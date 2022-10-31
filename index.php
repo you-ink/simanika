@@ -1,4 +1,7 @@
 <?php
+// echo "Maaf, aplikasi sedang melakukan update.";
+// exit;
+date_default_timezone_set("Asia/Jakarta");
 /**
  * CodeIgniter
  *
@@ -35,6 +38,19 @@
  * @since	Version 1.0.0
  * @filesource
  */
+
+function env($index, $data = '')
+{
+	if (!file_exists('.env.production')) {
+		echo 'File .env not found';
+		die;
+	} else {
+		$config = parse_ini_file('.env.production');
+		$exists = isset($config[$index]) ? $config[$index] : $data;
+		$value = empty($exists) ? $data : $exists;
+		return $value;
+	}
+}
 
 /*
  *---------------------------------------------------------------

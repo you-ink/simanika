@@ -33,6 +33,18 @@ class Dashboard extends CI_Controller {
 		$this->load->view('app/dashboard/footer', $data);
 	}
 
+	public function member()
+	{
+		$data['title'] = 'Simanika - Data Anggota';
+
+		$this->load->view('app/dashboard/header', $data);
+		$this->load->view('app/dashboard/sidebar', $data);
+		$this->load->view('app/dashboard/navbar', $data);
+		$this->load->view('dashboard/member', $data);
+		$data['script'] = get_views('dashboard/js/member');
+		$this->load->view('app/dashboard/footer', $data);
+	}
+
 }
 
 /* End of file Dashboard.php */

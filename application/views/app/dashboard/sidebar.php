@@ -25,45 +25,21 @@
   <div class="nav-wrapper">
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link active" href="index.html">
-          <i class="material-icons">edit</i>
-          <span>Blog Dashboard</span>
+        <a class="nav-link <?php echo ($this->uri->segment(2) == 'index' || empty($this->uri->segment(2)))?'active':'' ?>" href="<?php echo base_url('dashboard') ?>">
+          <i class="material-icons">home</i>
+          <span>Dashboard</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="components-blog-posts.html">
-          <i class="material-icons">vertical_split</i>
-          <span>Blog Posts</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="add-new-post.html">
-          <i class="material-icons">note_add</i>
-          <span>Add New Post</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="form-components.html">
-          <i class="material-icons">view_module</i>
-          <span>Forms &amp; Components</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="tables.html">
+        <a class="nav-link <?php echo ($this->uri->segment(2) == 'member')?'active':'' ?>" href="<?php echo base_url('dashboard/member') ?>">
           <i class="material-icons">table_chart</i>
-          <span>Tables</span>
+          <span>Data Anggota</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="user-profile-lite.html">
+        <a class="nav-link <?php echo ($this->uri->segment(2) == 'profile')?'active':'' ?>" href="<?php echo base_url('dashboard/profile') ?>">
           <i class="material-icons">person</i>
           <span>User Profile</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="errors.html">
-          <i class="material-icons">error</i>
-          <span>Errors</span>
         </a>
       </li>
     </ul>

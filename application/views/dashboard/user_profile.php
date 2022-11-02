@@ -14,7 +14,7 @@
 							src="<?php echo base_url() ?>assets/img/avatars/0.jpg" alt="User Avatar">
 					</div>
 					<h4 class="mb-0">Sierra Brooks</h4>
-					<span class="text-muted d-block mb-2">Ketua Himanika</span>
+					<span class="text-muted d-block mb-2">Anggota PSDM</span>
 					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
 						<i class="material-icons mr-1">person_add</i>Follow</button>
 				</div>

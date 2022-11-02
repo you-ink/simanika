@@ -18,3 +18,5 @@
     <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="<?php echo base_url('assets/template/shards-dashboard/') ?>styles/shards-dashboards.1.1.0.min.css">
   </head>
   <body class="h-100">
+    <div class="container-fluid">
+      <div class="row">

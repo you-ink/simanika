@@ -12,7 +12,10 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Simanika - Dashboard';
+
 		$this->load->view('app/dashboard/header', $data);
+		$this->load->view('app/dashboard/sidebar', $data);
+		$this->load->view('app/dashboard/navbar', $data);
 		$this->load->view('dashboard/main', $data);
 		$data['script'] = get_views('dashboard/js/main');
 		$this->load->view('app/dashboard/footer', $data);

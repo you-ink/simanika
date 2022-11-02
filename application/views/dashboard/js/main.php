@@ -1,3 +1,3 @@
 <script>
-	alert("ok")
+	// alert("ok")
 </script>

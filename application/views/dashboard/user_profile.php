@@ -14,29 +14,10 @@
 							src="<?php echo base_url() ?>assets/img/avatars/0.jpg" alt="User Avatar">
 					</div>
 					<h4 class="mb-0">Sierra Brooks</h4>
-					<span class="text-muted d-block mb-2">Project Manager</span>
+					<span class="text-muted d-block mb-2">Ketua Himanika</span>
 					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
 						<i class="material-icons mr-1">person_add</i>Follow</button>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item px-4">
-						<div class="progress-wrapper">
-							<strong class="text-muted d-block mb-2">Workload</strong>
-							<div class="progress progress-sm">
-								<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="74"
-									aria-valuemin="0" aria-valuemax="100" style="width: 74%;">
-									<span class="progress-value">74%</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="list-group-item p-4">
-						<strong class="text-muted d-block mb-2">Description</strong>
-						<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi
-							soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda
-							eligendi cumque?</span>
-					</li>
-				</ul>
 			</div>
 		</div>
 		<div class="col-lg-8">
@@ -51,49 +32,33 @@
 								<form>
 									<div class="form-row">
 										<div class="form-group col-md-6">
-											<label for="feFirstName">First Name</label>
-											<input type="text" class="form-control" id="feFirstName"
-												placeholder="First Name" value="Sierra"> </div>
+											<label for="fefulltName">Nama Lengkap</label>
+											<input type="text" class="form-control" id="fefulltName"
+												placeholder="Nama lengkap" value="Sierra Brooks"> </div>
 										<div class="form-group col-md-6">
-											<label for="feLastName">Last Name</label>
-											<input type="text" class="form-control" id="feLastName"
-												placeholder="Last Name" value="Brooks"> </div>
+											<label for="feUserName">UserName</label>
+											<input type="text" class="form-control" id="feUserName"
+												placeholder="User Name" value="Brooks"> </div>
 									</div>
 									<div class="form-row">
 										<div class="form-group col-md-6">
 											<label for="feEmailAddress">Email</label>
 											<input type="email" class="form-control" id="feEmailAddress"
-												placeholder="Email" value="sierra@example.com"> </div>
+												placeholder="Email" value="sierra@gmail.com"> </div>
 										<div class="form-group col-md-6">
 											<label for="fePassword">Password</label>
 											<input type="password" class="form-control" id="fePassword"
 												placeholder="Password"> </div>
 									</div>
-									<div class="form-group">
-										<label for="feInputAddress">Address</label>
-										<input type="text" class="form-control" id="feInputAddress"
-											placeholder="1234 Main St"> </div>
 									<div class="form-row">
 										<div class="form-group col-md-6">
-											<label for="feInputCity">City</label>
-											<input type="text" class="form-control" id="feInputCity"> </div>
-										<div class="form-group col-md-4">
-											<label for="feInputState">State</label>
-											<select id="feInputState" class="form-control">
-												<option selected>Choose...</option>
-												<option>...</option>
-											</select>
-										</div>
-										<div class="form-group col-md-2">
-											<label for="inputZip">Zip</label>
-											<input type="text" class="form-control" id="inputZip"> </div>
-									</div>
-									<div class="form-row">
-										<div class="form-group col-md-12">
-											<label for="feDescription">Description</label>
-											<textarea class="form-control" name="feDescription"
-												rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</textarea>
-										</div>
+											<label for="feNIM">NIM</label>
+											<input type="NIM" class="form-control" id="feNIM"
+												placeholder="NIM" value="E123456"> </div>
+										<div class="form-group col-md-6">
+											<label for="feNoHp">NO HP</label>
+											<input type="NoHp" class="form-control" id="feNoHp"
+												placeholder="Nomer Hanphone" value="085887865892"> </div>
 									</div>
 									<button type="submit" class="btn btn-accent">Update Account</button>
 								</form>

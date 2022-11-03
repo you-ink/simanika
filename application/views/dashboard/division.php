@@ -9,7 +9,7 @@
               <div class="col">
                 <div class="card card-small mb-4">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Data Member</h6>
+                    <h6 class="m-0">Data Divisi</h6>
                   </div>
                   <div class="card-body p-0 pb-3 text-center">
                     <table class="table mb-0">
@@ -17,22 +17,14 @@
                         <tr>
                           <th scope="col" class="border-0">#</th>
                           <th scope="col" class="border-0">Nama Lengkap</th>
-                          <th scope="col" class="border-0">UserName</th>
-                          <th scope="col" class="border-0">Email</th>
-                          <th scope="col" class="border-0">Password</th>
-                          <th scope="col" class="border-0">NIM</th>
-                          <th scope="col" class="border-0">NoHp</th>
+                          <th scope="col" class="border-0"></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1</td>
                           <td>Muhammad Rudy Darmawan</td>
-                          <td>Rudy</td>
-                          <td>Rudy@gmail.com</td>
-                          <td>12345678</td>
-                          <td>E31234567</td>
-                          <td>081234567890</td>
+                         
                         </tr>
                         <tr>
                           <td>2</td>

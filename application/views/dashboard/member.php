@@ -32,6 +32,9 @@
                           <td>081234567890</td>
                           <td>
                             <a href="#">
+                              <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-info"></i></button>
+                            </a>
+                            <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
                             <a href="#">
@@ -46,6 +49,9 @@
                           <td>E31234567</td>
                           <td>081234567890</td>
                           <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-info"></i></button>
+                            </a>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -62,6 +68,9 @@
                           <td>081234567890</td>
                           <td>
                             <a href="#">
+                              <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-info"></i></button>
+                            </a>
+                            <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
                             <a href="#">
@@ -76,6 +85,9 @@
                           <td>E31234567</td>
                           <td>081234567890</td>
                           <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-info"></i></button>
+                            </a>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -92,6 +104,9 @@
                           <td>081234567890</td>
                           <td>
                             <a href="#">
+                              <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-info"></i></button>
+                            </a>
+                            <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
                             <a href="#">
@@ -106,6 +121,9 @@
                           <td>E31234567</td>
                           <td>081234567890</td>
                           <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-warning"><i class="fas fa-info"></i></button>
+                            </a>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>

@@ -8,7 +8,7 @@
 	<div class="row">
               <div class="col">
                 <div class="card card-small mb-4">
-                  <div class="card-header border-bottom">
+                  <div class="card-header border-bottom"> 
                     <div class="row">
                       <div class="col-6">
                         <h6 class="m-0">Data Jabatan</h6>

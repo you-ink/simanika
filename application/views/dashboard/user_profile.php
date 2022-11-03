@@ -16,7 +16,7 @@
 					<h4 class="mb-0">Sierra Brooks</h4>
 					<span class="text-muted d-block mb-2">Anggota PSDM</span>
 					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
-						<i class="material-icons mr-1">person_add</i>Follow</button>
+						<i class="fa fa-pen mr-1"></i>Edit</button>
 				</div>
 			</div>
 		</div>

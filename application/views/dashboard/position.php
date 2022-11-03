@@ -101,6 +101,42 @@
                             </a>
                           </td>
                         </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Nurlita Ayu Rakhmawati</td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
+                            </a>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Mutia Budi Utami</td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
+                            </a>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Marisa Setya Anggarini</td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
+                            </a>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                            </a>
+                          </td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>

@@ -1,8 +1,8 @@
 <div class="main-content-container container-fluid px-4">
 	<div class="page-header row no-gutters py-4">
 		<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-			<span class="text-uppercase page-subtitle">Member</span>
-			<h3 class="page-title">HIMANIKA Meeting Agenda</h3>
+			<span class="text-uppercase page-subtitle">Meeting Agenda</span>
+			<h3 class="page-title">Data Agenda Rapat</h3>
 		</div>
 	</div>
 	<div class="row">
@@ -11,7 +11,7 @@
                   <div class="card-header border-bottom">
                     <h6 class="m-0">Data Meeting Agenda</h6>
                   </div>
-                  <div class="card-body p-0 pb-3 text-center">
+                  <div class="card-body p-0 pb-3 text-left">
                     <table class="table mb-0">
                       <thead class="bg-light">
                         <tr>

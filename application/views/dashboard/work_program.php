@@ -1,8 +1,8 @@
 <div class="main-content-container container-fluid px-4">
 	<div class="page-header row no-gutters py-4">
 		<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-			<span class="text-uppercase page-subtitle">Member</span>
-			<h3 class="page-title">HIMANIKA Work Program</h3>
+			<span class="text-uppercase page-subtitle">Work Program</span>
+			<h3 class="page-title">Data Program Kerja</h3>
 		</div>
 	</div>
 	<div class="row">
@@ -11,13 +11,15 @@
                   <div class="card-header border-bottom">
                     <h6 class="m-0">Data Work Program</h6>
                   </div>
-                  <div class="card-body p-0 pb-3 text-center">
+                  <div class="card-body p-0 pb-3 text-left">
                     <table class="table mb-0">
                       <thead class="bg-light">
                         <tr>
                           <th scope="col" class="border-0">No</th>
                           <th scope="col" class="border-0">Nama Program Kerja</th>
                           <th scope="col" class="border-0">Status</th>
+                          <th scope="col" class="border-0">Dokumen</th>
+                          <th scope="col" class="border-0">Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -25,6 +27,9 @@
                           <td>1</td>
                           <td>Gathering</td>
                           <td>Terlaksana</td>
+                          <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
@@ -39,6 +44,9 @@
                           <td>Sharing Sessions</td>
                           <td>Terlaksana</td>
                           <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+                          <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -51,6 +59,9 @@
                           <td>3</td>
                           <td>Webinar</td>
                           <td>Terlaksana</td>
+                          <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
@@ -65,6 +76,9 @@
                           <td>Anjangsana</td>
                           <td>Coming Soon</td>
                           <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+                          <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -78,6 +92,9 @@
                           <td>Open Recuitment HIMANIKA</td>
                           <td>Coming Soon</td>
                           <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+                          <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -90,6 +107,9 @@
                           <td>6</td>
                           <td>Management Informatics Competition</td>
                           <td>Coming Soon</td>
+                          <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>

@@ -57,16 +57,39 @@ class Dashboard extends CI_Controller {
 		$this->load->view('app/dashboard/footer', $data);
 	}
 
-
 	public function position()
 	{
-		$data['title'] = 'Simanika - Data Posisi';
+		$data['title'] = 'Simanika - Data Jabatan';
 
 		$this->load->view('app/dashboard/header', $data);
 		$this->load->view('app/dashboard/sidebar', $data);
 		$this->load->view('app/dashboard/navbar', $data);
 		$this->load->view('dashboard/position', $data);
 		$data['script'] = get_views('dashboard/js/position');
+		$this->load->view('app/dashboard/footer', $data);
+	}
+
+	public function meeting()
+	{
+		$data['title'] = 'Simanika - Data Rapat';
+
+		$this->load->view('app/dashboard/header', $data);
+		$this->load->view('app/dashboard/sidebar', $data);
+		$this->load->view('app/dashboard/navbar', $data);
+		$this->load->view('dashboard/meeting', $data);
+		$data['script'] = get_views('dashboard/js/meeting');
+		$this->load->view('app/dashboard/footer', $data);
+	}
+
+	public function proker()
+	{
+		$data['title'] = 'Simanika - Data Proker';
+
+		$this->load->view('app/dashboard/header', $data);
+		$this->load->view('app/dashboard/sidebar', $data);
+		$this->load->view('app/dashboard/navbar', $data);
+		$this->load->view('dashboard/work_program', $data);
+		$data['script'] = get_views('dashboard/js/work_program');
 		$this->load->view('app/dashboard/footer', $data);
 	}
 }

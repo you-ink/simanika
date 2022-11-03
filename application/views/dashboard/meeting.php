@@ -19,6 +19,8 @@
                           <th scope="col" class="border-0">Tipe Agenda Rapat</th>
                           <th scope="col" class="border-0">Nama Agenda Rapat</th>
                           <th scope="col" class="border-0">Waktu</th>
+                          <th scope="col" class="border-0">Dokumen</th>
+                          <th scope="col" class="border-0">Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -27,6 +29,9 @@
                           <td>Rapat Resmi</td>
                           <td>Rapat 100 Hari Kerja</td>
                           <td>3 September 2022</td>
+                          <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
@@ -42,6 +47,9 @@
                           <td>Rapat Rancangan Program Kerja</td>
                           <td>10 September 2022</td>
                           <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+                          <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -55,6 +63,9 @@
                           <td>Rapat Program Kerja</td>
                           <td>Konsep Acara Anjangsana</td>
                           <td>10 Desember 2022</td>
+                          <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
@@ -70,6 +81,9 @@
                           <td>Konsep Acara Open Recruitment HIMANIKA</td>
                           <td>20 Oktober 2022</td>
                           <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+                          <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -84,6 +98,9 @@
                           <td>Konsep Acara Management Informatics Competition</td>
                           <td>2 November 2022</td>
                           <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+                          <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
                             </a>
@@ -97,6 +114,9 @@
                           <td>Rapat Resmi</td>
                           <td>Rapat Akhir Tahun Periode</td>
                           <td>10 Desember 2022</td>
+                          <td>
+                          <a href="#">
+                              <button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>

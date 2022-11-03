@@ -93,7 +93,7 @@ class Dashboard extends CI_Controller {
 		$this->load->view('app/dashboard/footer', $data);
 	}
 
-	public function program()
+	public function pendaftaran()
 	{
 		$data['title'] = 'Pendaftaran';
 

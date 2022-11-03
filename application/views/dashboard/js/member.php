@@ -6,7 +6,6 @@
 				dom: "<'row'<'col-sm-12 mb-2'B>>lfrtip",
 			    lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
 				buttons: [
-					'selectRows',
 			         { 
 			         	extend: 'excel', 
 			         	text: '<i class="fas fa-download"></i> Download Excel',

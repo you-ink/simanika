@@ -11,7 +11,8 @@
     <?= stylesheet([
       'plugin/fontawesome/css/all.min.css',
       'plugin/bootstrap/css/bootstrap.min.css',
-      'template/shards-dashboard/styles/extras.1.1.0.min.css'
+      'template/shards-dashboard/styles/extras.1.1.0.min.css',
+      'plugin/DataTables/datatables.min.css',
     ]); ?>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

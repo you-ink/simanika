@@ -31,5 +31,25 @@
 
 		load_member();
 
+		$('.btn-delete').on('click', function() {
+			Swal.fire({
+			  title: 'Apakah anda yakin?',
+			  text: "Anda ingin menghapus data ini!",
+			  icon: 'warning',
+			  showCancelButton: true,
+			  confirmButtonColor: '#3085d6',
+			  cancelButtonColor: '#d33',
+			  confirmButtonText: 'Ya, hapus!'
+			}).then((result) => {
+			  if (result.isConfirmed) {
+			    Swal.fire(
+			      'Dihapus!',
+			      'Data berhasil dihapus.',
+			      'success'
+			    )
+			  }
+			})
+		})
+
 	})
 </script>

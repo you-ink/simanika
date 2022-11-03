@@ -33,7 +33,7 @@
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>
-                  <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
               <tr>
@@ -45,7 +45,7 @@
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
               <tr>
@@ -57,7 +57,7 @@
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
               <tr>
@@ -69,7 +69,7 @@
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
               <tr>
@@ -81,7 +81,7 @@
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
               <tr>
@@ -93,7 +93,7 @@
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
             </tbody>

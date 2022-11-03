@@ -20,7 +20,7 @@
               </li>
             </ul>
             <span class="copyright ml-auto my-auto mr-2">Copyright &copy; 2022
-              <a href="#" rel="nofollow">Simanika</a>
+              <a href="javascript:void(0)" rel="nofollow">Simanika</a>
             </span>
           </footer>
         </main>

@@ -31,7 +31,7 @@
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>Muhammad Rudy Darmawan</td>
+                          <td>Ketua Umum</td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
@@ -43,7 +43,7 @@
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td>Atikah Nuri Hazma</td>
+                          <td>Wakil Ketua</td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
@@ -55,7 +55,43 @@
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td>Rahma Romadona Ayu Riswanti</td>
+                          <td>Sekertaris</td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
+                            </a>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Bendahara</td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
+                            </a>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Ketua Divisi</td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>
+                            </a>
+                            <a href="#">
+                              <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Anggota</td>
                           <td>
                             <a href="#">
                               <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-pen"></i></button>

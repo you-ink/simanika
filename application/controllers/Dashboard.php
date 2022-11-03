@@ -71,7 +71,7 @@ class Dashboard extends CI_Controller {
 
 	public function meeting()
 	{
-		$data['title'] = 'Simanika - Data Rapat';
+		$data['title'] = 'Simanika - Rapat';
 
 		$this->load->view('app/dashboard/header', $data);
 		$this->load->view('app/dashboard/sidebar', $data);
@@ -81,9 +81,9 @@ class Dashboard extends CI_Controller {
 		$this->load->view('app/dashboard/footer', $data);
 	}
 
-	public function proker()
+	public function program()
 	{
-		$data['title'] = 'Simanika - Data Proker';
+		$data['title'] = 'Simanika - Program Kerja';
 
 		$this->load->view('app/dashboard/header', $data);
 		$this->load->view('app/dashboard/sidebar', $data);

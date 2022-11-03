@@ -34,7 +34,8 @@
       'plugin/shards-ui/js/shards.min.js',
       'template/shards-dashboard/scripts/extras.1.1.0.min.js',
       'template/shards-dashboard/scripts/shards-dashboards.1.1.0.min.js',
-      'template/shards-dashboard/scripts/app/app-blog-overview.1.1.0.js',
+      // 'template/shards-dashboard/scripts/app/app-blog-overview.1.1.0.js',
+      'plugin/DataTables/datatables.min.js',
     ]); ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
@@ -46,6 +47,12 @@
         }
 
     ?>
+
+    <script>
+      $(document).ready(function() {
+        $('.dt-button').removeClass("dt-button");
+      })
+    </script>
 
   </body>
 </html>

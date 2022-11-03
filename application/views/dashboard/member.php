@@ -2,16 +2,16 @@
 	<div class="page-header row no-gutters py-4">
 		<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
 			<span class="text-uppercase page-subtitle">Member</span>
-			<h3 class="page-title">HIMANIKA Member</h3>
+			<h3 class="page-title">Data Anggota</h3>
 		</div>
 	</div>
 	<div class="row">
               <div class="col">
                 <div class="card card-small mb-4">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Data Member</h6>
+                    <h6 class="m-0">Data Anggota</h6>
                   </div>
-                  <div class="card-body p-0 pb-3 text-center">
+                  <div class="card-body p-3">
                     <table class="table mb-0">
                       <thead class="bg-light">
                         <tr>

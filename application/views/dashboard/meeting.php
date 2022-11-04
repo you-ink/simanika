@@ -19,7 +19,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card-body p-0 pb-3 text-left">
+				<div class="card-body p-3 text-left">
 					<table class="table mb-0">
 						<thead class="bg-light">
 							<tr>

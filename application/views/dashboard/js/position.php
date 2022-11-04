@@ -1,7 +1,7 @@
 <script>
 	$(document).ready(function() {
 
-		function load_member(params = []) {
+		function load_position(params = []) {
 			$("table.table").DataTable({
 				dom: "<'row'<'col-sm-12 mb-2'B>>lfrtip",
 			    lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
@@ -29,7 +29,7 @@
 			});
 		}
 
-		load_member();
+		load_position();
 
 	})
 </script>

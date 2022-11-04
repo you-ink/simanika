@@ -13,7 +13,7 @@
 			         	title: null,
 			         	className: 'btn btn-sm btn-success',
 			         	exportOptions: {
-		                    columns: [ 0, 1, 2, 3, 4 ]
+		                    columns: [ 0, 1, 2, 3, 4, 5, 6 ]
 		                }
 			         },
 			         { 
@@ -22,7 +22,7 @@
 			         	title: 'Data Anggota Himanika',
 			         	className: 'btn btn-sm btn-success',
 			         	exportOptions: {
-		                    columns: [ 0, 1, 2, 3, 4 ]
+		                    columns: [ 0, 1, 2, 3, 4, 5, 6 ]
 		                }
 			         },
 			    ]

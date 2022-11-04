@@ -19,6 +19,8 @@
                 <th scope="col" class="border-0">Nama Lengkap</th>
                 <th scope="col" class="border-0">Email</th>
                 <th scope="col" class="border-0">NIM</th>
+                <th scope="col" class="border-0">Angkatan</th>
+                <th scope="col" class="border-0">Golongan</th>
                 <th scope="col" class="border-0">Telp</th>
                 <th scope="col" class="border-0">Aksi</th>
               </tr>
@@ -28,8 +30,10 @@
                 <td>1</td>
                 <td>Muhammad Rudy Darmawan</td>
                 <td>Rudy@gmail.com</td>
-                <td>E31234567</td>
-                <td>081234567890</td>
+                <td>E31200880</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>081236915399</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>
@@ -40,8 +44,10 @@
                 <td>2</td>
                 <td>Atikah Nuri Hazma</td>
                 <td>Atikah@gmail.com</td>
-                <td>E31234567</td>
-                <td>081234567890</td>
+                <td>E31200880</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>081236915399</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -52,8 +58,10 @@
                 <td>3</td>
                 <td>Rahma Romadona Ayu Riswanti</td>
                 <td>Rahma@gmail.com</td>
-                <td>E31234567</td>
-                <td>081234567890</td>
+                <td>E31200880</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>081236915399</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -64,8 +72,10 @@
                 <td>4</td>
                 <td>Mutia Budi Utami</td>
                 <td>Mutia@gmail.com</td>
-                <td>E31234567</td>
-                <td>081234567890</td>
+                <td>E31200880</td>
+                <td>2021</td>
+                <td>A</td>
+                <td>081236915399</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -76,8 +86,10 @@
                 <td>5</td>
                 <td>Nurlita Ayu Rakhmawati</td>
                 <td>Ayu@gmail.com</td>
-                <td>E31234567</td>
-                <td>081234567890</td>
+                <td>E31200880</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>081236915399</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -87,9 +99,11 @@
               <tr>
                 <td>6</td>
                 <td>Marisa Setya Anggraini</td>
-                <td>MArisa@gmail.com</td>
-                <td>E31234567</td>
-                <td>081234567890</td>
+                <td>Marisa@gmail.com</td>
+                <td>E31200880</td>
+                <td>2021</td>
+                <td>B</td>
+                <td>081236915399</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  

@@ -184,21 +184,21 @@
 						<div class="form-group col-12">
 							<label for="fefulltName">Tipe Agenda Rapat</label>
 							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="Sierra Brooks">
+								value="Rapat Resmi/Proker">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Nama Agenda Rapat</label>
 							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="Sierra Brooks">
+								value="Rapat Konsep Acara">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Waktu</label>
 							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="Sierra Brooks">
+								value="20 November 2022">
 						</div>
 					</div>
 				</form>

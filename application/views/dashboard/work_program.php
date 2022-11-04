@@ -149,13 +149,13 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Nama Proker</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Webinar">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Status</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Coming Soon">
 						</div>
 					</div>
 				</form>

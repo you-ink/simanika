@@ -5,12 +5,19 @@
 			<h3 class="page-title">Data Anggota</h3>
 		</div>
 	</div>
+
 	<div class="row">
     <div class="col">
       <div class="card card-small mb-4">
         <div class="card-header border-bottom">
+        <div class="row">
+						<div class="col-6">
           <h6 class="m-0">Data Anggota</h6>
         </div>
+        <div class="col-6 text-right">
+							<button class="btn btn-sm btn-success" data-toggle="modal" data-target="#crudModal"><i
+									class="fas fa-plus"></i> Tambah Anggota</button>
+						</div>
         <div class="card-body p-3">
           <table class="table mb-0">
             <thead class="bg-light">

@@ -50,7 +50,7 @@
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Sekertaris</td>
+								<td>Sekertaris 1</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -59,7 +59,7 @@
 							</tr>
 							<tr>
 								<td>4</td>
-								<td>Bendahara</td>
+								<td>Sekertaris 2</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -68,7 +68,7 @@
 							</tr>
 							<tr>
 								<td>5</td>
-								<td>Ketua Divisi</td>
+								<td>Bendahara 1</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -77,7 +77,7 @@
 							</tr>
 							<tr>
 								<td>6</td>
-								<td>Anggota</td>
+								<td>Bendahara 2</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -85,8 +85,8 @@
 								</td>
 							</tr>
 							<tr>
-								<td>4</td>
-								<td>Nurlita Ayu Rakhmawati</td>
+								<td>7</td>
+								<td>Ketua Divisi Humas</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -94,8 +94,8 @@
 								</td>
 							</tr>
 							<tr>
-								<td>5</td>
-								<td>Mutia Budi Utami</td>
+								<td>8</td>
+								<td>Anggota Divisi Humas</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -103,8 +103,71 @@
 								</td>
 							</tr>
 							<tr>
-								<td>6</td>
-								<td>Marisa Setya Anggarini</td>
+								<td>9</td>
+								<td>Ketua Divisi Kominfo</td>
+								<td>
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>Anggota Divisi Kominfo</td>
+								<td>
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>Ketua Divisi PSDM</td>
+								<td>
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>CO Minat Bakat</td>
+								<td>
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>Anggota Akademik</td>
+								<td>
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>Anggota Non Akademik</td>
+								<td>
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>CO Kewirausahaan</td>
+								<td>
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>Anggota Kewirausahaan</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>

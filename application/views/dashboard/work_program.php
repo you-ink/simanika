@@ -28,15 +28,20 @@
 								<td>Gathering</td>
 								<td>Terlaksana</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -45,15 +50,20 @@
 								<td>Sharing Sessions</td>
 								<td>Terlaksana</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -62,15 +72,20 @@
 								<td>Webinar</td>
 								<td>Terlaksana</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -79,15 +94,20 @@
 								<td>Anjangsana</td>
 								<td>Coming Soon</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -96,15 +116,20 @@
 								<td>Open Recuitment HIMANIKA</td>
 								<td>Coming Soon</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -113,15 +138,20 @@
 								<td>Management Informatics Competition</td>
 								<td>Coming Soon</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -149,13 +179,15 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Nama Proker</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Webinar">
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Webinar">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Status</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Coming Soon">
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Coming Soon">
 						</div>
 					</div>
 				</form>
@@ -163,6 +195,101 @@
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				<button type="button" class="btn btn-primary">Update</button>
+				<button type="button" class="btn btn-primary">Tambah</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CRUD Modal Info -->
+<div class="modal fade" id="crudModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Info Dokumen Proker</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama Pengirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Mutia Budi Utami">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama Proker</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Webinar">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Status</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Coming Soon">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Waktu Dikirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="20 November 2022">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CRUD Modal Dokumen -->
+<div class="modal fade" id="crudModalDoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Upload Dokumen</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama Pengirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Mutia Budi Utami">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Waktu Dikirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="20 November 2022">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName"> Upload Dokumen</label>
+							<input type="text"><button type="button" class="btn btn-sm btn-secondary"><i
+											class="fas fa-upload"></i>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Upload</button>
 				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>

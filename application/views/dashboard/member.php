@@ -51,10 +51,10 @@
                 <td>2</td>
                 <td>Atikah Nuri Hazma</td>
                 <td>Atikah@gmail.com</td>
-                <td>E31200880</td>
+                <td>E31210646</td>
                 <td>2020</td>
-                <td>A</td>
-                <td>081236915399</td>
+                <td>Internasional</td>
+                <td>082131871861</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -65,10 +65,10 @@
                 <td>3</td>
                 <td>Rahma Romadona Ayu Riswanti</td>
                 <td>Rahma@gmail.com</td>
-                <td>E31200880</td>
+                <td>E31201794</td>
                 <td>2020</td>
-                <td>A</td>
-                <td>081236915399</td>
+                <td>C</td>
+                <td>081219243906</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -79,10 +79,10 @@
                 <td>4</td>
                 <td>Mutia Budi Utami</td>
                 <td>Mutia@gmail.com</td>
-                <td>E31200880</td>
+                <td>E31210521</td>
                 <td>2021</td>
                 <td>A</td>
-                <td>081236915399</td>
+                <td>082359338615</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -93,10 +93,10 @@
                 <td>5</td>
                 <td>Nurlita Ayu Rakhmawati</td>
                 <td>Ayu@gmail.com</td>
-                <td>E31200880</td>
+                <td>E31200284</td>
                 <td>2020</td>
                 <td>A</td>
-                <td>081236915399</td>
+                <td>085283747658</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
@@ -107,16 +107,213 @@
                 <td>6</td>
                 <td>Marisa Setya Anggraini</td>
                 <td>Marisa@gmail.com</td>
-                <td>E31200880</td>
+                <td>E31210701</td>
                 <td>2021</td>
                 <td>B</td>
-                <td>081236915399</td>
+                <td>081331360036</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
                   <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
+              <tr>
+                <td>7</td>
+                <td>M Basar Riski</td>
+                <td>Basar@gmail.com</td>
+                <td>E31200251</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>081615605184</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Akbar Kusnadi</td>
+                <td>Akbar@gmail.com</td>
+                <td>E31211725</td>
+                <td>2021</td>
+                <td>B</td>
+                <td>081246922026</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Ananda Zakia Syahfitri</td>
+                <td>Kia@gmail.com</td>
+                <td>E31210529</td>
+                <td>2021</td>
+                <td>A</td>
+                <td>082391833198</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Farel Ramadhan Aryaputra</td>
+                <td>Farel@gmail.com</td>
+                <td>E31210049</td>
+                <td>2021</td>
+                <td>A</td>
+                <td>083857726588</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Firda Ulfa Unsilah</td>
+                <td>Firda@gmail.com</td>
+                <td>E31201536</td>
+                <td>2020</td>
+                <td>B</td>
+                <td>081231946103</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Fuad Hasyim Fanani</td>
+                <td>Fuad@gmail.com</td>
+                <td>E31200680</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>081235378751</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Lukman Afandi</td>
+                <td>Lukman@gmail.com</td>
+                <td>E31200844</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>085156426240</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Khoirul Anam</td>
+                <td>Khoirul@gmail.com</td>
+                <td>E31210705</td>
+                <td>2021</td>
+                <td>B</td>
+                <td>082228008055</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Muhammad Herman Maulana</td>
+                <td>Herman@gmail.com</td>
+                <td>E31202319</td>
+                <td>2020</td>
+                <td>C</td>
+                <td>085859482186</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Mochammad Andika Alsabfandi</td>
+                <td>Andika@gmail.com</td>
+                <td>E31202523</td>
+                <td>2020</td>
+                <td>C</td>
+                <td>085237774774</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Reyhan Reza Mahendra</td>
+                <td>Reyhan@gmail.com</td>
+                <td>E31201555</td>
+                <td>2020</td>
+                <td>B</td>
+                <td>089503734758</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Ranin nabila</td>
+                <td>Ranin@gmail.com</td>
+                <td>E31210790</td>
+                <td>2021</td>
+                <td>B</td>
+                <td>085850756711</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Yoga Saputra</td>
+                <td>Yoga@gmail.com</td>
+                <td>E31200356</td>
+                <td>2020</td>
+                <td>A</td>
+                <td>0821394456591</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Hamid Rafiud Derajad</td>
+                <td>Hamid@gmail.com</td>
+                <td>E31201365</td>
+                <td>2020</td>
+                <td>B</td>
+                <td>081235177686</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+
             </tbody>
           </table>
         </div>

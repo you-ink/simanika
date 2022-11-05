@@ -31,7 +31,7 @@
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Gathering</td>
+								<td>Gathering Mahasiswa Bru MIF'22</td>
 								<td>Terlaksana</td>
 								<td>
 
@@ -53,7 +53,7 @@
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Sharing Sessions</td>
+								<td>Sharing Sessions Alumni dan Dosen</td>
 								<td>Terlaksana</td>
 								<td>
 
@@ -75,7 +75,7 @@
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Webinar</td>
+								<td>Webinar MIF</td>
 								<td>Terlaksana</td>
 								<td>
 
@@ -97,7 +97,7 @@
 							</tr>
 							<tr>
 								<td>4</td>
-								<td>Anjangsana</td>
+								<td>Anjangsana Antar Program Studi</td>
 								<td>Coming Soon</td>
 								<td>
 

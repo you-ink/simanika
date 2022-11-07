@@ -24,7 +24,6 @@
 						<thead class="bg-light">
 							<tr>
 								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Nama</th>
 								<th scope="col" class="border-0">Divisi</th>
 								<th scope="col" class="border-0">Aksi</th>
 							</tr>
@@ -32,7 +31,6 @@
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Muhammad Rudy Darmawan</td>
 								<td>BPH</td>
 								<td>
 
@@ -43,8 +41,7 @@
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Atikah Nuri Hazma</td>
-								<td>BPH</td>
+								<td>Humas</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -53,8 +50,7 @@
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Rahma Romadona Riswanti</td>
-								<td>BPH</td>
+								<td>PSDM (Sub Divisi Minat Bakat - Akademik)</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -64,8 +60,7 @@
 							</tr>
 							<tr>
 								<td>4</td>
-								<td>Nurlita Ayu Rakhmawati</td>
-								<td>BPH</td>
+								<td>PSDM (Sub Divisi Minat Bakat - Non Akademik)</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -75,8 +70,7 @@
 							</tr>
 							<tr>
 								<td>5</td>
-								<td>Marisa Setya Anggaraini</td>
-								<td>BPH</td>
+								<td>PSDM (Sub DIvisi Kewirausahaan)</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -86,29 +80,6 @@
 							</tr>
 							<tr>
 								<td>6</td>
-								<td>M Basar Riski</td>
-								<td>Humas</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>7</td>
-								<td>Hamid Rafiud Derajat</td>
-								<td>PSDM</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>8</td>
-								<td>Lukman Afandi</td>
 								<td>Kominfo</td>
 								<td>
 

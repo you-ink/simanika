@@ -24,16 +24,14 @@
 						<thead class="bg-light">
 							<tr>
 								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Nama</th>
-								<th scope="col" class="border-0">Ketua</th>
+								<th scope="col" class="border-0">Nama Divisi</th>
 								<th scope="col" class="border-0">Aksi</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Muhammad Rudy Darmawan</td>
-								<td>Ketua Umum</td>
+								<td>BPH</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -43,8 +41,7 @@
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>M Basar Riski</td>
-								<td>Ketua Divisi Humas</td>
+								<td>Humas</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -53,8 +50,7 @@
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Lukman Afandi</td>
-								<td>Ketua Divisi Kominfo</td>
+								<td>Kominfo</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -64,30 +60,7 @@
 							</tr>
 							<tr>
 								<td>4</td>
-								<td>Hamid Rafiud Derajad</td>
-								<td>Ketua Divisi PSDM</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Aishanda Vania</td>
-								<td>Ketua Dvisi Minat Bakat</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Siti Rusdaniyah</td>
-								<td>Ketua Divisi KWU</td>
+								<td>PSDM</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i

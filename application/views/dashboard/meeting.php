@@ -38,18 +38,20 @@
 								<td>Rapat 100 Hari Kerja</td>
 								<td>3 September 2022</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i
-												class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary"
-											data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -59,18 +61,20 @@
 								<td>Rapat Rancangan Program Kerja</td>
 								<td>10 September 2022</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i
-												class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc"><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary"
-											data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -80,18 +84,20 @@
 								<td>Konsep Acara Anjangsana</td>
 								<td>10 Desember 2022</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i
-												class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc" ><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary"
-											data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -101,18 +107,20 @@
 								<td>Konsep Acara Open Recruitment HIMANIKA</td>
 								<td>20 Oktober 2022</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i
-												class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc" ><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary"
-											data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -122,18 +130,20 @@
 								<td>Konsep Acara Management Informatics Competition</td>
 								<td>2 November 2022</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i
-												class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc" ><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary"
-											data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -143,18 +153,20 @@
 								<td>Rapat Akhir Tahun Periode</td>
 								<td>10 Desember 2022</td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-secondary"><i
-												class="fas fa-upload"></i></td>
+
+									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+										data-target="#crudModalDoc" ><i
+											class="fas fa-upload"></i></td>
 								<td>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-primary"
-											data-toggle="modal" data-target="#crudModal"><i
-												class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+										data-target="#crudModalInfo"><i class="fas fa-info"></i></button>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+										data-target="#crudModal"><i class="fas fa-pen"></i></button>
 									</a>
-									<a href="#">
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
+
+									<button type="button" class="btn btn-sm btn-danger"><i
+											class="fas fa-trash"></i></button>
 									</a>
 								</td>
 							</tr>
@@ -206,6 +218,101 @@
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				<button type="button" class="btn btn-primary">Update</button>
+				<button type="button" class="btn btn-primary">Tambah</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CRUD Modal Info -->
+<div class="modal fade" id="crudModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Info Dokumen Rapat</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama Pengirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Mutia Budi Utami">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Tipe Agenda Rapat</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Rapat Resmi/Proker">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama Agenda Rapat</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Rapat Konsep Acara">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Waktu Dikirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="20 November 2022">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CRUD Modal Dokumen -->
+<div class="modal fade" id="crudModalDoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Upload Dokumen</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama Pengirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="Mutia Budi Utami">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Waktu Dikirim</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
+								value="20 November 2022">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName"> Upload Dokumen</label>
+							<input type="text"><button type="button" class="btn btn-sm btn-secondary"><i
+											class="fas fa-upload"></i>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Upload</button>
 				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>

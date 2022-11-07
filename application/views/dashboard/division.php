@@ -25,7 +25,7 @@
 							<tr>
 								<th scope="col" class="border-0">No</th>
 								<th scope="col" class="border-0">Nama</th>
-								<th scope="col" class="border-0">Ketua</th>
+								<th scope="col" class="border-0">Divisi</th>
 								<th scope="col" class="border-0">Aksi</th>
 							</tr>
 						</thead>
@@ -33,7 +33,7 @@
 							<tr>
 								<td>1</td>
 								<td>Muhammad Rudy Darmawan</td>
-								<td>Ketua Umum</td>
+								<td>BPH</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -43,8 +43,8 @@
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>M Basar Riski</td>
-								<td>Ketua Divisi Humas</td>
+								<td>Atikah Nuri Hazma</td>
+								<td>BPH</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -53,8 +53,8 @@
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Lukman Afandi</td>
-								<td>Ketua Divisi Kominfo</td>
+								<td>Rahma Romadona Riswanti</td>
+								<td>BPH</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -64,8 +64,8 @@
 							</tr>
 							<tr>
 								<td>4</td>
-								<td>Hamid Rafiud Derajad</td>
-								<td>Ketua Divisi PSDM</td>
+								<td>Nurlita Ayu Rakhmawati</td>
+								<td>BPH</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -75,8 +75,8 @@
 							</tr>
 							<tr>
 								<td>5</td>
-								<td>Aishanda Vania</td>
-								<td>Ketua Dvisi Minat Bakat</td>
+								<td>Marisa Setya Anggaraini</td>
+								<td>BPH</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -86,8 +86,30 @@
 							</tr>
 							<tr>
 								<td>6</td>
-								<td>Siti Rusdaniyah</td>
-								<td>Ketua Divisi KWU</td>
+								<td>M Basar Riski</td>
+								<td>Humas</td>
+								<td>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>Hamid Rafiud Derajat</td>
+								<td>PSDM</td>
+								<td>
+
+									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
+											class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>Lukman Afandi</td>
+								<td>Kominfo</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -121,13 +143,13 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Nama</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Muhammad Rudy Darmawan">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="feEmailAddress">Ketua Divisi</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
+							<label for="feEmailAddress">Divisi</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="BPH">
 						</div>
 					</div>
 				</form>

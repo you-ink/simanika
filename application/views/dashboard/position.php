@@ -24,7 +24,7 @@
 						<thead class="bg-light">
 							<tr>
 								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Nama</th>
+								<th scope="col" class="border-0">Nama Jabatan</th>
 								<th scope="col" class="border-0">Aksi</th>
 
 							</tr>
@@ -188,7 +188,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Posisi</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Jabatan</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -197,7 +197,7 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="fefulltName">Nama</label>
+							<label for="fefulltName">Nama Jabatan</label>
 							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
 						</div>
 					</div>

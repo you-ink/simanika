@@ -15,7 +15,8 @@
 					</div>
 					<h4 class="mb-0">Sierra Brooks</h4>
 					<span class="text-muted d-block mb-2">Anggota PSDM</span>
-					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
+					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2" data-toggle="modal" data-target="#crudModal">
+
 						<i class="fa fa-pen mr-1"></i>Edit</button>
 				</div>
 			</div>
@@ -66,6 +67,44 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- CRUD Modal -->
+<div class="modal fade" id="crudModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Divisi</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+				<form>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">Ketua Divisi</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Update</button>
+				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>
 	</div>

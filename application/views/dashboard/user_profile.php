@@ -15,7 +15,8 @@
 					</div>
 					<h4 class="mb-0">Muhammad Rudy Darmawan</h4>
 					<span class="text-muted d-block mb-2">Ketua Umum</span>
-					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2"data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen mr-1"></i>Edit</button>
+					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2" data-toggle="modal"
+						data-target="#crudModal"><i class="fas fa-pen mr-1"></i>Edit</button>
 				</div>
 			</div>
 		</div>
@@ -52,8 +53,8 @@
 									<div class="form-row">
 										<div class="form-group col-md-6">
 											<label for="feNIM">NIM</label>
-											<input type="NIM" class="form-control" id="feNIM"
-												placeholder="NIM" value="E31200880"> </div>
+											<input type="NIM" class="form-control" id="feNIM" placeholder="NIM"
+												value="E31200880"> </div>
 										<div class="form-group col-md-6">
 											<label for="feNoHp">NO HP</label>
 											<input type="NoHp" class="form-control" id="feNoHp"
@@ -87,34 +88,38 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Nama Lengkap</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Muhammad Rudy Darmawan">
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"value="Muhammad Rudy Darmawan">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="feEmailAddress">userName</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Rudydar">
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email"value="Rudydar">
 						</div>
-          <div class="form-row">
+					</div>
+					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="feEmailAddress">Email</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Rudy@amail.com">
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email"value="Rudy@amail.com">
+						</div>
 					</div>
-          <div class="form-row">
+					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="feEmailAddress">Password</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value=" ">
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email"value="Password">
+						</div>
 					</div>
-          <div class="form-row">
+					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="feEmailAddress">NIM</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="E31200880">
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email"value="E31200880">
+						</div>
 					</div>
-          <div class="form-row">
+					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="feEmailAddress">No HP</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="081236915399">
-					</div>
+							<input type="email" class="form-control" id="feEmailAddress"placeholder="Email" value="081236915399">
+						</div>
 					</div>
 				</form>
 			</div>

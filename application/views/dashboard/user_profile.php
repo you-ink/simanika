@@ -89,13 +89,37 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="fefulltName">Nama</label>
+							<label for="fefulltName">Nama Lengkap</label>
 							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="feEmailAddress">Ketua Divisi</label>
+							<label for="feEmailAddress">Email</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">NIM</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">No HP</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">UserName</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">Password</label>
 							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
 						</div>
 					</div>

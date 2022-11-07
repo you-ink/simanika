@@ -13,8 +13,8 @@
 						<img class="user-avatar rounded-circle mr-2"
 							src="<?php echo base_url() ?>assets/img/avatars/0.jpg" alt="User Avatar">
 					</div>
-					<h4 class="mb-0">Sierra Brooks</h4>
-					<span class="text-muted d-block mb-2">Anggota PSDM</span>
+					<h4 class="mb-0">Muhammad Rudy Darmawan</h4>
+					<span class="text-muted d-block mb-2">Ketua Umum</span>
 					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
 						<i class="fa fa-pen mr-1"></i>Edit</button>
 				</div>
@@ -34,17 +34,17 @@
 										<div class="form-group col-md-6">
 											<label for="fefulltName">Nama Lengkap</label>
 											<input type="text" class="form-control" id="fefulltName"
-												placeholder="Nama lengkap" value="Sierra Brooks"> </div>
+												placeholder="Nama lengkap" value="Muhammad Rudy Darmawan"> </div>
 										<div class="form-group col-md-6">
 											<label for="feUserName">UserName</label>
 											<input type="text" class="form-control" id="feUserName"
-												placeholder="User Name" value="Brooks"> </div>
+												placeholder="User Name" value="Rudydar"> </div>
 									</div>
 									<div class="form-row">
 										<div class="form-group col-md-6">
 											<label for="feEmailAddress">Email</label>
 											<input type="email" class="form-control" id="feEmailAddress"
-												placeholder="Email" value="sierra@gmail.com"> </div>
+												placeholder="Email" value="Rudy@gmail.com"> </div>
 										<div class="form-group col-md-6">
 											<label for="fePassword">Password</label>
 											<input type="password" class="form-control" id="fePassword"
@@ -54,11 +54,11 @@
 										<div class="form-group col-md-6">
 											<label for="feNIM">NIM</label>
 											<input type="NIM" class="form-control" id="feNIM"
-												placeholder="NIM" value="E123456"> </div>
+												placeholder="NIM" value="E31200880"> </div>
 										<div class="form-group col-md-6">
 											<label for="feNoHp">NO HP</label>
 											<input type="NoHp" class="form-control" id="feNoHp"
-												placeholder="Nomer Hanphone" value="085887865892"> </div>
+												placeholder="Nomer Hanphone" value="081236915399"> </div>
 									</div>
 									<button type="submit" class="btn btn-accent">Update Account</button>
 								</form>

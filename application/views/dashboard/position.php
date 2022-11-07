@@ -14,7 +14,7 @@
 							<h6 class="m-0">Data Jabatan</h6>
 						</div>
 						<div class="col-6 text-right">
-							<button class="btn btn-sm btn-success" data-toggle="modal" data-target="#crudModal"><i
+							<button class="btn btn-sm btn-success btn-add-position" data-toggle="modal" data-target="#crudModal"><i
 									class="fas fa-plus"></i> Tambah Jabatan</button>
 						</div>
 					</div>
@@ -26,91 +26,9 @@
 								<th scope="col" class="border-0">No</th>
 								<th scope="col" class="border-0">Nama</th>
 								<th scope="col" class="border-0">Aksi</th>
-
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Ketua Umum</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Wakil Ketua</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Sekertaris</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Bendahara</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Ketua Divisi</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Anggota</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Nurlita Ayu Rakhmawati</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Mutia Budi Utami</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Marisa Setya Anggarini</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -125,7 +43,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Posisi</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-position-modal"></span> Data Jabatan <span class="position-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -134,16 +52,16 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="fefulltName">Nama</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
+							<label for="positionName">Nama</label>
+							<input type="text" class="form-control" id="positionName" placeholder="Nama" value="">
 						</div>
 					</div>
 				</form>
 			</div>
 			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-confirm-update-position">Update</button>
+				<button type="button" class="btn btn-primary btn-confirm-add-position">Tambah</button>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Update</button>
-				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>
 	</div>

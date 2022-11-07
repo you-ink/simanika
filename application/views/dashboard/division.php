@@ -70,7 +70,7 @@
 							</tr>
 							<tr>
 								<td>5</td>
-								<td>PSDM (Sub DIvisi Kewirausahaan)</td>
+								<td>PSDM (Sub Divisi Kewirausahaan)</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -113,14 +113,8 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="fefulltName">Nama</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Muhammad Rudy Darmawan">
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="form-group col-12">
-							<label for="feEmailAddress">Divisi</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="BPH">
+							<label for="fefulltName">Nama Divisi</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama Divisi" value="BPH">
 						</div>
 					</div>
 				</form>

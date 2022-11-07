@@ -13,9 +13,17 @@
 						<img class="user-avatar rounded-circle mr-2"
 							src="<?php echo base_url() ?>assets/img/avatars/0.jpg" alt="User Avatar">
 					</div>
+<<<<<<< HEAD
 					<h4 class="mb-0">Muhammad Rudy Darmawan</h4>
 					<span class="text-muted d-block mb-2">Ketua Umum</span>
 					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2"data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen mr-1"></i>Edit</button>
+=======
+					<h4 class="mb-0">Sierra Brooks</h4>
+					<span class="text-muted d-block mb-2">Anggota PSDM</span>
+					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2" data-toggle="modal" data-target="#crudModal">
+
+						<i class="fa fa-pen mr-1"></i>Edit</button>
+>>>>>>> 773c4cac302406665a4e147b23202bf98779ecf6
 				</div>
 			</div>
 		</div>

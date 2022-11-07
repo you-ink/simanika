@@ -188,7 +188,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Jabatan</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Posisi</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -198,7 +198,7 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Nama</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Muhammad Rudy Darmawan">
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
 						</div>
 					</div>
 				</form>

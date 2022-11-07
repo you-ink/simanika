@@ -24,14 +24,16 @@
 						<thead class="bg-light">
 							<tr>
 								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Divisi</th>
+								<th scope="col" class="border-0">Nama</th>
+								<th scope="col" class="border-0">Ketua</th>
 								<th scope="col" class="border-0">Aksi</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>BPH</td>
+								<td>Muhammad Rudy Darmawan</td>
+								<td>Ketua Umum</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -41,7 +43,8 @@
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Humas</td>
+								<td>M Basar Riski</td>
+								<td>Ketua Divisi Humas</td>
 								<td>
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
@@ -50,7 +53,8 @@
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>PSDM (Sub Divisi Minat Bakat - Akademik)</td>
+								<td>Lukman Afandi</td>
+								<td>Ketua Divisi Kominfo</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -60,7 +64,8 @@
 							</tr>
 							<tr>
 								<td>4</td>
-								<td>PSDM (Sub Divisi Minat Bakat - Non Akademik)</td>
+								<td>Hamid Rafiud Derajad</td>
+								<td>Ketua Divisi PSDM</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -70,7 +75,8 @@
 							</tr>
 							<tr>
 								<td>5</td>
-								<td>PSDM (Sub Divisi Kewirausahaan)</td>
+								<td>Aishanda Vania</td>
+								<td>Ketua Dvisi Minat Bakat</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -80,7 +86,8 @@
 							</tr>
 							<tr>
 								<td>6</td>
-								<td>Kominfo</td>
+								<td>Siti Rusdaniyah</td>
+								<td>Ketua Divisi KWU</td>
 								<td>
 
 									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
@@ -113,8 +120,14 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="fefulltName">Nama Divisi</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama Divisi" value="BPH">
+							<label for="fefulltName">Nama</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">Ketua Divisi</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
 						</div>
 					</div>
 				</form>

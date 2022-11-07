@@ -11,31 +11,30 @@
 				<div class="card-header border-bottom">
 					<div class="row">
 						<div class="col-6">
-							<h6 class="m-0">Data Program Kerja</h6>
+							<h6 class="m-0">Data Work Program</h6>
 						</div>
 						<div class="col-6 text-right">
-							<button class="btn btn-sm btn-success" data-toggle="modal" data-target="#crudModal"><i
-									class="fas fa-plus"></i> Tambah Program Kerja</button>
+							<button class="btn btn-sm btn-success" data-toggle="modal"
+								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Program
+								Kerja</button>
 						</div>
-					</div>
-				</div>
-				<div class="card-body p-3">
-					<table class="table mb-0">
-						<thead class="bg-light">
-							<tr>
-								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Nama Program Kerja</th>
-								<th scope="col" class="border-0">Status</th>
-								<th scope="col" class="border-0">Dokumen</th>
-								<th scope="col" class="border-0">Aksi</th>
-							</tr>
-						</thead>
-						<tbody>
-						<tr>
-								<td>1</td>
-								<td>Gathering Mahasiswa Baru MIF'22</td>
-								<td>Terlaksana</td>
-								<td>
+						<div class="card-body p-3 text-left">
+							<table class="table mb-0">
+								<thead class="bg-light">
+									<tr>
+										<th scope="col" class="border-0">No</th>
+										<th scope="col" class="border-0">Nama Program Kerja</th>
+										<th scope="col" class="border-0">Status</th>
+										<th scope="col" class="border-0">Dokumen</th>
+										<th scope="col" class="border-0">Aksi</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Gathering Mahasiswa Bru MIF'22</td>
+										<td>Terlaksana</td>
+										<td>
 
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
@@ -166,7 +165,6 @@
 		</div>
 	</div>
 </div>
-
 		<!-- CRUD Modal -->
 		<div class="modal fade" id="crudModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
 			aria-hidden="true" data-backdrop="false">

@@ -15,8 +15,7 @@
 					</div>
 					<h4 class="mb-0">Muhammad Rudy Darmawan</h4>
 					<span class="text-muted d-block mb-2">Ketua Umum</span>
-					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
-						<i class="fa fa-pen mr-1"></i>Edit</button>
+					<button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2"data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen mr-1"></i>Edit</button>
 				</div>
 			</div>
 		</div>
@@ -66,6 +65,63 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CRUD Modal -->
+<div class="modal fade" id="crudModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Info User profile</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+
+				<form>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="fefulltName">Nama Lengkap</label>
+							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Muhammad Rudy Darmawan">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">userName</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Rudydar">
+						</div>
+          <div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">Email</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Rudy@amail.com">
+					</div>
+          <div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">Password</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value=" ">
+					</div>
+          <div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">NIM</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="E31200880">
+					</div>
+          <div class="form-row">
+						<div class="form-group col-12">
+							<label for="feEmailAddress">No HP</label>
+							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="081236915399">
+					</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Update</button>
+				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>
 	</div>

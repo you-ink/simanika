@@ -1,6 +1,6 @@
 <?php
 
-class Jabatan_model extends CI_Model {
+class Division_model extends CI_Model {
 
     public function list($params){
       $length = intval($params['length']);

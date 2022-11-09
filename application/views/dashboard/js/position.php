@@ -10,7 +10,7 @@
 				'processing': true,
 				"ordering": false,
 				"ajax": {
-					"url": get_api_url()+"jabatan",
+					"url": get_api_url()+"position",
 					"type": "GET",
 					"data": {
 						"SIMANIKA-API-KEY": get_api_login_global()['value'],
@@ -85,7 +85,7 @@
 
 			data[get_api_login_global()['key']] = get_api_login_global()['value'];
 
-			callApi("POST", "jabatan", data, function (req) {
+			callApi("POST", "position", data, function (req) {
 				pesan = req.message;
 				if (req.error == true) {
 					Swal.fire(
@@ -113,6 +113,7 @@
 			$('.btn-confirm-add-position').addClass('d-none')
 
 			$('#crudModal #positionName').val($(this).attr('data-name'))
+			$('#crudModal .position-name').val($(this).attr('data-name'))
 
 			$('.btn-confirm-update-position').attr('data-id', $(this).attr('data-id'))
 		})
@@ -125,7 +126,7 @@
 
 			data[get_api_login_global()['key']] = get_api_login_global()['value'];
 
-			callApi("PUT", "jabatan", data, function (req) {
+			callApi("PUT", "position", data, function (req) {
 				pesan = req.message;
 				if (req.error == true) {
 					Swal.fire(
@@ -164,7 +165,7 @@
 					id: $(this).attr('data-id')
 				}
 			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
-			  	callApi("DELETE", "jabatan", data, function (req) {
+			  	callApi("DELETE", "position", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {
 						Swal.fire(

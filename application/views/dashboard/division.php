@@ -14,7 +14,7 @@
 							<h6 class="m-0">Data Divisi</h6>
 						</div>
 						<div class="col-6 text-right">
-							<button class="btn btn-sm btn-success" data-toggle="modal" data-target="#crudModal"><i
+							<button class="btn btn-sm btn-success btn-add-division" data-toggle="modal" data-target="#crudModal"><i
 									class="fas fa-plus"></i> Tambah Divisi</button>
 						</div>
 					</div>
@@ -30,71 +30,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Muhammad Rudy Darmawan</td>
-								<td>Ketua Umum</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>M Basar Riski</td>
-								<td>Ketua Divisi Humas</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Lukman Afandi</td>
-								<td>Ketua Divisi Kominfo</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Hamid Rafiud Derajad</td>
-								<td>Ketua Divisi PSDM</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Aishanda Vania</td>
-								<td>Ketua Dvisi Minat Bakat</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Siti Rusdaniyah</td>
-								<td>Ketua Divisi KWU</td>
-								<td>
-
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-								</td>
-							</tr>
+							
 						</tbody>
 					</table>
 				</div>
@@ -110,32 +46,33 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Divisi</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-division-modal"></span> Data Divisi <span class="division-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="fefulltName">Nama</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap" value="Sierra Brooks">
+							<label for="divisionName">Nama</label>
+							<input type="text" class="form-control" id="divisionName" placeholder="Nama" value="">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="feEmailAddress">Ketua Divisi</label>
-							<input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="Ketua Umum">
+							<label for="divisionLeader">Ketua Divisi</label>
+							<select id="divisionLeader" class="form-control">
+								<option value="">-</option>
+							</select>
 						</div>
 					</div>
 				</form>
 			</div>
 			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-confirm-update-division">Update</button>
+				<button type="button" class="btn btn-primary btn-confirm-add-division">Tambah</button>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Update</button>
-				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>
 	</div>

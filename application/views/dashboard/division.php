@@ -24,12 +24,13 @@
 						<thead class="bg-light">
 							<tr>
 								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Nama Divisi</th>
+								<th scope="col" class="border-0">Nama</th>
+								<th scope="col" class="border-0">Ketua Divisi</th>
 								<th scope="col" class="border-0">Aksi</th>
 							</tr>
 						</thead>
 						<tbody>
-							
+
 						</tbody>
 					</table>
 				</div>

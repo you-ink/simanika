@@ -1,8 +1,8 @@
 <div class="main-content-container container-fluid px-4">
 	<div class="page-header row no-gutters py-4">
 		<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-			<span class="text-uppercase page-subtitle">Work Program</span>
-			<h3 class="page-title">Data Program Kerja</h3>
+			<span class="text-uppercase page-subtitle">Budget</span>
+			<h3 class="page-title">Anggaran Program Kerja</h3>
 		</div>
 	</div>
 	<div class="row">
@@ -11,7 +11,7 @@
 				<div class="card-header border-bottom">
 					<div class="row">
 						<div class="col-6">
-							<h6 class="m-0">Data Work Program</h6>
+							<h6 class="m-0">Budget Detail</h6>
 						</div>
 						<div class="col-6 text-right">
 							<button class="btn btn-sm btn-success" data-toggle="modal"
@@ -23,11 +23,10 @@
 								<thead class="bg-light">
 									<tr>
 										<th scope="col" class="border-0">No</th>
-										<th scope="col" class="border-0">Nama Program Kerja</th>
-										<th scope="col" class="border-0">Status</th>
-										<th scope="col" class="border-0">Tanggal</th>
-										<th scope="col" class="border-0">Anggaran</th>
-										<th scope="col" class="border-0">Dokumen</th>
+										<th scope="col" class="border-0">Jenis Pengeluaran</th>
+										<th scope="col" class="border-0">Jumlah</th>
+										<th scope="col" class="border-0">Satuan</th>
+										<th scope="col" class="border-0">Harga</th>
 										<th scope="col" class="border-0">Aksi</th>
 									</tr>
 								</thead>
@@ -37,11 +36,7 @@
 										<td>Gathering Mahasiswa Bru MIF'22</td>
 										<td>Terlaksana</td>
 										<td></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-											><i class="fa-sharp fa-solid fa-money-check-dollar">
-											</i></button>
-										</td>
+										<td></td>
 										<td>
 
 											<button type="button" class="btn btn-sm btn-secondary"

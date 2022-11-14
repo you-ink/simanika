@@ -153,6 +153,75 @@
 									</tr>
 									<tr>
 										<td>6</td>
+										<td>Desa Binaan</td>
+										<td>Coming Soon</td>
+										<td></td>
+										<td></td>
+										<td>
+
+											<button type="button" class="btn btn-sm btn-secondary"
+												data-toggle="modal" data-target="#crudModalDoc"><i
+													class="fas fa-upload"></i></td>
+										<td>
+											<button type="button" class="btn btn-sm btn-warning"
+												data-toggle="modal" data-target="#crudModalInfo"><i
+													class="fas fa-info"></i></button>
+
+											<button type="button" class="btn btn-sm btn-primary"
+												data-toggle="modal" data-target="#crudModal"><i
+													class="fas fa-pen"></i></button>
+											<button type="button" class="btn btn-sm btn-danger"><i
+													class="fas fa-trash"></i></button>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Bukber Akbar dan MIF Care</td>
+										<td>Coming Soon</td>
+										<td></td>
+										<td></td>
+										<td>
+
+											<button type="button" class="btn btn-sm btn-secondary"
+												data-toggle="modal" data-target="#crudModalDoc"><i
+													class="fas fa-upload"></i></td>
+										<td>
+											<button type="button" class="btn btn-sm btn-warning"
+												data-toggle="modal" data-target="#crudModalInfo"><i
+													class="fas fa-info"></i></button>
+
+											<button type="button" class="btn btn-sm btn-primary"
+												data-toggle="modal" data-target="#crudModal"><i
+													class="fas fa-pen"></i></button>
+											<button type="button" class="btn btn-sm btn-danger"><i
+													class="fas fa-trash"></i></button>
+										</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Disnatalies HIMANIKA</td>
+										<td>Coming Soon</td>
+										<td></td>
+										<td></td>
+										<td>
+
+											<button type="button" class="btn btn-sm btn-secondary"
+												data-toggle="modal" data-target="#crudModalDoc"><i
+													class="fas fa-upload"></i></td>
+										<td>
+											<button type="button" class="btn btn-sm btn-warning"
+												data-toggle="modal" data-target="#crudModalInfo"><i
+													class="fas fa-info"></i></button>
+
+											<button type="button" class="btn btn-sm btn-primary"
+												data-toggle="modal" data-target="#crudModal"><i
+													class="fas fa-pen"></i></button>
+											<button type="button" class="btn btn-sm btn-danger"><i
+													class="fas fa-trash"></i></button>
+										</td>
+									</tr>
+									<tr>
+										<td>9</td>
 										<td>Management Informatics Competition</td>
 										<td>Coming Soon</td>
 										<td></td>

@@ -37,10 +37,9 @@
 										<td>Gathering Mahasiswa Bru MIF'22</td>
 										<td>Terlaksana</td>
 										<td>22/01/2022</td>
-										<td></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-											><i class="fa-sharp fa-solid fa-money-check-dollar">
+											><i class="fas fa-doct">
 											</i></button>
 										</td>
 										<td>
@@ -65,7 +64,6 @@
 										<td>Sharing Sessions Alumni dan Dosen</td>
 										<td>Terlaksana</td>
 										<td>10/02/2022</td>
-										<td></td>
 										<td></td>
 										<td>
 

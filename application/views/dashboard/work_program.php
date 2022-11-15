@@ -36,6 +36,7 @@
 										<td>1</td>
 										<td>Gathering Mahasiswa Bru MIF'22</td>
 										<td>Terlaksana</td>
+										<td>22/01/2022</td>
 										<td></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
@@ -63,6 +64,7 @@
 										<td>2</td>
 										<td>Sharing Sessions Alumni dan Dosen</td>
 										<td>Terlaksana</td>
+										<td>10/02/2022</td>
 										<td></td>
 										<td></td>
 										<td>
@@ -86,7 +88,7 @@
 										<td>3</td>
 										<td>Webinar MIF</td>
 										<td>Terlaksana</td>
-										<td></td>
+										<td>03/04/2022</td>
 										<td></td>
 										<td>
 
@@ -109,7 +111,7 @@
 										<td>4</td>
 										<td>Anjangsana Antar Program Studi</td>
 										<td>Coming Soon</td>
-										<td></td>
+										<td>12/01/2022</td>
 										<td></td>
 										<td>
 
@@ -132,7 +134,7 @@
 										<td>5</td>
 										<td>Open Recuitment HIMANIKA</td>
 										<td>Coming Soon</td>
-										<td></td>
+										<td>06/06/2022</td>
 										<td></td>
 										<td>
 
@@ -155,7 +157,7 @@
 										<td>6</td>
 										<td>Desa Binaan</td>
 										<td>Coming Soon</td>
-										<td></td>
+										<td>11/07/2022</td>
 										<td></td>
 										<td>
 
@@ -178,7 +180,7 @@
 										<td>7</td>
 										<td>Bukber Akbar dan MIF Care</td>
 										<td>Coming Soon</td>
-										<td></td>
+										<td>24/06/2022</td>
 										<td></td>
 										<td>
 
@@ -201,7 +203,7 @@
 										<td>8</td>
 										<td>Disnatalies HIMANIKA</td>
 										<td>Coming Soon</td>
-										<td></td>
+										<td>30/10/2022</td>
 										<td></td>
 										<td>
 
@@ -224,7 +226,7 @@
 										<td>9</td>
 										<td>Management Informatics Competition</td>
 										<td>Coming Soon</td>
-										<td></td>
+										<td>20/11/2022</td>
 										<td></td>
 										<td>
 

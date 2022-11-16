@@ -39,7 +39,7 @@
 										<td>22/01/2022</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-											><i class="fas fa-doct">
+											><i class="fas fa-money">
 											</i></button>
 										</td>
 										<td>
@@ -49,7 +49,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -72,7 +72,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -95,7 +95,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -118,7 +118,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -141,7 +141,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -164,7 +164,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -187,7 +187,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -210,7 +210,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -233,7 +233,7 @@
 													class="fas fa-upload"></i></td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModalInfo"><i
+												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-info"></i></button>
 
 											<button type="button" class="btn btn-sm btn-primary"
@@ -252,94 +252,6 @@
 		</div>
 	</div>
 </div>
-		<!-- CRUD Modal -->
-		<div class="modal fade" id="crudModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-			aria-hidden="true" data-backdrop="false">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Proker</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="fefulltName">Nama Proker</label>
-									<input type="text" class="form-control" id="fefulltName"
-										placeholder="Nama lengkap" value="Webinar">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="fefulltName">Status</label>
-									<input type="text" class="form-control" id="fefulltName"
-										placeholder="Nama lengkap" value="Coming Soon">
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Update</button>
-						<button type="button" class="btn btn-primary">Tambah</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- CRUD Modal Info -->
-		<div class="modal fade" id="crudModalInfo" tabindex="-1" role="dialog"
-			aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Info Dokumen Proker</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="fefulltName">Nama Pengirim</label>
-									<input type="text" class="form-control" id="fefulltName"
-										placeholder="Nama lengkap" value="Mutia Budi Utami">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="fefulltName">Nama Proker</label>
-									<input type="text" class="form-control" id="fefulltName"
-										placeholder="Nama lengkap" value="Webinar">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="fefulltName">Status</label>
-									<input type="text" class="form-control" id="fefulltName"
-										placeholder="Nama lengkap" value="Coming Soon">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="fefulltName">Waktu Dikirim</label>
-									<input type="text" class="form-control" id="fefulltName"
-										placeholder="Nama lengkap" value="20 November 2022">
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<!-- CRUD Modal Dokumen -->
 		<div class="modal fade" id="crudModalDoc" tabindex="-1" role="dialog"
 			aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
@@ -355,21 +267,21 @@
 						<form>
 							<div class="form-row">
 								<div class="form-group col-12">
-									<label for="fefulltName">Nama Pengirim</label>
-									<input type="text" class="form-control" id="fefulltName"
+									<label>Nama Pengirim</label>
+									<input type="text" class="form-control"
 										placeholder="Nama lengkap" value="Mutia Budi Utami">
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-group col-12">
-									<label for="fefulltName">Waktu Dikirim</label>
-									<input type="text" class="form-control" id="fefulltName"
+									<label>Waktu Dikirim</label>
+									<input type="text" class="form-control"
 										placeholder="Nama lengkap" value="20 November 2022">
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-group col-12">
-									<label for="fefulltName"> Upload Dokumen</label>
+									<label> Upload Dokumen</label>
 									<input type="text"><button type="button"
 										class="btn btn-sm btn-secondary"><i class="fas fa-upload"></i>
 								</div>
@@ -397,7 +309,47 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						...
+						
+					<form>
+						<div class="form-row">
+							<div class="form-group col-12">
+								<label>Nama Proker</label>
+								<input type="text" class="form-control"
+									placeholder="Nama Proker" value="Webinar">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-12">
+								<label>Divisi</label>
+								<select class="form-control">
+									<option value="1">1</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-12">
+								<label>Pelaksana</label>
+								<select class="form-control">
+									<option value="1">1</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-12">
+								<label>Penanggung Jawab</label>
+								<select class="form-control">
+									<option value="1">1</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-12">
+								<label>Waktu Dikirim</label>
+								<input type="date" class="form-control"
+									placeholder="Nama lengkap" value="20 November 2022">
+							</div>
+						</div>
+					</form>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

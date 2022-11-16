@@ -6,21 +6,20 @@
 		</div>
 	</div>
 
+  
 	<div class="row">
-    <div class="col">
-      <div class="card card-small mb-4">
-        <div class="card-header border-bottom">
-        <div class="row">
+		<div class="col">
+			<div class="card card-small mb-4">
+				<div class="card-header border-bottom">
+					<div class="row">
 						<div class="col-6">
-          <h6 class="m-0">Data Anggota</h6>
-        </div>
-        <div class="col-6 text-right">
-							<button class="btn btn-sm btn-success" data-toggle="modal" data-target="#crudModal"><i
-									class="fas fa-plus"></i> Tambah Anggota</button>
+							<h6 class="m-0">Data Anggota</h6>
 						</div>
-        <div class="card-body p-3">
-          <table class="table mb-0">
-            <thead class="bg-light">
+					</div>
+				</div>
+				<div class="card-body p-3 text-left">
+					<table class="table mb-0">
+						<thead class="bg-light">
               <tr>
                 <th scope="col" class="border-0">No</th>
                 <th scope="col" class="border-0">Nama Lengkap</th>
@@ -31,7 +30,7 @@
                 <th scope="col" class="border-0">Telp</th>
                 <th scope="col" class="border-0">Aksi</th>
               </tr>
-            </thead>
+						</thead>
             <tbody>
               <tr>
                 <td>1</td>
@@ -43,7 +42,6 @@
                 <td>081236915399</td>
                 <td>
                   <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -56,8 +54,7 @@
                 <td>Internasional</td>
                 <td>082131871861</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -70,8 +67,7 @@
                 <td>C</td>
                 <td>081219243906</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -84,8 +80,7 @@
                 <td>A</td>
                 <td>082359338615</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -98,8 +93,7 @@
                 <td>A</td>
                 <td>085283747658</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -112,8 +106,7 @@
                 <td>B</td>
                 <td>081331360036</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -126,8 +119,7 @@
                 <td>A</td>
                 <td>081615605184</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -140,8 +132,7 @@
                 <td>B</td>
                 <td>081246922026</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -154,8 +145,7 @@
                 <td>A</td>
                 <td>082391833198</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -168,8 +158,7 @@
                 <td>A</td>
                 <td>083857726588</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -182,8 +171,7 @@
                 <td>B</td>
                 <td>081231946103</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -196,8 +184,7 @@
                 <td>A</td>
                 <td>081235378751</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -210,8 +197,7 @@
                 <td>A</td>
                 <td>085156426240</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -224,8 +210,7 @@
                 <td>B</td>
                 <td>082228008055</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -238,8 +223,7 @@
                 <td>C</td>
                 <td>085859482186</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -252,8 +236,7 @@
                 <td>C</td>
                 <td>085237774774</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -266,8 +249,7 @@
                 <td>B</td>
                 <td>089503734758</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -280,8 +262,7 @@
                 <td>B</td>
                 <td>085850756711</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -294,8 +275,7 @@
                 <td>A</td>
                 <td>0821394456591</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -308,8 +288,7 @@
                 <td>B</td>
                 <td>081235177686</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -322,8 +301,7 @@
                 <td>B</td>
                 <td>081358007467</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -336,8 +314,7 @@
                 <td>A</td>
                 <td>085156585108</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -350,8 +327,7 @@
                 <td>A</td>
                 <td>08558782963</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -364,8 +340,7 @@
                 <td>C</td>
                 <td>081325713904</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -378,8 +353,7 @@
                 <td>A</td>
                 <td>081615617559</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -392,8 +366,7 @@
                 <td>Internasional</td>
                 <td>081230147253</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -406,8 +379,7 @@
                 <td>A</td>
                 <td>082235623044</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -420,8 +392,7 @@
                 <td>C</td>
                 <td>081282246841</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
@@ -434,17 +405,17 @@
                 <td>Internasional</td>
                 <td>087830341927</td>
                 <td>
-                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                  
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>                  
+                  <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>                                    
                   <button type="button" class="btn btn-sm btn-danger btn-delete"><i class="fas fa-trash"></i></button>
                 </td>
               </tr>
             </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 
 

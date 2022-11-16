@@ -23,25 +23,20 @@
 								<thead class="bg-light">
 									<tr>
 										<th scope="col" class="border-0">No</th>
-										<th scope="col" class="border-0">Jenis Pengeluaran</th>
-										<th scope="col" class="border-0">Jumlah</th>
-										<th scope="col" class="border-0">Satuan</th>
-										<th scope="col" class="border-0">Harga</th>
+										<th scope="col" class="border-0">Nama Program Kerja</th>
+										<th scope="col" class="border-0">Dokumen</th>
 										<th scope="col" class="border-0">Aksi</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>1</td>
-										<td>Gathering Mahasiswa Bru MIF'22</td>
-										<td>Terlaksana</td>
-										<td></td>
-										<td></td>
+										<td>Gathering Mahasiswa Baru MIF'22</td>
 										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
+												<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
+													class="fas fa-upload"></i>
+										</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
@@ -57,14 +52,11 @@
 									<tr>
 										<td>2</td>
 										<td>Sharing Sessions Alumni dan Dosen</td>
-										<td>Terlaksana</td>
-										<td></td>
-										<td></td>
 										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
+												<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
+													class="fas fa-upload"></i>
+										</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
@@ -80,14 +72,11 @@
 									<tr>
 										<td>3</td>
 										<td>Webinar MIF</td>
-										<td>Terlaksana</td>
-										<td></td>
-										<td></td>
 										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
+												<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
+													class="fas fa-upload"></i>
+										</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
@@ -103,14 +92,11 @@
 									<tr>
 										<td>4</td>
 										<td>Anjangsana Antar Program Studi</td>
-										<td>Coming Soon</td>
-										<td></td>
-										<td></td>
 										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
+												<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
+													class="fas fa-upload"></i>
+										</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
@@ -126,14 +112,11 @@
 									<tr>
 										<td>5</td>
 										<td>Open Recuitment HIMANIKA</td>
-										<td>Coming Soon</td>
-										<td></td>
-										<td></td>
 										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
+												<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
+													class="fas fa-upload"></i>
+										</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
@@ -149,14 +132,11 @@
 									<tr>
 										<td>6</td>
 										<td>Management Informatics Competition</td>
-										<td>Coming Soon</td>
-										<td></td>
-										<td></td>
 										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
+												<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
+													class="fas fa-upload"></i>
+										</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i

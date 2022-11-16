@@ -320,33 +320,31 @@
 						</div>
 						<div class="form-row">
 							<div class="form-group col-12">
-								<label>Divisi</label>
-								<select class="form-control">
-									<option value="1">1</option>
-								</select>
+								<label>Tanggal Acara</label>
+								<input type="date" class="form-control"
+									placeholder="Nama lengkap" value="20 November 2022">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-12">
+								<label>Status</label>
+								<input type="text" class="form-control"
+									placeholder="Nama Proker" value="Terlaksana">
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-12">
 								<label>Pelaksana</label>
-								<select class="form-control">
-									<option value="1">1</option>
-								</select>
+								<input type="text" class="form-control"
+									placeholder="Nama Proker" value="Ahmad Afandi">
 							</div>
 						</div>
+						
 						<div class="form-row">
 							<div class="form-group col-12">
 								<label>Penanggung Jawab</label>
-								<select class="form-control">
-									<option value="1">1</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="form-group col-12">
-								<label>Waktu Dikirim</label>
-								<input type="date" class="form-control"
-									placeholder="Nama lengkap" value="20 November 2022">
+								<input type="text" class="form-control"
+									placeholder="Nama Proker" value="Yongki Vanesta">
 							</div>
 						</div>
 					</form>

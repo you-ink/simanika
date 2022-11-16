@@ -34,16 +34,15 @@
 								<tbody>
 									<tr>
 										<td>1</td>
-										<td>Gathering Mahasiswa Bru MIF'22</td>
+										<td>Gathering Mahasiswa Baru MIF'22</td>
 										<td>Terlaksana</td>
-										<td>22/01/2022</td>
+										<td>23/10/2022</td>
 										<td>
 											<button type="button" class="btn btn-sm btn-warning"
 											><i class="fas fa-doct">
 											</i></button>
 										</td>
 										<td>
-
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
 													class="fas fa-upload"></i></td>
@@ -61,12 +60,11 @@
 									</tr>
 									<tr>
 										<td>2</td>
-										<td>Sharing Sessions Alumni dan Dosen</td>
+										<td>Sharing Sessions Mahasiswa dan Dosen MIF</td>
 										<td>Terlaksana</td>
-										<td>10/02/2022</td>
+										<td>03/09/2022</td>
 										<td></td>
 										<td>
-
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
 													class="fas fa-upload"></i></td>
@@ -74,7 +72,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>
@@ -84,12 +81,11 @@
 									</tr>
 									<tr>
 										<td>3</td>
-										<td>Webinar MIF</td>
+										<td>Anjangsana HIMAPRODI JTI</td>
 										<td>Terlaksana</td>
-										<td>03/04/2022</td>
+										<td>05/11/2022</td>
 										<td></td>
 										<td>
-
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
 													class="fas fa-upload"></i></td>
@@ -97,7 +93,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>
@@ -107,12 +102,11 @@
 									</tr>
 									<tr>
 										<td>4</td>
-										<td>Anjangsana Antar Program Studi</td>
+										<td>Bukber Akbar dan MIF Care</td>
 										<td>Coming Soon</td>
-										<td>12/01/2022</td>
+										<td>26/04/2023</td>
 										<td></td>
 										<td>
-
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
 													class="fas fa-upload"></i></td>
@@ -120,7 +114,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>
@@ -130,12 +123,11 @@
 									</tr>
 									<tr>
 										<td>5</td>
-										<td>Open Recuitment HIMANIKA</td>
+										<td>Diesnatalis HIMANIKA</td>
 										<td>Coming Soon</td>
-										<td>06/06/2022</td>
+										<td>27/05/2023</td>
 										<td></td>
 										<td>
-
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
 													class="fas fa-upload"></i></td>
@@ -143,7 +135,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>
@@ -155,7 +146,7 @@
 										<td>6</td>
 										<td>Desa Binaan</td>
 										<td>Coming Soon</td>
-										<td>11/07/2022</td>
+										<td>11/07/2023</td>
 										<td></td>
 										<td>
 
@@ -166,7 +157,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>
@@ -178,7 +168,7 @@
 										<td>7</td>
 										<td>Bukber Akbar dan MIF Care</td>
 										<td>Coming Soon</td>
-										<td>24/06/2022</td>
+										<td>24/06/2023</td>
 										<td></td>
 										<td>
 
@@ -189,7 +179,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>
@@ -201,10 +190,9 @@
 										<td>8</td>
 										<td>Disnatalies HIMANIKA</td>
 										<td>Coming Soon</td>
-										<td>30/10/2022</td>
+										<td>27/05/2023</td>
 										<td></td>
 										<td>
-
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
 													class="fas fa-upload"></i></td>
@@ -212,7 +200,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>
@@ -223,11 +210,10 @@
 									<tr>
 										<td>9</td>
 										<td>Management Informatics Competition</td>
-										<td>Coming Soon</td>
-										<td>20/11/2022</td>
+										<td>Terlaksana</td>
+										<td>12/11/2022</td>
 										<td></td>
 										<td>
-
 											<button type="button" class="btn btn-sm btn-secondary"
 												data-toggle="modal" data-target="#crudModalDoc"><i
 													class="fas fa-upload"></i></td>
@@ -235,7 +221,6 @@
 											<button type="button" class="btn btn-sm btn-warning"
 												data-toggle="modal" data-target="#crudModalInfo"><i
 													class="fas fa-info"></i></button>
-
 											<button type="button" class="btn btn-sm btn-primary"
 												data-toggle="modal" data-target="#crudModal"><i
 													class="fas fa-pen"></i></button>

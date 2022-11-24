@@ -32,11 +32,10 @@
       'plugin/bootstrap/js/bootstrap.bundle.min.js',
       'plugin/chartjs/Chart.min.js',
       'plugin/shards-ui/js/shards.min.js',
-      // 'template/shards-dashboard/scripts/extras.1.1.0.min.js',
       'template/shards-dashboard/scripts/shards-dashboards.1.1.0.min.js',
-      // 'template/shards-dashboard/scripts/app/app-blog-overview.1.1.0.js',
       'plugin/DataTables/datatables.min.js',
       'plugin/sweetalert2/sweetalert2.all.min.js',
+      'plugin/select2/js/select2.min.js',
       'js/main.js',
     ]); ?>
 

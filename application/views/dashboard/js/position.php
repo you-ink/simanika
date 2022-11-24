@@ -37,7 +37,7 @@
 							return `
 								<button type="button" class="btn btn-sm btn-primary btn-update-position" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
-								<button type="button" class="btn btn-sm btn-danger btn-delete-position" data-id="${res.id}"><i class="fas fa-trash"></i></button>
+								<button type="button" class="btn btn-sm btn-danger btn-delete-position" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
 							`;
 						}
 					}
@@ -74,6 +74,7 @@
 			$('.title-position-modal').html('Tambah')
 			$('.btn-confirm-add-position').removeClass('d-none')
 			$('.btn-confirm-update-position').addClass('d-none')
+			$('#crudModal .position-name').html('')
 
 			$('#crudModal #positionName').val('')
 		})
@@ -111,9 +112,9 @@
 			$('.title-position-modal').html('Edit')
 			$('.btn-confirm-update-position').removeClass('d-none')
 			$('.btn-confirm-add-position').addClass('d-none')
+			$('#crudModal .position-name').html($(this).attr('data-name'))
 
 			$('#crudModal #positionName').val($(this).attr('data-name'))
-			$('#crudModal .position-name').val($(this).attr('data-name'))
 
 			$('.btn-confirm-update-position').attr('data-id', $(this).attr('data-id'))
 		})
@@ -150,10 +151,11 @@
 
 		$(document).on('click', ".btn-delete-position", function () {
 			let id = $(this).attr('data-id')
+			let nama = $(this).attr('data-name')
 
 			Swal.fire({
 			  title: 'Apakah anda yakin?',
-			  text: "Anda ingin menghapus data ini!",
+			  text: `Anda ingin menghapus data ${nama}!`,
 			  icon: 'warning',
 			  showCancelButton: true,
 			  confirmButtonColor: '#3085d6',

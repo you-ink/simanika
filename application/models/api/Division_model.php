@@ -6,31 +6,37 @@ class Division_model extends CI_Model {
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
-      $sort = (!empty($params['sort'])) ? "ORDER BY jabatan.id " . $this->db->escape_str($params['sort']) : "";
+      $sort = (!empty($params['sort'])) ? "ORDER BY divisi.id " . $this->db->escape_str($params['sort']) : "";
       $search = $params['search']['value'];
       $id = (!empty($params['id'])) ? $params['id'] : "";
       
       $paging = ($length > 0) ? "LIMIT $start, $length" : "";
 
-      $filter = "WHERE jabatan.id IS NOT NULL";
-      (!empty($id)) ? $filter .= " AND jabatan.id = " . $this->db->escape($id) : "";
-      (!empty($search)) ? $filter .= " AND jabatan.nama LIKE '%" . $this->db->escape_like_str($search) . "%'" : "";
+      $filter = "WHERE divisi.id IS NOT NULL";
+      (!empty($id)) ? $filter .= " AND divisi.id = " . $this->db->escape($id) : "";
+      (!empty($search)) ? $filter .= " AND divisi.nama LIKE '%" . $this->db->escape_like_str($search) . "%'" : "";
 
       $recordsTotal = $this->db->query("
         SELECT 
-          jabatan.id,
-          jabatan.nama
+          divisi.id,
+          divisi.nama,
+          users.nama as ketua,
+          ketua_id
         FROM
-          jabatan
+          divisi
+        LEFT JOIN users ON users.id = divisi.ketua_id
         $filter
       ")->num_rows();
 
-      $get_sekolah = $this->db->query("
+      $get_divisi = $this->db->query("
         SELECT 
-          jabatan.id,
-          jabatan.nama
+          divisi.id,
+          divisi.nama,
+          users.nama as ketua,
+          ketua_id
         FROM
-          jabatan
+          divisi
+        LEFT JOIN users ON users.id = divisi.ketua_id
         $filter
         $sort
         $paging
@@ -43,7 +49,7 @@ class Division_model extends CI_Model {
       $hasil['draw'] = $draw;
       $hasil['recordsTotal'] = $recordsTotal;
       $hasil['recordsFiltered'] = $recordsTotal;
-      foreach ($get_sekolah as $key) {
+      foreach ($get_divisi as $key) {
         $hasil['data'][$no++] = $key;
       }
       goto output;
@@ -54,6 +60,7 @@ class Division_model extends CI_Model {
 
     public function add($params){
       $nama = $params['nama'];
+      $ketua_id = $params['ketua_id'];
       
       if (empty($nama)) {
         $hasil = array(
@@ -61,23 +68,30 @@ class Division_model extends CI_Model {
           'message' => "Nama belum diisi."
         );
         goto output;
+      } else if (empty($ketua_id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Ketua belum dipilih."
+        );
+        goto output;
       }
 
-      $tambah = $this->db->insert('jabatan', array(
-        'nama' => $nama
+      $tambah = $this->db->insert('divisi', array(
+        'nama' => $nama,
+        'ketua_id' => $ketua_id
       ));
 
       if ($tambah) {
         $hasil = array(
           'error' => false,
-          'message' => "Jabatan berhasil ditambahkan."
+          'message' => "Divisi berhasil ditambahkan."
         );
         goto output;
       }
 
       $hasil = array(
         'error' => true,
-        'message' => "Jabatan gagal ditambahkan."
+        'message' => "Divisi gagal ditambahkan."
       );
 
       output:
@@ -87,11 +101,12 @@ class Division_model extends CI_Model {
     public function update($params){
       $id = $params['id'];
       $nama = $params['nama'];
+      $ketua_id = $params['ketua_id'];
       
       if (empty($id)) {
         $hasil = array(
           'error' => true,
-          'message' => "Jabatan belum dipilih."
+          'message' => "Divisi belum dipilih."
         );
         goto output;
       } else if (empty($nama)) {
@@ -100,23 +115,30 @@ class Division_model extends CI_Model {
           'message' => "Nama belum diisi."
         );
         goto output;
+      } else if (empty($ketua_id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Ketua belum dipilih."
+        );
+        goto output;
       }
 
-      $update = $this->db->update('jabatan', array(
-        'nama' => $nama
+      $update = $this->db->update('divisi', array(
+        'nama' => $nama,
+        'ketua_id' => $ketua_id
       ), ['id' => $id]);
 
       if ($update) {
         $hasil = array(
           'error' => false,
-          'message' => "Jabatan berhasil diupdate."
+          'message' => "Divisi berhasil diupdate."
         );
         goto output;
       }
 
       $hasil = array(
         'error' => true,
-        'message' => "Jabatan gagal diupdate."
+        'message' => "Divisi gagal diupdate."
       );
 
       output:
@@ -129,24 +151,24 @@ class Division_model extends CI_Model {
       if (empty($id)) {
         $hasil = array(
           'error' => true,
-          'message' => "Jabatan belum dipilih."
+          'message' => "Divisi belum dipilih."
         );
         goto output;
       }
 
-      $delete = $this->db->delete('jabatan', ['id' => $id]);
+      $delete = $this->db->delete('divisi', ['id' => $id]);
 
       if ($delete) {
         $hasil = array(
           'error' => false,
-          'message' => "Jabatan berhasil dihapus."
+          'message' => "Divisi berhasil dihapus."
         );
         goto output;
       }
 
       $hasil = array(
         'error' => true,
-        'message' => "Jabatan gagal dihapus."
+        'message' => "Divisi gagal dihapus."
       );
 
       output:

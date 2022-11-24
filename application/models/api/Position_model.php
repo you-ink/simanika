@@ -25,7 +25,7 @@ class Position_model extends CI_Model {
         $filter
       ")->num_rows();
 
-      $get_sekolah = $this->db->query("
+      $get_jabatan = $this->db->query("
         SELECT 
           jabatan.id,
           jabatan.nama
@@ -43,7 +43,7 @@ class Position_model extends CI_Model {
       $hasil['draw'] = $draw;
       $hasil['recordsTotal'] = $recordsTotal;
       $hasil['recordsFiltered'] = $recordsTotal;
-      foreach ($get_sekolah as $key) {
+      foreach ($get_jabatan as $key) {
         $hasil['data'][$no++] = $key;
       }
       goto output;

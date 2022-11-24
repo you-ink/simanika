@@ -14,7 +14,7 @@
 							<h6 class="m-0">Data Work Program</h6>
 						</div>
 						<div class="col-6 text-right">
-							<button class="btn btn-sm btn-success" data-toggle="modal"
+							<button class="btn btn-sm btn-success btn-add-proker" data-toggle="modal"
 								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Program
 								Kerja</button>
 						</div>
@@ -32,202 +32,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>1</td>
-										<td>Gathering Mahasiswa Baru MIF'22</td>
-										<td>Terlaksana</td>
-										<td>23/10/2022</td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-											><i class="fas fa-money">
-											</i></button>
-										</td>
-										<td>
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>Sharing Sessions Mahasiswa dan Dosen MIF</td>
-										<td>Terlaksana</td>
-										<td>03/09/2022</td>
-										<td></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Anjangsana HIMAPRODI JTI</td>
-										<td>Terlaksana</td>
-										<td>05/11/2022</td>
-										<td></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td>Bukber Akbar dan MIF Care</td>
-										<td>Coming Soon</td>
-										<td>26/04/2023</td>
-										<td></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td>Diesnatalis HIMANIKA</td>
-										<td>Coming Soon</td>
-										<td>27/05/2023</td>
-										<td></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td>Desa Binaan</td>
-										<td>Coming Soon</td>
-										<td>11/07/2023</td>
-										<td></td>
-										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td>Bukber Akbar dan MIF Care</td>
-										<td>Coming Soon</td>
-										<td>24/06/2023</td>
-										<td></td>
-										<td>
-
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>8</td>
-										<td>Disnatalies HIMANIKA</td>
-										<td>Coming Soon</td>
-										<td>27/05/2023</td>
-										<td></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
-									<tr>
-										<td>9</td>
-										<td>Management Informatics Competition</td>
-										<td>Terlaksana</td>
-										<td>12/11/2022</td>
-										<td></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-secondary"
-												data-toggle="modal" data-target="#crudModalDoc"><i
-													class="fas fa-upload"></i></td>
-										<td>
-											<button type="button" class="btn btn-sm btn-warning"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-info"></i></button>
-											<button type="button" class="btn btn-sm btn-primary"
-												data-toggle="modal" data-target="#crudModal"><i
-													class="fas fa-pen"></i></button>
-											<button type="button" class="btn btn-sm btn-danger"><i
-													class="fas fa-trash"></i></button>
-										</td>
-									</tr>
+									
 								</tbody>
 							</table>
 						</div>
@@ -288,7 +93,7 @@
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Detail/Tambah/Edit Data Anggota</h5>
+						<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-proker-modal"></span> Program Kerja <span class="proker-name"></span></h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -298,46 +103,46 @@
 					<form>
 						<div class="form-row">
 							<div class="form-group col-12">
-								<label>Nama Proker</label>
-								<input type="text" class="form-control"
-									placeholder="Nama Proker" value="Webinar">
+								<label for="prokerName">Nama Proker</label>
+								<input type="text" id="prokerName" class="form-control" placeholder="Nama Proker">
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-12">
-								<label>Tanggal Acara</label>
-								<input type="date" class="form-control"
-									placeholder="Nama lengkap" value="20 November 2022">
+								<label for="prokerDate">Tanggal Acara</label>
+								<input type="date" id="prokerDate" class="form-control">
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-12">
-								<label>Status</label>
-								<input type="text" class="form-control"
-									placeholder="Nama Proker" value="Terlaksana">
+								<label for="prokerStatus">Status</label>
+								<select id="prokerStatus" class="form-control">
+									<option value="1" selected>Terlaksana</option>
+									<option value="2">Belum Terlaksana</option>
+								</select>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-12">
-								<label>Pelaksana</label>
-								<input type="text" class="form-control"
-									placeholder="Nama Proker" value="Ahmad Afandi">
+								<label for="Pelaksana">Pelaksana</label>
+								<select id="pelaksana" class="form-control" style="width: 100%">
+								</select>
 							</div>
 						</div>
 						
 						<div class="form-row">
 							<div class="form-group col-12">
-								<label>Penanggung Jawab</label>
-								<input type="text" class="form-control"
-									placeholder="Nama Proker" value="Yongki Vanesta">
+								<label for="penanggungJawab">Penanggung Jawab</label>
+								<select id="penanggungJawab" class="form-control" style="width: 100%">
+								</select>
 							</div>
 						</div>
 					</form>
 					</div>
 					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-confirm-update-proker">Update</button>
+						<button type="button" class="btn btn-primary btn-confirm-add-proker">Tambah</button>
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Update</button>
-						<button type="button" class="btn btn-primary">Tambah</button>
 					</div>
 				</div>
 			</div>

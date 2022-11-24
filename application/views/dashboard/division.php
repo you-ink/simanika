@@ -46,7 +46,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-division-modal"></span> Data Divisi <span class="division-name"></span></h5>
+				<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-division-modal"></span> Divisi <span class="division-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -62,8 +62,7 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="divisionLeader">Ketua Divisi</label>
-							<select id="divisionLeader" class="form-control">
-								<option value="">-</option>
+							<select id="divisionLeader" class="form-control" style="width: 100%;">
 							</select>
 						</div>
 					</div>

@@ -185,7 +185,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Tambah/Edit Data Meeting</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle">Meeting</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -195,22 +195,22 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Tipe Agenda Rapat</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="Rapat Resmi/Proker">
+							<input type="text" class="form-control" id="TipeAngenda" placeholder="Tipe Rapat"
+								value="">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Nama Agenda Rapat</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="Rapat Konsep Acara">
+							<input type="text" class="form-control" id="meetingName" placeholder="Nama Rapat"
+								value="">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="fefulltName">Waktu</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="20 November 2022">
+							<input type="text" class="form-control" id="Time" placeholder="Tanggal"
+								value="2">
 						</div>
 					</div>
 				</form>

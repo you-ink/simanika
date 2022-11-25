@@ -33,6 +33,11 @@ class WorkProgram extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function uploadlpj_post(){
+    	$response = $this->workprogram->uploadlpj($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

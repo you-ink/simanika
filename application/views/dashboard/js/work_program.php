@@ -52,10 +52,10 @@
 							let tor = ''
 							let lpj = ''
 							if (res.tor) {
-								tor = `<p><a href="<?php echo base_url() ?>${res.tor}" taget="_blank">Lihat File TOR</a></p>`
+								tor = `<p class="my-1"><a href="<?php echo base_url() ?>${res.tor}" taget="_blank" class="text-primary">Lihat File TOR</a></p>`
 							}
 							if (res.lpj) {
-								lpj = `<p><a href="<?php echo base_url() ?>${res.lpj}" taget="_blank">Lihat File LPJ</a></p>`
+								lpj = `<p class="my-1"><a href="<?php echo base_url() ?>${res.lpj}" taget="_blank" class="text-primary">Lihat File LPJ</a></p>`
 							}
 							return `<button type="button" class="btn btn-sm btn-secondary btn-upload-document" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModalDoc"><i class="fas fa-upload"></i></button>${tor}${lpj}
 							`;
@@ -332,12 +332,40 @@
 			})
 		})
 
-
 		// Upload LPJ
 		upload('lpj')
 		$(document).on('click', '#crudModalDoc .btn--upload-lpj', function (e) {
-			let file = sessionStorage.getItem('lpj')
-			console.log(file)
+			let data = {
+				id: $(this).attr('data-id'),
+				lpj: sessionStorage.getItem('lpj')
+			}
+
+			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+
+			callApi("POST", "workprogram/uploadlpj", data, function (req) {
+				pesan = req.message;
+				if (req.error == true) {
+					Swal.fire(
+				      	'Gagal diupdate!',
+				      	pesan,
+				      	'error'
+				    )
+				}else{
+					Swal.fire(
+				      	'Diupdate!',
+				      	pesan,
+				      	'success'
+				    ).then((result) => {
+				    	$('#crudModalDoc').remove()
+						window.location.reload()
+					})
+
+				    $("input#prokerName").val('')
+				    $("#crudModal").modal("hide")
+					load_work_program();
+					change_datatable_button();
+				}
+			})
 		})
 
 	})

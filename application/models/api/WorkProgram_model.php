@@ -288,6 +288,55 @@ class WorkProgram_model extends CI_Model {
       return $hasil;
     }
 
+    public function uploadlpj($params){
+      $id = $params['id'];
+      $lpj = $params['lpj'];
+
+      if (empty($id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Program Kerja belum dipilih."
+        );
+        goto output;
+      } else if (empty($lpj)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "LPJ belum diisi."
+        );
+        goto output;
+      }
+
+      $uploaded = upload_base64("assets/cdn/proker-document/" . $id . "/", $lpj);
+
+      if (!$uploaded['status']) {
+        $hasil = array(
+          'error' => true,
+          'message' => $uploaded['message']
+        );
+        goto output;
+      }
+
+      $update = $this->db->update('proker', array(
+        'lpj' => $uploaded['path']
+      ), ['id' => $id]);
+
+      if ($update) {
+        $hasil = array(
+          'error' => false,
+          'message' => "LPJ berhasil ditambahkan."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "LPJ gagal ditambahkan."
+      );
+
+      output:
+      return $hasil;
+    }
+
 }
 
 ?>

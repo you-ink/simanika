@@ -14,6 +14,7 @@
       'template/shards-dashboard/styles/extras.1.1.0.min.css',
       'plugin/DataTables/datatables.min.css',
       'plugin/select2/css/select2.min.css',
+      'plugin/fancy-file-uploader/fancy_fileupload.css',
     ]); ?>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

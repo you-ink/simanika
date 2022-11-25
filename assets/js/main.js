@@ -6,3 +6,13 @@ function callApi(t, n, a, e) {
     });
 }
 
+function getBase64(file, name) {
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function () {
+        sessionStorage.setItem(name, reader.result)
+    };
+    reader.onerror = function (error) {
+        console.log('Error: ', error);
+    };
+}

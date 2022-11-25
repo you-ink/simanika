@@ -36,6 +36,10 @@
       'plugin/DataTables/datatables.min.js',
       'plugin/sweetalert2/sweetalert2.all.min.js',
       'plugin/select2/js/select2.min.js',
+      'plugin/fancy-file-uploader/jquery.ui.widget.js',
+      'plugin/fancy-file-uploader/jquery.fileupload.js',
+      'plugin/fancy-file-uploader/jquery.iframe-transport.js',
+      'plugin/fancy-file-uploader/jquery.fancy-fileupload.js',
       'js/main.js',
     ]); ?>
 
@@ -56,12 +60,63 @@
     ?>
 
     <script>
+      // Change Datatable Button
       function change_datatable_button() {
         $('.dt-button').removeClass("dt-button");
       }
       $(document).ready(function() {
         change_datatable_button();
       })
+
+
+      // Function For Upload File
+      function upload(name, maxFiles = 1) {
+        $(`#${name}`).FancyFileUpload({
+          params : {
+            action : 'fileuploader'
+          },
+          edit: false,
+          maxfilesize : 10000000,
+          added: function (e, data) {
+            if (data.ff_info.errors.length > 0) {
+              Swal.fire(
+                  'Gagal Ditambahkan!',
+                  'Error: '+data.ff_info.errors,
+                  'error'
+                )
+                $(this).remove()
+                delete data.ff_info
+                return;
+            }
+
+            if ($(`.upload--${name}`).find('.ff_fileupload_queued').length > maxFiles) {
+              Swal.fire(
+                  'Gagal Ditambahkan!',
+                  `Maksimal upload hanya ${maxFiles} file`,
+                  'error'
+                )
+              $(this).remove()
+              delete data.ff_info
+              return;
+            }
+
+            $(`.upload--${name}`).find('.btn--upload-file').removeClass('d-none');
+            $(`.upload--${name}`).find('.ff_fileupload_remove_file').attr('data-doc', name);
+
+            // Get Base64 of File & Set Session To Save The Data
+            getBase64(data.files[0], name)
+
+            $(this).find('.ff_fileupload_start_upload').remove()
+          }
+        });
+      }
+      
+      $(document).on('click', '.ff_fileupload_remove_file', function(e) {
+        let doc = $(this).attr('data-doc')
+        if ($(`.upload--${doc}`).find('.ff_fileupload_queued').length < 1) {
+          $(`.upload--${doc}`).find('.btn--upload-file').addClass('d-none');
+        }
+      });
     </script>
 
   </body>

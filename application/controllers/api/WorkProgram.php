@@ -24,7 +24,12 @@ class WorkProgram extends REST_Controller{
   	}
 
   	public function index_delete(){
-	$response = $this->workprogram->delete($this->delete());
+		$response = $this->workprogram->delete($this->delete());
+    	$this->response($response);
+  	}
+
+  	public function uploadtor_post(){
+    	$response = $this->workprogram->uploadtor($this->post());
     	$this->response($response);
   	}
 

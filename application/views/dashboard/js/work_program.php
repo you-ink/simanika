@@ -1,6 +1,8 @@
 <script>
 	$(document).ready(function () {
 
+		sessionStorage.clear();
+
 		function load_work_program(params = []) {
 			$("table.table").DataTable().destroy()
 			$("table.table").DataTable({
@@ -40,14 +42,22 @@
 					{
 						data: null,
 						render: res => {
-							return `<button type="button" class="btn btn-sm btn-warning text-white" data-toggle="modal" data-target="#crudModalDoc"><i class="fas fa-receipt"></i></td>
+							return `<button type="button" class="btn btn-sm btn-warning text-white btn-budget" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-receipt"></i></button>
 							`;
 						}
 					},
 					{
 						data: null,
 						render: res => {
-							return `<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#crudModalDoc"><i class="fas fa-upload"></i></td>
+							let tor = ''
+							let lpj = ''
+							if (res.tor) {
+								tor = `<p><a href="<?php echo base_url() ?>${res.tor}" taget="_blank">Lihat File TOR</a></p>`
+							}
+							if (res.lpj) {
+								lpj = `<p><a href="<?php echo base_url() ?>${res.lpj}" taget="_blank">Lihat File LPJ</a></p>`
+							}
+							return `<button type="button" class="btn btn-sm btn-secondary btn-upload-document" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModalDoc"><i class="fas fa-upload"></i></button>${tor}${lpj}
 							`;
 						}
 					},
@@ -55,10 +65,10 @@
 						data: null,
 						render: res => {
 							return `
-								<button type="button" class="btn btn-sm btn-warning btn-detail-proker" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal_acara}" data-status="${res.status}" data-pelaksana="${res.pelaksana_id}" data-penanggung-jawab="${res.penanggung_jawab_id}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
-								<button type="button" class="btn btn-sm btn-primary btn-update-proker" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal_acara}" data-status="${res.status}" data-pelaksana="${res.pelaksana_id}" data-penanggung-jawab="${res.penanggung_jawab_id}" data-toggle="modal" data-target="#crudModal"><i
+								<button type="button" class="btn btn-sm mb-1 btn-warning btn-detail-proker" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal_acara}" data-status="${res.status}" data-pelaksana="${res.pelaksana_id}" data-penanggung-jawab="${res.penanggung_jawab_id}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
+								<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-proker" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal_acara}" data-status="${res.status}" data-pelaksana="${res.pelaksana_id}" data-penanggung-jawab="${res.penanggung_jawab_id}" data-toggle="modal" data-target="#crudModal"><i
 											class="fas fa-pen"></i></button>
-								<button type="button" class="btn btn-sm btn-danger btn-delete-proker" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
+								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-proker" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
 							`;
 						}
 					}
@@ -268,6 +278,16 @@
 			})
 		})
 
+		$(document).on('click', '.btn-budget', function (e) {
+			window.location.href = "<?php echo base_url() ?>dashboard/budget/"+$(this).attr('data-id')
+		})
+
+		$(document).on('click', '.btn-upload-document', function (e) {
+			$('#crudModalDoc .document-proker-name').html($(this).attr('data-name'))
+			$('#crudModalDoc .btn--upload-tor').attr('data-id', $(this).attr('data-id'))
+			$('#crudModalDoc .btn--upload-lpj').attr('data-id', $(this).attr('data-id'))
+		})
+
 		function disabled(is_true = true){
 			$('#crudModal #prokerName').prop("disabled", is_true)
 			$('#crudModal #prokerDate').prop("disabled", is_true)
@@ -275,6 +295,50 @@
 			$('#crudModal #pelaksana').prop("disabled", is_true)
 			$('#crudModal #penanggungJawab').prop("disabled", is_true)
 		}
+
+		// Upload TOR
+		upload('tor')
+		$(document).on('click', '#crudModalDoc .btn--upload-tor', function (e) {
+			let data = {
+				id: $(this).attr('data-id'),
+				tor: sessionStorage.getItem('tor')
+			}
+
+			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+
+			callApi("POST", "workprogram/uploadtor", data, function (req) {
+				pesan = req.message;
+				if (req.error == true) {
+					Swal.fire(
+				      	'Gagal diupdate!',
+				      	pesan,
+				      	'error'
+				    )
+				}else{
+					Swal.fire(
+				      	'Diupdate!',
+				      	pesan,
+				      	'success'
+				    ).then((result) => {
+				    	$('#crudModalDoc').remove()
+						window.location.reload()
+					})
+
+				    $("input#prokerName").val('')
+				    $("#crudModal").modal("hide")
+					load_work_program();
+					change_datatable_button();
+				}
+			})
+		})
+
+
+		// Upload LPJ
+		upload('lpj')
+		$(document).on('click', '#crudModalDoc .btn--upload-lpj', function (e) {
+			let file = sessionStorage.getItem('lpj')
+			console.log(file)
+		})
 
 	})
 

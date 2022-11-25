@@ -149,7 +149,7 @@ class WorkProgram_model extends CI_Model {
       if (empty($id)) {
         $hasil = array(
           'error' => true,
-          'message' => "Jabatan belum dipilih."
+          'message' => "Program Kerja belum dipilih."
         );
         goto output;
       } else if (empty($nama)) {
@@ -239,6 +239,54 @@ class WorkProgram_model extends CI_Model {
       return $hasil;
     }
 
+    public function uploadtor($params){
+      $id = $params['id'];
+      $tor = $params['tor'];
+
+      if (empty($id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Program Kerja belum dipilih."
+        );
+        goto output;
+      } else if (empty($tor)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "TOR belum diisi."
+        );
+        goto output;
+      }
+
+      $uploaded = upload_base64("assets/cdn/proker-document/" . $id . "/", $tor);
+
+      if (!$uploaded['status']) {
+        $hasil = array(
+          'error' => true,
+          'message' => $uploaded['message']
+        );
+        goto output;
+      }
+
+      $update = $this->db->update('proker', array(
+        'tor' => $uploaded['path']
+      ), ['id' => $id]);
+
+      if ($update) {
+        $hasil = array(
+          'error' => false,
+          'message' => "TOR berhasil ditambahkan."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "TOR gagal ditambahkan."
+      );
+
+      output:
+      return $hasil;
+    }
 
 }
 

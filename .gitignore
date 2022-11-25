@@ -35,3 +35,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 api/.env.production
 *.error
 .phpintel/*
+assets/cdn/*

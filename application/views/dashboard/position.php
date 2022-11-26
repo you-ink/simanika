@@ -44,7 +44,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-position-modal"></span> Data <span class="position-name"></span></h5>
+				<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-position-modal"></span> Jabatan <span class="position-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -53,7 +53,7 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="positionName">Nama</label>
+							<label for="positionName">Nama Jabatan</label>
 							<input type="text" class="form-control" id="positionName" placeholder="Nama" value="">
 						</div>
 					</div>

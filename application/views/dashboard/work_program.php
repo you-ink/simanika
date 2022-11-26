@@ -15,8 +15,7 @@
 						</div>
 						<div class="col-6 text-right">
 							<button class="btn btn-sm btn-success btn-add-proker" data-toggle="modal"
-								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Program
-								Kerja</button>
+								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Program Kerja</button>
 						</div>
 						<div class="card-body p-3 text-left">
 							<table class="table mb-0">
@@ -85,7 +84,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-proker-modal"></span> Program Kerja <span class="proker-name"></span></h5>
+			<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-proker-modal"></span> Program Kerja <span class="proker-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -95,7 +94,7 @@
 			<form>
 				<div class="form-row">
 					<div class="form-group col-12">
-						<label for="prokerName">Nama Proker</label>
+						<label for="prokerName">Nama Program Kerja</label>
 						<input type="text" id="prokerName" class="form-control" placeholder="Nama Proker">
 					</div>
 				</div>
@@ -132,9 +131,8 @@
 			</form>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary btn-confirm-update-proker">Update</button>
-				<button type="button" class="btn btn-primary btn-confirm-add-proker">Tambah</button>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>
 	</div>

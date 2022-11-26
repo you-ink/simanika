@@ -15,7 +15,7 @@
 						</div>
 						<div class="col-6 text-right">
 							<button class="btn btn-sm btn-success" data-toggle="modal"
-								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Agenda</button>
+								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Agenda Rapat </button>
 						</div>
 					</div>
 				</div>
@@ -185,7 +185,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Meeting</h5>
+			<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-position-modal"></span> Agenda Rapat <span class="position-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>

@@ -55,7 +55,7 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="divisionName">Nama Divivi</label>
+							<label for="divisionName">Nama Divisi</label>
 							<input type="text" class="form-control" id="divisionName" placeholder="Nama" value="">
 						</div>
 					</div>

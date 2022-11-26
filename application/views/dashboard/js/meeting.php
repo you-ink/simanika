@@ -74,15 +74,18 @@
 			$('.title-meeting-modal').html('Tambah')
 			$('.btn-confirm-add-meeting').removeClass('d-none')
 			$('.btn-confirm-update-meeting').addClass('d-none')
+			$('#crudModal .meeting-name').html('')
 
+			$('#crudModal #meetingTipe').val('')
 			$('#crudModal #meetingName').val('')
+			$('#crudModal #meetingTime').val('')
 		})
 
 		$(document).on('click', '.btn-confirm-add-meeting', function () {
 			data = {
-				type: $("input#TipeAgenda").val()
-				nama: $("input#meetingName").val()
-				time: $("input#Time").val()
+				type: $("input#meetingTipe").val(),
+				nama: $("input#meetingName").val(),
+				time: $("input#meetingTime").val()
 			}
 
 			data[get_api_login_global()['key']] = get_api_login_global()['value'];
@@ -101,9 +104,9 @@
 				      pesan,
 				      'success'
 				    )
-				    $("input#TipeAgenda").val('')
-				    $("input#meetingName").val('')
-				    $("input#Time").val('')
+				    $("input#meetingTipe").val(),
+				    $("input#meetingName").val(),
+				    $("input#meetingTime").val()
 				    $("#crudModal").modal("hide")
 					load_meeting();
 					change_datatable_button();
@@ -113,19 +116,23 @@
 
 		$(document).on('click', ".btn-update-meeting", function () {
 			$('.title-meeting-modal').html('Edit')
-			$('.btn-confirm-update-position').removeClass('d-none')
-			$('.btn-confirm-add-position').addClass('d-none')
+			$('.btn-confirm-update-meeting').removeClass('d-none')
+			$('.btn-confirm-add-meeting').addClass('d-none')
+			$('#crudModal .meeting-name').html($(this).attr('data-name'))
 
+			$('#crudModal #meetingTipe').val($(this).attr('data-Tipe'))
 			$('#crudModal #meetingName').val($(this).attr('data-name'))
-			$('#crudModal .meeting-name').val($(this).attr('data-name'))
+			$('#drudModal #meetingTime').val($(this).attr('data-Time'))
 
-			$('.btn-confirm-update-position').attr('data-id', $(this).attr('data-id'))
+			$('.btn-confirm-update-meeting').attr('data-id', $(this).attr('data-id'))
 		})
 
 		$(document).on('click', '.btn-confirm-update-meeting', function () {
 			data = {
 				id: $(this).attr('data-id'),
-				nama: $("input#meetingName").val()
+				type: $("input#meetingTipe").val(),
+				nama: $("input#meetingName").val(),
+				time: $("input#meetingTime").val()
 			}
 
 			data[get_api_login_global()['key']] = get_api_login_global()['value'];
@@ -183,7 +190,7 @@
 					      pesan,
 					      'success'
 					    )
-						load_position();
+						load_meeting();
 						change_datatable_button();
 					}
 				})

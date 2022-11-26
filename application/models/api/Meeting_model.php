@@ -19,16 +19,20 @@ class Meeting_model extends CI_Model {
       $recordsTotal = $this->db->query("
         SELECT 
           rapat.id,
-          rapat.nama
+          rapat.tipe,
+          rapat.nama,
+          rapat.tanggal
         FROM
           rapat
         $filter
       ")->num_rows();
 
-      $get_sekolah = $this->db->query("
+      $get_rapat = $this->db->query("
         SELECT 
           rapat.id,
-          rapat.nama
+          rapat.tipe,
+          rapat.nama,
+          rapat.tanggal
         FROM
           rapat
         $filter
@@ -53,22 +57,34 @@ class Meeting_model extends CI_Model {
     }
 
     public function add($params){
-      $time = $params['tanggal'],
-      $nama = $params['nama'],
       $type = $params['tipe'];
+      $nama = $params['nama'];
+      $time = $params['tanggal'];
       
-      if (empty($nama)) {
+      if (empty($type)) {
         $hasil = array(
           'error' => true,
-          'message' => "Nama belum diisi."
+          'message' => "Tipe belum diisi."
+        );
+        goto output;
+      } else if (empty($nama)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Nama rapat belum diisi."
+        );
+        goto output;
+      } else if (empty($time)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Tanggal belum diisi."
         );
         goto output;
       }
 
       $tambah = $this->db->insert('rapat', array(
-        'tanggal' => $time;
-        'nama' => $nama;
         'tipe' => $type;
+        'nama' => $nama;
+        'tanggal' => $time;
 
       ));
 
@@ -91,7 +107,9 @@ class Meeting_model extends CI_Model {
 
     public function update($params){
       $id = $params['id'];
+      $type = $params['tipe'];
       $nama = $params['nama'];
+      $time = $params['tanggal'];
       
       if (empty($id)) {
         $hasil = array(
@@ -99,16 +117,30 @@ class Meeting_model extends CI_Model {
           'message' => "Rapat belum dipilih."
         );
         goto output;
+      } else if (empty($type)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Tipe belum diisi."
+        );
+        goto output;
       } else if (empty($nama)) {
         $hasil = array(
           'error' => true,
-          'message' => "Nama belum diisi."
+          'message' => "Nama rapat belum diisi."
+        );
+        goto output;
+      } else if (empty($time)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Tanggal belum diisi."
         );
         goto output;
       }
 
       $update = $this->db->update('rapat', array(
-        'nama' => $nama
+        'tipe' => $type,
+        'nama' => $nama,
+        'tanggal' => $time
       ), ['id' => $id]);
 
       if ($update) {

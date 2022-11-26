@@ -38,6 +38,11 @@ class WorkProgram extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function budget_post(){
+    	$response = $this->workprogram->getbudget($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

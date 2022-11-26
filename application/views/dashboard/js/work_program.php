@@ -42,6 +42,15 @@
 					{
 						data: null,
 						render: res => {
+							if (res.total == '' || res.total == null) {
+								res.total = 0
+							}
+							return res.total
+						}
+					},
+					{
+						data: null,
+						render: res => {
 							return `<button type="button" class="btn btn-sm btn-warning text-white btn-budget" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-receipt"></i></button>
 							`;
 						}

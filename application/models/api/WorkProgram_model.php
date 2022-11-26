@@ -28,7 +28,10 @@ class WorkProgram_model extends CI_Model {
           pelaksana.nama as pelaksana,
           penanggung_jawab.nama as penanggung_jawab,
           pelaksana_id,
-          penanggung_jawab_id
+          penanggung_jawab_id,
+          (
+            SELECT SUM(jumlah*harga) FROM detail_anggaran_proker LEFT JOIN anggaran_proker on anggaran_proker.id = anggaran_proker_id WHERE proker_id = proker.id
+          ) as total
         FROM
           proker
         LEFT JOIN users pelaksana ON pelaksana.id = pelaksana_id
@@ -48,7 +51,10 @@ class WorkProgram_model extends CI_Model {
           pelaksana.nama as pelaksana,
           penanggung_jawab.nama as penanggung_jawab,
           pelaksana_id,
-          penanggung_jawab_id
+          penanggung_jawab_id,
+          (
+            SELECT SUM(jumlah*harga) FROM detail_anggaran_proker LEFT JOIN anggaran_proker on anggaran_proker.id = anggaran_proker_id WHERE proker_id = proker.id
+          ) as total
         FROM
           proker
         LEFT JOIN users pelaksana ON pelaksana.id = pelaksana_id
@@ -332,6 +338,67 @@ class WorkProgram_model extends CI_Model {
         'error' => true,
         'message' => "LPJ gagal ditambahkan."
       );
+
+      output:
+      return $hasil;
+    }
+
+
+    public function getbudget($params){
+      $length = intval($params['length']);
+      $start = intval($params['start']);
+      $draw = $params['draw'];
+      $sort = (!empty($params['sort'])) ? "ORDER BY detail_anggaran_proker.id " . $this->db->escape_str($params['sort']) : "";
+      $search = $params['search']['value'];
+      $id = (!empty($params['id'])) ? $params['id'] : "";
+      
+      $paging = ($length > 0) ? "LIMIT $start, $length" : "";
+
+      $filter = "WHERE detail_anggaran_proker.id IS NOT NULL";
+      (!empty($id)) ? $filter .= " AND detail_anggaran_proker.id = " . $this->db->escape($id) : "";
+      (!empty($search)) ? $filter .= " AND (detail_anggaran_proker.jenis_pengeluaran LIKE '%" . $this->db->escape_like_str($search) . "%' OR anggaran_proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
+
+      $recordsTotal = $this->db->query("
+        SELECT 
+          detail_anggaran_proker.id,
+          jenis_pengeluaran,
+          jumlah,
+          satuan,
+          harga,
+          anggaran_proker.nama as nama_anggaran
+        FROM
+          detail_anggaran_proker
+          LEFT JOIN anggaran_proker on anggaran_proker.id = anggaran_proker_id
+        $filter
+      ")->num_rows();
+
+      $get_anggaran_proker = $this->db->query("
+        SELECT 
+          detail_anggaran_proker.id,
+          jenis_pengeluaran,
+          jumlah,
+          satuan,
+          harga,
+          anggaran_proker.nama as nama_anggaran
+        FROM
+          detail_anggaran_proker
+          LEFT JOIN anggaran_proker on anggaran_proker.id = anggaran_proker_id
+        $filter
+        $sort
+        $paging
+      ")->result_array();
+
+      $no = 0;
+      $hasil['error'] = false;
+      $hasil['message'] = "success";
+      $hasil['data'] = array();
+      $hasil['draw'] = $draw;
+      $hasil['recordsTotal'] = $recordsTotal;
+      $hasil['recordsFiltered'] = $recordsTotal;
+      foreach ($get_anggaran_proker as $key) {
+        $hasil['data'][$no++] = $key;
+      }
+      goto output;
 
       output:
       return $hasil;

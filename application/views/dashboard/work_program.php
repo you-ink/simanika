@@ -26,6 +26,7 @@
 										<th scope="col" class="border-0">Nama Program Kerja</th>
 										<th scope="col" class="border-0">Status</th>
 										<th scope="col" class="border-0">Tanggal</th>
+										<th scope="col" class="border-0">Total Pengeluaran</th>
 										<th scope="col" class="border-0">Anggaran</th>
 										<th scope="col" class="border-0">Dokumen</th>
 										<th scope="col" class="border-0">Aksi</th>

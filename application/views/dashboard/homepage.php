@@ -1,121 +1,4 @@
 
-<!doctype html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta http-equiv="Content-Language" content="en" />
-        <meta name="msapplication-TileColor" content="#2d89ef">
-        <meta name="theme-color" content="#0e1929">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-
-        <meta name="description" content="Jurusan Teknologi Informasi Politeknik Negeri Jember" />
-        <meta name="keywords" content="jti, polije," />
-        <meta name="author" content="Sambutan Ketua Jurusan Teknologi Informasi" />
-
-        <!-- URL Theme Color for Chrome, Firefox OS, Opera and Vivaldi -->
-        <meta name="theme-color" content="#2C3E50" />
-        <!-- URL Theme Color for Windows Phone -->
-        <meta name="msapplication-navbutton-color" content="#2C3E50" />
-        <!-- URL Theme Color for iOS Safari -->
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-
-        <meta name="apple-mobile-web-app-status-bar-style" content="#F0E17C" />
-        <meta property="og:url" content="http://jti.polije.ac.id/" />
-        <meta property="og:title" content=" Jurusan Teknologi Informasi - Politeknik Negeri Jember " />
-        <meta property="og:description" content="Jurusan Teknologi Informasi Politeknik Negeri Jember" />
-        <meta property="og:site_name" content="Jurusan Teknologi Informasi" />
-        <meta property="og:image" content="https://jti.polije.ac.id/an-component/media/upload-gambar-pendukung/Gedung-Jurusan-TI.jpg" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:type" content="website" />
-    
-        <link rel="icon" href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/favicon.png" type="image/x-icon"/>
-        <link rel="shortcut icon" type="image/x-icon" href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/favicon.png" />
-        <!-- Generated: 2018-04-16 09:29:05 +0200 -->
-        <title>Jurusan Teknologi Informasi - Politeknik Negeri Jember</title>
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-        <!-- Dashboard Core -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/css/dashboard.css" rel="stylesheet" />
-        <!-- c3.js Charts Plugin -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
-        <!-- Google Maps Plugin -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/maps-google/plugin.css" rel="stylesheet" />
-        <!-- Breaking News Ticker -->
-        <link rel="stylesheet" href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/breaking-news-ticker/breaking-news-ticker.css">
-        <!-- Animate -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/css/animate.min.css" rel="stylesheet" />
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/css/custom.css" rel="stylesheet" />
-        <!-- Owl Carousel -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-        <!-- jsSocials -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/jssocials/jssocials.css" rel="stylesheet">
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/jssocials/jssocials-theme-flat.css" rel="stylesheet">
-        <!-- TosRUs -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/tosrus/css/jquery.tosrus.all.css" rel="stylesheet">
-        <!-- Toastr -->
-        <link href="http://jti.polije.ac.id/an-theme/tabler-admin/assets/plugins/toastr/css/toastr.css" rel="stylesheet" />
-        <script src="http://jti.polije.ac.id/an-theme/tabler-admin/assets/js/vendors/jquery-3.2.1.min.js"></script>
-    </head>
-    <body class="">
-                <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-blue-darkest fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="http://jti.polije.ac.id/">
-                    <img src="http://jti.polije.ac.id/an-theme/tabler-admin/assets/images/navbar-brand.svg" class="header-brand-img" alt="JTI logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class='nav-item'><a class='nav-link' href='http://jti.polije.ac.id/' target='_self'>Home</a></li><li class='nav-item'><a class='nav-link' href='http://jti.polije.ac.id/profil-jti' target='_self'>Profil JTI</a></li><li class='nav-item dropdown'>
-						<a href='' target='_self' class='nav-link dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Akademik <span class='caret'></span></a><ul class='dropdown-menu dropdown-menu-right'><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/43-kalendar-akademik-semeser-genap-2021-2022' target='_self'>Kalender Akademik</a></li><li class='dropdown-submenu'><a class='dropdown-item dropdown-toggle' href='' target='_self'>Program Studi <span class='caret'></span></a><ul class='dropdown-menu'><li><a class='dropdown-item' href='http://jti.polije.ac.id/prodi/mif' target='_self'>D3 Manajemen Informatika</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/prodi/tkk' target='_self'>D3 Teknik Komputer</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/prodi/tif' target='_self'>D4 Teknik Informatika</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/prodi/tif_kampus_bondowoso' target='_self'>D4 Teknik Informatika - Kampus Bondowoso</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/prodi/tif_kampus_nganjuk' target='_self'>D4 Teknik Informatika - PSDKU Nganjuk</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/prodi/tif_kampus_sidoarjo' target='_self'>D4 Teknik Informatika - PSDKU Sidoarjo</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/prodi/bsd' target='_self'>D4 Bisnis Digital</a></li></ul></li><li><a class='dropdown-item' href='http://103.109.209.245/jtiform/login' target='_blank'>Evaluasi Pembelajaran</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/ruangbaca/' target='_blank'>Ruang Baca</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/tata-tertib' target='_self'>Tata Tertib Mahasiswa</a></li></ul></li><li class='nav-item dropdown'>
-						<a href='' target='_self' class='nav-link dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Informasi <span class='caret'></span></a><ul class='dropdown-menu dropdown-menu-right'><li><a class='dropdown-item' href='http://jtit.polije.ac.id/' target='_blank'>Publikasi Ilmiah</a></li><li class='dropdown-submenu'><a class='dropdown-item dropdown-toggle' href='#' target='_self'>Administrasi <span class='caret'></span></a><ul class='dropdown-menu'><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/8-alur-pendaftaran-praktek-kerja-lapang' target='_self'>Alur Pendaftaran PKL</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/9-syarat-pendaftaran-tugas-akhir' target='_self'>Syarat Pendaftaran TA</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/24-info-bebas-tanggungan-untuk-pendaftaran-pra-yudisium' target='_self'>Syarat Pendaftaran Yudisium</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/22-alur-perwalian-mahasiswa-khs' target='_self'>Alur Perwalian KHS</a></li><li><a class='dropdown-item' href='#' target='_self'>Alur Pelayanan Laboratorium</a></li></ul></li></ul></li><li class='nav-item dropdown'>
-						<a href='' target='_self' class='nav-link dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Fasilitas <span class='caret'></span></a><ul class='dropdown-menu dropdown-menu-right'><li class='dropdown-submenu'><a class='dropdown-item dropdown-toggle' href='' target='_self'>Perkantoran <span class='caret'></span></a><ul class='dropdown-menu'><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/16-ruang-jurusan-teknologi-informasi' target='_self'>Ruang Jurusan TI</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/17-ruang-program-studi-jurusan-teknologi-informasi' target='_self'>Ruang Program Studi</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/18-ruang-unit-pelayanan-kelas' target='_self'>Unit Pelayanan Kelas</a></li></ul></li><li class='dropdown-submenu'><a class='dropdown-item dropdown-toggle' href='' target='_self'>Laboratorium <span class='caret'></span></a><ul class='dropdown-menu'><li><a class='dropdown-item' href='http://jti.polije.ac.id/lab/ajk' target='_self'>Lab Arsitektur dan Jaringan Komputer (AJK)</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/lab/ksi' target='_self'>Lab Komputasi & Sistem Informasi (KSI)</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/lab/rsi' target='_self'>Lab Rekayasa Sistem Informasi (RSI)</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/lab/skk' target='_self'>Lab Sistem Komputer & Kontrol (SKK)</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/lab/rpl' target='_self'>Lab Rekayasa Perangkat Lunak (RPL)</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/lab/mmc' target='_self'>Lab Multimedia Cerdas (MMC)</a></li></ul></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/19-ruang-dosen' target='_self'>Ruang Dosen</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/20-ruang-kelas' target='_self'>Ruang Kelas</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/21-fasilitas-lain' target='_self'>Fasilitas Lain</a></li></ul></li><li class='nav-item dropdown'>
-						<a href='' target='_self' class='nav-link dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Civitas <span class='caret'></span></a><ul class='dropdown-menu dropdown-menu-right'><li><a class='dropdown-item' href='http://jti.polije.ac.id/dosen' target='_self'>Dosen</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/staf' target='_self'>Staf</a></li><li class='dropdown-submenu'><a class='dropdown-item dropdown-toggle' href='#' target='_self'>Mahasiswa <span class='caret'></span></a><ul class='dropdown-menu'><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/11-profil-hmj-ti-2017' target='_self'>Himpunan Mahasiswa JTI 2017</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/page/13-profil-hmjti-2018' target='_self'>Himpunan Mahasiswa JTI 2018</a></li><li><a class='dropdown-item' href='http://jti.polije.ac.id/hmjti' target='_self'>Himpunan Mahasiswa JTI 2019</a></li></ul></li><li><a class='dropdown-item' href=' http://jti.polije.ac.id/alumni' target='_self'>Alumni</a></li></ul></li><li class='nav-item'><a class='nav-link' href='http://jti.polije.ac.id/kontak-kami' target='_self'>Kontak Kami</a></li>                        <li class="nav-item">
-                            <a href="http://jti.polije.ac.id/eng" target="_self" title="JTI Web English Version"><img src="http://jti.polije.ac.id/an-theme/tabler-admin/assets/images/uk-flag.svg" height="15px" alt="EN"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <nav class="header collapse d-lg-flex py-0 fixed-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- <div class="col-2 text-center">
-                        <h4 class="py-2 text-bold bg-gold news-ticker"><i class="fe fe-rss"></i> INFO TERKINI</h4>
-                    </div>
-                    <div class="col-10 py-1">
-                        <marquee scrolldelay="100">
-                                                </marquee>
-                    </div> -->
-                    <div class="col-lg-2 bg-blue-darker font-weight-bold text-white text-center today-date pt-2"></div>
-                    <div class="col-lg-10 px-0">
-                        <div class="breaking-news-ticker" id="breaking-news-ticker">
-                            <div class="bn-label"><i class="fe fe-rss"></i> INFO TERKINI</div>
-                            <div class="bn-news">
-                                <ul>
-                                    <li><a href='#' target='_blank'>Mulai tanggal 17-29 Maret 2020 perkuliahan dialihkan ke moda daring di: http://jti.polije.ac.id/elearning  untuk mengantisipasi penyebaran virus COVID-19</a></li><li><a href='#' target='_blank'>KETUA JURUSAN TEKNOLOGI INFORMASI PERIODE 2019-2023 : Hendra Yufit Riskiawan, S.Kom, M.Cs Terhitung Mulai Tanggal 1 Juni 2019</a></li><li><a href='http://jti.polije.ac.id/page/24-info-bebas-tanggungan-untuk-pendaftaran-pra-yudisium' target='_blank'>[INFO] BEBAS TANGGUNGAN UNTUK PENDAFTARAN PRA YUDISIUM</a></li><li><a href='http://jti.polije.ac.id/page/15-kode-etik-mahasiswa' target='_blank'>Tata Tertib & Kode Etik Mahasiswa</a></li><li><a href='https://www.instagram.com/jtipolije/' target='_blank'>Silahkan Follow Akun Instagram Jurusan Teknologi Informasi @jtipolije</a></li><li><a href='http://jti.polije.ac.id/akademik/kalender' target='_blank'>Kalender Akademik Politeknik Negeri Jember Tahun Akademik 2019/2020</a></li>                                </ul>
-                            </div>
-                            <div class="bn-controls">
-                                <button><span class="bn-arrow bn-prev"></span></button>
-                                <button><span class="bn-action"></span></button>
-                                <button><span class="bn-arrow bn-next"></span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
         <script>
@@ -240,10 +123,10 @@
                                     <div class="col-lg-12">
                                         <div class="card card-aside text-white bg-blue-darkest">
                                             <div class="card-body pb-0">
-                                                <h3 class="card-title"><strong><i class="fe fe-globe"></i> Sambutan Ketua Jurusan Teknologi Informasi</strong></h3>
+                                                <h3 class="card-title"><strong><i class="fe fe-globe"></i> VISI DAN MISI </strong></h3>
                                                 <div class="row">
                                                     <div class="col-md-12 col-sm-12 text-justify">
-                                                        <p>Assalaamu’alaikum warohmatullahi wabarokatuh<br />
+                                                        <p>Visi<br />
 <br />
 Puji dan syukur kami panjatkan kehadirat Allah SWT, Selamat datang di website resmi Jurusan Teknologi Informasi.<br />
 <br />
@@ -941,27 +824,3 @@ Nomor: SK Direktur No 3870/K14/KP/SK/2007 tanggal 25 Agustus 2007.</p>
                 }
             });
         </script>
-    </body>
-</html>
-<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
-
-<h4>A PHP Error was encountered</h4>
-
-<p>Severity: Core Warning</p>
-<p>Message:  PHP Startup: Unable to load dynamic library 'mysqli' (tried: /usr/lib/php/20170718/mysqli (/usr/lib/php/20170718/mysqli: cannot open shared object file: No such file or directory), /usr/lib/php/20170718/mysqli.so (/usr/lib/php/20170718/mysqli.so: undefined symbol: mysqlnd_global_stats))</p>
-<p>Filename: Unknown</p>
-<p>Line Number: 0</p>
-
-
-	<p>Backtrace:</p>
-	
-		
-	
-		
-	
-		
-	
-		
-	
-
-</div>

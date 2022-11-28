@@ -14,8 +14,7 @@
 							<h6 class="m-0">Data Meeting Agenda</h6>
 						</div>
 						<div class="col-6 text-right">
-							<button class="btn btn-sm btn-success" data-toggle="modal"
-								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Agenda Rapat </button>
+							<button class="btn btn-sm btn-success btn-add-meeting" data-toggle="modal" data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Agenda Rapat </button>
 						</div>
 					</div>
 				</div>
@@ -33,144 +32,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Rapat Resmi</td>
-									<td>Rapat 100 Hari Kerja</td>
-									<td>3 September 2022</td>
-									<td>
-
-										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-											data-target="#crudModalDoc"><i
-												class="fas fa-upload"></i></td>
-									<td>
-										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-info"></i></button>
-
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-pen"></i></button>
-										</a>
-
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Rapat Resmi</td>
-									<td>Rapat Rancangan Program Kerja</td>
-									<td>10 September 2022</td>
-									<td>
-
-										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-											data-target="#crudModalDoc"><i
-												class="fas fa-upload"></i></td>
-									<td>
-										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-info"></i></button>
-
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-pen"></i></button>
-										</a>
-
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>Rapat Program Kerja</td>
-									<td>Konsep Acara Anjangsana</td>
-									<td>10 Desember 2022</td>
-									<td>
-
-										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-											data-target="#crudModalDoc" ><i
-												class="fas fa-upload"></i></td>
-									<td>
-										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-info"></i></button>
-
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-pen"></i></button>
-										</a>
-
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Rapat Program Kerja</td>
-									<td>Konsep Acara Open Recruitment HIMANIKA</td>
-									<td>20 Oktober 2022</td>
-									<td>
-
-										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-											data-target="#crudModalDoc" ><i
-												class="fas fa-upload"></i></td>
-									<td>
-										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-info"></i></button>
-
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-pen"></i></button>
-										</a>
-
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Rapat Program Kerja</td>
-									<td>Konsep Acara Management Informatics Competition</td>
-									<td>2 November 2022</td>
-									<td>
-
-										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-											data-target="#crudModalDoc" ><i
-												class="fas fa-upload"></i></td>
-									<td>
-										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-info"></i></button>
-
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-pen"></i></button>
-										</a>
-
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Rapat Resmi</td>
-									<td>Rapat Akhir Tahun Periode</td>
-									<td>10 Desember 2022</td>
-									<td>
-
-										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-											data-target="#crudModalDoc" ><i
-												class="fas fa-upload"></i></td>
-									<td>
-										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-info"></i></button>
-
-										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-											data-target="#crudModal"><i class="fas fa-pen"></i></button>
-										</a>
-
-										<button type="button" class="btn btn-sm btn-danger"><i
-												class="fas fa-trash"></i></button>
-										</a>
-									</td>
-								</tr>
+								
 							</tbody>
 						</table>
 					</div>
@@ -182,12 +44,11 @@
 
 
 <!-- CRUD Modal -->
-<div class="modal fade" id="crudModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-	aria-hidden="true" data-backdrop="false">
+<div class="modal fade" id="crudModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-position-modal"></span> Agenda Rapat <span class="position-name"></span></h5>
+			<h5 class="modal-title" id="exampleModalLongTitle"><span class="title-meeting-modal"></span> Agenda Rapat <span class="meeting-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -197,22 +58,22 @@
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="meetingTipe">Tipe Agenda Rapat</label>
-							<input type="text" class="form-control" id="meetingtipe" placeholder="Tipe Rapat"
-								value="">
+							<select id="meetingTipe" class="form-control">
+								<option value="1" selected>Rapat Resmi</option>
+								<option value="2">Rapat Program Kerja</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
 							<label for="meetingName">Nama Agenda Rapat</label>
-							<input type="text" class="form-control" id="meetingName" placeholder="Nama Rapat"
-								value="">
+							<input type="text" class="form-control" id="meetingName" placeholder="Nama Rapat">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-12">
-							<label for="meetingTime">Waktu</label>
-							<input type="text" class="form-control" id="meetingTime" placeholder="Tanggal"
-								value="">
+							<label for="meetingDate">Tanggal Meeting</label>
+							<input type="date" class="form-control" id="meetingDate" placeholder="Tanggal">
 						</div>
 					</div>
 				</form>
@@ -229,44 +90,36 @@
 
 <!-- CRUD Modal Dokumen -->
 <div class="modal fade" id="crudModalDoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-	aria-hidden="true" data-backdrop="false">
+	aria-hidden="true" data-backdrop="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Upload Dokumen</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle">Upload Dokumen <span class="document-meeting-name"></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
 				<form>
-					<div class="form-row">
+					<div class="form-row upload--notulensi">
 						<div class="form-group col-12">
-							<label for="fefulltName">Nama Pengirim</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="Mutia Budi Utami">
+							<label>Notulensi</label>
+							<input id="notulensi" type="file" accept=".pdf, .docx, .doc">
+						</div>
+						<div class="form-group col-12 text-right btn--upload-file d-none">
+							<button type="button" class="btn btn-sm btn-secondary btn--upload-notulensi">Upload</button>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="form-row upload--daftarhadir">
 						<div class="form-group col-12">
-							<label for="fefulltName">Waktu Dikirim</label>
-							<input type="text" class="form-control" id="fefulltName" placeholder="Nama lengkap"
-								value="20 November 2022">
+							<label>Daftar Hadir</label>
+							<input id="daftarhadir" type="file" accept=".pdf, .docx, .doc">
 						</div>
-					</div>
-					<div class="form-row">
-						<div class="form-group col-12">
-							<label for="fefulltName"> Upload Dokumen</label>
-							<input type="text"><button type="button" class="btn btn-sm btn-secondary"><i
-											class="fas fa-upload"></i>
+						<div class="form-group col-12 text-right btn--upload-file d-none">
+							<button type="button" class="btn btn-sm btn-secondary btn--upload-daftarhadir">Upload</button>
 						</div>
 					</div>
 				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Upload</button>
-				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>
 	</div>

@@ -332,7 +332,6 @@
 						window.location.reload()
 					})
 
-				    $("#crudModal").modal("hide")
 					load_work_program();
 					change_datatable_button();
 				}
@@ -367,7 +366,6 @@
 						window.location.reload()
 					})
 
-				    $("#crudModal").modal("hide")
 					load_work_program();
 					change_datatable_button();
 				}

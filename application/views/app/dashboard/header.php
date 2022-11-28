@@ -9,6 +9,7 @@
     <link rel="icon" href="<?php echo base_url('assets/img/icon.png') ?>" type="image/icon type">
 
     <?= stylesheet([
+      'css/main.css',
       'plugin/fontawesome/css/all.min.css',
       'plugin/bootstrap/css/bootstrap.min.css',
       'template/shards-dashboard/styles/extras.1.1.0.min.css',

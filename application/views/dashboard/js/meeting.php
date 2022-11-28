@@ -1,6 +1,8 @@
 <script>
 	$(document).ready(function () {
 
+		sessionStorage.clear();
+		
 		function load_meeting(params = []) {
 			$("table.table").DataTable().destroy()
 			$("table.table").DataTable({
@@ -10,7 +12,7 @@
 				'processing': true,
 				"ordering": false,
 				"ajax": {
-					"url": get_api_url()+"position",
+					"url": get_api_url()+"meeting",
 					"type": "GET",
 					"data": {
 						"SIMANIKA-API-KEY": get_api_login_global()['value'],
@@ -29,15 +31,37 @@
 						}
 					},
 					{
+						data: 'deskripsi_tipe'
+					},
+					{
 						data: 'nama'
+					},
+					{
+						data: 'tanggal'
+					},
+					{
+						data: null,
+						render: res => {
+							let notulensi = ''
+							let daftar_hadir = ''
+							if (res.notulensi) {
+								notulensi = `<p class="my-1"><a href="<?php echo base_url() ?>${res.notulensi}" taget="_blank" class="text-primary">Lihat Notulensi</a></p>`
+							}
+							if (res.daftar_hadir) {
+								daftar_hadir = `<p class="my-1"><a href="<?php echo base_url() ?>${res.daftar_hadir}" taget="_blank" class="text-primary">Lihat Daftar Hadir</a></p>`
+							}
+
+							return `
+								<button type="button" class="btn btn-sm btn-secondary btn-upload-document" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModalDoc" ><i class="fas fa-upload"></i></button>${notulensi}${daftar_hadir}
+							`;
+						}
 					},
 					{
 						data: null,
 						render: res => {
 							return `
-								<button type="button" class="btn btn-sm btn-primary btn-update-position" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-								<button type="button" class="btn btn-sm btn-danger btn-delete-position" data-id="${res.id}"><i class="fas fa-trash"></i></button>
+								<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-meeting" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal}" data-tipe="${res.tipe}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>
+								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-meeting" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
 							`;
 						}
 					}
@@ -76,16 +100,15 @@
 			$('.btn-confirm-update-meeting').addClass('d-none')
 			$('#crudModal .meeting-name').html('')
 
-			$('#crudModal #meetingTipe').val('')
 			$('#crudModal #meetingName').val('')
-			$('#crudModal #meetingTime').val('')
+			$('#crudModal #meetingDate').val('')
 		})
 
 		$(document).on('click', '.btn-confirm-add-meeting', function () {
 			data = {
-				type: $("input#meetingTipe").val(),
+				tipe: $("select#meetingTipe option:selected").val(),
 				nama: $("input#meetingName").val(),
-				time: $("input#meetingTime").val()
+				tanggal: $("input#meetingDate").val()
 			}
 
 			data[get_api_login_global()['key']] = get_api_login_global()['value'];
@@ -104,9 +127,6 @@
 				      pesan,
 				      'success'
 				    )
-				    $("input#meetingTipe").val(),
-				    $("input#meetingName").val(),
-				    $("input#meetingTime").val()
 				    $("#crudModal").modal("hide")
 					load_meeting();
 					change_datatable_button();
@@ -120,9 +140,9 @@
 			$('.btn-confirm-add-meeting').addClass('d-none')
 			$('#crudModal .meeting-name').html($(this).attr('data-name'))
 
-			$('#crudModal #meetingTipe').val($(this).attr('data-Tipe'))
+			$('#crudModal #meetingTipe').val($(this).attr('data-tipe'))
 			$('#crudModal #meetingName').val($(this).attr('data-name'))
-			$('#drudModal #meetingTime').val($(this).attr('data-Time'))
+			$('#crudModal #meetingDate').val($(this).attr('data-date'))
 
 			$('.btn-confirm-update-meeting').attr('data-id', $(this).attr('data-id'))
 		})
@@ -130,9 +150,9 @@
 		$(document).on('click', '.btn-confirm-update-meeting', function () {
 			data = {
 				id: $(this).attr('data-id'),
-				type: $("input#meetingTipe").val(),
+				tipe: $("select#meetingTipe option:selected").val(),
 				nama: $("input#meetingName").val(),
-				time: $("input#meetingTime").val()
+				tanggal: $("input#meetingDate").val()
 			}
 
 			data[get_api_login_global()['key']] = get_api_login_global()['value'];
@@ -151,9 +171,8 @@
 				      pesan,
 				      'success'
 				    )
-				    $("input#meetingName").val('')
 				    $("#crudModal").modal("hide")
-					load_position();
+					load_meeting();
 					change_datatable_button();
 				}
 			})
@@ -161,10 +180,11 @@
 
 		$(document).on('click', ".btn-delete-meeting", function () {
 			let id = $(this).attr('data-id')
+			let name = $(this).attr('data-name')
 
 			Swal.fire({
 			  title: 'Apakah anda yakin?',
-			  text: "Anda ingin menghapus data ini!",
+			  text: `Anda ingin menghapus data ${name}!`,
 			  icon: 'warning',
 			  showCancelButton: true,
 			  confirmButtonColor: '#3085d6',
@@ -196,6 +216,80 @@
 				})
 
 			  }
+			})
+		})
+
+		$(document).on('click', '.btn-upload-document', function (e) {
+			$('#crudModalDoc .document-meeting-name').html($(this).attr('data-name'))
+			$('#crudModalDoc .btn--upload-notulensi').attr('data-id', $(this).attr('data-id'))
+			$('#crudModalDoc .btn--upload-daftarhadir').attr('data-id', $(this).attr('data-id'))
+		})
+
+		// Upload Noteluensi
+		upload('notulensi')
+		$(document).on('click', '#crudModalDoc .btn--upload-notulensi', function (e) {
+			let data = {
+				id: $(this).attr('data-id'),
+				notulensi: sessionStorage.getItem('notulensi')
+			}
+
+			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+
+			callApi("POST", "meeting/uploadnotulensi", data, function (req) {
+				pesan = req.message;
+				if (req.error == true) {
+					Swal.fire(
+				      	'Gagal diupdate!',
+				      	pesan,
+				      	'error'
+				    )
+				}else{
+					Swal.fire(
+				      	'Diupdate!',
+				      	pesan,
+				      	'success'
+				    ).then((result) => {
+				    	$('#crudModalDoc').remove()
+						window.location.reload()
+					})
+
+					load_meeting();
+					change_datatable_button();
+				}
+			})
+		})
+
+		// Upload Daftar Hadir
+		upload('daftarhadir')
+		$(document).on('click', '#crudModalDoc .btn--upload-daftarhadir', function (e) {
+			let data = {
+				id: $(this).attr('data-id'),
+				daftar_hadir: sessionStorage.getItem('daftarhadir')
+			}
+
+			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+
+			callApi("POST", "meeting/uploaddaftarhadir", data, function (req) {
+				pesan = req.message;
+				if (req.error == true) {
+					Swal.fire(
+				      	'Gagal diupdate!',
+				      	pesan,
+				      	'error'
+				    )
+				}else{
+					Swal.fire(
+				      	'Diupdate!',
+				      	pesan,
+				      	'success'
+				    ).then((result) => {
+				    	$('#crudModalDoc').remove()
+						window.location.reload()
+					})
+
+					load_meeting();
+					change_datatable_button();
+				}
 			})
 		})
 

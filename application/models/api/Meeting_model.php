@@ -14,14 +14,18 @@ class Meeting_model extends CI_Model {
 
       $filter = "WHERE rapat.id IS NOT NULL";
       (!empty($id)) ? $filter .= " AND rapat.id = " . $this->db->escape($id) : "";
-      (!empty($search)) ? $filter .= " AND rapat.nama LIKE '%" . $this->db->escape_like_str($search) . "%'" : "";
+      (!empty($search)) ? $filter .= " AND (rapat.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR get_tipe_rapat(rapat.tipe) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
 
       $recordsTotal = $this->db->query("
         SELECT 
           rapat.id,
           rapat.tipe,
           rapat.nama,
-          rapat.tanggal
+          rapat.tanggal,
+          rapat.waktu_mulai,
+          rapat.notulensi,
+          rapat.daftar_hadir,
+          get_tipe_rapat(rapat.tipe) as deskripsi_tipe
         FROM
           rapat
         $filter
@@ -32,7 +36,11 @@ class Meeting_model extends CI_Model {
           rapat.id,
           rapat.tipe,
           rapat.nama,
-          rapat.tanggal
+          rapat.tanggal,
+          rapat.waktu_mulai,
+          rapat.notulensi,
+          rapat.daftar_hadir,
+          get_tipe_rapat(rapat.tipe) as deskripsi_tipe
         FROM
           rapat
         $filter
@@ -47,7 +55,7 @@ class Meeting_model extends CI_Model {
       $hasil['draw'] = $draw;
       $hasil['recordsTotal'] = $recordsTotal;
       $hasil['recordsFiltered'] = $recordsTotal;
-      foreach ($get_sekolah as $key) {
+      foreach ($get_rapat as $key) {
         $hasil['data'][$no++] = $key;
       }
       goto output;
@@ -57,48 +65,47 @@ class Meeting_model extends CI_Model {
     }
 
     public function add($params){
-      $type = $params['tipe'];
+      $tipe = $params['tipe'];
       $nama = $params['nama'];
-      $time = $params['tanggal'];
+      $tanggal = $params['tanggal'];
       
-      if (empty($type)) {
+      if (empty($nama)) {
         $hasil = array(
           'error' => true,
-          'message' => "Tipe belum diisi."
+          'message' => "Nama belum diisi."
         );
         goto output;
-      } else if (empty($nama)) {
-        $hasil = array(
-          'error' => true,
-          'message' => "Nama rapat belum diisi."
-        );
-        goto output;
-      } else if (empty($time)) {
+      } else if (empty($tanggal)) {
         $hasil = array(
           'error' => true,
           'message' => "Tanggal belum diisi."
         );
         goto output;
+      } else if (empty($tipe)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Tipe Rapat belum dipilih."
+        );
+        goto output;
       }
 
       $tambah = $this->db->insert('rapat', array(
-        'tipe' => $type;
-        'nama' => $nama;
-        'tanggal' => $time;
-
+        'tipe' => $tipe,
+        'nama' => $nama,
+        'tanggal' => $tanggal
       ));
 
       if ($tambah) {
         $hasil = array(
           'error' => false,
-          'message' => "Rapat berhasil ditambahkan."
+          'message' => "Agenda Rapat berhasil ditambahkan."
         );
         goto output;
       }
 
       $hasil = array(
         'error' => true,
-        'message' => "Rapat gagal ditambahkan."
+        'message' => "Agenda Rapat gagal ditambahkan."
       );
 
       output:
@@ -107,53 +114,53 @@ class Meeting_model extends CI_Model {
 
     public function update($params){
       $id = $params['id'];
-      $type = $params['tipe'];
+      $tipe = $params['tipe'];
       $nama = $params['nama'];
-      $time = $params['tanggal'];
+      $tanggal = $params['tanggal'];
       
       if (empty($id)) {
         $hasil = array(
           'error' => true,
-          'message' => "Rapat belum dipilih."
-        );
-        goto output;
-      } else if (empty($type)) {
-        $hasil = array(
-          'error' => true,
-          'message' => "Tipe belum diisi."
+          'message' => "Agenda Rapat belum dipilih."
         );
         goto output;
       } else if (empty($nama)) {
         $hasil = array(
           'error' => true,
-          'message' => "Nama rapat belum diisi."
+          'message' => "Nama belum diisi."
         );
         goto output;
-      } else if (empty($time)) {
+      } else if (empty($tanggal)) {
         $hasil = array(
           'error' => true,
           'message' => "Tanggal belum diisi."
         );
         goto output;
+      } else if (empty($tipe)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Tipe Rapat belum dipilih."
+        );
+        goto output;
       }
 
       $update = $this->db->update('rapat', array(
-        'tipe' => $type,
+        'tipe' => $tipe,
         'nama' => $nama,
-        'tanggal' => $time
+        'tanggal' => $tanggal
       ), ['id' => $id]);
 
       if ($update) {
         $hasil = array(
           'error' => false,
-          'message' => "Rapat berhasil diupdate."
+          'message' => "Agenda Rapat berhasil diupdate."
         );
         goto output;
       }
 
       $hasil = array(
         'error' => true,
-        'message' => "Rapat gagal diupdate."
+        'message' => "Agenda Rapat gagal diupdate."
       );
 
       output:
@@ -166,30 +173,127 @@ class Meeting_model extends CI_Model {
       if (empty($id)) {
         $hasil = array(
           'error' => true,
-          'message' => "Rapat belum dipilih."
+          'message' => "Agenda Rapat belum dipilih."
         );
         goto output;
       }
 
-      $delete = $this->db->delete('Rapat', ['id' => $id]);
+      $delete = $this->db->delete('rapat', ['id' => $id]);
 
       if ($delete) {
         $hasil = array(
           'error' => false,
-          'message' => "Rapat berhasil dihapus."
+          'message' => "Agenda Rapat berhasil dihapus."
         );
         goto output;
       }
 
       $hasil = array(
         'error' => true,
-        'message' => "Rapat gagal dihapus."
+        'message' => "Agenda Rapat gagal dihapus."
       );
 
       output:
       return $hasil;
     }
 
+    public function uploadnotulensi($params){
+      $id = $params['id'];
+      $notulensi = $params['notulensi'];
+
+      if (empty($id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Agenda Rapat belum dipilih."
+        );
+        goto output;
+      } else if (empty($notulensi)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Notulensi belum diisi."
+        );
+        goto output;
+      }
+
+      $uploaded = upload_base64("assets/cdn/meeting-document/" . $id . "/", $notulensi);
+
+      if (!$uploaded['status']) {
+        $hasil = array(
+          'error' => true,
+          'message' => $uploaded['message']
+        );
+        goto output;
+      }
+
+      $update = $this->db->update('rapat', array(
+        'notulensi' => $uploaded['path']
+      ), ['id' => $id]);
+
+      if ($update) {
+        $hasil = array(
+          'error' => false,
+          'message' => "Notulensi berhasil ditambahkan."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Notulensi gagal ditambahkan."
+      );
+
+      output:
+      return $hasil;
+    }
+
+    public function uploaddaftarhadir($params){
+      $id = $params['id'];
+      $daftar_hadir = $params['daftar_hadir'];
+
+      if (empty($id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Agenda Rapat belum dipilih."
+        );
+        goto output;
+      } else if (empty($daftar_hadir)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Daftar Hadir belum diisi."
+        );
+        goto output;
+      }
+
+      $uploaded = upload_base64("assets/cdn/meeting-document/" . $id . "/", $daftar_hadir);
+
+      if (!$uploaded['status']) {
+        $hasil = array(
+          'error' => true,
+          'message' => $uploaded['message']
+        );
+        goto output;
+      }
+
+      $update = $this->db->update('rapat', array(
+        'daftar_hadir' => $uploaded['path']
+      ), ['id' => $id]);
+
+      if ($update) {
+        $hasil = array(
+          'error' => false,
+          'message' => "Daftar Hadir berhasil ditambahkan."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Daftar Hadir gagal ditambahkan."
+      );
+
+      output:
+      return $hasil;
+    }
 
 }
 

@@ -28,6 +28,16 @@ class Meeting extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function uploadnotulensi_post(){
+    	$response = $this->meeting->uploadnotulensi($this->post());
+    	$this->response($response);
+  	}
+
+  	public function uploaddaftarhadir_post(){
+    	$response = $this->meeting->uploaddaftarhadir($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

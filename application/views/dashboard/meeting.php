@@ -20,158 +20,160 @@
 					</div>
 				</div>
 				<div class="card-body p-3 text-left">
-					<table class="table mb-0">
-						<thead class="bg-light">
-							<tr>
-								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Tipe Agenda Rapat</th>
-								<th scope="col" class="border-0">Nama Agenda Rapat</th>
-								<th scope="col" class="border-0">Waktu</th>
-								<th scope="col" class="border-0">Dokumen</th>
-								<th scope="col" class="border-0">Aksi</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Rapat Resmi</td>
-								<td>Rapat 100 Hari Kerja</td>
-								<td>3 September 2022</td>
-								<td>
+					<div class="table-responsive">
+						<table class="table mb-0">
+							<thead class="bg-light">
+								<tr>
+									<th scope="col" class="border-0">No</th>
+									<th scope="col" class="border-0">Tipe Agenda Rapat</th>
+									<th scope="col" class="border-0">Nama Agenda Rapat</th>
+									<th scope="col" class="border-0">Waktu</th>
+									<th scope="col" class="border-0">Dokumen</th>
+									<th scope="col" class="border-0">Aksi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Rapat Resmi</td>
+									<td>Rapat 100 Hari Kerja</td>
+									<td>3 September 2022</td>
+									<td>
 
-									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-										data-target="#crudModalDoc"><i
-											class="fas fa-upload"></i></td>
-								<td>
-									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-info"></i></button>
+										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+											data-target="#crudModalDoc"><i
+												class="fas fa-upload"></i></td>
+									<td>
+										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-info"></i></button>
 
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-pen"></i></button>
-									</a>
+										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-pen"></i></button>
+										</a>
 
-									<button type="button" class="btn btn-sm btn-danger"><i
-											class="fas fa-trash"></i></button>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Rapat Resmi</td>
-								<td>Rapat Rancangan Program Kerja</td>
-								<td>10 September 2022</td>
-								<td>
+										<button type="button" class="btn btn-sm btn-danger"><i
+												class="fas fa-trash"></i></button>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Rapat Resmi</td>
+									<td>Rapat Rancangan Program Kerja</td>
+									<td>10 September 2022</td>
+									<td>
 
-									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-										data-target="#crudModalDoc"><i
-											class="fas fa-upload"></i></td>
-								<td>
-									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-info"></i></button>
+										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+											data-target="#crudModalDoc"><i
+												class="fas fa-upload"></i></td>
+									<td>
+										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-info"></i></button>
 
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-pen"></i></button>
-									</a>
+										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-pen"></i></button>
+										</a>
 
-									<button type="button" class="btn btn-sm btn-danger"><i
-											class="fas fa-trash"></i></button>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Rapat Program Kerja</td>
-								<td>Konsep Acara Anjangsana</td>
-								<td>10 Desember 2022</td>
-								<td>
+										<button type="button" class="btn btn-sm btn-danger"><i
+												class="fas fa-trash"></i></button>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Rapat Program Kerja</td>
+									<td>Konsep Acara Anjangsana</td>
+									<td>10 Desember 2022</td>
+									<td>
 
-									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-										data-target="#crudModalDoc" ><i
-											class="fas fa-upload"></i></td>
-								<td>
-									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-info"></i></button>
+										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+											data-target="#crudModalDoc" ><i
+												class="fas fa-upload"></i></td>
+									<td>
+										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-info"></i></button>
 
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-pen"></i></button>
-									</a>
+										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-pen"></i></button>
+										</a>
 
-									<button type="button" class="btn btn-sm btn-danger"><i
-											class="fas fa-trash"></i></button>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Rapat Program Kerja</td>
-								<td>Konsep Acara Open Recruitment HIMANIKA</td>
-								<td>20 Oktober 2022</td>
-								<td>
+										<button type="button" class="btn btn-sm btn-danger"><i
+												class="fas fa-trash"></i></button>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Rapat Program Kerja</td>
+									<td>Konsep Acara Open Recruitment HIMANIKA</td>
+									<td>20 Oktober 2022</td>
+									<td>
 
-									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-										data-target="#crudModalDoc" ><i
-											class="fas fa-upload"></i></td>
-								<td>
-									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-info"></i></button>
+										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+											data-target="#crudModalDoc" ><i
+												class="fas fa-upload"></i></td>
+									<td>
+										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-info"></i></button>
 
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-pen"></i></button>
-									</a>
+										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-pen"></i></button>
+										</a>
 
-									<button type="button" class="btn btn-sm btn-danger"><i
-											class="fas fa-trash"></i></button>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Rapat Program Kerja</td>
-								<td>Konsep Acara Management Informatics Competition</td>
-								<td>2 November 2022</td>
-								<td>
+										<button type="button" class="btn btn-sm btn-danger"><i
+												class="fas fa-trash"></i></button>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Rapat Program Kerja</td>
+									<td>Konsep Acara Management Informatics Competition</td>
+									<td>2 November 2022</td>
+									<td>
 
-									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-										data-target="#crudModalDoc" ><i
-											class="fas fa-upload"></i></td>
-								<td>
-									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-info"></i></button>
+										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+											data-target="#crudModalDoc" ><i
+												class="fas fa-upload"></i></td>
+									<td>
+										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-info"></i></button>
 
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-pen"></i></button>
-									</a>
+										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-pen"></i></button>
+										</a>
 
-									<button type="button" class="btn btn-sm btn-danger"><i
-											class="fas fa-trash"></i></button>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>Rapat Resmi</td>
-								<td>Rapat Akhir Tahun Periode</td>
-								<td>10 Desember 2022</td>
-								<td>
+										<button type="button" class="btn btn-sm btn-danger"><i
+												class="fas fa-trash"></i></button>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Rapat Resmi</td>
+									<td>Rapat Akhir Tahun Periode</td>
+									<td>10 Desember 2022</td>
+									<td>
 
-									<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
-										data-target="#crudModalDoc" ><i
-											class="fas fa-upload"></i></td>
-								<td>
-									<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-info"></i></button>
+										<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+											data-target="#crudModalDoc" ><i
+												class="fas fa-upload"></i></td>
+									<td>
+										<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-info"></i></button>
 
-									<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-										data-target="#crudModal"><i class="fas fa-pen"></i></button>
-									</a>
+										<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+											data-target="#crudModal"><i class="fas fa-pen"></i></button>
+										</a>
 
-									<button type="button" class="btn btn-sm btn-danger"><i
-											class="fas fa-trash"></i></button>
-									</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+										<button type="button" class="btn btn-sm btn-danger"><i
+												class="fas fa-trash"></i></button>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>

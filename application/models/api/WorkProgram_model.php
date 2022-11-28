@@ -343,19 +343,148 @@ class WorkProgram_model extends CI_Model {
       return $hasil;
     }
 
+    public function listbudget($params){
+      $length = intval($params['length']);
+      $start = intval($params['start']);
+      $draw = $params['draw'];
+      $sort = (!empty($params['sort'])) ? "ORDER BY anggaran_proker.id " . $this->db->escape_str($params['sort']) : "";
+      $search = $params['search']['value'];
+      $id = (!empty($params['id'])) ? $params['id'] : "";
+      $proker_id = (!empty($params['proker_id'])) ? $params['proker_id'] : "";
+      
+      $paging = ($length > 0) ? "LIMIT $start, $length" : "";
 
-    public function getbudget($params){
+      $filter = "WHERE anggaran_proker.id IS NOT NULL";
+      (!empty($id)) ? $filter .= " AND anggaran_proker.id = " . $this->db->escape($id) : "";
+      (!empty($proker_id)) ? $filter .= " AND anggaran_proker.proker_id = " . $this->db->escape($proker_id) : "";
+      (!empty($search)) ? $filter .= " AND anggaran_proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%'" : "";
+
+      $recordsTotal = $this->db->query("
+        SELECT 
+          anggaran_proker.id,
+          anggaran_proker.nama,
+          (
+            SELECT count(id) FROM detail_anggaran_proker WHERE anggaran_proker_id = anggaran_proker.id
+          ) as jumlah_detail
+        FROM
+          anggaran_proker
+        $filter
+      ")->num_rows();
+
+      $get_anggaran_proker = $this->db->query("
+        SELECT 
+          anggaran_proker.id,
+          anggaran_proker.nama,
+          (
+            SELECT count(id) FROM detail_anggaran_proker WHERE anggaran_proker_id = anggaran_proker.id
+          ) as jumlah_detail
+        FROM
+          anggaran_proker
+        $filter
+        $sort
+        $paging
+      ")->result_array();
+
+      $no = 0;
+      $hasil['error'] = false;
+      $hasil['message'] = "success";
+      $hasil['data'] = array();
+      $hasil['draw'] = $draw;
+      $hasil['recordsTotal'] = $recordsTotal;
+      $hasil['recordsFiltered'] = $recordsTotal;
+      foreach ($get_anggaran_proker as $key) {
+        $hasil['data'][$no++] = $key;
+      }
+      goto output;
+
+      output:
+      return $hasil;
+    }
+
+    public function addbudget($params){
+      $nama = $params['nama'];
+      $proker_id = $params['proker_id'];
+      
+      if (empty($nama)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Nama belum diisi."
+        );
+        goto output;
+      } else if (empty($proker_id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Program Kerja belum dipilih."
+        );
+        goto output;
+      }
+
+      $tambah = $this->db->insert('anggaran_proker', array(
+        'nama' => $nama,
+        'proker_id' => $proker_id
+      ));
+
+      if ($tambah) {
+        $hasil = array(
+          'error' => false,
+          'message' => "Anggaran berhasil ditambahkan."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Anggaran gagal ditambahkan."
+      );
+
+      output:
+      return $hasil;
+    }
+
+    public function deletebudget($params){
+      $id = $params['id'];
+      
+      if (empty($id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Anggaran belum dipilih."
+        );
+        goto output;
+      }
+
+      $delete = $this->db->delete('anggaran_proker', ['id' => $id]);
+
+      if ($delete) {
+        $hasil = array(
+          'error' => false,
+          'message' => "Anggaran berhasil dihapus."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Anggaran gagal dihapus."
+      );
+
+      output:
+      return $hasil;
+    }
+
+    public function listbudgetdetail($params){
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
       $sort = (!empty($params['sort'])) ? "ORDER BY detail_anggaran_proker.id " . $this->db->escape_str($params['sort']) : "";
       $search = $params['search']['value'];
       $id = (!empty($params['id'])) ? $params['id'] : "";
+      $proker_id = (!empty($params['proker_id'])) ? $params['proker_id'] : "";
       
       $paging = ($length > 0) ? "LIMIT $start, $length" : "";
 
       $filter = "WHERE detail_anggaran_proker.id IS NOT NULL";
       (!empty($id)) ? $filter .= " AND detail_anggaran_proker.id = " . $this->db->escape($id) : "";
+      (!empty($proker_id)) ? $filter .= " AND anggaran_proker.proker_id = " . $this->db->escape($proker_id) : "";
       (!empty($search)) ? $filter .= " AND (detail_anggaran_proker.jenis_pengeluaran LIKE '%" . $this->db->escape_like_str($search) . "%' OR anggaran_proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
 
       $recordsTotal = $this->db->query("
@@ -365,6 +494,7 @@ class WorkProgram_model extends CI_Model {
           jumlah,
           satuan,
           harga,
+          anggaran_proker_id,
           anggaran_proker.nama as nama_anggaran
         FROM
           detail_anggaran_proker
@@ -379,6 +509,7 @@ class WorkProgram_model extends CI_Model {
           jumlah,
           satuan,
           harga,
+          anggaran_proker_id,
           anggaran_proker.nama as nama_anggaran
         FROM
           detail_anggaran_proker
@@ -399,6 +530,171 @@ class WorkProgram_model extends CI_Model {
         $hasil['data'][$no++] = $key;
       }
       goto output;
+
+      output:
+      return $hasil;
+    }
+
+    public function addbudgetdetail($params){
+      $anggaran_proker_id = $params['anggaran_proker_id'];
+      $jenis_pengeluaran = $params['jenis_pengeluaran'];
+      $jumlah = $params['jumlah'];
+      $satuan = $params['satuan'];
+      $harga = $params['harga'];
+      
+      if (empty($anggaran_proker_id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Anggaran tidak dipilih."
+        );
+        goto output;
+      } else if (empty($jenis_pengeluaran)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Jenis Pengeluaran belum diisi."
+        );
+        goto output;
+      } else if (empty($jumlah)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Jumlah belum diisi."
+        );
+        goto output;
+      } else if (empty($satuan)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Satuan belum diisi."
+        );
+        goto output;
+      } else if (empty($harga)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Harga belum diisi."
+        );
+        goto output;
+      }
+
+      $tambah = $this->db->insert('detail_anggaran_proker', array(
+        'anggaran_proker_id' => $anggaran_proker_id,
+        'jenis_pengeluaran' => $jenis_pengeluaran,
+        'jumlah' => $jumlah,
+        'satuan' => $satuan,
+        'harga' => $harga
+      ));
+
+      if ($tambah) {
+        $hasil = array(
+          'error' => false,
+          'message' => "Detail Anggaran berhasil ditambahkan."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Detail Anggaran gagal ditambahkan."
+      );
+
+      output:
+      return $hasil;
+    }
+
+    public function updatebudgetdetail($params){
+      $id = $params['id'];
+      $anggaran_proker_id = $params['anggaran_proker_id'];
+      $jenis_pengeluaran = $params['jenis_pengeluaran'];
+      $jumlah = $params['jumlah'];
+      $satuan = $params['satuan'];
+      $harga = $params['harga'];
+      
+      if (empty($id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Program Kerja belum dipilih."
+        );
+        goto output;
+      } else if (empty($anggaran_proker_id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Anggaran tidak dipilih."
+        );
+        goto output;
+      } else if (empty($jenis_pengeluaran)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Jenis Pengeluaran belum diisi."
+        );
+        goto output;
+      } else if (empty($jumlah)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Jumlah belum diisi."
+        );
+        goto output;
+      } else if (empty($satuan)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Satuan belum diisi."
+        );
+        goto output;
+      } else if (empty($harga)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Harga belum diisi."
+        );
+        goto output;
+      }
+
+      $update = $this->db->update('detail_anggaran_proker', array(
+        'anggaran_proker_id' => $anggaran_proker_id,
+        'jenis_pengeluaran' => $jenis_pengeluaran,
+        'jumlah' => $jumlah,
+        'satuan' => $satuan,
+        'harga' => $harga
+      ), ['id' => $id]);
+
+      if ($update) {
+        $hasil = array(
+          'error' => false,
+          'message' => "Detail Anggaran berhasil diupdate."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Detail Anggaran gagal diupdate."
+      );
+
+      output:
+      return $hasil;
+    }
+
+    public function deletebudgetdetail($params){
+      $id = $params['id'];
+      
+      if (empty($id)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Detail Anggaran belum dipilih."
+        );
+        goto output;
+      }
+
+      $delete = $this->db->delete('detail_anggaran_proker', ['id' => $id]);
+
+      if ($delete) {
+        $hasil = array(
+          'error' => false,
+          'message' => "Detail Anggaran berhasil dihapus."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Detail Anggaran gagal dihapus."
+      );
 
       output:
       return $hasil;

@@ -18,23 +18,25 @@
 								data-target="#crudModal"><i class="fas fa-plus"></i> Tambah Program Kerja</button>
 						</div>
 						<div class="card-body p-3 text-left">
-							<table class="table mb-0">
-								<thead class="bg-light">
-									<tr>
-										<th scope="col" class="border-0">No</th>
-										<th scope="col" class="border-0">Nama Program Kerja</th>
-										<th scope="col" class="border-0">Status</th>
-										<th scope="col" class="border-0">Tanggal</th>
-										<th scope="col" class="border-0">Total Pengeluaran</th>
-										<th scope="col" class="border-0">Anggaran</th>
-										<th scope="col" class="border-0">Dokumen</th>
-										<th scope="col" class="border-0">Aksi</th>
-									</tr>
-								</thead>
-								<tbody>
-									
-								</tbody>
-							</table>
+							<div class="table-responsive">
+								<table class="table mb-0">
+									<thead class="bg-light">
+										<tr>
+											<th scope="col" class="border-0">No</th>
+											<th scope="col" class="border-0">Nama Program Kerja</th>
+											<th scope="col" class="border-0">Status</th>
+											<th scope="col" class="border-0">Tanggal</th>
+											<th scope="col" class="border-0">Total Pengeluaran</th>
+											<th scope="col" class="border-0">Anggaran</th>
+											<th scope="col" class="border-0">Dokumen</th>
+											<th scope="col" class="border-0">Aksi</th>
+										</tr>
+									</thead>
+									<tbody>
+										
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>

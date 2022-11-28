@@ -38,8 +38,38 @@ class WorkProgram extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function budget_get(){
+    	$response = $this->workprogram->listbudget($this->get());
+    	$this->response($response);
+  	}
+
   	public function budget_post(){
-    	$response = $this->workprogram->getbudget($this->post());
+    	$response = $this->workprogram->addbudget($this->post());
+    	$this->response($response);
+  	}
+
+  	public function budget_delete(){
+    	$response = $this->workprogram->deletebudget($this->delete());
+    	$this->response($response);
+  	}
+
+  	public function budgetdetail_get(){
+    	$response = $this->workprogram->listbudgetdetail($this->get());
+    	$this->response($response);
+  	}
+
+  	public function budgetdetail_post(){
+    	$response = $this->workprogram->addbudgetdetail($this->post());
+    	$this->response($response);
+  	}
+
+  	public function budgetdetail_put(){
+    	$response = $this->workprogram->updatebudgetdetail($this->put());
+    	$this->response($response);
+  	}
+
+  	public function budgetdetail_delete(){
+    	$response = $this->workprogram->deletebudgetdetail($this->delete());
     	$this->response($response);
   	}
 

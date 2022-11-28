@@ -20,18 +20,20 @@
 					</div>
 				</div>
 				<div class="card-body p-3">
-					<table class="table mb-0">
-						<thead class="bg-light">
-							<tr>
-								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Nama Jabatan</th>
-								<th scope="col" class="border-0">Aksi</th>
-							</tr>
-						</thead>
-						<tbody>
+					<div class="table-responsive">
+						<table class="table mb-0">
+							<thead class="bg-light">
+								<tr>
+									<th scope="col" class="border-0">No</th>
+									<th scope="col" class="border-0">Nama Jabatan</th>
+									<th scope="col" class="border-0">Aksi</th>
+								</tr>
+							</thead>
+							<tbody>
 
-						</tbody>
-					</table>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>

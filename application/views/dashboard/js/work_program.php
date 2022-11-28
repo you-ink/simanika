@@ -238,7 +238,6 @@
 				      pesan,
 				      'success'
 				    )
-				    $("input#prokerName").val('')
 				    $("#crudModal").modal("hide")
 					load_work_program();
 					change_datatable_button();
@@ -278,7 +277,7 @@
 					      pesan,
 					      'success'
 					    )
-						load_division();
+						load_work_program();
 						change_datatable_button();
 					}
 				})
@@ -333,7 +332,6 @@
 						window.location.reload()
 					})
 
-				    $("input#prokerName").val('')
 				    $("#crudModal").modal("hide")
 					load_work_program();
 					change_datatable_button();
@@ -369,7 +367,6 @@
 						window.location.reload()
 					})
 
-				    $("input#prokerName").val('')
 				    $("#crudModal").modal("hide")
 					load_work_program();
 					change_datatable_button();

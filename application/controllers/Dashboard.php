@@ -116,6 +116,18 @@ class Dashboard extends CI_Controller {
 		$data['script'] = get_views('dashboard/js/homepage');
 		$this->load->view('app/dashboard/footer', $data);
 	}
+
+	public function homepage1()
+	{
+		$data['title'] = 'Simanika - Homepage';
+
+		$this->load->view('app/dashboard/header', $data);
+		$this->load->view('app/dashboard/sidebar', $data);
+		$this->load->view('app/dashboard/navbar', $data);
+		$this->load->view('dashboard/homepage1', $data);
+		$data['script'] = get_views('dashboard/js/homepage1');
+		$this->load->view('app/dashboard/footer', $data);
+	}
 }
 
 /* End of file Dashboard.php */

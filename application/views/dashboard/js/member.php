@@ -28,14 +28,32 @@
 							return meta.row + meta.settings._iDisplayStart + 1 + '.';
 						}
 					},
-					
+					{
+						data: 'nama'
+					},
+					{
+						data: 'email'
+					},
+					{
+						data: 'nim'
+					},
+					{
+						data: 'angkatan'
+					},
+					{
+						data: 'divisi'
+					},
+					{
+						data: 'jabatan'
+					},
+					{
+						data: 'telp'
+					},
 					{
 						data: null,
 						render: res => {
 							return `
 								<button type="button" class="btn btn-sm mb-1 btn-warning btn-detail-proker" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
-								<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-proker" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
 								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-proker" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
 							`;
 						}

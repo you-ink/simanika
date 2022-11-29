@@ -29,7 +29,8 @@
 	                <th scope="col" class="border-0">Email</th>
 	                <th scope="col" class="border-0">NIM</th>
 	                <th scope="col" class="border-0">Angkatan</th>
-	                <th scope="col" class="border-0">Golongan</th>
+	                <th scope="col" class="border-0">Divisi</th>
+					<th scope="col" class="border-0">Jabatan</th>
 	                <th scope="col" class="border-0">Telp</th>
 	                <th scope="col" class="border-0">Aksi</th>
 	              </tr>

@@ -18,25 +18,51 @@ class Member_model extends CI_Model {
 
       $recordsTotal = $this->db->query("
         SELECT 
-          divisi.id,
-          divisi.nama,
-          users.nama as ketua,
-          ketua_id
+          users.id,
+          users.nama,
+          users.telp,
+          users.email,
+          users.alamat,
+          users.status,
+          users.nim,
+          users.angkatan,
+          level.nama as level,
+          detail_user.bukti_kesanggupan,
+          detail_user.bukti_mahasiswa,
+          detail_user.tanggal_wawancara,
+          divisi.nama as divisi,
+          jabatan.nama as jabatan
         FROM
-          divisi
-        LEFT JOIN users ON users.id = divisi.ketua_id
+          users
+        LEFT JOIN level ON level.id = users.level_id
+        LEFT JOIN detail_user ON users.id = detail_user.user_id
+        LEFT JOIN divisi ON detail_user.divisi_id = divisi.id
+        LEFT JOIN jabatan ON detail_user.jabatan_id = jabatan.id
         $filter
       ")->num_rows();
 
-      $get_divisi = $this->db->query("
+      $get_users = $this->db->query("
         SELECT 
-          divisi.id,
-          divisi.nama,
-          users.nama as ketua,
-          ketua_id
+          users.id,
+          users.nama,
+          users.telp,
+          users.email,
+          users.alamat,
+          users.status,
+          users.nim,
+          users.angkatan,
+          level.nama as level,
+          detail_user.bukti_kesanggupan,
+          detail_user.bukti_mahasiswa,
+          detail_user.tanggal_wawancara,
+          divisi.nama as divisi,
+          jabatan.nama as jabatan
         FROM
-          divisi
-        LEFT JOIN users ON users.id = divisi.ketua_id
+          users
+        LEFT JOIN level ON level.id = users.level_id
+        LEFT JOIN detail_user ON users.id = detail_user.user_id
+        LEFT JOIN divisi ON detail_user.divisi_id = divisi.id
+        LEFT JOIN jabatan ON detail_user.jabatan_id = jabatan.id
         $filter
         $sort
         $paging
@@ -49,7 +75,7 @@ class Member_model extends CI_Model {
       $hasil['draw'] = $draw;
       $hasil['recordsTotal'] = $recordsTotal;
       $hasil['recordsFiltered'] = $recordsTotal;
-      foreach ($get_divisi as $key) {
+      foreach ($get_users as $key) {
         $hasil['data'][$no++] = $key;
       }
       goto output;

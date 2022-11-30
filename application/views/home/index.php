@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Arsha Bootstrap Template - Index</title>
+  <title>Homepage</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#services">Structure</a></li>
           <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -85,8 +85,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Better Solutions For Your Business</h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <h1>Himpunan Mahasiswa Program Studi manajemen Informatika</h1>
+          <h2>Diam mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -302,40 +302,81 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Struktur dan Tugas Pokok HIMANIKA</h2>
         </div>
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
+              <div class="divisi text-center">
+                <h4><a href="">KETUA UMUM</a></h4>
+                  <p>Bertanggung jawab terhadap organisasi imaprodi dan semua divisi agar tercapainya visi dan misi, serta korrdinasi dengan Himpunan mahasiswa Jurusan Teknologi Informasi (HMJTI)
+                  </p>
+                </div>
+              </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            <div class="divisi text-center">
+              <h4><a href="">WAKIL KETUA UMUM</a></h4>
+              <p>Membantu tugas dan wewenang ketua Umum HIMANIKA dan juga bertanggung jawab terhadap semua divisi</p>
+            </div>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <div class="divisi text-center">
+              <h4><a href="">SEKRETARIS</a></h4>
+              <p>Bertanggung jawab terhadap administrasi surat menyurat maupun laporan berdasarkan kebutuhan organisasi</p>
+            </div>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            <div class="divisi text-center">
+              <h4><a href="">BENDAHARA</a></h4>
+              <p>Bertanggung jawab terhadap pengelolaan dan pendistribusian keuangan organisasi</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+            <div class="divisi text-center">
+              <h4><a href="">DIVISI HUMAS</a></h4>
+              <p>Bertanggung jawab dalam menjalin komunikasi dan informasi di lingkungan internal Program Studi Manajemen Informatika,
+                serta menjalin komunikasi dan kerjasam di lingkungan luar Himpunan Program Studi manajemen Informatika maupun Politeknik Negeri Jember
+              </p>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+            <div class="divisi text-center">
+              <h4><a href="">DIVISI PSDM</a></h4>
+              <p>Terdiri dari 2 subdivisi, yaitu Subdivisi Minat Bakat (Akadmik & Non Akademik) dan SUbdivisi Kewirausahaan <br>
+              Subdivisi Minat Bakat bertanggung jawab dalam pengembangan sumber daya manusia di bidang akademik, guna meningkatkan
+              hardskill dan softskill Mahasiswa Program Studi manajemen Informatika dan di bidang non akademik, guna meningkatkan
+              prestasi olahraga Mahasiswa Program Studi Manajemen Informatika <br>
+              SUbdivisi Kewirausahaan bertanggung jawab dalam melakukan keewirausahaan guna mengembangkan kemampuan softskill untuk
+              meingkatkan technopreneur
+              </p>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+            <div class="divisi text-center">
+              <h4><a href="">DIVISI KOMINFO</a></h4>
+              <p>Bertanggung jawab dalam mengelola media komunikasi dan informasi untuk mempublikasikan aktivitas keorganisasian HIMANIKA
+                maupun informasi yang berkaitan dengan TI
+              </p>
+            </div>
             </div>
           </div>
 

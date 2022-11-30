@@ -559,7 +559,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kominfo">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
             <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Divisi PSDM</h4>
@@ -592,7 +592,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
             <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm1.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>DIvisi PSDM</h4>
+              <h4>Divisi PSDM</h4>
               <p>Pelantikan Pengurus HIMANIKA 2021/2022</p>
               <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi PSDM - Pelantikan Pengurus HIMANIKA 2021/2022"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -624,7 +624,7 @@
             <div class="portfolio-info">
               <h4>Divisi PSDM</h4>
               <p>MIC (Management Informatic Competitiion)</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi PSDM -MIC (Management Informatic COmpetitiion) "><i class="bx bx-plus"></i></a>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi PSDM -MIC (Management Informatic Competitiion) "><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>

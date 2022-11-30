@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Homepage</title>
+  <title>Simanika</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -520,7 +520,7 @@
 
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>HIMPUNAN MAHASISWA MANAJEMEN INFORMATIKA</h3>
+            <h3>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h3>
             <p> Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
@@ -773,7 +773,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Himpunan Mahasiswa Program studi Manajemen Informatika 2022</p>
+          <p>Himpunan Mahasiswa Program studi Manajemen Informatika</p>
         </div>
 
         <div class="row">

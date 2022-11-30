@@ -76,96 +76,11 @@ class Member_model extends CI_Model {
       $hasil['recordsTotal'] = $recordsTotal;
       $hasil['recordsFiltered'] = $recordsTotal;
       foreach ($get_users as $key) {
+        $key['file_bukti_kesanggupan'] = explode($key['id']."/", $key['bukti_kesanggupan'])[1];
+        $key['file_bukti_mahasiswa'] = explode($key['id']."/", $key['bukti_mahasiswa'])[1];
         $hasil['data'][$no++] = $key;
       }
       goto output;
-
-      output:
-      return $hasil;
-    }
-
-    public function add($params){
-      $nama = $params['nama'];
-      $ketua_id = $params['ketua_id'];
-      
-      if (empty($nama)) {
-        $hasil = array(
-          'error' => true,
-          'message' => "Nama belum diisi."
-        );
-        goto output;
-      } else if (empty($ketua_id)) {
-        $hasil = array(
-          'error' => true,
-          'message' => "Ketua belum dipilih."
-        );
-        goto output;
-      }
-
-      $tambah = $this->db->insert('divisi', array(
-        'nama' => $nama,
-        'ketua_id' => $ketua_id
-      ));
-
-      if ($tambah) {
-        $hasil = array(
-          'error' => false,
-          'message' => "Divisi berhasil ditambahkan."
-        );
-        goto output;
-      }
-
-      $hasil = array(
-        'error' => true,
-        'message' => "Divisi gagal ditambahkan."
-      );
-
-      output:
-      return $hasil;
-    }
-
-    public function update($params){
-      $id = $params['id'];
-      $nama = $params['nama'];
-      $ketua_id = $params['ketua_id'];
-      
-      if (empty($id)) {
-        $hasil = array(
-          'error' => true,
-          'message' => "Divisi belum dipilih."
-        );
-        goto output;
-      } else if (empty($nama)) {
-        $hasil = array(
-          'error' => true,
-          'message' => "Nama belum diisi."
-        );
-        goto output;
-      } else if (empty($ketua_id)) {
-        $hasil = array(
-          'error' => true,
-          'message' => "Ketua belum dipilih."
-        );
-        goto output;
-      }
-
-      $update = $this->db->update('divisi', array(
-        'nama' => $nama,
-        'ketua_id' => $ketua_id
-      ), ['id' => $id]);
-
-      if ($update) {
-        $hasil = array(
-          'error' => false,
-          'message' => "Divisi berhasil diupdate."
-        );
-        goto output;
-      }
-
-      $hasil = array(
-        'error' => true,
-        'message' => "Divisi gagal diupdate."
-      );
 
       output:
       return $hasil;
@@ -177,24 +92,24 @@ class Member_model extends CI_Model {
       if (empty($id)) {
         $hasil = array(
           'error' => true,
-          'message' => "Divisi belum dipilih."
+          'message' => "User belum dipilih."
         );
         goto output;
       }
 
-      $delete = $this->db->delete('divisi', ['id' => $id]);
+      $delete = $this->db->delete('users', ['id' => $id]);
 
       if ($delete) {
         $hasil = array(
           'error' => false,
-          'message' => "Divisi berhasil dihapus."
+          'message' => "User berhasil dihapus."
         );
         goto output;
       }
 
       $hasil = array(
         'error' => true,
-        'message' => "Divisi gagal dihapus."
+        'message' => "User gagal dihapus."
       );
 
       output:

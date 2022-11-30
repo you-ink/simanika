@@ -13,16 +13,6 @@ class Member extends REST_Controller{
     	$this->response($response);
   	}
 
-  	public function index_post(){
-    	$response = $this->member->add($this->post());
-    	$this->response($response);
-  	}
-
-  	public function index_put(){
-    	$response = $this->member->update($this->put());
-    	$this->response($response);
-  	}
-
   	public function index_delete(){
 	    $response = $this->member->delete($this->delete());
     	$this->response($response);

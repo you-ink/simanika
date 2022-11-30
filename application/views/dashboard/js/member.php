@@ -53,8 +53,8 @@
 						data: null,
 						render: res => {
 							return `
-								<button type="button" class="btn btn-sm mb-1 btn-warning btn-detail-proker" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
-								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-proker" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
+								<button type="button" class="btn btn-sm mb-1 btn-warning btn-detail-member" data-alamat="${res.alamat}" data-tanggalWawancara="${res.tanggal_wawancara}" data-buktiKesanggupan="${res.bukti_kesanggupan}" data-buktiMahasiswa="${res.bukti_mahasiswa}" data-fileBuktiKesanggupan="${res.file_bukti_kesanggupan}" data-fileBuktiMahasiswa="${res.file_bukti_mahasiswa}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
+								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-member" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
 							`;
 						}
 					}
@@ -87,10 +87,22 @@
 
 		load_member();
 
-		$('.btn-delete').on('click', function() {
+		$(document).on('click', ".btn-detail-member", function () {
+			$('#crudModal #tanggalWawancara').val($(this).attr('data-tanggalWawancara'))
+			$('#crudModal #alamatMember').val($(this).attr('data-alamat'))
+			$('#crudModal #buktiKesanggupanNama').html($(this).attr('data-fileBuktiKesanggupan'))
+			$('#crudModal #buktiKesanggupanInfo').html(`<a href="<?php echo base_url() ?>`+$(this).attr('data-buktiKesanggupan')+`">Lihat File</a>`)
+			$('#crudModal #buktiMahasiswaNama').html($(this).attr('data-fileBuktiMahasiswa'))
+			$('#crudModal #buktiMahasiswaInfo').html(`<a href="<?php echo base_url() ?>`+$(this).attr('data-buktiMahasiswa')+`">Lihat File</a>`)
+		})
+
+		$(document).on('click', ".btn-delete-member", function () {
+			let id = $(this).attr('data-id')
+			let nama = $(this).attr('data-name')
+
 			Swal.fire({
 			  title: 'Apakah anda yakin?',
-			  text: "Anda ingin menghapus data ini!",
+			  text: `Anda ingin menghapus data ${nama}!`,
 			  icon: 'warning',
 			  showCancelButton: true,
 			  confirmButtonColor: '#3085d6',
@@ -98,11 +110,29 @@
 			  confirmButtonText: 'Ya, hapus!'
 			}).then((result) => {
 			  if (result.isConfirmed) {
-			    Swal.fire(
-			      'Dihapus!',
-			      'Data berhasil dihapus.',
-			      'success'
-			    )
+			    data = {
+					id: $(this).attr('data-id')
+				}
+			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			  	callApi("DELETE", "member", data, function (req) {
+					pesan = req.message;
+					if (req.error == true) {
+						Swal.fire(
+					      'Gagal Dihapus!',
+					      pesan,
+					      'error'
+					    )
+					}else{
+						Swal.fire(
+					      'Dihapus!',
+					      pesan,
+					      'success'
+					    )
+						load_member();
+						change_datatable_button();
+					}
+				})
+
 			  }
 			})
 		})

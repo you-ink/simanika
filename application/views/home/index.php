@@ -144,45 +144,66 @@
         <div class="section-title">
           <h2>APA ITU HIMANIKA ?</h2>
         </div>
-
         <div class="row content">
-          <div class="col-lg-18">
+          <div class="col xl-2 col-lg-15 mt-xl-10">
+          <div class="about text-center">
             <p>
-              Himpunan mahasiswa Program Studi Manajemen Informatika (HIMANIKA) adalah suatu organisasi yang menghimpun Program Studi Manajemen informatika yang ada di Politeknik Negeri Jember. Organisasi ini berada dalam naungan keluarga Mahasiswa Jurusan Teknologi Informasi Polteknik Negeri Jember.             </p>
+              Himpunan mahasiswa Program Studi Manajemen Informatika (HIMANIKA) adalah suatu organisasi yang menghimpun Program Studi Manajemen informatika yang ada di Politeknik Negeri Jember. Organisasi ini berada dalam naungan keluarga Mahasiswa Jurusan Teknologi Informasi Polteknik Negeri Jember.             
+            </p>
           </div>
-          
+          </div>
         </div>
+      </div>
+
+        <br> 
 
         <div class="section-title">
-          <h2>TUJUAN HIMANIKA ?</h2>
+          <h2>TUJUAN HIMANIKA </h2>
+          </div>
         </div>
-
+        </div>
         <div class="row content">
-          <div class="col-lg-18">
+          <div class="col xl-2 col-lg-15 mt-xl-6">
+            <div class ="container p-2">
+          <div class="about text-center">
             <p>
               Organisasi ini bertujuan sebagai wadah untuk merekatkan kekeluargaan seluruh Mahasiswa Manajemen Informatika. Alumni Manajemen Inofrmatika serta menjalin hubungan baik dengan organisasi luar HIMANIKA guna menjaga keutuhan keluarga besar Jurusan Teknologi Informasi di Politeknik Negeri Jember.</p>
           </div>
-
-          <div class="section-title">
-          <h2>PENGURUS HIMANIKA ?</h2>
+          </div>
+          </div>
         </div>
 
+          <br>
+
+          <div class="section-title">
+          <h2>PENGURUS HIMANIKA </h2>
+        </div>
         <div class="row content">
-          <div class="col-lg-18">
+        <div class="col xl-2 col-lg-15 mt-xl-6">
+        <div class ="container p-2">
+          <div class="about text-center">
             <p>
               Pengurus Himpunan Mahasiswa Program Studi Manajemen Informatika merupakan mahasiswa aktif program studi Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember. Adapun susunan pengurus ialah ketua, wakil ketua, sekretaris, bendahara, dan koordinator divisi.</p>
           </div>
-
-          <div class="section-title">
-          <h2>ANGGOTA HIMANIKA ?</h2>
+          </div>
+        </div>
         </div>
 
+          <br>
+
+          <div class="section-title">
+          <h2>ANGGOTA HIMANIKA </h2>
+        </div>
         <div class="row content">
-          <div class="col-lg-18">
+        <div class="col xl-2 col-lg-15 mt-xl-6">
+        <div class ="container p-2">
+          <div class="about text-center">
             <p>
               Anggota Himpunan Mahasiswa Program Studi Manajemen Informatika adalah seluruh Mahasiswa Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember yang terdiri dari mahasiswa aktif dan alumni.</p>
           </div>
-          
+          </div>
+        </div>
+        </div>
         </div>
 
 

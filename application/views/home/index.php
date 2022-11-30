@@ -85,7 +85,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Himpunan Mahasiswa Program Studi manajemen Informatika</h1>
+          <h1>Himpunan Mahasiswa Program Studi Manajemen Informatika</h1>
           <h2>Diam mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -776,11 +776,11 @@
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Youtobe:</h4>
+                <h4>Youtube:</h4>
                 <p>Himanika Polije</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe class="Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7898.907339829851!2d113.7199978!3d-8.156963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sState%20Polytechnic%20of%20Jember!5e0!3m2!1sen!2sid!4v1655120996527!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
           </div>
@@ -828,10 +828,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Join Our Organization</h4><br>
+            <h5>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h5>
+            <p>Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="Join">
             </form>
           </div>
         </div>

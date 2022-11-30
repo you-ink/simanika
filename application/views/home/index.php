@@ -214,10 +214,6 @@
     <section id="why-us" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
 
-  
-
-      </div>
-
         <div class="row">
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
@@ -764,20 +760,12 @@
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
                 <p>Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121. Polteknik Negeri Jember</p>
-              
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-                  <div class ="container p-2">
-                  </div>
-                </div>
+              </div>
 
               <div class="instagram">
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <i class="bi bi-envelope"></i>
                 <h4>Instagram:</h4>
                 <p>himanikapolije</p>
-                
-                <iframe src="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y=" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-                  <div class ="container p-2">
-                  </div>
               </div>
 
               <div class="email">
@@ -788,16 +776,13 @@
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Youtobe:</h4>
+                <h4>Youtube:</h4>
                 <p>Himanika Polije</p>
-
-                <iframe src="https://youtube.com/@himanikapolije6995" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-                  <div class ="container p-2">
-                  </div>
               </div>
 
-              </div>
-           
+              <iframe class="Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7898.907339829851!2d113.7199978!3d-8.156963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sState%20Polytechnic%20of%20Jember!5e0!3m2!1sen!2sid!4v1655120996527!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
@@ -873,28 +858,27 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Profile</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Structure</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Member</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Agenda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>About Us</h4>
+            <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Apa itu himanika?</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tujuan Himanika</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Pengurus Himanika</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Anggota Himanika</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak dipublikasikan. Silahkan hubungi saya melalui kontak form pada tautan berikut atau email kami.</p>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -910,14 +894,14 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. HimanikaPolije
+        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">A4</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->

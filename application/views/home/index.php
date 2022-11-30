@@ -785,12 +785,23 @@
                 <h4>Location:</h4>
                 <p>Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121. Polteknik Negeri Jember</p>
               </div>
+              <div>
+              <iframe class="Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7898.907339829851!2d113.7199978!3d-8.156963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sState%20Polytechnic%20of%20Jember!5e0!3m2!1sen!2sid!4v1655120996527!5m2!1sen!2sid" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <br>
 
               <div class="instagram">
                 <i class="bi bi-envelope"></i>
                 <h4>Instagram:</h4>
                 <p>himanikapolije</p>
               </div>
+
+              <div>
+              <iframe class="Maps" src="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y=" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <br>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
@@ -804,7 +815,9 @@
                 <p>Himanika Polije</p>
               </div>
 
-              <iframe class="Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7898.907339829851!2d113.7199978!3d-8.156963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sState%20Polytechnic%20of%20Jember!5e0!3m2!1sen!2sid!4v1655120996527!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <br>
+              <iframe class="Maps" src="https://youtube.com/@himanikapolije6995" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
           </div>

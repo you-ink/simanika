@@ -882,21 +882,22 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Profile</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Structure</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Member</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Agenda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>About us</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">kominfo Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">kominfo Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Apa itu Himanika?</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tujuan Himanika</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pengurus Himanika</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Anggota Himanika</a></li>
             </ul>
           </div>
 

@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="<?php echo base_url("assets/template/arsha/") ?>assets/img/favicon.png" rel="icon">
-  <link href="<?php echo base_url("assets/template/arsha/") ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?php echo base_url("assets/template/arsha/") ?>assets/img/humasle-touch-icon.png" rel="humasle-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -407,7 +407,7 @@
               Subdivisi Minat Bakat bertanggung jawab dalam pengembangan sumber daya manusia di bidang akademik, guna meningkatkan
               hardskill dan softskill Mahasiswa Program Studi manajemen Informatika dan di bidang non akademik, guna meningkatkan
               prestasi olahraga Mahasiswa Program Studi Manajemen Informatika <br>
-              SUbdivisi Kewirausahaan bertanggung jawab dalam melakukan keewirausahaan guna mengembangkan kemampuan softskill untuk
+              Subdivisi Kewirausahaan bertanggung jawab dalam melakukan keewirausahaan guna mengembangkan kemampuan softskill untuk
               meingkatkan technopreneur
               </p>
             </div>
@@ -435,7 +435,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Kepengurusan HIMANIKA Tahun Periode 2022/2023</h2>
+          <h2>Kepengurusan HIMANIKA Tahun Periode 2021/2022</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -537,104 +537,104 @@
 
         <div class="section-title">
           <h2>Rekapitulasi Agenda Kegiatan HIMANIKA</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Dokumentasi Kegiatan Himpunan Mahasiswa Manajemen Informatika Tahun Periode 2021/2022</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
           <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
+          <li data-filter=".filter-humas">Humas</li>
+          <li data-filter=".filter-psdm">PSDM</li>
+          <li data-filter=".filter-kominfo">Kominfo</li>
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-humas">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas1.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <h4>Divisi Humas</h4>
+              <p>HIMANIKA Takjil On The Road</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi Humas - HIMANIKA Takjil On The Road"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-kominfo">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <h4>Divisi PSDM</h4>
+              <p>Open Requitment Pengurus HIMANIKA 2022/2023</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi PSDM - Open Requitment Pengurus HIMANIKA 2022/2023"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-humas">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas2.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <h4>Divisi Humas</h4>
+              <p>Halal Bihalal</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi Humas - Halal Bihalal"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-kominfo">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/kominfo1.jpeg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <h4>Divisi Kominfo</h4>
+              <p>Jasa Desain Grafis</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/kominfo1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi Kominfo - Jasa Desain Grafis"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm1.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <h4>DIvisi PSDM</h4>
+              <p>Pelantikan Pengurus HIMANIKA 2021/2022</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi PSDM - Pelantikan Pengurus HIMANIKA 2021/2022"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-humas">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas3.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <h4>Divisi Humas</h4>
+              <p>Gathering MIF 2022</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi Humas - Gathering MIF 2022"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm2.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <h4>Divisi PSDM</h4>
+              <p>Lepas Pisah Kaprodi MIF</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi PSDM - Lepas Pisah Kaprodi MIF"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm3.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <h4>Divisi PSDM</h4>
+              <p>MIC (Management Informatic Competitiion)</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi PSDM -MIC (Management Informatic COmpetitiion) "><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-humas">
+            <div class="portfolio-img"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas4.jpeg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <h4>Divisi Humas</h4>
+              <p>Anjangsana HIMAPRODI JTI</p>
+              <a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Proker Divisi Humas - Anjangsana HIMAPRODI JTI"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -892,8 +892,8 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">kominfo Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">kominfo Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>

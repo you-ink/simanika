@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">SIMANIKA</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -142,30 +142,49 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>APA ITU HIMANIKA ?</h2>
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
+          <div class="col-lg-18">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
+              Himpunan mahasiswa Program Studi Manajemen Informatika (HIMANIKA) adalah suatu organisasi yang menghimpun Program Studi Manajemen informatika yang ada di Politeknik Negeri Jember. Organisasi ini berada dalam naungan keluarga Mahasiswa Jurusan Teknologi Informasi Polteknik Negeri Jember.             </p>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
-          </div>
+          
         </div>
+
+        <div class="section-title">
+          <h2>TUJUAN HIMANIKA ?</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-18">
+            <p>
+              Organisasi ini bertujuan sebagai wadah untuk merekatkan kekeluargaan seluruh Mahasiswa Manajemen Informatika. Alumni Manajemen Inofrmatika serta menjalin hubungan baik dengan organisasi luar HIMANIKA guna menjaga keutuhan keluarga besar Jurusan Teknologi Informasi di Politeknik Negeri Jember.</p>
+          </div>
+
+          <div class="section-title">
+          <h2>PENGURUS HIMANIKA ?</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-18">
+            <p>
+              Pengurus Himpunan Mahasiswa Program Studi Manajemen Informatika merupakan mahasiswa aktif program studi Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember. Adapun susunan pengurus ialah ketua, wakil ketua, sekretaris, bendahara, dan koordinator divisi.</p>
+          </div>
+
+          <div class="section-title">
+          <h2>ANGGOTA HIMANIKA ?</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-18">
+            <p>
+              Anggota Himpunan Mahasiswa Program Studi Manajemen Informatika adalah seluruh Mahasiswa Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember yang terdiri dari mahasiswa aktif dan alumni.</p>
+          </div>
+          
+        </div>
+
 
       </div>
     </section><!-- End About Us Section -->
@@ -668,7 +687,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Himpunan Mahasiswa Program studi Manajemen Informatika 2022</p>
         </div>
 
         <div class="row">
@@ -678,19 +697,25 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121. Polteknik Negeri Jember</p>
+              </div>
+
+              <div class="instagram">
+                <i class="bi bi-envelope"></i>
+                <h4>Instagram:</h4>
+                <p>himanikapolije</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>himanikamif@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <h4>Youtobe:</h4>
+                <p>Himanika Polije</p>
               </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -756,13 +781,13 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
+            <h3>SIMANIKA</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+            Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121. Polteknik Negeri Jember <br>
+            <br> 
+            <strong>Instagram:</strong> himanikapolije<br>
+              <strong>Email:</strong>himanikamif@gmail.com<br>
+              <strong>Youtobe:</strong> Himanika Polije<br>
             </p>
           </div>
 
@@ -771,7 +796,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Structure</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>

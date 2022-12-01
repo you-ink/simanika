@@ -72,8 +72,8 @@
             </ul>
           </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="login.php">Login</a></li>
-          <li><a class="getstarted scrollto" href="register.php">Register</a></li>
+          <li><a class="getstarted scrollto" href="<?php echo base_url('auth/login') ?>" >Login</a></li>
+          <li><a class="getstarted scrollto" href="<?php echo base_url('auth/register') ?>" >Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -524,7 +524,7 @@
             <p> Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Let's Join</a>
+            <a class="cta-btn align-middle" href="https://bit.ly/PendaftaranHimanika2023">Let's Join</a>
           </div>
         </div>
 

@@ -90,8 +90,8 @@
           <h1>Himpunan Mahasiswa Program Studi Manajemen Informatika</h1>
           <h2>Diam mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Subscribe</a>
-            <a href="https://youtube.com/shorts/tQdHn8wbtBA?feature=share" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <a href="#footer" class="btn-get-started scrollto">Subscribe</a>
+            <a href="https://www.youtube.com/watch?v=RAx8Hv8Wg9c" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -105,7 +105,7 @@
   <main id="main">
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
+    <section id="clients" class="clients section-bg pt-4">
       <div class="container P-5">
         <h1>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h1>
 
@@ -208,8 +208,6 @@
                     </p>
                   </div>
                 </li>
-
-                
               </ul>
             </div>
       </div>
@@ -403,9 +401,9 @@
             <div class="icon-box">
             <div class="divisi text-center">
               <h4><a href="">DIVISI PSDM</a></h4>
-              <p>Terdiri dari 2 subdivisi, yaitu Subdivisi Minat Bakat (Akadmik & Non Akademik) dan SUbdivisi Kewirausahaan <br>
+              <p>Terdiri dari 2 subdivisi, yaitu Subdivisi Minat Bakat (Akademik & Non Akademik) dan Subdivisi Kewirausahaan <br>
               Subdivisi Minat Bakat bertanggung jawab dalam pengembangan sumber daya manusia di bidang akademik, guna meningkatkan
-              hardskill dan softskill Mahasiswa Program Studi manajemen Informatika dan di bidang non akademik, guna meningkatkan
+              hardskill dan softskill Mahasiswa Program Studi Manajemen Informatika dan di bidang non akademik, guna meningkatkan
               prestasi olahraga Mahasiswa Program Studi Manajemen Informatika <br>
               Subdivisi Kewirausahaan bertanggung jawab dalam melakukan keewirausahaan guna mengembangkan kemampuan softskill untuk
               meingkatkan technopreneur
@@ -773,7 +771,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Himpunan Mahasiswa Program studi Manajemen Informatika</p>
+          <p>Himpunan Mahasiswa Program Studi Manajemen Informatika Tahun Periode 2021/2022</p>
         </div>
 
         <div class="row">
@@ -868,8 +866,8 @@
             <h4>Join Our Organization</h4><br>
             <h5>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h5>
             <p>Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Join">
+            <form action="https://bit.ly/PendaftaranHimanika2023" method="post">
+              <input type="email" name="email"><input type="submit"value="Join">
             </form>
           </div>
         </div>
@@ -894,33 +892,33 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Profile</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Structure</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Member</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Agenda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#profile">Profile</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#structure">Structure</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#member">Member</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#activity">Activity</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>About us</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Apa itu Himanika?</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tujuan Himanika</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Pengurus Himanika</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Anggota Himanika</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Apa itu Himanika?</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Tujuan Himanika</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Pengurus Himanika</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Anggota Himanika</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Tentang Kami</h4>
-            <p>Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak dipublikasikan. Silahkan hubungi saya melalui kontak form pada tautan berikut atau email kami.</p>
+            <h4>Contact Us</h4>
+            <p>Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak dipublikasikan. Silahkan hubungi kami melalui kontak form pada tautan berikut atau email kami.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-youtube"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://youtube.com/@himanikapolije6995" class="twitter"><i class="bx bxl-youtube"></i></a>
+              <a href="https://chat.whatsapp.com/JI3BSUrHdzX5zApSuLZG3f" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+              <a href="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
           </div>
 
@@ -937,7 +935,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">Simanika</a>
+        Designed by <a  href="<?php echo base_url('home/') ?>" rel="nofollow">Simanika</a>
       </div>
     </div>
   </footer><!-- End Footer -->

@@ -133,8 +133,9 @@
 			</form>
 			</div>
 			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-confirm-update-proker">Update</button>
+				<button type="button" class="btn btn-primary btn-confirm-add-proker">Tambah</button>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Tambah</button>
 			</div>
 		</div>
 	</div>

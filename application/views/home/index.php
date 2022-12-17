@@ -759,54 +759,6 @@
 			</div>
 		</section><!-- End Activity Section -->
 
-		<!-- ======= Activity Section ======= -->
-		<section id="agenda" class="portfolio">
-			<div class="container" data-aos="fade-up">
-
-				<div class="section-title">
-					<h2>Agenda Kegiatan HIMANIKA Yang Masih Berjalan</h2>
-					<p>Informasi Himpunan Mahasiswa Manajemen Informatika Yang masih berjalan</p>
-				</div>
-
-				<ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-					<li data-filter="*" class="filter-active">All</li>
-					<li data-filter=".filter-humas_agenda">Humas</li>
-					<li data-filter=".filter-psdm_agenda">PSDM</li>
-					<li data-filter=".filter-kominfo_agenda">Kominfo</li>
-				</ul>
-
-				<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-psdm_agenda">
-						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg" class="img-fluid"
-								alt="">
-							<h4>Divisi PSDM</h4>
-							<p>Open Requitment Pengurus HIMANIKA 2022/2023</p>
-							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg"
-								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi PSDM - Open Requitment Pengurus HIMANIKA 2022/2023"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-kominfo_agenda">
-						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/kominfo1.jpeg"
-								class="img-fluid" alt="">
-							<h4>Divisi Kominfo</h4>
-							<p>Jasa Desain Grafis</p>
-							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/kominfo1.jpeg"
-								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi Kominfo - Jasa Desain Grafis"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</section><!-- End Activity Section -->
 
 
 		<!-- ======= Pricing Section ======= -->

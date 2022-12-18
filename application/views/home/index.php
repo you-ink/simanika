@@ -10,9 +10,10 @@
 	<meta content="" name="keywords">
 
 	<!-- Favicons -->
-	<link href="<?php echo base_url("assets/template/arsha/") ?>assets/img/favicon.png" rel="icon">
+	<link rel="icon" href="<?php echo base_url('assets/img/logo2-himanika.png') ?>" type="image/icon type">
+	<!-- <link href="<?php echo base_url("assets/template/arsha/") ?>assets/img/favicon.png" rel="icon">
 	<link href="<?php echo base_url("assets/template/arsha/") ?>assets/img/humasle-touch-icon.png"
-		rel="humasle-touch-icon">
+		rel="humasle-touch-icon"> -->
 
 	<!-- Google Fonts -->
 	<link
@@ -97,15 +98,15 @@
 				<div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
 					data-aos="fade-up" data-aos-delay="200">
 					<h1>Himpunan Mahasiswa Program Studi Manajemen Informatika</h1>
-					<h2>Diam mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
+					<h2>Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
 					<div class="d-flex justify-content-center justify-content-lg-start">
 						<a href="#footer" class="btn-get-started scrollto">Subscribe</a>
 						<a href="https://www.youtube.com/watch?v=RAx8Hv8Wg9c" class="glightbox btn-watch-video"><i
 								class="bi bi-play-circle"></i><span>Watch Video</span></a>
 					</div>
 				</div>
-				<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-					<img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/hero-img.png" class="img-fluid animated"
+				<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="300">
+					<img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/logo-himanika.png" class="img-fluid animated"
 						alt="">
 				</div>
 			</div>

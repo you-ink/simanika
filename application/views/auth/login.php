@@ -10,7 +10,7 @@
 	<title><?php echo $title ?></title>
 	<meta name="description" content="Official website Himpunan Mahasiswa Teknik Informatika (Himanika) POLIJE.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="<?php echo base_url('assets/img/icon.png') ?>" type="image/icon type">
+	<link rel="icon" href="<?php echo base_url('assets/img/logo2-himanika.png') ?>" type="image/icon type">
 
 	<?= stylesheet([
       'plugin/fontawesome/css/all.min.css',

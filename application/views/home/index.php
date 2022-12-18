@@ -162,7 +162,7 @@
 
 				<div class="main-content-container">
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-sm-6">
 							<div class="card card-small mb-4 pt-3">
 								<div class="card-header border-bottom">
 									<div class="content">
@@ -266,6 +266,8 @@
 					</ul>
 				</div>
 			</div>
+
+	
 
 		</section><!-- End Profile Section -->
 
@@ -512,15 +514,16 @@
 
         <div class="section-title">
           <h2>Kepengurusan HIMANIKA Tahun Periode 2021/2022</h2>
-          <p>Badan Pengurus Harian </p>
+          <p>Badan Pengurus Harian Himpunan Mahasiswa Program Studi Manajemen Informatika Tahun Periode 2021/2022 </p>
         </div>
 
 		
         <div class="row">
 
-          <div class="col-lg-6">
+          <div class="col-sm-6 mt-4-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/ketua.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/ketua.jpg" class="img-fluid"
+								alt=""></div>
               <div class="team-img">
                 <h4>Muhammad Rudy Darmawan</h4>
                 <span>Ketua Umum</span>
@@ -535,10 +538,11 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="col-sm-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/wakilketua.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/wakilketua.jpg" class="img-fluid"
+								alt=""></div>
+              <div class="team-img">
                 <h4>Atikah Nuri Hazma</h4>
                 <span>Wakil Ketua Umum</span>
                 <p>Manajemen Informatika Angkatan 2021</p>
@@ -552,10 +556,11 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4">
+          <div class="col-sm-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+				<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris1.jpg" class="img-fluid"
+								alt=""></div>
+              <div class="team-img">
                 <h4>Rahma Romadona Ayu Riswanti</h4>
                 <span>Sekretaris 1</span>
                 <p>Manajemen Informatika Angkatan 2020</p>
@@ -569,10 +574,11 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4">
+          <div class="col-sm-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris2.jpg" class="img-fluid"
+								alt=""></div>
+              <div class="team-img">
                 <h4>Mutia Budi Utami</h4>
                 <span>Sekretaris 2</span>
                 <p>Manajemen Informatika Angkatan 2021</p>
@@ -586,10 +592,11 @@
             </div>
           </div>
 
-		  <div class="col-lg-6 mt-4">
+		  <div class="col-sm-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="500">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara1.jpg" class="img-fluid"
+								alt=""></div>
+              <div class="team-img">
                 <h4>Nurlita Ayu Rakhmawati</h4>
                 <span>Bendahara 1</span>
                 <p>Manajemen Informatika Angkatan 2020</p>
@@ -603,10 +610,11 @@
             </div>
           </div>
 
-		  <div class="col-lg-6 mt-4">
+		  <div class="col-sm-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara2.jpg" class="img-fluid"
+								alt=""></div>
+              <div class="team-img">
                 <h4>Marisa Setya Anggraini</h4>
                 <span>Bendahara 2</span>
                 <p>Manajemen Informatika Angkatan 2021</p>
@@ -620,10 +628,11 @@
             </div>
           </div>
 
-		  <div class="col-lg-6 mt-4">
+		  <!-- <div class="col-sm-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="700">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kadivpsdm.jpg" class="img-fluid"
+								alt=""></div>
+              <div class="team-img">
                 <h4>Hamid Rafiud Derajad</h4>
                 <span>Kepala Divisi PSDM</span>
                 <p>Manajemen Informatika Angkatan 2020</p>
@@ -631,7 +640,7 @@
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href=""><i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -639,29 +648,12 @@
         </div>
 
 		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="800">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Aishanda Vania Aanisah</h4>
-                <span>CO Minat Bakat</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="900">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Siti Rusdaniah</h4>
-                <span>CO Kewirausahaan</span>
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/cominatbakatkewirausahaan.jpg" class="img-fluid"
+								alt=""></div>
+              <div class="team-img">
+                <h4>Aishanda Vania A. & Siti Rusdaniah</h4>
+                <span>CO Minat Bakat dan Co Kewirausahaan</span>
                 <p>Manajemen Informatika Angkatan 2021</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -676,8 +668,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="1000">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/lailatul.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Lailatul Nunawaroh & Nur Laili W</h4>
                 <span>Anggota Akademik PSDM</span>
                 <p>Manajemen Informatika Angkatan 2020</p>
@@ -694,8 +686,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/hendy.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Hendy Mawarid & Mufid Aditya Dafentri</h4>
                 <span>Anggota Akademik PSDM</span>
                 <p>Manajemen Informatika Angkatan 2020 & 2021</p>
@@ -712,8 +704,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/rafli.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>M Rafli Maulana & Raynaldi Wibowo</h4>
                 <span>Anggota NonAkademik PSDM</span>
                 <p>Manajemen Informatika Angkatan 2020</p>
@@ -730,8 +722,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/theo.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>M Daffa Izzaz Agung Theola & Dimas Rizqi Agung P
 				</h4>
                 <span>Anggota NonAkademik PSDM</span>
@@ -749,8 +741,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/afandi.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Ahmad Afandi & Ardella Setya Maharany
 				</h4>
                 <span>Anggota Kewirausahaan</span>
@@ -768,8 +760,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/nadila.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Nadila Devi Tsabita & Imratul Mukdalifah
 				</h4>
                 <span>Anggota Kewirausahaan</span>
@@ -787,8 +779,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/rizal.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Rizal Khoirul Anam & Thoriq Ayub Bahtiar
 				</h4>
                 <span>Anggota Akdemik & Non Akademik PSDM</span>
@@ -806,8 +798,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kadivhumas.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>M Basar Riski
 				</h4>
                 <span>Kepala Divisi HUMAS</span>
@@ -825,8 +817,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/fuad.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Fuad Hasyim Fanani
 				</h4>
                 <span>Anggota HUMAS</span>
@@ -843,8 +835,8 @@
         </div>
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/firda.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Firda Ulfa Unsilah
 				</h4>
                 <span>Anggota HUMAS</span>
@@ -862,8 +854,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kia.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Ananda Zakia Syahfitri
 				</h4>
                 <span>Anggota HUMAS</span>
@@ -881,8 +873,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/akbar.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Akbar Kusnadi
 				</h4>
                 <span>Anggota HUMAS</span>
@@ -900,8 +892,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kadivkominfo.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Lukman Afandi
 				</h4>
                 <span>Kepala Divisi KOMINFO</span>
@@ -919,8 +911,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/raehan.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Raehan Reza Mahendra
 				</h4>
                 <span>Anggota KOMINFO</span>
@@ -938,8 +930,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/yoga.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Yoga Saputra
 				</h4>
                 <span>Anggota KOMINFO</span>
@@ -957,8 +949,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/ranin.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Ranin Nabila
 				</h4>
                 <span>Anggota KOMINFO</span>
@@ -976,8 +968,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/andika.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Mohammad Andika Alsabfandi
 				</h4>
                 <span>Anggota KOMINFO</span>
@@ -995,8 +987,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/anam.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Khoirul Anam
 				</h4>
                 <span>Anggota KOMINFO</span>
@@ -1014,8 +1006,8 @@
 
 		<div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/herman.jpg" class="img-fluid"
+								alt=""></div>
                 <h4>Muhammad Herman Maulana
 				</h4>
                 <span>Anggota KOMINFO</span>
@@ -1029,9 +1021,7 @@
               </div>
             </div>
           </div>
-        </div>
-
-		
+        </div> -->
 
       </div>
     </section><!-- End member Section -->
@@ -1385,8 +1375,10 @@
 
 
 							<br>
-							<iframe class="Maps" src="https://youtube.com/@himanikapolije6995" width="100%" height="250"
-								frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<iframe class="Maps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" 
+							height="250" type="text/html" src="https://www.youtube.com/embed/4P71C-72r3U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+							<!-- <iframe class="Maps" src="https://www.youtube.com/watch?v=RAx8Hv8Wg9c" width="100%" height="250"
+								frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 						</div>
 
 					</div>

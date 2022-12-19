@@ -16,8 +16,7 @@
 		rel="humasle-touch-icon"> -->
 
 	<!-- Google Fonts -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
 		rel="stylesheet">
 
 	<!-- Vendor CSS Files -->
@@ -30,7 +29,8 @@
 		rel="stylesheet">
 	<link href="<?php echo base_url("assets/template/arsha/") ?>assets/vendor/glightbox/css/glightbox.min.css"
 		rel="stylesheet">
-	<link href="<?php echo base_url("assets/template/arsha/") ?>assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+	<link href="<?php echo base_url("assets/template/arsha/") ?>assets/vendor/remixicon/remixicon.css"
+		rel="stylesheet">
 	<link href="<?php echo base_url("assets/template/arsha/") ?>assets/vendor/swiper/swiper-bundle.min.css"
 		rel="stylesheet">
 
@@ -82,7 +82,8 @@
           </li> -->
 					<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
 					<li><a class="getstarted scrollto" href="<?php echo base_url('auth/login') ?>">Login</a></li>
-					<li><a class="getstarted scrollto" href="<?php echo base_url('auth/register') ?>">Register</a></li>
+					<li><a class="getstarted scrollto" href="<?php echo base_url('auth/register') ?>">Register</a>
+					</li>
 				</ul>
 				<i class="bi bi-list mobile-nav-toggle"></i>
 			</nav><!-- .navbar -->
@@ -106,8 +107,8 @@
 					</div>
 				</div>
 				<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="300">
-					<img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/logo-himanika.png" class="img-fluid animated"
-						alt="">
+					<img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/logo-himanika.png"
+						class="img-fluid animated" alt="">
 				</div>
 			</div>
 		</div>
@@ -160,114 +161,54 @@
 					<h2>VISI & MISI HIMANIKA</h2>
 				</div>
 
-				<div class="main-content-container">
+				<div class="main-content-container container-fluid">
 					<div class="row">
-						<div class="col-sm-6">
+
+						<div class="col-lg-6">
 							<div class="card card-small mb-4 pt-3">
 								<div class="card-header border-bottom">
-									<div class="content">
-										<h3>VISI</h3>
+									<div class="content pt-2 px-4">
+										<h3 style="color:DodgerBlue;">VISI</h3>
 									</div>
 								</div>
-                <div class="col">
+								<div class="col px-2">
 									<p>
-										<span style="color:DodgerBlue;">01</span> Mewujudkan HIMANIKA sebagai suatu media pembelajaran yang mencerdaskan mahasiswa dan
+										<span style="color:DodgerBlue;">01</span> Mewujudkan HIMANIKA sebagai
+										suatu media pembelajaran yang mencerdaskan mahasiswa dan
 										menciptakan suatu kenyamanan dalam Program Studi manajemen Informatika
 									</p>
 									<p>
-										<span style="color:DodgerBlue;">02</span> Menjadikan HIMANIKA sebagai fasilitator kepada mahasiswa untuk berpartisipasi dalam
+										<span style="color:DodgerBlue;">02</span> Menjadikan HIMANIKA sebagai
+										fasilitator kepada mahasiswa untuk berpartisipasi dalam
 										berbagai kegiatan atau hal positif
 									</p>
-                </div>
+								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-6">
 							<div class="card card-small mb-4 pt-3">
 								<div class="card-header border-bottom">
-									<div class="content m-0">
+									<div class="content pt-4">
 										<h3>MISI</h3>
 									</div>
 								</div>
-                <div class="col">
-                <p>
-									<span style="color:DodgerBlue;">01</span> Mengadakan pelatihan yang mendukung peningkatan pengetahuan dan skill dari setiap
-									mahasiswa
-								</p>
-								<p>
-									<span style="color:DodgerBlue;">02</span> Mewadahi kreativitas mahasiswa untuk mengembangkan suatu kemampuan yang dimiliki
-								</p>
-                </div>
+								<div class="col mb-4">
+									<p>
+										<span style="color:DodgerBlue;">01</span> Mengadakan pelatihan yang
+										mendukung peningkatan pengetahuan dan skill dari setiap
+										mahasiswa
+									</p>
+									<p>
+										<span style="color:DodgerBlue;">02</span> Mewadahi kreativitas
+										mahasiswa untuk mengembangkan suatu kemampuan yang dimiliki
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-						<div class="content">
-							<h3>VISI</h3>
-						</div>
-						<div class="accordion-list">
-							<ul>
-								<li>
-									<!-- <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> -->
-									<!-- <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list"> -->
-									<p>
-										<span>01</span> Mewujudkan HIMANIKA sebagai suatu media pembelajaran yang mencerdaskan mahasiswa dan
-										menciptakan suatu kenyamanan dalam Program Studi manajemen Informatika
-									</p>
-									<!-- </div> -->
-								</li>
-
-								<li>
-									<!-- <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list"> -->
-									<p>
-										<span>02</span> Menjadikan HIMANIKA sebagai fasilitator kepada mahasiswa untuk berpartisipasi dalam
-										berbagai kegiatan atau hal positif
-									</p>
-						</div>
-						</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			</div>
-			<div class="row">
-
-				<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-3 order-lg-1">
-
-					<div class="content">
-						<h3>MISI</h3>
-					</div>
-
-					<div class="accordion-list">
-						<ul>
-							<li>
-								<!-- <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a> -->
-								<!-- <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list"> -->
-								<p>
-									<span>01</span> Mengadakan pelatihan yang mendukung peningkatan pengetahuan dan skill dari setiap
-									mahasiswa
-								</p>
-								<!-- </div> -->
-							</li>
-
-							<li>
-								<!-- <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list"> -->
-								<p>
-									<span>02</span> Mewadahi kreativitas mahasiswa untuk mengembangkan suatu kemampuan yang dimiliki
-								</p>
-					</div>
-					</li>
-					</ul>
-				</div>
-			</div>
-
-	
 
 		</section><!-- End Profile Section -->
 
@@ -282,9 +223,12 @@
 					<div class="col xl-2 col-lg-15 mt-xl-10">
 						<div class="about text-center">
 							<p>
-								Himpunan mahasiswa Program Studi Manajemen Informatika (HIMANIKA) adalah suatu organisasi yang
-								menghimpun Program Studi Manajemen informatika yang ada di Politeknik Negeri Jember. Organisasi ini
-								berada dalam naungan keluarga Mahasiswa Jurusan Teknologi Informasi Polteknik Negeri Jember.
+								Himpunan mahasiswa Program Studi Manajemen Informatika (HIMANIKA) adalah suatu
+								organisasi yang
+								menghimpun Program Studi Manajemen informatika yang ada di Politeknik Negeri
+								Jember. Organisasi ini
+								berada dalam naungan keluarga Mahasiswa Jurusan Teknologi Informasi Polteknik
+								Negeri Jember.
 							</p>
 						</div>
 					</div>
@@ -303,9 +247,12 @@
 					<div class="container p-2">
 						<div class="about text-center">
 							<p>
-								Organisasi ini bertujuan sebagai wadah untuk merekatkan kekeluargaan seluruh Mahasiswa Manajemen
-								Informatika. Alumni Manajemen Inofrmatika serta menjalin hubungan baik dengan organisasi luar HIMANIKA
-								guna menjaga keutuhan keluarga besar Jurusan Teknologi Informasi di Politeknik Negeri Jember.</p>
+								Organisasi ini bertujuan sebagai wadah untuk merekatkan kekeluargaan seluruh
+								Mahasiswa Manajemen
+								Informatika. Alumni Manajemen Inofrmatika serta menjalin hubungan baik dengan
+								organisasi luar HIMANIKA
+								guna menjaga keutuhan keluarga besar Jurusan Teknologi Informasi di Politeknik
+								Negeri Jember.</p>
 						</div>
 					</div>
 				</div>
@@ -321,8 +268,10 @@
 					<div class="container p-2">
 						<div class="about text-center">
 							<p>
-								Pengurus Himpunan Mahasiswa Program Studi Manajemen Informatika merupakan mahasiswa aktif program studi
-								Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember. Adapun susunan pengurus
+								Pengurus Himpunan Mahasiswa Program Studi Manajemen Informatika merupakan
+								mahasiswa aktif program studi
+								Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember.
+								Adapun susunan pengurus
 								ialah ketua, wakil ketua, sekretaris, bendahara, dan koordinator divisi.</p>
 						</div>
 					</div>
@@ -339,8 +288,10 @@
 					<div class="container p-2">
 						<div class="about text-center">
 							<p>
-								Anggota Himpunan Mahasiswa Program Studi Manajemen Informatika adalah seluruh Mahasiswa Manajemen
-								Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember yang terdiri dari mahasiswa aktif dan
+								Anggota Himpunan Mahasiswa Program Studi Manajemen Informatika adalah seluruh
+								Mahasiswa Manajemen
+								Informatika Jurusan Teknologi Informasi Politeknik Negeri Jember yang terdiri
+								dari mahasiswa aktif dan
 								alumni.</p>
 						</div>
 					</div>
@@ -414,11 +365,13 @@
 				</div>
 
 				<div class="row">
-					<div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+					<div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in"
+						data-aos-delay="100">
 						<div class="icon-box">
 							<div class="divisi text-center">
 								<h4><a href="">KETUA UMUM</a></h4>
-								<p>Bertanggung jawab terhadap organisasi imaprodi dan semua divisi agar tercapainya visi dan misi, serta
+								<p>Bertanggung jawab terhadap organisasi imaprodi dan semua divisi agar
+									tercapainya visi dan misi, serta
 									korrdinasi dengan Himpunan mahasiswa Jurusan Teknologi Informasi (HMJTI)
 								</p>
 							</div>
@@ -430,7 +383,8 @@
 						<div class="icon-box">
 							<div class="divisi text-center">
 								<h4><a href="">WAKIL KETUA UMUM</a></h4>
-								<p>Membantu tugas dan wewenang ketua Umum HIMANIKA dan juga bertanggung jawab terhadap semua divisi</p>
+								<p>Membantu tugas dan wewenang ketua Umum HIMANIKA dan juga bertanggung jawab
+									terhadap semua divisi</p>
 							</div>
 						</div>
 					</div>
@@ -440,7 +394,8 @@
 						<div class="icon-box">
 							<div class="divisi text-center">
 								<h4><a href="">SEKRETARIS</a></h4>
-								<p>Bertanggung jawab terhadap administrasi surat menyurat maupun laporan berdasarkan kebutuhan
+								<p>Bertanggung jawab terhadap administrasi surat menyurat maupun laporan
+									berdasarkan kebutuhan
 									organisasi</p>
 							</div>
 						</div>
@@ -451,7 +406,8 @@
 						<div class="icon-box">
 							<div class="divisi text-center">
 								<h4><a href="">BENDAHARA</a></h4>
-								<p>Bertanggung jawab terhadap pengelolaan dan pendistribusian keuangan organisasi</p>
+								<p>Bertanggung jawab terhadap pengelolaan dan pendistribusian keuangan
+									organisasi</p>
 							</div>
 						</div>
 					</div>
@@ -461,9 +417,11 @@
 						<div class="icon-box">
 							<div class="divisi text-center">
 								<h4><a href="">DIVISI HUMAS</a></h4>
-								<p>Bertanggung jawab dalam menjalin komunikasi dan informasi di lingkungan internal Program Studi
+								<p>Bertanggung jawab dalam menjalin komunikasi dan informasi di lingkungan
+									internal Program Studi
 									Manajemen Informatika,
-									serta menjalin komunikasi dan kerjasam di lingkungan luar Himpunan Program Studi manajemen Informatika
+									serta menjalin komunikasi dan kerjasam di lingkungan luar Himpunan Program
+									Studi manajemen Informatika
 									maupun Politeknik Negeri Jember
 								</p>
 							</div>
@@ -475,14 +433,18 @@
 						<div class="icon-box">
 							<div class="divisi text-center">
 								<h4><a href="">DIVISI PSDM</a></h4>
-								<p>Terdiri dari 2 subdivisi, yaitu Subdivisi Minat Bakat (Akademik & Non Akademik) dan Subdivisi
+								<p>Terdiri dari 2 subdivisi, yaitu Subdivisi Minat Bakat (Akademik & Non
+									Akademik) dan Subdivisi
 									Kewirausahaan <br>
-									Subdivisi Minat Bakat bertanggung jawab dalam pengembangan sumber daya manusia di bidang akademik,
+									Subdivisi Minat Bakat bertanggung jawab dalam pengembangan sumber daya
+									manusia di bidang akademik,
 									guna meningkatkan
-									hardskill dan softskill Mahasiswa Program Studi Manajemen Informatika dan di bidang non akademik, guna
+									hardskill dan softskill Mahasiswa Program Studi Manajemen Informatika dan
+									di bidang non akademik, guna
 									meningkatkan
 									prestasi olahraga Mahasiswa Program Studi Manajemen Informatika <br>
-									Subdivisi Kewirausahaan bertanggung jawab dalam melakukan keewirausahaan guna mengembangkan kemampuan
+									Subdivisi Kewirausahaan bertanggung jawab dalam melakukan keewirausahaan
+									guna mengembangkan kemampuan
 									softskill untuk
 									meingkatkan technopreneur
 								</p>
@@ -495,7 +457,8 @@
 						<div class="icon-box">
 							<div class="divisi text-center">
 								<h4><a href="">DIVISI KOMINFO</a></h4>
-								<p>Bertanggung jawab dalam mengelola media komunikasi dan informasi untuk mempublikasikan aktivitas
+								<p>Bertanggung jawab dalam mengelola media komunikasi dan informasi untuk
+									mempublikasikan aktivitas
 									keorganisasian HIMANIKA
 									maupun informasi yang berkaitan dengan TI
 								</p>
@@ -508,127 +471,134 @@
 			</div>
 		</section><!-- End Structure Section -->
 
-    <!-- ======= Member Section ======= -->
-    <section id="member" class="team section-bg">
-      <div class="container" data-aos="fade-up">
+		<!-- ======= Member Section ======= -->
+		<section id="member" class="team section-bg">
+			<div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Kepengurusan HIMANIKA Tahun Periode 2021/2022</h2>
-          <p>Badan Pengurus Harian Himpunan Mahasiswa Program Studi Manajemen Informatika Tahun Periode 2021/2022 </p>
-        </div>
+				<div class="section-title">
+					<h2>Kepengurusan HIMANIKA Tahun Periode 2021/2022</h2>
+					<p>Badan Pengurus Harian Himpunan Mahasiswa Program Studi Manajemen Informatika Tahun Periode
+						2021/2022 </p>
+				</div>
 
-		
-        <div class="row">
 
-          <div class="col-sm-6 mt-4-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/ketua.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Muhammad Rudy Darmawan</h4>
-                <span>Ketua Umum</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
+				<div class="row">
 
-          <div class="col-sm-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/wakilketua.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Atikah Nuri Hazma</h4>
-                <span>Wakil Ketua Umum</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
+					<div class="col-sm-6 mt-4-lg-0">
+						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+							<div class="pic"><img
+									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/ketua.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="team-img">
+								<h4>Muhammad Rudy Darmawan</h4>
+								<span>Ketua Umum</span>
+								<p>Manajemen Informatika Angkatan 2020</p>
+								<div class="social">
+									<a href=""><i class="ri-twitter-fill"></i></a>
+									<a href=""><i class="ri-facebook-fill"></i></a>
+									<a href=""><i class="ri-instagram-fill"></i></a>
+									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="col-sm-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-				<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris1.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Rahma Romadona Ayu Riswanti</h4>
-                <span>Sekretaris 1</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
+					<div class="col-sm-6 mt-4 mt-lg-0">
+						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+							<div class="pic"><img
+									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/wakilketua.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="team-img">
+								<h4>Atikah Nuri Hazma</h4>
+								<span>Wakil Ketua Umum</span>
+								<p>Manajemen Informatika Angkatan 2021</p>
+								<div class="social">
+									<a href=""><i class="ri-twitter-fill"></i></a>
+									<a href=""><i class="ri-facebook-fill"></i></a>
+									<a href=""><i class="ri-instagram-fill"></i></a>
+									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="col-sm-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris2.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Mutia Budi Utami</h4>
-                <span>Sekretaris 2</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
+					<div class="col-sm-6 mt-4">
+						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+							<div class="pic"><img
+									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris1.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="team-img">
+								<h4>Rahma Romadona Ayu Riswanti</h4>
+								<span>Sekretaris 1</span>
+								<p>Manajemen Informatika Angkatan 2020</p>
+								<div class="social">
+									<a href=""><i class="ri-twitter-fill"></i></a>
+									<a href=""><i class="ri-facebook-fill"></i></a>
+									<a href=""><i class="ri-instagram-fill"></i></a>
+									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="500">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara1.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Nurlita Ayu Rakhmawati</h4>
-                <span>Bendahara 1</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
+					<div class="col-sm-6 mt-4">
+						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+							<div class="pic"><img
+									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris2.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="team-img">
+								<h4>Mutia Budi Utami</h4>
+								<span>Sekretaris 2</span>
+								<p>Manajemen Informatika Angkatan 2021</p>
+								<div class="social">
+									<a href=""><i class="ri-twitter-fill"></i></a>
+									<a href=""><i class="ri-facebook-fill"></i></a>
+									<a href=""><i class="ri-instagram-fill"></i></a>
+									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-		  <div class="col-sm-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara2.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Marisa Setya Anggraini</h4>
-                <span>Bendahara 2</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
+					<div class="col-sm-6 mt-4">
+						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="500">
+							<div class="pic"><img
+									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara1.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="team-img">
+								<h4>Nurlita Ayu Rakhmawati</h4>
+								<span>Bendahara 1</span>
+								<p>Manajemen Informatika Angkatan 2020</p>
+								<div class="social">
+									<a href=""><i class="ri-twitter-fill"></i></a>
+									<a href=""><i class="ri-facebook-fill"></i></a>
+									<a href=""><i class="ri-instagram-fill"></i></a>
+									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-		  <!-- <div class="col-sm-6 mt-4">
+					<div class="col-sm-6 mt-4">
+						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
+							<div class="pic"><img
+									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara2.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="team-img">
+								<h4>Marisa Setya Anggraini</h4>
+								<span>Bendahara 2</span>
+								<p>Manajemen Informatika Angkatan 2021</p>
+								<div class="social">
+									<a href=""><i class="ri-twitter-fill"></i></a>
+									<a href=""><i class="ri-facebook-fill"></i></a>
+									<a href=""><i class="ri-instagram-fill"></i></a>
+									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="col-sm-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="700">
 			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kadivpsdm.jpg" class="img-fluid"
 								alt=""></div>
@@ -1023,8 +993,8 @@
           </div>
         </div> -->
 
-      </div>
-    </section><!-- End member Section -->
+				</div>
+		</section><!-- End member Section -->
 
 
 
@@ -1038,7 +1008,8 @@
 						<p> Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
 					</div>
 					<div class="col-lg-3 cta-btn-container text-center">
-						<a class="cta-btn align-middle" href="https://bit.ly/PendaftaranHimanika2023">Let's Join</a>
+						<a class="cta-btn align-middle" href="https://bit.ly/PendaftaranHimanika2023">Let's
+							Join</a>
 					</div>
 				</div>
 
@@ -1054,7 +1025,8 @@
 					<p>Dokumentasi Kegiatan Himpunan Mahasiswa Manajemen Informatika Tahun Periode 2021/2022</p>
 				</div>
 
-				<ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+				<ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up"
+					data-aos-delay="100">
 					<li data-filter="*" class="filter-active">All</li>
 					<li data-filter=".filter-humas">Humas</li>
 					<li data-filter=".filter-psdm">PSDM</li>
@@ -1065,113 +1037,127 @@
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-humas">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas1.jpg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas1.jpg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi Humas</h4>
 							<p>HIMANIKA Takjil On The Road</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas1.jpg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi Humas - HIMANIKA Takjil On The Road"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+								title="Proker Divisi Humas - HIMANIKA Takjil On The Road"><i
+									class="bx bx-plus"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-humas">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas2.jpg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas2.jpg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi Humas</h4>
 							<p>Halal Bihalal</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas2.jpg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
 								title="Proker Divisi Humas - Halal Bihalal"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm1.jpg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm1.jpg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi PSDM</h4>
 							<p>Pelantikan Pengurus HIMANIKA 2021/2022</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm1.jpg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi PSDM - Pelantikan Pengurus HIMANIKA 2021/2022"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+								title="Proker Divisi PSDM - Pelantikan Pengurus HIMANIKA 2021/2022"><i
+									class="bx bx-plus"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-humas">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas3.jpg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas3.jpg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi Humas</h4>
 							<p>Gathering MIF 2022</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas3.jpg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
 								title="Proker Divisi Humas - Gathering MIF 2022"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm2.jpg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm2.jpg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi PSDM</h4>
 							<p>Lepas Pisah Kaprodi MIF</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm2.jpg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi PSDM - Lepas Pisah Kaprodi MIF"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+								title="Proker Divisi PSDM - Lepas Pisah Kaprodi MIF"><i
+									class="bx bx-plus"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm3.jpg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm3.jpg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi PSDM</h4>
 							<p>MIC (Management Informatic Competitiion)</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm3.jpg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi PSDM -MIC (Management Informatic Competitiion) "><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+								title="Proker Divisi PSDM -MIC (Management Informatic Competitiion) "><i
+									class="bx bx-plus"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-humas">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas4.jpeg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas4.jpeg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi Humas</h4>
 							<p>Anjangsana HIMAPRODI JTI</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/humas4.jpeg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi Humas - Anjangsana HIMAPRODI JTI"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+								title="Proker Divisi Humas - Anjangsana HIMAPRODI JTI"><i
+									class="bx bx-plus"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 portfolio-item filter-psdm">
 						<div class="portfolio-img"><img
-								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg" class="img-fluid"
-								alt=""></div>
+								src="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg"
+								class="img-fluid" alt=""></div>
 						<div class="portfolio-info">
 							<h4>Divisi PSDM</h4>
 							<p>Open Requitment Pengurus HIMANIKA 2022/2023</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/psdm4.jpeg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi PSDM - Open Requitment Pengurus HIMANIKA 2022/2023"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+								title="Proker Divisi PSDM - Open Requitment Pengurus HIMANIKA 2022/2023"><i
+									class="bx bx-plus"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
@@ -1184,8 +1170,10 @@
 							<p>Jasa Desain Grafis</p>
 							<a href="<?php echo base_url("assets/template/arsha/") ?>assets/img/portfolio/kominfo1.jpeg"
 								data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-								title="Proker Divisi Kominfo - Jasa Desain Grafis"><i class="bx bx-plus"></i></a>
-							<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+								title="Proker Divisi Kominfo - Jasa Desain Grafis"><i
+									class="bx bx-plus"></i></a>
+							<a href="portfolio-details.html" class="details-link" title="More Details"><i
+									class="bx bx-link"></i></a>
 						</div>
 					</div>
 
@@ -1335,14 +1323,15 @@
 							<div class="address">
 								<i class="bi bi-geo-alt"></i>
 								<h4>Location:</h4>
-								<p>Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121. Polteknik
+								<p>Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember,
+									Jawa Timur 68121. Polteknik
 									Negeri Jember</p>
 							</div>
 							<div>
 								<iframe class="Maps"
 									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7898.907339829851!2d113.7199978!3d-8.156963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sState%20Polytechnic%20of%20Jember!5e0!3m2!1sen!2sid!4v1655120996527!5m2!1sen!2sid"
-									width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-									tabindex="0"></iframe>
+									width="100%" height="250" frameborder="0" style="border:0;"
+									allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 							</div>
 
 							<br>
@@ -1354,9 +1343,10 @@
 							</div>
 
 							<div>
-								<iframe class="Maps" src="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y=" width="100%"
-									height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-									tabindex="0"></iframe>
+								<iframe class="Maps"
+									src="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y=" width="100%"
+									height="250" frameborder="0" style="border:0;" allowfullscreen=""
+									aria-hidden="false" tabindex="0"></iframe>
 							</div>
 
 							<br>
@@ -1375,8 +1365,9 @@
 
 
 							<br>
-							<iframe class="Maps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" 
-							height="250" type="text/html" src="https://www.youtube.com/embed/4P71C-72r3U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+							<iframe class="Maps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+								width="100%" height="250" type="text/html"
+								src="https://www.youtube.com/embed/4P71C-72r3U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
 							<!-- <iframe class="Maps" src="https://www.youtube.com/watch?v=RAx8Hv8Wg9c" width="100%" height="250"
 								frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 						</div>
@@ -1444,7 +1435,8 @@
 					<div class="col-lg-3 col-md-6 footer-contact">
 						<h3>SIMANIKA</h3>
 						<p>
-							Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121. Polteknik
+							Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur
+							68121. Polteknik
 							Negeri Jember <br>
 							<br>
 							<strong>Instagram:</strong> himanikapolije<br>
@@ -1478,14 +1470,16 @@
 
 					<div class="col-lg-3 col-md-6 footer-links">
 						<h4>Contact Us</h4>
-						<p>Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak dipublikasikan. Silahkan
+						<p>Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak
+							dipublikasikan. Silahkan
 							hubungi kami melalui kontak form pada tautan berikut atau email kami.</p>
 						<div class="social-links mt-3">
-							<a href="https://youtube.com/@himanikapolije6995" class="twitter"><i class="bx bxl-youtube"></i></a>
+							<a href="https://youtube.com/@himanikapolije6995" class="twitter"><i
+									class="bx bxl-youtube"></i></a>
 							<a href="https://chat.whatsapp.com/JI3BSUrHdzX5zApSuLZG3f" class="whatsapp"><i
 									class="bx bxl-whatsapp"></i></a>
-							<a href="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y=" class="instagram"><i
-									class="bx bxl-instagram"></i></a>
+							<a href="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y="
+								class="instagram"><i class="bx bxl-instagram"></i></a>
 						</div>
 					</div>
 

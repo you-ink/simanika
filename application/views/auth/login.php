@@ -29,25 +29,30 @@
 	<div class="container">
 		<!-- Outer Row -->
 		<div class="row justify-content-center">
-			<div class="col-xl-10 col-lg-12 col-md-9">
+			<div class="col-xl-9 col-lg-12 col-md-9">
 				<div class="card o-hidden border-0 shadow-lg my-5">
 					<div class="card-body p-0">
 						<!-- Nested Row within Card Body -->
 						<div class="row" style="background-color:black;">
-							<div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                <img src="<?php echo base_url() ?>assets/img/logo.png" alt="simanika">
-                            </div>
-							<div class="col-lg-6" style="background-color:Black">
+							<div class="col-lg-5 d-none d-lg-block bg-login-image pt-5">
+								<div class="col-md-2">
+									<img src="<?php echo base_url() ?>assets/img/logo.png" alt="simanika">
+								</div>
+								
+							</div>
+							<div class="col-lg-7" style="background-color:Black">
 								<div class="p-5">
 									<div>
-										<h1 class="h5" style="color:white;">Hello !</h1> 
-										<h1 class="h5 mb-4" style="color:DodgerBlue;">Welcome To SIMANIKA !</h1>
-										<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;">Login </span>Your Account</h1>  
+										<h1 class="h5" style="color:white;">Hello !</h1>
+										<h1 class="h5 mb-4" style="color:#4FCAF7;">Welcome To SIMANIKA !</h1>
 									</div>
+									<hr color="white">
+									<h1 class="h5 mb-4 text-center" style="color:white;"><span
+												style="Color:DodgerBlue;">Login </span>Your Account</h1>
 									<form class="user" action="login.php" method="POST">
 										<div class="form-group">
-											<input type="text" class="form-control form-control-user" name="txt_email"
-												placeholder="user name" required>
+											<input type="text" class="form-control form-control-user"
+												name="txt_email" placeholder="user name" required>
 										</div>
 										<div class="form-group">
 											<input type="password" class="form-control form-control-user"

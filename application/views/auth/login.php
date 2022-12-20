@@ -43,8 +43,9 @@
 							<div class="col-lg-7" style="background-color:Black">
 								<div class="p-5">
 									<div>
-										<h1 class="h5" style="color:white;">Hello !</h1>
-										<h1 class="h5 mb-4" style="color:#4FCAF7;">Welcome To SIMANIKA !</h1>
+										<h1 class="h5 mb-0" style="color:white;"><span><b>Hello !</b></span></h1> 
+										<h1 class="h5 mb-4" style="color:DodgerBlue;"><span><b>Welcome To SIMANIKA !</b></span></h1>
+										<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;"><b>Login </b></span>Your Account</h1>  
 									</div>
 									<hr color="white">
 									<h1 class="h5 mb-4 text-center" style="color:white;"><span

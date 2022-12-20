@@ -189,8 +189,8 @@
 						<div class="col-lg-6">
 							<div class="card card-small mb-4 pt-3">
 								<div class="card-header border-bottom">
-									<div class="content pt-4">
-										<h3>MISI</h3>
+									<div class="content pt-4 px-4">
+									<h3 style="color:DodgerBlue;">MISI</h3>
 									</div>
 								</div>
 								<div class="col mb-4">
@@ -202,6 +202,18 @@
 									<p>
 										<span style="color:DodgerBlue;">02</span> Mewadahi kreativitas
 										mahasiswa untuk mengembangkan suatu kemampuan yang dimiliki
+									</p>
+									<p>
+										<span style="color:DodgerBlue;">03</span> Mengembangkan branding media sosial guna 
+										meningkatkan informasi dan komunikasi
+									</p>
+									<p>
+										<span style="color:DodgerBlue;">04</span> Mengaktifkan fungsi media sosial sebagai 
+										sarana pembelajaran berbasis online untuk kemajuan mahasiswa
+									</p>
+									<p>
+										<span style="color:DodgerBlue;">05</span> Melakukan kegiatan sharing bersama antara
+										dosen, alumni, dan mahasiswa aktif untuk menciptakan inovasi baru
 									</p>
 								</div>
 							</div>

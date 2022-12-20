@@ -42,34 +42,38 @@
 							</div>
 							<div class="col-lg-7" style="background-color:Black">
 								<div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h3 mb-0" style="color:white;"><span><b>SIMANIKA</b></span></h1> <br>
+									</div>
 									<div>
-										<h1 class="h5 mb-0" style="color:white;"><span><b>Hello !</b></span></h1> 
-										<h1 class="h5 mb-4" style="color:DodgerBlue;"><span><b>Welcome To SIMANIKA !</b></span></h1>
+										<h1 class="h4 mb-4" style="color:DodgerBlue;"><span><b>Forgot Your Password ?</b></span></h1>
 									</div>
 									<hr color="white">
-									<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;"><b>Login </b></span>Your Account</h1>  
+                                    <h6 class="text-white mb-4">Enter the email the address associated with your account </h6> <br>
+									<!-- <h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;"><b>Login </b></span>Your Account</h1>   -->
 									<form class="user" action="login.php" method="POST">
 										<div class="form-group">
 											<input type="text" class="form-control form-control-user"
-												name="txt_email" placeholder="user name" required>
+												name="txt_email" placeholder="Enter your email" required>
 										</div>
-										<div class="form-group">
+										<!-- <div class="form-group">
 											<input type="password" class="form-control form-control-user"
 												name="txt_pass" placeholder="password" required>
-										</div>
+										</div> -->
 										<div>
 											<input class="btn btn-primary btn-user btn-block" type="submit"
-												name="submit" value="Login">
+												name="submit" value="Confirm">
 										</div>
 									</form>
-									<div class="row">
-									    <div class="text-left col-6">
-										    <a class="small text-white mb-4" href="<?php echo base_url('register') ?>">Create an Account!</a>
+									<hr>
+                                    <!-- <div class="col-sm-6 mt-4-lg-0">
+									    <div class="text-left">
+										    <a class="small" href="register.php">Create an Account!</a>
                                         </div>
-                                        <div class="text-right col-6">
-										<a class="small text-white mb-4" href="<?php echo base_url('forgotpassword') ?>">Forgot Your Password?</a>
+                                        <div class="text-right">
+										    <a class="small" href="forgotpassword.php">Forgot Your Password?</a>
                                         </div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>

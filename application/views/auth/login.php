@@ -40,9 +40,9 @@
 							<div class="col-lg-6" style="background-color:Black">
 								<div class="p-5">
 									<div>
-										<h1 class="h5" style="color:white;">Hello !</h1> 
-										<h1 class="h5 mb-4" style="color:DodgerBlue;">Welcome To SIMANIKA !</h1>
-										<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;">Login </span>Your Account</h1>  
+										<h1 class="h5 mb-0" style="color:white;"><span><b>Hello !</b></span></h1> 
+										<h1 class="h5 mb-4" style="color:DodgerBlue;"><span><b>Welcome To SIMANIKA !</b></span></h1>
+										<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;"><b>Login </b></span>Your Account</h1>  
 									</div>
 									<form class="user" action="login.php" method="POST">
 										<div class="form-group">

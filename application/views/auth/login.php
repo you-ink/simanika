@@ -33,14 +33,16 @@
 				<div class="card o-hidden border-0 shadow-lg my-5">
 					<div class="card-body p-0">
 						<!-- Nested Row within Card Body -->
-						<div class="row">
-							<div class="col-lg-6 d-none d-lg-block bg-login-image">
+						<div class="row" style="background-color:black;">
+							<div class="col-lg-6 d-none d-lg-block bg-login-image" style="background-color:Black">
                                 <img src="<?php echo base_url() ?>assets/img/icon.png" alt="simanika">
                             </div>
-							<div class="col-lg-6">
+							<div class="col-lg-6 style="background-color:Black">
 								<div class="p-5">
-									<div class="text-center">
-										<h1 class="h4 text-gray-900 mb-4">Welcome Back To Simanika</h1>
+									<div>
+										<h1 class="h5" style="color:white;">Hello !</h1> 
+										<h1 class="h5 mb-4" style="color:DodgerBlue;">Welcome To SIMANIKA !</h1>
+										<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;">Login</span></h1>  
 									</div>
 									<form class="user" action="login.php" method="POST">
 										<div class="form-group">

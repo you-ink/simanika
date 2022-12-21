@@ -18,6 +18,16 @@ class Auth extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function check_token_reset_post(){
+    	$response = $this->auth->check_token_reset($this->post());
+    	$this->response($response);
+  	}
+
+  	public function resetpassword_post(){
+    	$response = $this->auth->resetpassword($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

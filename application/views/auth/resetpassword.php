@@ -48,18 +48,18 @@
 									</div>
 									<hr color="white">
 									<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;"><b>Reset </b></span>Your Password</h1>  
-									<form class="user" action="login.php" method="POST">
+									<form class="user">
 										<div class="form-group">
 											<input type="password" class="form-control form-control-user"
-                                            name="txt_pass" placeholder="New Password" required>
+                                            id="txt_pass" placeholder="New Password" required>
 										</div>
 										<div class="form-group">
 											<input type="password" class="form-control form-control-user"
-												name="txt_newpass" placeholder="Confirm password" required>
+												id="txt_confirmpass" placeholder="Confirm password" required>
 										</div>
 										<div>
-											<input class="btn btn-primary btn-user btn-block" type="submit"
-												name="submit" value="Confirm">
+											<button class="btn btn-primary btn-user btn-block btn-reset-password" type="submit"
+													name="submit">Confirm</button>
 										</div>
 									</form>
 								</div>
@@ -70,6 +70,76 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script>
+    	function get_api_url() {
+        	return "<?php echo base_url('api/') ?>";
+    	}
+  	</script>
+
+  	<?= script([
+	    'js/jquery-3.6.1.min.js',
+	    'plugin/bootstrap/js/bootstrap.bundle.min.js',
+	    'plugin/sweetalert2/sweetalert2.all.min.js',
+	    'js/main.js',
+  	]); ?>
+
+  	<script>
+		$(document).ready(function () {
+			(function () {
+				data = {
+					email: "<?php echo $_GET['email'] ?>",
+					token: "<?php echo $_GET['token'] ?>"
+				}
+
+				callApi("POST", "auth/check_token_reset", data, function (req) {
+					pesan = req.message;
+					if (req.error == true) {
+						Swal.fire(
+					      	'Error!',
+					      	pesan,
+					      	'error'
+					    ).then((result) => {
+					    	window.location.href = "<?php echo base_url() ?>"
+					    })
+					}
+				})
+			})();
+
+
+			$(document).on('click', '.btn-reset-password', function (e) {
+				e.preventDefault()
+				
+				data = {
+					email: "<?php echo $_GET['email'] ?>",
+					token: "<?php echo $_GET['token'] ?>",
+					password: $("input#txt_pass").val(),
+					confirm_password: $("input#txt_confirmpass").val()
+				}
+
+				callApi("POST", "auth/resetpassword", data, function (req) {
+					pesan = req.message;
+					if (req.error == true) {
+						Swal.fire(
+					      	'Gagal!',
+					      	pesan,
+					      	'error'
+					    )
+					}else{
+						Swal.fire(
+					      	'Berhasil!',
+					      	pesan,
+					      	'success'
+					    ).then((result) => {
+							window.location.href = "<?php echo base_url() ?>"
+						})
+					}
+				})
+			})
+		})
+  	</script>
+
 </body>
 
 </html>

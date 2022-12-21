@@ -53,8 +53,8 @@
 													id="txt_email" placeholder="Enter your email" required>
 											</div>
 											<div>
-												<input class="btn btn-primary btn-user btn-block btn-forgot-password" type="submit"
-													name="submit" value="Send Link">
+												<button class="btn btn-primary btn-user btn-block btn-forgot-password" type="submit"
+													name="submit">Send Link</button>
 											</div>
 										</form>
 									</div>
@@ -68,44 +68,52 @@
 	</div>
 
 	<script>
-      function get_api_url() {
-          return "<?php echo base_url('api/') ?>";
-      }
-    </script>
+    function get_api_url() {
+        return "<?php echo base_url('api/') ?>";
+    }
+  </script>
 
-    <?= script([
-      'js/jquery-3.6.1.min.js',
-      'plugin/bootstrap/js/bootstrap.bundle.min.js',
-      'plugin/sweetalert2/sweetalert2.all.min.js',
-      'js/main.js',
-    ]); ?>
+  <?= script([
+    'js/jquery-3.6.1.min.js',
+    'plugin/bootstrap/js/bootstrap.bundle.min.js',
+    'plugin/sweetalert2/sweetalert2.all.min.js',
+    'js/main.js',
+  ]); ?>
 
-    <script>
-			$(document).on('click', '.btn-forgot-password', function (e) {
-				e.preventDefault()
-				
-				data = {
-					email: $("input#txt_email").val()
+  <script>
+		$(document).on('click', '.btn-forgot-password', function (e) {
+			e.preventDefault()
+			$(this).html("<i class='fas fa-spinner fa-pulse'></i>")
+			$(this).attr('disabled', true)
+			
+			data = {
+				email: $("input#txt_email").val()
+			}
+
+			callApi("POST", "auth/forgotpassword", data, function (req) {
+				pesan = req.message;
+				if (req.error == true) {
+					Swal.fire(
+			      'Gagal!',
+			      pesan,
+			      'error'
+			    ).then((result) => {
+						$('.btn-forgot-password').html("Send Link")
+						$('.btn-forgot-password').attr('disabled', false)
+			    })
+				}else{
+					Swal.fire(
+		      	'Berhasil!',
+		      	pesan,
+		      	'success'
+		    	).then((result) => {
+						$('.btn-forgot-password').html("Send Link")
+						$('.btn-forgot-password').attr('disabled', false)
+			    })
 				}
-
-				callApi("POST", "auth/forgotpassword", data, function (req) {
-					pesan = req.message;
-					if (req.error == true) {
-						Swal.fire(
-					      'Gagal!',
-					      pesan,
-					      'error'
-					    )
-					}else{
-						Swal.fire(
-					      	'Berhasil!',
-					      	pesan,
-					      	'success'
-					    )
-					}
-				})
 			})
-    </script>
+		})
+  </script>
 
 </body>
 

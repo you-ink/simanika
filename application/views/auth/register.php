@@ -32,62 +32,96 @@
 		<div class="row justify-content-center">
 			<div class="col-xl-10 col-lg-12 col-md-9">
 				<div class="card o-hidden border-0 shadow-lg my-5">
-					<div class="card-body p-0">
+					<div class="card-body p-0" style="background-color:Black;">
 						<!-- Nested Row within Card Body -->
 						<div class="row">
 							<div class="col-lg-6 d-none d-lg-block bg-login-image">
-								<img src="<?php echo base_url() ?>assets/img/icon.png" alt="simanika">
+								<div class="col-13 pt-4">
+								<img src="<?php echo base_url() ?>assets/img/logo.png" alt="simanika"  style="width:400px;height:400px;">
+								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="p-5">
-									<div class="text-center">
-										<h1 class="h4 text-gray-900 mb-4"><span>REGISTER</h1>
+									<div class="text">
+										<h1 class="h4 mb-4" style="color:white;"><span>REGISTER</h1>
 									</div>
 									<div class="text-left">
-										<h6 class="h6 text-gray-900 mb-4">Thank You for joining us. Please register by 
+										<h6 class="h6 mb-4" style="color:white;">Thank You for joining us. Please
+											register by
 											completing the information below. </h6> <br>
-									<form>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="fefulltName">Nama Lengkap</label>
-												<input type="text" class="form-control" id="fefulltName"
-													placeholder="Nama lengkap"
-													value="Muhammad Rudy Darmawan"> </div>
-											<div class="form-group col-md-6">
-												<label for="feUserName">UserName</label>
-												<input type="text" class="form-control" id="feUserName"
-													placeholder="User Name" value="Rudydar"> </div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="feEmailAddress">Email</label>
-												<input type="email" class="form-control" id="feEmailAddress"
-													placeholder="Email" value="Rudy@gmail.com"> </div>
-											<div class="form-group col-md-6">
-												<label for="fePassword">Password</label>
-												<input type="password" class="form-control" id="fePassword"
-													placeholder="Password"> </div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="feNIM">NIM</label>
-												<input type="NIM" class="form-control" id="feNIM"
-													placeholder="NIM" value="E31200880"> </div>
-											<div class="form-group col-md-6">
-												<label for="feNoHp">NO HP</label>
-												<input type="NoHp" class="form-control" id="feNoHp"
-													placeholder="Nomer Hanphone" value="081236915399">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label for="fefulltName" style="color:white;">Nama Lengkap</label>
+													<input type="text" class="form-control"
+														id="fefulltName" placeholder="Nama lengkap"
+														value="Muhammad Rudy Darmawan"> </div>
+												<div class="form-group col-md-6">
+													<label for="feNIM" style="color:white;">NIM</label>
+													<input type="number" class="form-control" id="feNIM"
+														placeholder="NIM"> </div>
 											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label for="feEmailAddress" style="color:white;">Email</label>
+													<input type="email" class="form-control"
+														id="feEmailAddress" placeholder="Email"> </div>
+												<div class="form-group col-md-6">
+													<label for="fePassword" style="color:white;">Password</label>
+													<input type="password" class="form-control"
+														id="fePassword" placeholder="Password"> </div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label for="feAngkatan" style="color:white;">Angkatan</label>
+													<input type="Angkatan" class="form-control" id="feNoHp"
+														placeholder="Angkatan">
+												</div>
+												<div class="form-group col-md-6">
+													<label for="feNoHp" style="color:white;">NO HP</label>
+													<input type="NoHp" class="form-control" id="feNoHp"
+														placeholder="Nomer Hanphone">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-12">
+													<label style="color:white;">Alamat</label>
+													<textarea name="" id="alamat" rows="3"
+														class="form-control"></textarea>
+												</div>
+											</div>
+											<div class="from-row">
+												<div class="form-group">
+													<div class="form-group col-md-12">
+														<label style="color:white;">Bukti Kesanggupan</label>
+														<input id="tor" type="file"
+															accept=".pdf, .docx, .doc">
+													</div>
+													<div
+														class="form-group col-12 text-right btn--upload-file d-none">
+														<button type="button"
+															class="btn btn-sm btn-secondary btn--upload-tor">Upload</button>
+													</div>
+												</div>
+												<div class="from-group">
+													<div class="form-group col-md-12">
+														<label style="color:white;">Bukti Mahasiswa</label>
+														<input id="tor" type="file"
+															accept=".pdf, .docx, .doc">
+													</div>
+													<div
+														class="form-group col-12 text-right btn--upload-file d-none">
+														<button type="button"
+															class="btn btn-sm btn-secondary btn--upload-tor">Upload</button>
+													</div>
+												</div>
+											</div>
+										</form>
+										<hr>
+										<div class="text-center">
+											<a class="small" href="register.php" style="color:white;">Already have an account?
+												Login!</a>
 										</div>
-										<div>
-											<input class="btn btn-primary btn-user btn-block" type="submit"
-												name="submit" value="Register">
-										</div>
-									</form>
-									<hr>
-									<div class="text-center">
-										<a class="small" href="register.php">Already have an account?
-											Login!</a>
 									</div>
 								</div>
 							</div>
@@ -96,7 +130,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </body>
 
 </html>

@@ -11,7 +11,7 @@
 	<title><?php echo $title ?></title>
 	<meta name="description" content="Official website Himpunan Mahasiswa Teknik Informatika (Himanika) POLIJE.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="<?php echo base_url('assets/img/icon.png') ?>" type="image/icon type">
+	<link rel="icon" href="<?php echo base_url('assets/img/logo2-himanika.png') ?>" type="image/icon type">
 
 	<?= stylesheet([
       'plugin/fontawesome/css/all.min.css',
@@ -41,8 +41,11 @@
 							<div class="col-lg-6">
 								<div class="p-5">
 									<div class="text-center">
-										<h1 class="h4 text-gray-900 mb-4">Welcome To Simanika</h1>
+										<h1 class="h4 text-gray-900 mb-4"><span>REGISTER</h1>
 									</div>
+									<div class="text-left">
+										<h6 class="h6 text-gray-900 mb-4">Thank You for joining us. Please register by 
+											completing the information below. </h6> <br>
 									<form>
 										<div class="form-row">
 											<div class="form-group col-md-6">

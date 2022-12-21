@@ -74,6 +74,67 @@ class Auth_model extends CI_Model {
       return $hasil;
     }
 
+    public function forgotpassword($params){
+      $email = $params['email'];
+
+      if (empty($email)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Email belum diisi."
+        );
+        goto output;
+      }
+
+      $forgot_token = generate_unique_id();
+
+      $this->load->library('phpmailer_lib');
+        
+      // PHPMailer object
+      $mail = $this->phpmailer_lib->load();
+      
+      // SMTP configuration
+      $mail->isSMTP();
+      $mail->Host     = 'smtp.gmail.com';
+      $mail->SMTPAuth = true;
+      $mail->Username = env("mail_username");
+      $mail->Password = env("mail_password");
+      $mail->SMTPSecure = 'ssl';
+      $mail->Port     = 465;
+
+      $mail->isHTML(true);
+      $mail->setFrom(env("mail_username"), 'No-reply '.env("mail_name"));
+      $mail->addReplyTo(env("mail_username"), 'No-reply '.env("mail_name"));
+
+      $mail->addAddress($email);
+      $mail->Subject = 'Reset Password';
+      $mailContent = "<h1>Silahkan Salin atau klik link dibawah untuk melakukan reset password</h1>
+          <p><i>Abaikan jika anda merasa tidak melakukan request reset password.</i></p>".base_url("resetpassword?token=").$forgot_token;
+      $mail->Body = $mailContent;
+
+      if($mail->send()) {
+
+        $this->db->update('users', array(
+          'token_forgot_password' => $forgot_token
+        ), ['email' => $email]);
+
+        $hasil = array(
+          'error' => false,
+          'message' => "Email reset password telah dikirim. Silahkan cek email anda secara berkala. Cek folder SPAM jika tidak ada di utama."
+        );
+        goto output;
+
+      } else {
+        $hasil = array(
+          'error' => true,
+          'message' => "Pesan gagal dikirim.".$mail->ErrorInfo
+        );
+        goto output;
+      }
+
+      output:
+      return $hasil;
+    }
+
 }
 
 ?>

@@ -391,5 +391,51 @@ if (!function_exists('mime2ext')) {
             return $user;
         }
     }
+
+    if (!function_exists('generate_token')) {
+        function generate_token($length = 181){
+            $token = "";
+            $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            $codeAlphabet .= "abcdefghijklmnopqrstuvwxyz";
+            $codeAlphabet .= "0123456789";
+            $max = strlen($codeAlphabet);
+
+            for ($i = 0; $i < $length; $i++) {
+                $token .= $codeAlphabet[crypto_rand_secure(0, $max - 1)];
+            }
+            return $token;
+        }
+    }
+
+    if (!function_exists('generate_unique_id')) {
+            function generate_unique_id($length = 5)
+            {
+                mt_srand((float)microtime() * 10000);
+                $charid = strtoupper(md5(uniqid(rand(), true)));
+                $hyphen = chr(45);
+                $uuid = substr($charid, 0, 8) . $hyphen;
+
+                $ind = [
+                    0 => substr($charid, 8, 4),
+                    1 => substr($charid, 12, 6),
+                    2 => substr($charid, 16, 8),
+                    3 => substr($charid, 20, 10),
+                    4 => substr($charid, 24, 12)
+                ];
+
+            if ($length > 5) {
+                $length = 5;
+            }
+
+            for ($i = 0; $i < $length; $i++) {
+                $uuid .= $ind[$i];
+                if ($i !== ($length - 1)) {
+                    $uuid .= $hyphen;
+                }
+            }
+
+            return strtolower($uuid);
+        }
+    }
     
 }

@@ -88,35 +88,35 @@
     ]); ?>
 
     <script>
-		$(document).on('click', '.btn-login', function (e) {
-			e.preventDefault()
-			
-			data = {
-				email: $("input#txt_email").val(),
-				password: $("input#txt_pass").val()
-			}
-
-			callApi("POST", "auth/login", data, function (req) {
-				pesan = req.message;
-				if (req.error == true) {
-					Swal.fire(
-				      'Gagal!',
-				      pesan,
-				      'error'
-				    )
-				}else{
-					Swal.fire(
-			      'Berhasil!',
-			      pesan,
-			      'success'
-			    ).then((result) => {
-			  		cookie.set('uid',req.data.token);
-						cookie.set('sesid',req.data.sesID);
-						window.location.href = "<?php echo base_url('dashboard') ?>"
-					})
+			$(document).on('click', '.btn-login', function (e) {
+				e.preventDefault()
+				
+				data = {
+					email: $("input#txt_email").val(),
+					password: $("input#txt_pass").val()
 				}
+
+				callApi("POST", "auth/login", data, function (req) {
+					pesan = req.message;
+					if (req.error == true) {
+						Swal.fire(
+					      'Gagal!',
+					      pesan,
+					      'error'
+					    )
+					}else{
+						Swal.fire(
+				      'Berhasil!',
+				      pesan,
+				      'success'
+				    ).then((result) => {
+				  		cookie.set('uid',req.data.token);
+							cookie.set('sesid',req.data.sesID);
+							window.location.href = "<?php echo base_url('dashboard') ?>"
+						})
+					}
+				})
 			})
-		})
     </script>
 </body>
 

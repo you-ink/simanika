@@ -32,6 +32,13 @@ class Auth extends CI_Controller {
 		$this->load->view('auth/forgotpassword', $data);
 	}
 
+	public function resetpassword()
+	{
+    	$data['title'] = 'reset Password';
+		$this->load->view('auth/resetpassword', $data);
+	}
+
+
 }
 
 /* End of file Auth.php */

@@ -35,31 +35,27 @@
 					<div class="card-body p-0" style="background-color:Black;">
 						<!-- Nested Row within Card Body -->
 						<div class="row">
-							<div class="col-lg-6 d-none d-lg-block bg-login-image">
+							<div class="col-lg-5 d-none d-lg-block bg-login-image">
 								<div class="col-13 pt-4">
 								<img src="<?php echo base_url() ?>assets/img/logo.png" alt="simanika"  style="width:400px;height:400px;">
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-7">
 								<div class="p-5">
 									<div class="text">
 										<h1 class="h4 mb-4" style="color:white;"><span>REGISTER</h1>
-									</div>
-									<div class="text-left">
 										<h6 class="h6 mb-4" style="color:white;">Thank You for joining us. Please
 											register by
 											completing the information below. </h6> <br>
-										<form>
+									</div>
+									<div>
+										<form style="max-height: 400px !important; overflow-y: scroll; overflow-x: hidden;" class="p-2">
 											<div class="form-row">
-												<div class="form-group col-md-6">
+												<div class="form-group col-md-12">
 													<label for="fefulltName" style="color:white;">Nama Lengkap</label>
 													<input type="text" class="form-control"
 														id="fefulltName" placeholder="Nama lengkap"
 														value="Muhammad Rudy Darmawan"> </div>
-												<div class="form-group col-md-6">
-													<label for="feNIM" style="color:white;">NIM</label>
-													<input type="number" class="form-control" id="feNIM"
-														placeholder="NIM"> </div>
 											</div>
 											<div class="form-row">
 												<div class="form-group col-md-6">
@@ -67,7 +63,7 @@
 													<input type="email" class="form-control"
 														id="feEmailAddress" placeholder="Email"> </div>
 												<div class="form-group col-md-6">
-													<label for="fePassword" style="color:white;">Password</label>
+													<label for="fePassword" style="color:white;">NIM</label>
 													<input type="password" class="form-control"
 														id="fePassword" placeholder="Password"> </div>
 											</div>
@@ -90,6 +86,16 @@
 														class="form-control"></textarea>
 												</div>
 											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label for="feEmailAddress" style="color:white;">Password</label>
+													<input type="email" class="form-control"
+														id="feEmailAddress" placeholder="Email"> </div>
+												<div class="form-group col-md-6">
+													<label for="fePassword" style="color:white;">Confirm Password</label>
+													<input type="password" class="form-control"
+														id="fePassword" placeholder="Password"> </div>
+											</div>
 											<div class="from-row">
 												<div class="form-group">
 													<div class="form-group col-md-12">
@@ -109,10 +115,10 @@
 														<input id="tor" type="file"
 															accept=".pdf, .docx, .doc">
 													</div>
-													<div
-														class="form-group col-12 text-right btn--upload-file d-none">
-														<button type="button"
-															class="btn btn-sm btn-secondary btn--upload-tor">Upload</button>
+												</div>
+												<div class="from-group">
+													<div class="form-group col-md-12">
+														<input type="submit" value="Register" class="form-control btn btn-primary">
 													</div>
 												</div>
 											</div>

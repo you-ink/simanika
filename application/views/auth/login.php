@@ -96,8 +96,6 @@
 				password: $("input#txt_pass").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
-
 			callApi("POST", "auth/login", data, function (req) {
 				pesan = req.message;
 				if (req.error == true) {
@@ -108,11 +106,11 @@
 				    )
 				}else{
 					Swal.fire(
-				      'Berhasil!',
-				      pesan,
-				      'success'
-				    ).then((result) => {
-				  		cookie.set('uid',req.data.token);
+			      'Berhasil!',
+			      pesan,
+			      'success'
+			    ).then((result) => {
+			  		cookie.set('uid',req.data.token);
 						cookie.set('sesid',req.data.sesID);
 						window.location.href = "<?php echo base_url('dashboard') ?>"
 					})

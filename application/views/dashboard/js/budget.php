@@ -6,7 +6,7 @@
 				id: "<?php echo $this->uri->segment(3) ?>"
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("GET", "workprogram", data, function (req) {
 				data = req.data
@@ -39,7 +39,7 @@
 				proker_id: "<?php echo $this->uri->segment(3) ?>"
 			}
 
-			param[get_api_login_global()['key']] = get_api_login_global()['value'];
+			param[get_api_login_global()['key']] = get_api_login_value();
 			callApi("GET", "workprogram/budget", param, function(req) {
 				$("select#budget").select2({
 			        dropdownParent: $('#crudModal')
@@ -74,7 +74,7 @@
 					"url": get_api_url()+"workprogram/budget",
 					"type": "GET",
 					"data": {
-						"SIMANIKA-API-KEY": get_api_login_global()['value'],
+						"SIMANIKA-API-KEY": get_api_login_value(),
 						"sort": "ASC",
 						"proker_id": "<?php echo $this->uri->segment(3) ?>"
 					},
@@ -120,7 +120,7 @@
 					"url": get_api_url()+"workprogram/budgetdetail",
 					"type": "GET",
 					"data": {
-						"SIMANIKA-API-KEY": get_api_login_global()['value'],
+						"SIMANIKA-API-KEY": get_api_login_value(),
 						"sort": "ASC",
 						"proker_id": "<?php echo $this->uri->segment(3) ?>"
 					},
@@ -206,7 +206,7 @@
 				proker_id: "<?php echo $this->uri->segment(3) ?>"
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "workprogram/budget", data, function (req) {
 				pesan = req.message;
@@ -246,7 +246,7 @@
 			    data = {
 					id: $(this).attr('data-id')
 				}
-			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			    data[get_api_login_global()['key']] = get_api_login_value();
 			  	callApi("DELETE", "workprogram/budget", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {
@@ -291,7 +291,7 @@
 				harga: $('#crudModal #harga').val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "workprogram/budgetdetail", data, function (req) {
 				pesan = req.message;
@@ -339,7 +339,7 @@
 				harga: $('#crudModal #harga').val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("PUT", "workprogram/budgetdetail", data, function (req) {
 				pesan = req.message;
@@ -378,7 +378,7 @@
 			    data = {
 					id: $(this).attr('data-id')
 				}
-			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			    data[get_api_login_global()['key']] = get_api_login_value();
 			  	callApi("DELETE", "workprogram/budgetdetail", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {

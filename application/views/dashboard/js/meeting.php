@@ -15,7 +15,7 @@
 					"url": get_api_url()+"meeting",
 					"type": "GET",
 					"data": {
-						"SIMANIKA-API-KEY": get_api_login_global()['value'],
+						"SIMANIKA-API-KEY": get_api_login_value(),
 						"sort": "ASC"
 					},
 					"headers": {
@@ -111,7 +111,7 @@
 				tanggal: $("input#meetingDate").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "meeting", data, function (req) {
 				pesan = req.message;
@@ -155,7 +155,7 @@
 				tanggal: $("input#meetingDate").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("PUT", "meeting", data, function (req) {
 				pesan = req.message;
@@ -195,7 +195,7 @@
 			    data = {
 					id: $(this).attr('data-id')
 				}
-			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			    data[get_api_login_global()['key']] = get_api_login_value();
 			  	callApi("DELETE", "meeting", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {
@@ -233,7 +233,7 @@
 				notulensi: sessionStorage.getItem('notulensi')
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "meeting/uploadnotulensi", data, function (req) {
 				pesan = req.message;
@@ -267,7 +267,7 @@
 				daftar_hadir: sessionStorage.getItem('daftarhadir')
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "meeting/uploaddaftarhadir", data, function (req) {
 				pesan = req.message;

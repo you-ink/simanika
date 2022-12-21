@@ -11,7 +11,7 @@
 				alamat: $("textarea#alamat").text(),
 			}
 
-			data[get_api_login_global()['key']] = "<?php echo get_uid() ?>";
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "user/update_profile", data, function (req) {
 				pesan = req.message;

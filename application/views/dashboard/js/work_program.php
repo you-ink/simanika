@@ -15,7 +15,7 @@
 					"url": get_api_url()+"workprogram",
 					"type": "GET",
 					"data": {
-						"SIMANIKA-API-KEY": get_api_login_global()['value'],
+						"SIMANIKA-API-KEY": get_api_login_value(),
 						"sort": "ASC"
 					},
 					"headers": {
@@ -114,7 +114,7 @@
 
 		function get_user(user_id = 0) {
 			param = {}
-			param[get_api_login_global()['key']] = get_api_login_global()['value'];
+			param[get_api_login_global()['key']] = get_api_login_value();
 			callApi("POST", "user/getAll", param, function(req) {
 				$("select#penanggungJawab").select2({
 			        dropdownParent: $('#crudModal')
@@ -172,7 +172,7 @@
 				penanggung_jawab_id: $("select#penanggungJawab option:selected").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "workprogram", data, function (req) {
 				pesan = req.message;
@@ -222,7 +222,7 @@
 				penanggung_jawab_id: $("select#penanggungJawab option:selected").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("PUT", "workprogram", data, function (req) {
 				pesan = req.message;
@@ -262,7 +262,7 @@
 			    data = {
 					id: $(this).attr('data-id')
 				}
-			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			    data[get_api_login_global()['key']] = get_api_login_value();
 			  	callApi("DELETE", "workprogram", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {
@@ -312,7 +312,7 @@
 				tor: sessionStorage.getItem('tor')
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "workprogram/uploadtor", data, function (req) {
 				pesan = req.message;
@@ -346,7 +346,7 @@
 				lpj: sessionStorage.getItem('lpj')
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "workprogram/uploadlpj", data, function (req) {
 				pesan = req.message;

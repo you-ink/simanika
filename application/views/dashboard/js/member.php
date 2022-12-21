@@ -13,7 +13,7 @@
 					"url": get_api_url()+"member",
 					"type": "GET",
 					"data": {
-						"SIMANIKA-API-KEY": get_api_login_global()['value'],
+						"SIMANIKA-API-KEY": get_api_login_value(),
 						"sort": "ASC"
 					},
 					"headers": {
@@ -113,7 +113,7 @@
 			    data = {
 					id: $(this).attr('data-id')
 				}
-			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			    data[get_api_login_global()['key']] = get_api_login_value();
 			  	callApi("DELETE", "member", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {

@@ -13,7 +13,7 @@
 					"url": get_api_url()+"division",
 					"type": "GET",
 					"data": {
-						"SIMANIKA-API-KEY": get_api_login_global()['value'],
+						"SIMANIKA-API-KEY": get_api_login_value(),
 						"sort": "ASC"
 					},
 					"headers": {
@@ -77,7 +77,7 @@
 
 		function get_user(user_id = 0) {
 			param = {}
-			param[get_api_login_global()['key']] = get_api_login_global()['value'];
+			param[get_api_login_global()['key']] = get_api_login_value();
 			callApi("POST", "user/getAll", param, function(req) {
 				$("select#divisionLeader").select2({
 			        dropdownParent: $('#crudModal')
@@ -114,7 +114,7 @@
 				ketua_id: $("select#divisionLeader option:selected").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "division", data, function (req) {
 				pesan = req.message;
@@ -157,7 +157,7 @@
 				ketua_id: $("select#divisionLeader option:selected").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("PUT", "division", data, function (req) {
 				pesan = req.message;
@@ -198,7 +198,7 @@
 			    data = {
 					id: $(this).attr('data-id')
 				}
-			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			    data[get_api_login_global()['key']] = get_api_login_value();
 			  	callApi("DELETE", "division", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {

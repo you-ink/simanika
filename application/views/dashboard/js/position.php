@@ -13,7 +13,7 @@
 					"url": get_api_url()+"position",
 					"type": "GET",
 					"data": {
-						"SIMANIKA-API-KEY": get_api_login_global()['value'],
+						"SIMANIKA-API-KEY": get_api_login_value(),
 						"sort": "ASC"
 					},
 					"headers": {
@@ -84,7 +84,7 @@
 				nama: $("input#positionName").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("POST", "position", data, function (req) {
 				pesan = req.message;
@@ -125,7 +125,7 @@
 				nama: $("input#positionName").val()
 			}
 
-			data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			data[get_api_login_global()['key']] = get_api_login_value();
 
 			callApi("PUT", "position", data, function (req) {
 				pesan = req.message;
@@ -166,7 +166,7 @@
 			    data = {
 					id: $(this).attr('data-id')
 				}
-			    data[get_api_login_global()['key']] = get_api_login_global()['value'];
+			    data[get_api_login_global()['key']] = get_api_login_value();
 			  	callApi("DELETE", "position", data, function (req) {
 					pesan = req.message;
 					if (req.error == true) {

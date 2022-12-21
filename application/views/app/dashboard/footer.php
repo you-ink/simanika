@@ -32,6 +32,9 @@
       function get_api_url() {
           return "<?php echo base_url('api/') ?>";
       }
+      function get_api_login_value() {
+          return "<?php echo get_uid() ?>";
+      }
     </script>
 
     <?php 

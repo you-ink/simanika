@@ -47,7 +47,7 @@
 									<form class="user" action="login.php" method="POST">
 										<div class="form-group">
 											<input type="text" class="form-control form-control-user"
-												name="txt_email" placeholder="email" required>
+												id="txt_email" placeholder="email" required>
 										</div>
 										<div class="form-group">
 											<input type="password" class="form-control form-control-user"

@@ -43,11 +43,11 @@
 							<div class="col-lg-7" style="background-color:Black">
 								<div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h3 mb-0" style="color:white;"><span><b>SIMANIKA</b></span></h1> <br>
+                                    <h1 class="h3 mb-0" style="color:white;"><span><b>Forgot Your Password ?</b></span></h1> <br>
 									</div>
-									<div>
+									<!-- <div>
 										<h1 class="h4 mb-4" style="color:DodgerBlue;"><span><b>Forgot Your Password ?</b></span></h1>
-									</div>
+									</div> -->
 									<hr color="white">
                                     <h6 class="text-white mb-4">Enter the email the address associated with your account </h6> <br>
 									<!-- <h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;"><b>Login </b></span>Your Account</h1>   -->

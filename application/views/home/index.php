@@ -155,65 +155,69 @@
 
 		<!-- ======= Profile Section ======= -->
 		<section id="profile" class="why-us section-bg">
-			<div class="container-fluid" data-aos="fade-up">
+			<div class="container p-1" data-aos="fade-up">
 
 				<div class="section-title">
 					<h2>VISI & MISI HIMANIKA</h2>
 				</div>
 
-				<div class="main-content-container container-fluid">
+				<div class="main-content-container container-p-5">
 					<div class="row">
 
-						<div class="col-lg-6">
+						<div class="col-lg-12">
 							<div class="card card-small mb-4 pt-3">
 								<div class="card-header border-bottom">
-									<div class="content pt-2 px-4">
-										<h3 style="color:DodgerBlue;">VISI</h3>
+									<div class="text-center" style="background-color:#37517e;">
+										<div class="content pt-2 px-4">
+											<h3 style="color:White;"><b>VISI</b></h3>
+										</div>
 									</div>
 								</div>
 								<div class="col px-2">
 									<p>
-										<span style="color:DodgerBlue;">01</span> Mewujudkan HIMANIKA sebagai
+										<span style="color:DarkBlue;"><b>01</b></span> <p>Mewujudkan HIMANIKA sebagai
 										suatu media pembelajaran yang mencerdaskan mahasiswa dan
-										menciptakan suatu kenyamanan dalam Program Studi manajemen Informatika
+										menciptakan suatu kenyamanan dalam Program Studi Manajemen Informatika</p>
 									</p>
 									<p>
-										<span style="color:DodgerBlue;">02</span> Menjadikan HIMANIKA sebagai
+										<span style="color:DarkBlue;"><b>02</b></span> <p>Menjadikan HIMANIKA sebagai
 										fasilitator kepada mahasiswa untuk berpartisipasi dalam
-										berbagai kegiatan atau hal positif
+										berbagai kegiatan atau hal positif</p>
 									</p>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-lg-6">
+						<div class="col-lg-12">
 							<div class="card card-small mb-4 pt-3">
-								<div class="card-header border-bottom">
-									<div class="content pt-4 px-4">
-									<h3 style="color:DodgerBlue;">MISI</h3>
+							<div class="card-header border-bottom">
+									<div class="text-center" style="background-color:#37517e;">
+										<div class="content pt-2 px-4">
+											<h3 style="color:White;"><b>MISI</b></h3>
+										</div>
 									</div>
 								</div>
-								<div class="col mb-4">
+								<div class="col px-2">
 									<p>
-										<span style="color:DodgerBlue;">01</span> Mengadakan pelatihan yang
+										<span style="color:DarkBlue;"><b>01</b></span> <p>Mengadakan pelatihan yang
 										mendukung peningkatan pengetahuan dan skill dari setiap
-										mahasiswa
+										mahasiswa</p>
 									</p>
 									<p>
-										<span style="color:DodgerBlue;">02</span> Mewadahi kreativitas
-										mahasiswa untuk mengembangkan suatu kemampuan yang dimiliki
+										<span style="color:DarkBlue;"><b>02</b></span> <p>Mewadahi kreativitas
+										mahasiswa untuk mengembangkan suatu kemampuan yang dimiliki</p>
 									</p>
 									<p>
-										<span style="color:DodgerBlue;">03</span> Mengembangkan branding media sosial guna 
-										meningkatkan informasi dan komunikasi
+										<span style="color:DarkBlue;"><b>03</b></span> <p>Mengembangkan branding media sosial guna 
+										meningkatkan informasi dan komunikasi</p>
 									</p>
 									<p>
-										<span style="color:DodgerBlue;">04</span> Mengaktifkan fungsi media sosial sebagai 
-										sarana pembelajaran berbasis online untuk kemajuan mahasiswa
+										<span style="color:DarkBlue;"><b>04</b></span> <p>Mengaktifkan fungsi media sosial sebagai 
+										sarana pembelajaran berbasis online untuk kemajuan mahasiswa</p>
 									</p>
 									<p>
-										<span style="color:DodgerBlue;">05</span> Melakukan kegiatan sharing bersama antara
-										dosen, alumni, dan mahasiswa aktif untuk menciptakan inovasi baru
+										<span style="color:DarkBlue;"><b>05</b></span> <p>Melakukan kegiatan sharing bersama antara
+										dosen, alumni, dan mahasiswa aktif untuk menciptakan inovasi baru</p>
 									</p>
 								</div>
 							</div>
@@ -1020,7 +1024,7 @@
 						<p> Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
 					</div>
 					<div class="col-lg-3 cta-btn-container text-center">
-						<a class="cta-btn align-middle" href="https://bit.ly/PendaftaranHimanika2023">Let's
+						<a class="cta-btn align-middle" href="<?php echo base_url('register') ?>">Let's
 							Join</a>
 					</div>
 				</div>
@@ -1486,12 +1490,12 @@
 							dipublikasikan. Silahkan
 							hubungi kami melalui kontak form pada tautan berikut atau email kami.</p>
 						<div class="social-links mt-3">
-							<a href="https://youtube.com/@himanikapolije6995" class="twitter"><i
-									class="bx bxl-youtube"></i></a>
-							<a href="https://chat.whatsapp.com/JI3BSUrHdzX5zApSuLZG3f" class="whatsapp"><i
-									class="bx bxl-whatsapp"></i></a>
-							<a href="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y="
-								class="instagram"><i class="bx bxl-instagram"></i></a>
+							<a href="https://youtube.com/@himanikapolije6995" class="youtube">
+								<i class="bx bxl-youtube"></i></a>
+							<a href="https://chat.whatsapp.com/JI3BSUrHdzX5zApSuLZG3f" class="whatsapp">
+								<i class="bx bxl-whatsapp"></i></a>
+							<a href="https://instagram.com/himanikapolije?igshid=YmMyMTA2M2Y="class="instagram">
+								<i class="bx bxl-instagram"></i></a>
 						</div>
 					</div>
 

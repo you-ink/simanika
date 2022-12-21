@@ -100,6 +100,26 @@
           $(`.upload--${doc}`).find('.btn--upload-file').addClass('d-none');
         }
       });
+
+      $(document).on('click', '.btn-logout', function(e) {
+        Swal.fire({
+          title: 'Logout?',
+          text: `Anda ingin melakukan logout!`,
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, logout!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            
+            cookie.remove('uid')
+            cookie.remove('sesid')
+            window.location.href = "<?php echo base_url() ?>"
+
+          }
+        })
+      });      
     </script>
 
   </body>

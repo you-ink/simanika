@@ -7,6 +7,10 @@ class Dashboard extends CI_Controller {
 	{
 		parent::__construct();
 		//Do your magic here
+
+		if (empty(get_uid())) {
+            header('location: '.base_url('login'));
+        }
 	}
 
 	public function index()

@@ -1,3 +1,6 @@
+<?php 
+  $user_profile = $this->Func->get_profile();
+?>
 <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
   <div class="main-navbar sticky-top bg-white">
     <!-- Main Navbar -->
@@ -50,14 +53,16 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
             <img class="user-avatar rounded-circle mr-2" src="<?php echo base_url() ?>assets/img/avatars/0.jpg" alt="User Avatar">
-            <span class="d-none d-md-inline-block">Sierra Brooks</span>
+            <span class="d-none d-md-inline-block"><?php echo $user_profile['nama'] ?></span>
           </a>
           <div class="dropdown-menu dropdown-menu-small">
             <a class="dropdown-item" href="<?php echo base_url('dashboard/profile') ?>">
-              <i class="material-icons">&#xE7FD;</i> Profile</a>
+              <i class="material-icons">&#xE7FD;</i> Profile
+            </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item text-danger" href="#">
-              <i class="material-icons text-danger">&#xE879;</i> Logout </a>
+            <a class="dropdown-item text-danger btn-logout" href="javascript:void(0)">
+              <i class="material-icons text-danger">&#xE879;</i> Logout 
+            </a>
           </div>
         </li>
       </ul>

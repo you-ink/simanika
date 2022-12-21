@@ -9,7 +9,12 @@ class User extends REST_Controller{
   	}
 
   	public function getAll_post(){
-    	$response = $this->user->getAll($this->get());
+    	$response = $this->user->getAll($this->post());
+    	$this->response($response);
+  	}
+
+  	public function profile_post(){
+    	$response = $this->user->profile($this->post());
     	$this->response($response);
   	}
 

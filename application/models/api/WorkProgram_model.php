@@ -3,6 +3,17 @@
 class WorkProgram_model extends CI_Model {
 
     public function list($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
@@ -81,6 +92,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function add($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $nama = $params['nama'];
       $tanggal = $params['tanggal'];
       $status = $params['status'];
@@ -145,6 +167,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function update($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       $nama = $params['nama'];
       $tanggal = $params['tanggal'];
@@ -216,6 +249,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function delete($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       
       if (empty($id)) {
@@ -246,6 +290,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function uploadtor($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       $tor = $params['tor'];
 
@@ -295,6 +350,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function uploadlpj($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       $lpj = $params['lpj'];
 
@@ -344,6 +410,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function listbudget($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
@@ -402,6 +479,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function addbudget($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $nama = $params['nama'];
       $proker_id = $params['proker_id'];
       
@@ -442,6 +530,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function deletebudget($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       
       if (empty($id)) {
@@ -472,6 +571,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function listbudgetdetail($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
@@ -536,6 +646,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function addbudgetdetail($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $anggaran_proker_id = $params['anggaran_proker_id'];
       $jenis_pengeluaran = $params['jenis_pengeluaran'];
       $jumlah = $params['jumlah'];
@@ -600,6 +721,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function updatebudgetdetail($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       $anggaran_proker_id = $params['anggaran_proker_id'];
       $jenis_pengeluaran = $params['jenis_pengeluaran'];
@@ -671,6 +803,17 @@ class WorkProgram_model extends CI_Model {
     }
 
     public function deletebudgetdetail($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+      
       $id = $params['id'];
       
       if (empty($id)) {

@@ -42,7 +42,7 @@
 									<div class="form-row">
 										<div class="form-group col-md-6">
 											<label for="nim">NIM</label>
-											<input type="text" class="form-control" id="nim" placeholder="NIM" value="<?php echo $data_user['nim'] ?>"> 
+											<input type="text" class="form-control" id="nim" placeholder="NIM" value="<?php echo $data_user['nim'] ?>" readonly> 
 										</div>
 										<div class="form-group col-md-6">
 											<label for="angkatan">Angkatan</label>
@@ -52,7 +52,7 @@
 									<div class="form-row">
 										<div class="form-group col-md-6">
 											<label for="email">Email</label>
-											<input type="email" class="form-control" id="email" placeholder="Email" value="<?php echo $data_user['email'] ?>"> 
+											<input type="email" class="form-control" id="email" placeholder="Email" value="<?php echo $data_user['email'] ?>" readonly> 
 										</div>
 										<div class="form-group col-md-6">
 											<label for="telp">No Telepon</label>
@@ -105,7 +105,7 @@
 											</div>
 										</div>
 									</div>
-									<button type="submit" class="btn btn-accent">Update Account</button>
+									<button type="submit" class="btn btn-accent btn-update-profile">Update Profile</button>
 								</form>
 							</div>
 						</div>

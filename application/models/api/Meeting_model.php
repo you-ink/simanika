@@ -3,6 +3,17 @@
 class Meeting_model extends CI_Model {
 
     public function list($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
@@ -65,6 +76,17 @@ class Meeting_model extends CI_Model {
     }
 
     public function add($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $tipe = $params['tipe'];
       $nama = $params['nama'];
       $tanggal = $params['tanggal'];
@@ -113,6 +135,17 @@ class Meeting_model extends CI_Model {
     }
 
     public function update($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       $tipe = $params['tipe'];
       $nama = $params['nama'];
@@ -168,6 +201,17 @@ class Meeting_model extends CI_Model {
     }
 
     public function delete($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       
       if (empty($id)) {
@@ -198,6 +242,17 @@ class Meeting_model extends CI_Model {
     }
 
     public function uploadnotulensi($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       $notulensi = $params['notulensi'];
 
@@ -247,6 +302,17 @@ class Meeting_model extends CI_Model {
     }
 
     public function uploaddaftarhadir($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+      
       $id = $params['id'];
       $daftar_hadir = $params['daftar_hadir'];
 

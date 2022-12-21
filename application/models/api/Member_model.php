@@ -3,6 +3,17 @@
 class Member_model extends CI_Model {
 
     public function list($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
@@ -87,6 +98,17 @@ class Member_model extends CI_Model {
     }
 
     public function delete($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+      
       $id = $params['id'];
       
       if (empty($id)) {

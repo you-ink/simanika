@@ -18,6 +18,11 @@ class User extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function update_profile_post(){
+    	$response = $this->user->update_profile($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

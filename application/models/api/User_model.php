@@ -3,6 +3,17 @@
 class User_model extends CI_Model {
 
     public function getAll($params){
+    	$user = get_user();
+		$user_id = $user['id'];
+		
+		if (empty($user_id)) {
+        	$hasil = array(
+          		'error' => true,
+          		'message' => "Anda belum login."
+        	);
+        	goto output;
+      	}
+
 		$id = isset($params['id']) ? $params['id'] : '';
 
 		$user = $this->db->query("SELECT
@@ -107,6 +118,71 @@ class User_model extends CI_Model {
 		output:
 		return $result;
     }
+
+    public function update_profile($params){
+    	$user = get_user();
+		$user_id = $user['id'];
+
+      	$nama = $params['nama'];
+      	$angkatan = $params['angkatan'];
+      	$telp = $params['telp'];
+      	$alamat = $params['alamat'];
+      
+	    if (empty($user_id)) {
+        	$hasil = array(
+          		'error' => true,
+          		'message' => "Anda belum login."
+        	);
+        	goto output;
+      	} else if (empty($nama)) {
+	        $hasil = array(
+    	      	'error' => true,
+	          	'message' => "Nama belum diisi."
+        	);
+        	goto output;
+      	} else if (empty($angkatan)) {
+	        $hasil = array(
+	          	'error' => true,
+	          	'message' => "Angkatan belum diisi."
+	        );
+	        goto output;
+	    } else if (empty($telp)) {
+	        $hasil = array(
+	          	'error' => true,
+	          	'message' => "No. Telepon belum diisi."
+	        );
+	        goto output;
+	    } else if (empty($alamat)) {
+	        $hasil = array(
+	          	'error' => true,
+	          	'message' => "Alamat belum diisi."
+	        );
+	        goto output;
+	    }
+
+	    $update = $this->db->update('users', array(
+	        'nama' => $nama,
+	        'angkatan' => $angkatan,
+	        'telp' => $telp,
+	        'alamat' => $alamat
+	    ), ['id' => $user_id]);
+
+	    if ($update) {
+	        $hasil = array(
+	          	'error' => false,
+	          	'message' => "Profile berhasil diupdate."
+	        );
+	        goto output;
+	    }
+
+	    $hasil = array(
+	        'error' => true,
+	        'message' => "Profile gagal diupdate."
+	    );
+
+	    output:
+	    return $hasil;
+	}
 
 }
 

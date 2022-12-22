@@ -38,6 +38,12 @@ class Auth extends CI_Controller {
 		$this->load->view('auth/resetpassword', $data);
 	}
 
+	public function view___reset_password_email()
+	{
+    	$data['title'] = 'Reset Password';
+		$this->load->view('auth/_template_reset_password', $data);
+	}
+
 
 }
 

@@ -62,7 +62,6 @@ if(!function_exists('slugify')) {
     }
 }
 
-
 if (!function_exists('upload_base64')) {
     function upload_base64($path_upload, $file_base64)
     {
@@ -329,113 +328,112 @@ if (!function_exists('mime2ext')) {
 
         return isset($mime_map[$mime]) ? $mime_map[$mime] : false;
     }
-
-    if (!function_exists('guidv4')) {
-        function guidv4($data = null)
-        {
-            // Generate 16 bytes (128 bits) of random data or use the data passed into the function.
-            $data = $data ?? random_bytes(16);
-            assert(strlen($data) == 16);
-
-            // Set version to 0100
-            $data[6] = chr(ord($data[6]) & 0x0f | 0x40);
-            // Set bits 6-7 to 10
-            $data[8] = chr(ord($data[8]) & 0x3f | 0x80);
-
-            // Output the 36 character UUID.
-            return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
-        }
-    }
-
-    if(!function_exists('get_uid')){
-        function get_uid($key = 'uid')
-        {
-            return get_cookie($key, TRUE);
-        }
-    }
-
-
-    if(!function_exists('get_user')){
-        function get_user(){
-            $ci = &get_instance();
-
-            $token_uid = get_uid();
-
-            $cookie =  $ci->input->request_headers()['Cookie'];
-            preg_match_all("/([^,= ]+)=([^,= ]+)/", $cookie, $r);
-            $result = array_combine($r[1], str_replace(';', '', $r[2]));
-            $token_from_cookie = $result['uid'];
-
-            if (!empty($token_from_cookie)) {
-                $token_uid = $token_from_cookie;
-            }
-
-            if (empty($token_uid)) {
-                return "Token not found.";
-            }
-
-            $user = $ci->db->select("
-                    users.id,
-                    users.nama,
-                    users.nim,
-                    users.angkatan,
-                    users.email,
-                    users.telp,
-                    users.alamat,
-                    users.level_id as level,
-                ")
-                ->get_where('users', [
-                    'token' => $token_uid
-                ])->row_array();
-
-            return $user;
-        }
-    }
-
-    if (!function_exists('generate_token')) {
-        function generate_token($length = 181){
-            $token = "";
-            $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            $codeAlphabet .= "abcdefghijklmnopqrstuvwxyz";
-            $codeAlphabet .= "0123456789";
-            $max = strlen($codeAlphabet);
-
-            for ($i = 0; $i < $length; $i++) {
-                $token .= $codeAlphabet[crypto_rand_secure(0, $max - 1)];
-            }
-            return $token;
-        }
-    }
-
-    if (!function_exists('generate_unique_id')) {
-            function generate_unique_id($length = 5)
-            {
-                mt_srand((float)microtime() * 10000);
-                $charid = strtoupper(md5(uniqid(rand(), true)));
-                $hyphen = chr(45);
-                $uuid = substr($charid, 0, 8) . $hyphen;
-
-                $ind = [
-                    0 => substr($charid, 8, 4),
-                    1 => substr($charid, 12, 6),
-                    2 => substr($charid, 16, 8),
-                    3 => substr($charid, 20, 10),
-                    4 => substr($charid, 24, 12)
-                ];
-
-            if ($length > 5) {
-                $length = 5;
-            }
-
-            for ($i = 0; $i < $length; $i++) {
-                $uuid .= $ind[$i];
-                if ($i !== ($length - 1)) {
-                    $uuid .= $hyphen;
-                }
-            }
-
-            return strtolower($uuid);
-        }
-    }
-    
 }
+
+if (!function_exists('guidv4')) {
+    function guidv4($data = null)
+    {
+        // Generate 16 bytes (128 bits) of random data or use the data passed into the function.
+        $data = $data ?? random_bytes(16);
+        assert(strlen($data) == 16);
+
+        // Set version to 0100
+        $data[6] = chr(ord($data[6]) & 0x0f | 0x40);
+        // Set bits 6-7 to 10
+        $data[8] = chr(ord($data[8]) & 0x3f | 0x80);
+
+        // Output the 36 character UUID.
+        return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
+    }
+}
+
+if(!function_exists('get_uid')){
+    function get_uid($key = 'uid')
+    {
+        return get_cookie($key, TRUE);
+    }
+}
+
+if(!function_exists('get_user')){
+    function get_user(){
+        $ci = &get_instance();
+
+        $token_uid = get_uid();
+
+        $cookie =  $ci->input->request_headers()['Cookie'];
+        preg_match_all("/([^,= ]+)=([^,= ]+)/", $cookie, $r);
+        $result = array_combine($r[1], str_replace(';', '', $r[2]));
+        $token_from_cookie = $result['uid'];
+
+        if (!empty($token_from_cookie)) {
+            $token_uid = $token_from_cookie;
+        }
+
+        if (empty($token_uid)) {
+            return "Token not found.";
+        }
+
+        $user = $ci->db->select("
+                users.id,
+                users.nama,
+                users.nim,
+                users.angkatan,
+                users.email,
+                users.telp,
+                users.alamat,
+                users.level_id as level,
+            ")
+            ->get_where('users', [
+                'token' => $token_uid
+            ])->row_array();
+
+        return $user;
+    }
+}
+
+if (!function_exists('generate_token')) {
+    function generate_token($length = 181){
+        $token = "";
+        $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $codeAlphabet .= "abcdefghijklmnopqrstuvwxyz";
+        $codeAlphabet .= "0123456789";
+        $max = strlen($codeAlphabet);
+
+        for ($i = 0; $i < $length; $i++) {
+            $token .= $codeAlphabet[crypto_rand_secure(0, $max - 1)];
+        }
+        return $token;
+    }
+}
+
+if (!function_exists('generate_unique_id')) {
+        function generate_unique_id($length = 5)
+        {
+            mt_srand((float)microtime() * 10000);
+            $charid = strtoupper(md5(uniqid(rand(), true)));
+            $hyphen = chr(45);
+            $uuid = substr($charid, 0, 8) . $hyphen;
+
+            $ind = [
+                0 => substr($charid, 8, 4),
+                1 => substr($charid, 12, 6),
+                2 => substr($charid, 16, 8),
+                3 => substr($charid, 20, 10),
+                4 => substr($charid, 24, 12)
+            ];
+
+        if ($length > 5) {
+            $length = 5;
+        }
+
+        for ($i = 0; $i < $length; $i++) {
+            $uuid .= $ind[$i];
+            if ($i !== ($length - 1)) {
+                $uuid .= $hyphen;
+            }
+        }
+
+        return strtolower($uuid);
+    }
+}
+    

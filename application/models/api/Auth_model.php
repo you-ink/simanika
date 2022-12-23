@@ -41,7 +41,7 @@ class Auth_model extends CI_Model {
 
   		  } else {
     			$hasil = array(
-    				'status' => false,
+    				'error' => true,
     				'message' => "Password yang anda masukkan salah."
     			);
     			goto output;

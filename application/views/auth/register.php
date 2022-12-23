@@ -125,7 +125,7 @@
 										</form>
 										<hr>
 										<div class="text-center">
-											<a class="small" href="register.php" style="color:white;">Already have an account?
+											<a class="small" href="<?php echo base_url('login') ?>" style="color:white;">Already have an account?
 												Login!</a>
 										</div>
 									</div>

@@ -36,8 +36,8 @@
 						<!-- Nested Row within Card Body -->
 						<div class="row">
 							<div class="col-lg-5 d-none d-lg-block bg-login-image">
-								<div class="col-13 pt-4">
-								<img src="<?php echo base_url() ?>assets/img/logo.png" alt="simanika"  style="width:400px;height:400px;">
+								<div class="col-12 pt-5">
+									<img src="<?php echo base_url() ?>assets/img/logo.png" alt="simanika"  style="width:400px;height:400px;">
 								</div>
 							</div>
 							<div class="col-lg-7">
@@ -45,8 +45,7 @@
 									<div class="text">
 										<h1 class="h4 mb-4" style="color:white;"><span>REGISTER</h1>
 										<h6 class="h6 mb-4" style="color:white;">Thank You for joining us. Please
-											register by
-											completing the information below. </h6> <br>
+											register by completing the information below. </h6> <br>
 									</div>
 									<div>
 										<form style="max-height: 400px !important; overflow-y: scroll; overflow-x: hidden;" class="p-2">
@@ -125,8 +124,7 @@
 										</form>
 										<hr>
 										<div class="text-center">
-											<a class="small" href="<?php echo base_url('login') ?>" style="color:white;">Already have an account?
-												Login!</a>
+											<a class="small" href="<?php echo base_url('login') ?>" style="color:white;">Already have an account? Login!</a>
 										</div>
 									</div>
 								</div>

@@ -43,7 +43,7 @@
 							<div class="col-lg-7" style="background-color:Black">
 								<div class="p-5">
 	                                <div class="text-center">
-	                                    <h1 class="h3 mb-0" style="color:white;"><span><b>Forgot Your Password ?</b></span></h1> <br>
+	                                    <h1 class="h3 mb-0" style="color:white;"><span><b>Forgot Your Password ?</b></span></h1> 
 										</div>
 										<hr class="text-white bg-info">
 	                                    <h6 class="text-white mb-4">Enter email address that associated with your account </h6> <br>
@@ -54,8 +54,11 @@
 											</div>
 											<div>
 												<button class="btn btn-primary btn-user btn-block btn-forgot-password" type="submit"
-													name="submit">Send Link</button>
+													name="submit">Send Link</button> <br>
 											</div>
+											<div class="h6 text-right">
+												<a class="small text-white mb-4" href="<?php echo base_url('login') ?>">Back to Login</a>
+                                        	</div>
 										</form>
 									</div>
 								</div>

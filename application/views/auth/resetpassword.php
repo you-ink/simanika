@@ -42,12 +42,11 @@
 							</div>
 							<div class="col-lg-7" style="background-color:Black">
 								<div class="p-5">
-									<div>
-										<h1 class="h5 mb-0" style="color:white;"><span><b>Hello !</b></span></h1> 
-										<h1 class="h5 mb-4" style="color:DodgerBlue;"><span><b>Welcome To SIMANIKA !</b></span></h1>
-									</div>
-									<hr color="white">
-									<h1 class="h5 mb-4 text-center" style="color:white;"><span style="Color:DodgerBlue;"><b>Reset </b></span>Your Password</h1>  
+	                                <div class="text-center">
+	                                    <h1 class="h3 mb-0" style="color:white;"><span><b>Reset Your Password ?</b></span></h1> <br>
+										<h6 class="text-white mb-4">Enter the new password and do the configuration to reset the password</h6> <br>
+										</div>
+										<hr class="text-white bg-info">
 									<form class="user">
 										<div class="form-group">
 											<input type="password" class="form-control form-control-user"

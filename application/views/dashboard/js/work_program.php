@@ -1,3 +1,6 @@
+<?php 
+	$user = $this->Func->get_profile();
+?>
 <script>
 	$(document).ready(function () {
 
@@ -58,6 +61,7 @@
 					{
 						data: null,
 						render: res => {
+							let button = ''
 							let tor = ''
 							let lpj = ''
 							if (res.tor) {
@@ -66,18 +70,30 @@
 							if (res.lpj) {
 								lpj = `<p class="my-1"><a href="<?php echo base_url() ?>${res.lpj}" taget="_blank" class="text-primary">Lihat File LPJ</a></p>`
 							}
-							return `<button type="button" class="btn btn-sm btn-secondary btn-upload-document" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModalDoc"><i class="fas fa-upload"></i></button>${tor}${lpj}
+
+							<?php if ($user['level_id'] != 3): ?>
+								button = `<button type="button" class="btn btn-sm btn-secondary btn-upload-document" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModalDoc"><i class="fas fa-upload"></i></button>`
+							<?php endif ?>
+
+							return `
+								${button}${tor}${lpj}
 							`;
 						}
 					},
 					{
 						data: null,
 						render: res => {
+							let btn_edit = ''
+							let btn_delete = ''
+
+							<?php if ($user['level_id'] == 1): ?>
+								btn_edit = `<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-proker" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal_acara}" data-status="${res.status}" data-pelaksana="${res.pelaksana_id}" data-penanggung-jawab="${res.penanggung_jawab_id}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>`
+								btn_delete = `<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-proker" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>`
+							<?php endif ?>
+
 							return `
 								<button type="button" class="btn btn-sm mb-1 btn-warning btn-detail-proker" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal_acara}" data-status="${res.status}" data-pelaksana="${res.pelaksana_id}" data-penanggung-jawab="${res.penanggung_jawab_id}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
-								<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-proker" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal_acara}" data-status="${res.status}" data-pelaksana="${res.pelaksana_id}" data-penanggung-jawab="${res.penanggung_jawab_id}" data-toggle="modal" data-target="#crudModal"><i
-											class="fas fa-pen"></i></button>
-								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-proker" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
+								${btn_edit}${btn_delete}
 							`;
 						}
 					}
@@ -92,7 +108,7 @@
 			         	title: null,
 			         	className: 'btn btn-sm btn-success',
 			         	exportOptions: {
-		                    columns: [ 0, 1, 2, 3 ]
+		                    columns: [ 0, 1, 2, 3, 4 ]
 		                }
 			        },
 			        { 
@@ -101,7 +117,7 @@
 			         	title: 'Data Proker Himanika',
 			         	className: 'btn btn-sm btn-success',
 			         	exportOptions: {
-		                    columns: [ 0, 1, 2, 3 ]
+		                    columns: [ 0, 1, 2, 3, 4 ]
 		                }
 			        },
 			    ]

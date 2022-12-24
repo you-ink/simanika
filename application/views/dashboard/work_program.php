@@ -1,3 +1,6 @@
+<?php 
+	$user = $this->Func->get_profile();
+?>
 <div class="main-content-container container-fluid px-4">
 	<div class="page-header row no-gutters py-4">
 		<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
@@ -66,15 +69,17 @@
 							<button type="button" class="btn btn-sm btn-secondary btn--upload-tor">Upload</button>
 						</div>
 					</div>
-					<div class="form-row upload--lpj">
-						<div class="form-group col-12">
-							<label>LPJ</label>
-							<input id="lpj" type="file" accept=".pdf, .docx, .doc">
+					<?php if ($user['level_id'] == 1): ?>
+						<div class="form-row upload--lpj">
+							<div class="form-group col-12">
+								<label>LPJ</label>
+								<input id="lpj" type="file" accept=".pdf, .docx, .doc">
+							</div>
+							<div class="form-group col-12 text-right btn--upload-file d-none">
+								<button type="button" class="btn btn-sm btn-secondary btn--upload-lpj">Upload</button>
+							</div>
 						</div>
-						<div class="form-group col-12 text-right btn--upload-file d-none">
-							<button type="button" class="btn btn-sm btn-secondary btn--upload-lpj">Upload</button>
-						</div>
-					</div>
+					<?php endif ?>
 				</form>
 			</div>
 		</div>

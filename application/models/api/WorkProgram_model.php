@@ -178,6 +178,14 @@ class WorkProgram_model extends CI_Model {
         goto output;
       }
 
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       $nama = $params['nama'];
       $tanggal = $params['tanggal'];
@@ -260,6 +268,14 @@ class WorkProgram_model extends CI_Model {
         goto output;
       }
 
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       
       if (empty($id)) {
@@ -297,6 +313,14 @@ class WorkProgram_model extends CI_Model {
         $hasil = array(
             'error' => true,
             'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
+      if ($user['level'] == 3) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
         );
         goto output;
       }
@@ -357,6 +381,14 @@ class WorkProgram_model extends CI_Model {
         $hasil = array(
             'error' => true,
             'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
         );
         goto output;
       }

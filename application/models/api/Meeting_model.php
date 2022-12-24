@@ -87,6 +87,14 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
+
       $tipe = $params['tipe'];
       $nama = $params['nama'];
       $tanggal = $params['tanggal'];
@@ -142,6 +150,14 @@ class Meeting_model extends CI_Model {
         $hasil = array(
             'error' => true,
             'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
         );
         goto output;
       }
@@ -212,6 +228,14 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
+
       $id = $params['id'];
       
       if (empty($id)) {
@@ -249,6 +273,14 @@ class Meeting_model extends CI_Model {
         $hasil = array(
             'error' => true,
             'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
         );
         goto output;
       }
@@ -309,6 +341,14 @@ class Meeting_model extends CI_Model {
         $hasil = array(
             'error' => true,
             'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
+      if ($user['level'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
         );
         goto output;
       }

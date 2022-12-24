@@ -1,3 +1,6 @@
+<?php 
+	$user = $this->Func->get_profile();
+?>
 <script>
 	$(document).ready(function () {
 
@@ -42,6 +45,7 @@
 					{
 						data: null,
 						render: res => {
+							let button = ''
 							let notulensi = ''
 							let daftar_hadir = ''
 							if (res.notulensi) {
@@ -51,20 +55,26 @@
 								daftar_hadir = `<p class="my-1"><a href="<?php echo base_url() ?>${res.daftar_hadir}" taget="_blank" class="text-primary">Lihat Daftar Hadir</a></p>`
 							}
 
+							<?php if ($user['level_id'] == 1): ?>
+								button = `<button type="button" class="btn btn-sm btn-secondary btn-upload-document" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModalDoc" ><i class="fas fa-upload"></i></button>`
+							<?php endif ?>
+
 							return `
-								<button type="button" class="btn btn-sm btn-secondary btn-upload-document" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#crudModalDoc" ><i class="fas fa-upload"></i></button>${notulensi}${daftar_hadir}
+								${button}${notulensi}${daftar_hadir}
 							`;
 						}
 					},
-					{
-						data: null,
-						render: res => {
-							return `
-								<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-meeting" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal}" data-tipe="${res.tipe}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>
-								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-meeting" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
-							`;
+					<?php if ($user['level_id'] == 1): ?>
+						{
+							data: null,
+							render: res => {
+								return `
+									<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-meeting" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal}" data-tipe="${res.tipe}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>
+									<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-meeting" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
+								`;
+							}
 						}
-					}
+					<?php endif ?>
 				],
 				dom: "<'row'<'col-sm-12 mb-2'B>>lfrtip",
                 lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],

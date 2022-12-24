@@ -5,7 +5,7 @@ class CustomError extends CI_Controller {
 
 	public function index()
 	{
-		err404();
+		show_404();
 	}
 
 	public function err404()

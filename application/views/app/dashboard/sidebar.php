@@ -1,3 +1,6 @@
+<?php 
+  $user = $this->Func->get_profile();
+?>
 <!-- Main Sidebar -->
 <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
   <div class="main-navbar">
@@ -42,24 +45,26 @@
           <span>Program Kerja</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link <?php echo ($this->uri->segment(2) == 'division')?'active':'' ?>" href="<?php echo base_url('dashboard/division') ?>">
-          <i class="material-icons">toc</i>
-          <span>Data Divisi</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link <?php echo ($this->uri->segment(2) == 'position')?'active':'' ?>" href="<?php echo base_url('dashboard/position') ?>">
-          <i class="material-icons">toc</i>
-          <span>Data Jabatan</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link <?php echo ($this->uri->segment(2) == 'member')?'active':'' ?>" href="<?php echo base_url('dashboard/member') ?>">
-          <i class="material-icons">table_chart</i>
-          <span>Data Anggota</span>
-        </a>
-      </li>
+      <?php if ($user['level_id'] == 1): ?>
+        <li class="nav-item">
+          <a class="nav-link <?php echo ($this->uri->segment(2) == 'division')?'active':'' ?>" href="<?php echo base_url('dashboard/division') ?>">
+            <i class="material-icons">toc</i>
+            <span>Data Divisi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo ($this->uri->segment(2) == 'position')?'active':'' ?>" href="<?php echo base_url('dashboard/position') ?>">
+            <i class="material-icons">toc</i>
+            <span>Data Jabatan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo ($this->uri->segment(2) == 'member')?'active':'' ?>" href="<?php echo base_url('dashboard/member') ?>">
+            <i class="material-icons">table_chart</i>
+            <span>Data Anggota</span>
+          </a>
+        </li>
+      <?php endif ?>
       <li class="nav-item">
         <a class="nav-link <?php echo ($this->uri->segment(2) == 'profile')?'active':'' ?>" href="<?php echo base_url('dashboard/profile') ?>">
           <i class="material-icons">person</i>

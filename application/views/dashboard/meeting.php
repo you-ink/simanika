@@ -1,3 +1,6 @@
+<?php 
+	$user = $this->Func->get_profile();
+?>
 <div class="main-content-container container-fluid px-4">
 	<div class="page-header row no-gutters py-4">
 		<div class="col-12 col-sm-4 text-center text-sm-left mb-0">
@@ -28,7 +31,9 @@
 									<th scope="col" class="border-0">Nama Agenda Rapat</th>
 									<th scope="col" class="border-0">Waktu</th>
 									<th scope="col" class="border-0">Dokumen</th>
-									<th scope="col" class="border-0">Aksi</th>
+									<?php if ($user['level_id'] == 1): ?>
+										<th scope="col" class="border-0">Aksi</th>
+									<?php endif ?>
 								</tr>
 							</thead>
 							<tbody>

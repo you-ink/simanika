@@ -3,6 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dashboard extends CI_Controller {
 
+	private $user = [];
+
 	public function __construct()
 	{
 		parent::__construct();
@@ -11,6 +13,8 @@ class Dashboard extends CI_Controller {
 		if (empty(get_uid())) {
             header('location: '.base_url('login'));
         }
+
+        $this->user = $this->Func->get_profile();
 	}
 
 	public function index()
@@ -39,6 +43,10 @@ class Dashboard extends CI_Controller {
 
 	public function member()
 	{
+		if ($this->user['level_id'] != 1) {
+			show_404();
+		}
+
 		$data['title'] = 'Simanika - Data Anggota';
 
 		$this->load->view('app/dashboard/header', $data);
@@ -51,6 +59,10 @@ class Dashboard extends CI_Controller {
 
 	public function division()
 	{
+		if ($this->user['level_id'] != 1) {
+			show_404();
+		}
+		
 		$data['title'] = 'Simanika - Data Divisi';
 
 		$this->load->view('app/dashboard/header', $data);
@@ -63,6 +75,10 @@ class Dashboard extends CI_Controller {
 
 	public function position()
 	{
+		if ($this->user['level_id'] != 1) {
+			show_404();
+		}
+		
 		$data['title'] = 'Simanika - Data Jabatan';
 
 		$this->load->view('app/dashboard/header', $data);

@@ -7,6 +7,10 @@ class Auth extends CI_Controller {
 	{
 		parent::__construct();
 		//Do your magic here
+
+		if (get_uid()) {
+			redirect('dashboard','refresh');
+		}
 	}
 
 	public function index()

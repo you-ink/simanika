@@ -153,9 +153,9 @@
 		</div>
 		<!-- End Users By Device Stats -->
 		<!-- New Draft Component -->
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+		<!-- <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> -->
 			<!-- Quick Post -->
-			<div class="card card-small h-100">
+			<!-- <div class="card card-small h-100">
 				<div class="card-header border-bottom">
 					<h6 class="m-0">New Draft</h6>
 				</div>
@@ -173,12 +173,12 @@
 						</div>
 					</form>
 				</div>
-			</div>
+			</div> -->
 			<!-- End Quick Post -->
-		</div>
+		<!-- </div> -->
 		<!-- End New Draft Component -->
 		<!-- Discussions Component -->
-		<div class="col-lg-5 col-md-12 col-sm-12 mb-4">
+		<!-- <div class="col-lg-5 col-md-12 col-sm-12 mb-4">
 			<div class="card card-small blog-comments">
 				<div class="card-header border-bottom">
 					<h6 class="m-0">Discussions</h6>
@@ -277,10 +277,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- End Discussions Component -->
 		<!-- Top Referrals Component -->
-		<div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+		<!-- <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
 			<div class="card card-small">
 				<div class="card-header border-bottom">
 					<h6 class="m-0">Top Referrals</h6>
@@ -337,7 +337,83 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- End Top Referrals Component -->
+		<div class="footer bg-blue-darkest text-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-md-6">
+						<h4 class="menu-title">Internal Link</h4>
+						<ul class="list-unstyled mb-0">
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://jti.polije.ac.id/tif-psdku-sidoarjo/' target='_blank'>Web TIF PSDKU
+									Sidoarjo</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://jti.polije.ac.id/elearning' target='_blank'>Elearning JTI</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://jtit.polije.ac.id/' target='_blank'>Publikasi JTIT</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://pusatkarir.polije.ac.id' target='_blank'>Pusat Karir POLIJE</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://sim-online.polije.ac.id/' target='_blank'>SIM Online</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://103.109.209.245/jtiform/login' target='_blank'>Evaluasi
+									Pembelajaran</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://jti.polije.ac.id/jtisurat' target='_blank'>JTI Surat</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://jti.polije.ac.id/ruangbaca' target='_blank'>Ruang Baca</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://jti.polije.ac.id/galeri' target='_self'>Galeri JTI</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://arsip.jti.polije.ac.id/' target='_blank'>Arsip JTI</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<h4 class="menu-title">Eksternal Link</h4>
+						<ul class="list-unstyled mb-0">
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://polije.ac.id/' target='_blank'>Politeknik Negeri Jember</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='http://ristekdikti.go.id/' target='_blank'>Ristekdikti</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='https://pintu.polije.ac.id/' target='_blank'>Pintu POLIJE</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='https://pibkwu.polije.ac.id/' target='_blank'>PIBKWU POLIJE</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='https://lsp.polije.ac.id/' target='_blank'>LSP P1 POLIJE</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='https://perpustakaan.polije.ac.id/' target='_blank'>Perpustakaan POLIJE</a>
+							</li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='https://pena.polije.ac.id/' target='_blank'>Pena POLIJE</a></li>
+							<li class='py-2 ml-4 border-bottom border-secondary'><i class='fe fe-link'></i> <a
+									href='https://publikasi.polije.ac.id/' target='_blank'>Jurnal POLIJE</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						<h4>ABOUT ME</h4>
+								<h5>Jurusan Teknologi Informasi</h5>
+								<h5>Politeknik Negeri Jember</h5>
+								<ul class="list-unstyled mb-0">
+								<li class='fe fe-home'></li> Jl. Mastrip PO.BOX 164 Jember<br />Jember Jawa Timur 68101
+								Indonesia <br />
+								<li class='fe fe-phone'></li> Tlp :<span class='angka'> 0331-333532</span><br />
+								<li class='fe fe-printer'></li> Fax :<span class='angka'> 0331-333531</span><br />
+								<li class='fe fe-mail'></li> kajurti@polije.ac.id <br />
+								<li class='fe fe-mail'></li> jti1@polije.ac.id <br />
+								</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 	</div>
 </div>

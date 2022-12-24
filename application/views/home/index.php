@@ -1436,9 +1436,9 @@
 						<h4>Join Our Organization</h4><br>
 						<h5>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h5>
 						<p>Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
-						<form action="https://bit.ly/PendaftaranHimanika2023" method="post">
+						<!-- <form action="https://bit.ly/PendaftaranHimanika2023" method="post">
 							<input type="email" name="email"><input type="submit" value="Join">
-						</form>
+						</form> -->
 					</div>
 				</div>
 			</div>

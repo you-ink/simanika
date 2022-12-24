@@ -14,14 +14,10 @@
 
 	<?= stylesheet([
       'plugin/fontawesome/css/all.min.css',
-      'plugin/bootstrap/css/bootstrap.min.css',
-      'template/shards-dashboard/styles/extras.1.1.0.min.css',
-      'plugin/DataTables/datatables.min.css',
+      'plugin/bootstrap/css/bootstrap.min.css'
     ]); ?>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" id="main-stylesheet" data-version="1.1.0"
-		href="<?php echo base_url('assets/template/shards-dashboard/') ?>styles/shards-dashboards.1.1.0.min.css">
 
 </head>
 
@@ -42,11 +38,11 @@
 							</div>
 							<div class="col-lg-7" style="background-color:Black">
 								<div class="p-5">
-	                                <div class="text-center">
-	                                    <h1 class="h3 mb-0" style="color:white;"><span><b>Reset Your Password ?</b></span></h1> <br>
-										<h6 class="text-white mb-4">Enter the new password and do the configuration to reset the password</h6> <br>
-										</div>
+									<div class="text-center">
+										<h1 class="h3 mb-0" style="color:white;"><span><b>Reset Your Password
+													?</b></span></h1>
 										<hr class="text-white bg-info">
+										<h6 class="text-white mb-4">EEnter the new password and do the configuration to reset the password </h6> <br>
 									<form class="user">
 										<div class="form-group">
 											<input type="password" class="form-control form-control-user"

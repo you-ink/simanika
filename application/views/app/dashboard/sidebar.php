@@ -33,37 +33,39 @@
           <span>Dashboard</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link <?php echo ($this->uri->segment(2) == 'meeting')?'active':'' ?>" href="<?php echo base_url('dashboard/meeting') ?>">
-          <i class="material-icons">groups</i>
-          <span>Rapat</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link <?php echo ($this->uri->segment(2) == 'program')?'active':'' ?>" href="<?php echo base_url('dashboard/program') ?>">
-          <i class="material-icons">analytics</i>
-          <span>Program Kerja</span>
-        </a>
-      </li>
-      <?php if ($user['level_id'] == 1): ?>
+      <?php if ($user['status'] == 1): ?>
         <li class="nav-item">
-          <a class="nav-link <?php echo ($this->uri->segment(2) == 'division')?'active':'' ?>" href="<?php echo base_url('dashboard/division') ?>">
-            <i class="material-icons">toc</i>
-            <span>Data Divisi</span>
+          <a class="nav-link <?php echo ($this->uri->segment(2) == 'meeting')?'active':'' ?>" href="<?php echo base_url('dashboard/meeting') ?>">
+            <i class="material-icons">groups</i>
+            <span>Rapat</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo ($this->uri->segment(2) == 'position')?'active':'' ?>" href="<?php echo base_url('dashboard/position') ?>">
-            <i class="material-icons">toc</i>
-            <span>Data Jabatan</span>
+          <a class="nav-link <?php echo ($this->uri->segment(2) == 'program')?'active':'' ?>" href="<?php echo base_url('dashboard/program') ?>">
+            <i class="material-icons">analytics</i>
+            <span>Program Kerja</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link <?php echo ($this->uri->segment(2) == 'member')?'active':'' ?>" href="<?php echo base_url('dashboard/member') ?>">
-            <i class="material-icons">table_chart</i>
-            <span>Data Anggota</span>
-          </a>
-        </li>
+        <?php if ($user['level_id'] == 1): ?>
+          <li class="nav-item">
+            <a class="nav-link <?php echo ($this->uri->segment(2) == 'division')?'active':'' ?>" href="<?php echo base_url('dashboard/division') ?>">
+              <i class="material-icons">toc</i>
+              <span>Data Divisi</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php echo ($this->uri->segment(2) == 'position')?'active':'' ?>" href="<?php echo base_url('dashboard/position') ?>">
+              <i class="material-icons">toc</i>
+              <span>Data Jabatan</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php echo ($this->uri->segment(2) == 'member')?'active':'' ?>" href="<?php echo base_url('dashboard/member') ?>">
+              <i class="material-icons">table_chart</i>
+              <span>Data Anggota</span>
+            </a>
+          </li>
+        <?php endif ?>
       <?php endif ?>
       <li class="nav-item">
         <a class="nav-link <?php echo ($this->uri->segment(2) == 'profile')?'active':'' ?>" href="<?php echo base_url('dashboard/profile') ?>">

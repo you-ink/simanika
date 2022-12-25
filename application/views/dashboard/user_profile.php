@@ -14,7 +14,7 @@
 				<div class="card-header border-bottom text-center">
 					<div class="mb-3 mx-auto">
 						<img class="user-avatar rounded-circle mr-2"
-							src="<?php echo base_url() ?>assets/img/avatars/0.jpg" alt="User Avatar">
+							src="<?php echo base_url().$data_user['foto'] ?>" alt="User Avatar" width="150" height="150">
 					</div>
 					<h4 class="mb-0"><?php echo $data_user['nama'] ?></h4>
 					<span class="text-muted d-block mb-2"><?php echo $data_user['jabatan']." • ".$data_user['divisi'] ?></span>
@@ -69,7 +69,7 @@
 										<div class="form-group col-md-6">
 											<div class="ff_fileupload_wrap">
 												<table class="ff_fileupload_uploads">
-													<tr class="ff_fileupload_queued">
+													<tr class="">
 														<td class="ff_fileupload_preview">
 															<button class="ff_fileupload_preview_image ff_fileupload_preview_text_with_color ff_fileupload_preview_text_d" type="button" disabled="" aria-label="No preview available">File</button>
 														</td>
@@ -88,7 +88,7 @@
 										<div class="form-group col-md-6">
 											<div class="ff_fileupload_wrap">
 												<table class="ff_fileupload_uploads">
-													<tr class="ff_fileupload_queued">
+													<tr class="">
 														<td class="ff_fileupload_preview">
 															<button class="ff_fileupload_preview_image ff_fileupload_preview_text_with_color ff_fileupload_preview_text_d" type="button" disabled="" aria-label="No preview available">File</button>
 														</td>
@@ -111,6 +111,34 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CRUD Modal -->
+<div class="modal fade" id="crudModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Update Foto Profile</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-row upload--foto">
+						<div class="form-group col-12">
+							<input id="foto" type="file" accept=".png, .jpeg, .jpg">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn--upload-foto">Update</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 			</div>
 		</div>
 	</div>

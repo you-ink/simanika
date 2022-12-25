@@ -27,6 +27,10 @@ class WorkProgram_model extends CI_Model {
       (!empty($id)) ? $filter .= " AND proker.id = " . $this->db->escape($id) : "";
       (!empty($search)) ? $filter .= " AND proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%'" : "";
 
+      if ($user['divisi_id'] != 1) {
+        $filter .= " AND proker.divisi_id IS NULL OR proker.divisi_id IN(1, ".$user['divisi_id'].")";
+      }
+
       $recordsTotal = $this->db->query("
         SELECT 
           proker.id,
@@ -146,7 +150,8 @@ class WorkProgram_model extends CI_Model {
         'tanggal_acara' => $tanggal,
         'status' => $status,
         'pelaksana_id' => $pelaksana_id,
-        'penanggung_jawab_id' => $penanggung_jawab_id
+        'penanggung_jawab_id' => $penanggung_jawab_id,
+        'divisi_id' => $user['divisi_id']
       ));
 
       if ($tambah) {

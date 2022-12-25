@@ -23,6 +23,11 @@ class User extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function upload_foto_profile_post(){
+    	$response = $this->user->upload_foto_profile($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

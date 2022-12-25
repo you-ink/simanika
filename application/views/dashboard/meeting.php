@@ -31,9 +31,7 @@
 									<th scope="col" class="border-0">Nama Agenda Rapat</th>
 									<th scope="col" class="border-0">Waktu</th>
 									<th scope="col" class="border-0">Dokumen</th>
-									<?php if ($user['level_id'] == 1): ?>
-										<th scope="col" class="border-0">Aksi</th>
-									<?php endif ?>
+									<th scope="col" class="border-0">Aksi</th>
 								</tr>
 							</thead>
 							<tbody>

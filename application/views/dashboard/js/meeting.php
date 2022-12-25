@@ -50,9 +50,14 @@
 							let daftar_hadir = ''
 							if (res.notulensi) {
 								notulensi = `<p class="my-1"><a href="<?php echo base_url() ?>${res.notulensi}" taget="_blank" class="text-primary">Lihat Notulensi</a></p>`
+							} else {
+								notulensi = '<p class="my-1">-</p>'
 							}
+
 							if (res.daftar_hadir) {
 								daftar_hadir = `<p class="my-1"><a href="<?php echo base_url() ?>${res.daftar_hadir}" taget="_blank" class="text-primary">Lihat Daftar Hadir</a></p>`
+							} else {
+								daftar_hadir = '<p class="my-1">-</p>'
 							}
 
 							<?php if ($user['level_id'] == 1): ?>
@@ -64,17 +69,24 @@
 							`;
 						}
 					},
-					<?php if ($user['level_id'] == 1): ?>
-						{
-							data: null,
-							render: res => {
+					{
+						data: null,
+						render: res => {
+							let btn_edit = ''
+							let btn_delete = ''
+
+							btn_edit = `<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-meeting" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal}" data-tipe="${res.tipe}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>`
+
+							<?php if ($user['level_id'] == 1): ?>
+								btn_delete = `<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-meeting" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>`
+							<?php endif ?>
+
 								return `
-									<button type="button" class="btn btn-sm mb-1 btn-primary btn-update-meeting" data-id="${res.id}" data-name="${res.nama}" data-date="${res.tanggal}" data-tipe="${res.tipe}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-pen"></i></button>
-									<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-meeting" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
+									${btn_edit}
+									${btn_delete}
 								`;
-							}
 						}
-					<?php endif ?>
+					}
 				],
 				dom: "<'row'<'col-sm-12 mb-2'B>>lfrtip",
                 lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],

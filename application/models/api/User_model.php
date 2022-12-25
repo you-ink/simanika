@@ -71,6 +71,7 @@ class User_model extends CI_Model {
           	detail_user.bukti_kesanggupan,
           	detail_user.bukti_mahasiswa,
           	detail_user.tanggal_wawancara,
+          	detail_user.foto,
           	divisi.nama as divisi,
           	jabatan.nama as jabatan
         FROM
@@ -103,6 +104,7 @@ class User_model extends CI_Model {
 				'bukti_mahasiswa' => $get_user['bukti_mahasiswa'],
 				'file_bukti_mahasiswa' => explode($get_user['id']."/", $get_user['bukti_mahasiswa'])[1],
 				'tanggal_wawancara' => $get_user['tanggal_wawancara'],
+				'foto' => $get_user['foto'],
 				'divisi' => $get_user['divisi'],
 				'jabatan' => $get_user['jabatan'],
 			];
@@ -178,6 +180,62 @@ class User_model extends CI_Model {
 	    $hasil = array(
 	        'error' => true,
 	        'message' => "Profile gagal diupdate."
+	    );
+
+	    output:
+	    return $hasil;
+	}
+
+    public function upload_foto_profile($params){
+    	$user = get_user();
+		$user_id = $user['id'];
+
+      	$foto = $params['foto'];
+      
+	    if (empty($user_id)) {
+        	$hasil = array(
+          		'error' => true,
+          		'message' => "Anda belum login."
+        	);
+        	goto output;
+      	} else if (empty($foto)) {
+	        $hasil = array(
+    	      	'error' => true,
+	          	'message' => "Foto belum diisi."
+        	);
+        	goto output;
+      	}
+
+      	$detail_user = $this->db->select('foto')->get_where('detail_user', ['user_id' => $user_id])->row_array();
+      	$uploaded_foto = upload_base64("assets/cdn/member-document/" . $user_id . "/", $foto);
+
+      	if (!$uploaded_foto['status']) {
+          	$hasil = array(
+            	'error' => true,
+            	'message' => $uploaded_foto['message']
+          	);
+          	goto output;
+        }
+
+	    $update = $this->db->update('detail_user', array(
+	        'foto' => $uploaded_foto['path']
+	    ), ['user_id' => $user_id]);
+
+	    if ($update) {
+	      	if (file_exists(FCPATH.$detail_user['foto'])) {
+	        	unlink(FCPATH.$detail_user['foto']);
+	    	}
+
+	        $hasil = array(
+	          	'error' => false,
+	          	'message' => "Foto Profile berhasil diupdate."
+	        );
+	        goto output;
+	    }
+
+	    $hasil = array(
+	        'error' => true,
+	        'message' => "Foto Profile gagal diupdate."
 	    );
 
 	    output:

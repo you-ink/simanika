@@ -53,7 +53,7 @@
         </li> -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            <img class="user-avatar rounded-circle mr-2" src="<?php echo base_url() ?>assets/img/avatars/0.jpg" alt="User Avatar">
+            <img class="user-avatar rounded-circle mr-2" src="<?php echo base_url().$user_profile['foto'] ?>" alt="User Avatar" style="width: 2.5rem !important; height: 2.5rem !important;">
             <span class="d-none d-md-inline-block"><?php echo $user_profile['nama'] ?></span>
           </a>
           <div class="dropdown-menu dropdown-menu-small">

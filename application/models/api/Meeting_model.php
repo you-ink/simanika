@@ -27,6 +27,10 @@ class Meeting_model extends CI_Model {
       (!empty($id)) ? $filter .= " AND rapat.id = " . $this->db->escape($id) : "";
       (!empty($search)) ? $filter .= " AND (rapat.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR get_tipe_rapat(rapat.tipe) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
 
+      if ($user['divisi_id'] != 1) {
+        $filter .= " AND rapat.divisi_id IS NULL OR rapat.divisi_id IN(1, ".$user['divisi_id'].")";
+      }
+
       $recordsTotal = $this->db->query("
         SELECT 
           rapat.id,
@@ -122,7 +126,8 @@ class Meeting_model extends CI_Model {
       $tambah = $this->db->insert('rapat', array(
         'tipe' => $tipe,
         'nama' => $nama,
-        'tanggal' => $tanggal
+        'tanggal' => $tanggal,
+        'divisi_id' => $user['divisi_id']
       ));
 
       if ($tambah) {

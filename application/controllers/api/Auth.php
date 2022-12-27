@@ -13,6 +13,11 @@ class Auth extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function register_post(){
+    	$response = $this->auth->register($this->post());
+    	$this->response($response);
+  	}
+
   	public function forgotpassword_post(){
     	$response = $this->auth->forgotpassword($this->post());
     	$this->response($response);

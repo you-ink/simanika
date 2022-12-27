@@ -373,25 +373,43 @@ if(!function_exists('get_user')){
             return "Token not found.";
         }
 
-        $user = $ci->db->select("
-                users.id,
-                users.nama,
-                users.nim,
-                users.angkatan,
-                users.email,
-                users.telp,
-                users.alamat,
-                users.level_id as level,
-            ")
-            ->get_where('users', [
-                'token' => $token_uid
-            ])->row_array();
+        $user = $ci->db->query("SELECT
+            users.id,
+            users.nama,
+            users.telp,
+            users.email,
+            users.alamat,
+            users.status,
+            users.nim,
+            users.angkatan,
+            users.level_id,
+            detail_user.divisi_id,
+            detail_user.jabatan_id
+        FROM
+            users
+        LEFT JOIN detail_user ON users.id = detail_user.user_id
+        WHERE users.token = '$token_uid'")->row_array();
 
         return $user;
     }
 }
 
 if (!function_exists('generate_token')) {
+    function crypto_rand_secure($min, $max)
+    {
+        $range = $max - $min;
+        if ($range < 1) return $min; // not so random...
+        $log = ceil(log($range, 2));
+        $bytes = (int) ($log / 8) + 1; // length in bytes
+        $bits = (int) $log + 1; // length in bits
+        $filter = (int) (1 << $bits) - 1; // set all lower bits to 1
+        do {
+          $rnd = hexdec(bin2hex(openssl_random_pseudo_bytes($bytes)));
+          $rnd = $rnd & $filter; // discard irrelevant bits
+        } while ($rnd > $range);
+        return $min + $rnd;
+    }
+
     function generate_token($length = 181){
         $token = "";
         $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

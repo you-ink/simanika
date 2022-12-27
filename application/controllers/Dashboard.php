@@ -43,7 +43,7 @@ class Dashboard extends CI_Controller {
 
 	public function member()
 	{
-		if ($this->user['level_id'] != 1) {
+		if ($this->user['level_id'] != 1 || $this->user['status'] != 1) {
 			show_404();
 		}
 
@@ -59,7 +59,7 @@ class Dashboard extends CI_Controller {
 
 	public function division()
 	{
-		if ($this->user['level_id'] != 1) {
+		if ($this->user['level_id'] != 1 || $this->user['status'] != 1) {
 			show_404();
 		}
 		
@@ -75,7 +75,7 @@ class Dashboard extends CI_Controller {
 
 	public function position()
 	{
-		if ($this->user['level_id'] != 1) {
+		if ($this->user['level_id'] != 1 || $this->user['status'] != 1) {
 			show_404();
 		}
 		
@@ -91,6 +91,10 @@ class Dashboard extends CI_Controller {
 
 	public function meeting()
 	{
+		if ($this->user['status'] != 1) {
+			show_404();
+		}
+		
 		$data['title'] = 'Simanika - Rapat';
 
 		$this->load->view('app/dashboard/header', $data);
@@ -103,6 +107,10 @@ class Dashboard extends CI_Controller {
 
 	public function program()
 	{
+		if ($this->user['status'] != 1) {
+			show_404();
+		}
+		
 		$data['title'] = 'Simanika - Program Kerja';
 
 		$this->load->view('app/dashboard/header', $data);
@@ -115,6 +123,10 @@ class Dashboard extends CI_Controller {
 
 	public function Budget()
 	{
+		if ($this->user['status'] != 1) {
+			show_404();
+		}
+		
 		$data['title'] = 'Simanika - Anggaran Proker';
 
 		$this->load->view('app/dashboard/header', $data);

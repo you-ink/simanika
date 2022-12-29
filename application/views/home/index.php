@@ -48,10 +48,10 @@
 <body>
 
 	<!-- ======= Header ======= -->
-	<header id="header" class="fixed-top ">
+	<header id="header" class="fixed-top " style= "background-color: #05adec;">
 		<div class="container d-flex align-items-center">
 
-			<h1 class="logo me-auto"><a href="index.html">SIMANIKA</a></h1>
+			<h1 class="logo me-auto" ><a href="index.html"  >SIMANIKA</a></h1>
 			<!-- Uncomment below if you prefer to use an image logo -->
 			<!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -81,8 +81,8 @@
             </ul>
           </li> -->
 					<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-					<li><a class="getstarted scrollto" href="<?php echo base_url('auth/login') ?>">Login</a></li>
-					<li><a class="getstarted scrollto" href="<?php echo base_url('auth/register') ?>">Register</a>
+					<li><a class="getstarted scrollto" href="<?php echo base_url('auth/login') ?>"style=" background-color: black;">Login</a></li>
+					<li><a class="getstarted scrollto" href="<?php echo base_url('auth/register') ?>" style=" background-color: black;">Register</a>
 					</li>
 				</ul>
 				<i class="bi bi-list mobile-nav-toggle"></i>
@@ -92,18 +92,19 @@
 	</header><!-- End Header -->
 
 	<!-- ======= Hero Section ======= -->
-	<section id="hero" class="d-flex align-items-center">
+	<section id="hero" class="d-flex align-items-center" style="background-color: #05adec;">
+
 
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
 					data-aos="fade-up" data-aos-delay="200">
 					<h1>Himpunan Mahasiswa Program Studi Manajemen Informatika</h1>
-					<h2>Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
+					<h2 >Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
 					<div class="d-flex justify-content-center justify-content-lg-start">
-						<a href="#footer" class="btn-get-started scrollto">Subscribe</a>
-						<a href="https://www.youtube.com/watch?v=RAx8Hv8Wg9c" class="glightbox btn-watch-video"><i
-								class="bi bi-play-circle"></i><span>Watch Video</span></a>
+						<a href="#footer" class="btn-get-started scrollto " style="background-color:black ">Subscribe</a>
+						<a href="https://www.youtube.com/watch?v=RAx8Hv8Wg9c"  class="glightbox btn-watch-video" ><i
+								class="bi bi-play-circle" ></i><span>Watch Video</span></a>
 					</div>
 				</div>
 				<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="300">
@@ -118,8 +119,8 @@
 	<main id="main">
 
 		<!-- ======= Clients Section ======= -->
-		<section id="clients" class="clients section-bg pt-4">
-			<div class="container P-5">
+		<section id="clients" class="clients section-bg pt-4" style= "background-color: #000102;">
+			<div class="container P-5" style= "color: #ffff;">
 				<h1>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h1>
 
 				<div class="row" data-aos="zoom-in">
@@ -154,20 +155,20 @@
 		</section><!-- End Cliens Section -->
 
 		<!-- ======= Profile Section ======= -->
-		<section id="profile" class="why-us section-bg">
+		<section id="profile" class="why-us section-bg" style="background-color:white">
 			<div class="container p-1" data-aos="fade-up">
 
-				<div class="section-title">
-					<h2>VISI & MISI HIMANIKA</h2>
+				<div class="section-title" >
+					<h2 style= "color: #000000;">VISI & MISI HIMANIKA</h2>
 				</div>
 
 				<div class="main-content-container container-p-5">
 					<div class="row">
 
 						<div class="col-lg-12">
-							<div class="card card-small mb-4 pt-3">
-								<div class="card-header border-bottom">
-									<div class="text-center" style="background-color:#37517e;">
+							<div class="card card-small mb-4 pt-3" style="background-color:#05adec;">
+								<div class="card-header border-bottom"  style="background-color:#000000;">
+									<div class="text-center">
 										<div class="content pt-2 px-4">
 											<h3 style="color:White;"><b>VISI</b></h3>
 										</div>
@@ -175,12 +176,12 @@
 								</div>
 								<div class="col px-2">
 									<p>
-										<span style="color:DarkBlue;"><b>01</b></span> <p>Mewujudkan HIMANIKA sebagai
+										<span style="color:#000000;"><b>01</b></span> <p style="color:white;">Mewujudkan HIMANIKA sebagai
 										suatu media pembelajaran yang mencerdaskan mahasiswa dan
 										menciptakan suatu kenyamanan dalam Program Studi Manajemen Informatika</p>
 									</p>
 									<p>
-										<span style="color:DarkBlue;"><b>02</b></span> <p>Menjadikan HIMANIKA sebagai
+										<span style="color:#000000;"><b>02</b></span> <p style="color:white;">Menjadikan HIMANIKA sebagai
 										fasilitator kepada mahasiswa untuk berpartisipasi dalam
 										berbagai kegiatan atau hal positif</p>
 									</p>
@@ -189,9 +190,9 @@
 						</div>
 
 						<div class="col-lg-12">
-							<div class="card card-small mb-4 pt-3">
-							<div class="card-header border-bottom">
-									<div class="text-center" style="background-color:#37517e;">
+							<div class="card card-small mb-4 pt-3" style="background-color:#05adec;">
+							<div class="card-header border-bottom" style="background-color:#000000">
+									<div class="text-center" >
 										<div class="content pt-2 px-4">
 											<h3 style="color:White;"><b>MISI</b></h3>
 										</div>
@@ -199,24 +200,24 @@
 								</div>
 								<div class="col px-2">
 									<p>
-										<span style="color:DarkBlue;"><b>01</b></span> <p>Mengadakan pelatihan yang
+										<span style="color:#000000;"><b>01</b></span> <p style="color:white;">Mengadakan pelatihan yang
 										mendukung peningkatan pengetahuan dan skill dari setiap
 										mahasiswa</p>
 									</p>
 									<p>
-										<span style="color:DarkBlue;"><b>02</b></span> <p>Mewadahi kreativitas
+										<span style="color:#000000;"><b>02</b></span> <p style="color:white;">Mewadahi kreativitas
 										mahasiswa untuk mengembangkan suatu kemampuan yang dimiliki</p>
 									</p>
 									<p>
-										<span style="color:DarkBlue;"><b>03</b></span> <p>Mengembangkan branding media sosial guna 
+										<span style="color:#000000;"><b>03</b></span> <p style="color:white;">Mengembangkan branding media sosial guna 
 										meningkatkan informasi dan komunikasi</p>
 									</p>
 									<p>
-										<span style="color:DarkBlue;"><b>04</b></span> <p>Mengaktifkan fungsi media sosial sebagai 
+										<span style="color:#000000;"><b>04</b></span> <p style="color:white;">Mengaktifkan fungsi media sosial sebagai 
 										sarana pembelajaran berbasis online untuk kemajuan mahasiswa</p>
 									</p>
 									<p>
-										<span style="color:DarkBlue;"><b>05</b></span> <p>Melakukan kegiatan sharing bersama antara
+										<span style="color:#000000;"><b>05</b></span> <p style="color:white;">Melakukan kegiatan sharing bersama antara
 										dosen, alumni, dan mahasiswa aktif untuk menciptakan inovasi baru</p>
 									</p>
 								</div>
@@ -229,11 +230,11 @@
 		</section><!-- End Profile Section -->
 
 		<!-- ======= About Us Section ======= -->
-		<section id="about" class="about">
-			<div class="container" data-aos="fade-up">
+		<section id="about" class="about" style="background-color:white">
+			<div class="container" data-aos="fade-up" >
 
 				<div class="section-title">
-					<h2>APA ITU HIMANIKA ?</h2>
+					<h2 style="color:black;">APA ITU HIMANIKA ?</h2>
 				</div>
 				<div class="row content">
 					<div class="col xl-2 col-lg-15 mt-xl-10">
@@ -254,7 +255,7 @@
 			<br>
 
 			<div class="section-title">
-				<h2>TUJUAN HIMANIKA </h2>
+				<h2 style="color:black;">TUJUAN HIMANIKA </h2>
 			</div>
 			</div>
 			</div>
@@ -277,7 +278,7 @@
 			<br>
 
 			<div class="section-title">
-				<h2>PENGURUS HIMANIKA </h2>
+				<h2 style="color:black;">PENGURUS HIMANIKA </h2>
 			</div>
 			<div class="row content">
 				<div class="col xl-2 col-lg-15 mt-xl-6">
@@ -297,7 +298,7 @@
 			<br>
 
 			<div class="section-title">
-				<h2>ANGGOTA HIMANIKA </h2>
+				<h2 style="color:black;">ANGGOTA HIMANIKA </h2>
 			</div>
 			<div class="row content">
 				<div class="col xl-2 col-lg-15 mt-xl-6">
@@ -373,11 +374,11 @@
 		</section><!-- End Skills Section -->
 
 		<!-- ======= Structure Section ======= -->
-		<section id="structure" class="services section-bg">
+		<section id="structure" class="services section-bg" style="background-color:#05adec;">
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
-					<h2>Struktur dan Tugas Pokok HIMANIKA</h2>
+					<h2 style="color:white;">Struktur dan Tugas Pokok HIMANIKA</h2>
 				</div>
 
 				<div class="row">
@@ -385,7 +386,7 @@
 						data-aos-delay="100">
 						<div class="icon-box">
 							<div class="divisi text-center">
-								<h4><a href="">KETUA UMUM</a></h4>
+								<h4 ><a href="" style="color:black;">KETUA UMUM</a></h4>
 								<p>Bertanggung jawab terhadap organisasi imaprodi dan semua divisi agar
 									tercapainya visi dan misi, serta
 									korrdinasi dengan Himpunan mahasiswa Jurusan Teknologi Informasi (HMJTI)
@@ -398,7 +399,7 @@
 						data-aos-delay="200">
 						<div class="icon-box">
 							<div class="divisi text-center">
-								<h4><a href="">WAKIL KETUA UMUM</a></h4>
+								<h4><a href="" style="color:black;">WAKIL KETUA UMUM</a></h4>
 								<p>Membantu tugas dan wewenang ketua Umum HIMANIKA dan juga bertanggung jawab
 									terhadap semua divisi</p>
 							</div>
@@ -409,7 +410,7 @@
 						data-aos-delay="300">
 						<div class="icon-box">
 							<div class="divisi text-center">
-								<h4><a href="">SEKRETARIS</a></h4>
+								<h4><a href="" style="color:black;">SEKRETARIS</a></h4>
 								<p>Bertanggung jawab terhadap administrasi surat menyurat maupun laporan
 									berdasarkan kebutuhan
 									organisasi</p>
@@ -421,7 +422,7 @@
 						data-aos-delay="400">
 						<div class="icon-box">
 							<div class="divisi text-center">
-								<h4><a href="">BENDAHARA</a></h4>
+								<h4><a href="" style="color:black;">BENDAHARA</a></h4>
 								<p>Bertanggung jawab terhadap pengelolaan dan pendistribusian keuangan
 									organisasi</p>
 							</div>
@@ -432,7 +433,7 @@
 						data-aos-delay="400">
 						<div class="icon-box">
 							<div class="divisi text-center">
-								<h4><a href="">DIVISI HUMAS</a></h4>
+								<h4><a href="" style="color:black;">DIVISI HUMAS</a></h4>
 								<p>Bertanggung jawab dalam menjalin komunikasi dan informasi di lingkungan
 									internal Program Studi
 									Manajemen Informatika,
@@ -448,7 +449,7 @@
 						data-aos-delay="400">
 						<div class="icon-box">
 							<div class="divisi text-center">
-								<h4><a href="">DIVISI PSDM</a></h4>
+								<h4><a href="" style="color:black;">DIVISI PSDM</a></h4>
 								<p>Terdiri dari 2 subdivisi, yaitu Subdivisi Minat Bakat (Akademik & Non
 									Akademik) dan Subdivisi
 									Kewirausahaan <br>
@@ -472,7 +473,7 @@
 						data-aos-delay="400">
 						<div class="icon-box">
 							<div class="divisi text-center">
-								<h4><a href="">DIVISI KOMINFO</a></h4>
+								<h4><a href="" style="color:black;">DIVISI KOMINFO</a></h4>
 								<p>Bertanggung jawab dalam mengelola media komunikasi dan informasi untuk
 									mempublikasikan aktivitas
 									keorganisasian HIMANIKA
@@ -492,7 +493,7 @@
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
-					<h2>Kepengurusan HIMANIKA Tahun Periode 2021/2022</h2>
+					<h2 style="color:#05adec;">Kepengurusan HIMANIKA Tahun Periode 2021/2022</h2>
 					<p>Badan Pengurus Harian Himpunan Mahasiswa Program Studi Manajemen Informatika Tahun Periode
 						2021/2022 </p>
 				</div>
@@ -506,14 +507,14 @@
 									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/ketua.jpg"
 									class="img-fluid" alt=""></div>
 							<div class="team-img">
-								<h4>Muhammad Rudy Darmawan</h4>
+								<h4 style="color:#05adec;">Muhammad Rudy Darmawan</h4>
 								<span>Ketua Umum</span>
 								<p>Manajemen Informatika Angkatan 2020</p>
 								<div class="social">
-									<a href=""><i class="ri-twitter-fill"></i></a>
-									<a href=""><i class="ri-facebook-fill"></i></a>
-									<a href=""><i class="ri-instagram-fill"></i></a>
-									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+									<a href="" ><i  style="color:#05adec;" class="ri-twitter-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
+									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
 								</div>
 							</div>
 						</div>
@@ -525,14 +526,14 @@
 									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/wakilketua.jpg"
 									class="img-fluid" alt=""></div>
 							<div class="team-img">
-								<h4>Atikah Nuri Hazma</h4>
+								<h4 style="color:#05adec;" >Atikah Nuri Hazma</h4>
 								<span>Wakil Ketua Umum</span>
 								<p>Manajemen Informatika Angkatan 2021</p>
 								<div class="social">
-									<a href=""><i class="ri-twitter-fill"></i></a>
-									<a href=""><i class="ri-facebook-fill"></i></a>
-									<a href=""><i class="ri-instagram-fill"></i></a>
-									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
+									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
 								</div>
 							</div>
 						</div>
@@ -544,14 +545,14 @@
 									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris1.jpg"
 									class="img-fluid" alt=""></div>
 							<div class="team-img">
-								<h4>Rahma Romadona Ayu Riswanti</h4>
+								<h4 style="color:#05adec;" >Rahma Romadona Ayu Riswanti</h4>
 								<span>Sekretaris 1</span>
 								<p>Manajemen Informatika Angkatan 2020</p>
 								<div class="social">
-									<a href=""><i class="ri-twitter-fill"></i></a>
-									<a href=""><i class="ri-facebook-fill"></i></a>
-									<a href=""><i class="ri-instagram-fill"></i></a>
-									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
+									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
 								</div>
 							</div>
 						</div>
@@ -563,14 +564,14 @@
 									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris2.jpg"
 									class="img-fluid" alt=""></div>
 							<div class="team-img">
-								<h4>Mutia Budi Utami</h4>
+								<h4 style="color:#05adec;" >Mutia Budi Utami</h4>
 								<span>Sekretaris 2</span>
 								<p>Manajemen Informatika Angkatan 2021</p>
 								<div class="social">
-									<a href=""><i class="ri-twitter-fill"></i></a>
-									<a href=""><i class="ri-facebook-fill"></i></a>
-									<a href=""><i class="ri-instagram-fill"></i></a>
-									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
+									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
 								</div>
 							</div>
 						</div>
@@ -582,14 +583,14 @@
 									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara1.jpg"
 									class="img-fluid" alt=""></div>
 							<div class="team-img">
-								<h4>Nurlita Ayu Rakhmawati</h4>
+								<h4 style="color:#05adec;" >Nurlita Ayu Rakhmawati</h4>
 								<span>Bendahara 1</span>
 								<p>Manajemen Informatika Angkatan 2020</p>
 								<div class="social">
-									<a href=""><i class="ri-twitter-fill"></i></a>
-									<a href=""><i class="ri-facebook-fill"></i></a>
-									<a href=""><i class="ri-instagram-fill"></i></a>
-									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
+									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
 								</div>
 							</div>
 						</div>
@@ -601,14 +602,14 @@
 									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara2.jpg"
 									class="img-fluid" alt=""></div>
 							<div class="team-img">
-								<h4>Marisa Setya Anggraini</h4>
+								<h4 style="color:#05adec;" >Marisa Setya Anggraini</h4>
 								<span>Bendahara 2</span>
 								<p>Manajemen Informatika Angkatan 2021</p>
 								<div class="social">
-									<a href=""><i class="ri-twitter-fill"></i></a>
-									<a href=""><i class="ri-facebook-fill"></i></a>
-									<a href=""><i class="ri-instagram-fill"></i></a>
-									<a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
+									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
+									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
 								</div>
 							</div>
 						</div>
@@ -1015,12 +1016,12 @@
 
 
 		<!-- ======= Cta Section ======= -->
-		<section id="cta" class="cta">
+		<section id="cta" class="cta" >
 			<div class="container" data-aos="zoom-in">
 
 				<div class="row">
 					<div class="col-lg-9 text-center text-lg-start">
-						<h3>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h3>
+						<h3 >HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h3>
 						<p> Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
 					</div>
 					<div class="col-lg-3 cta-btn-container text-center">
@@ -1037,7 +1038,7 @@
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
-					<h2>Rekapitulasi Agenda Kegiatan HIMANIKA</h2>
+					<h2 style="color:#05adec;" >Rekapitulasi Agenda Kegiatan HIMANIKA</h2>
 					<p>Dokumentasi Kegiatan Himpunan Mahasiswa Manajemen Informatika Tahun Periode 2021/2022</p>
 				</div>
 
@@ -1328,7 +1329,7 @@
 			<div class="container" data-aos="fade-up">
 
 				<div class="section-title">
-					<h2>Contact</h2>
+					<h2 style="color:black;" >Contact</h2>
 					<p>Himpunan Mahasiswa Program Studi Manajemen Informatika Tahun Periode 2021/2022</p>
 				</div>
 
@@ -1433,7 +1434,7 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-6">
-						<h4>Join Our Organization</h4><br>
+						<h4 style="color:#05adec;" >Join Our Organization</h4><br>
 						<h5>HIMPUNAN MAHASISWA PROGRAM STUDI MANAJEMEN INFORMATIKA</h5>
 						<p>Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</p>
 						<!-- <form action="https://bit.ly/PendaftaranHimanika2023" method="post">
@@ -1449,7 +1450,7 @@
 				<div class="row">
 
 					<div class="col-lg-3 col-md-6 footer-contact">
-						<h3>SIMANIKA</h3>
+						<h3 style="color:#05adec;" >SIMANIKA</h3>
 						<p>
 							Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur
 							68121. Polteknik
@@ -1462,7 +1463,7 @@
 					</div>
 
 					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Useful Links</h4>
+						<h4 style="color:#05adec;" >Useful Links</h4>
 						<ul>
 							<li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
 							<li><i class="bx bx-chevron-right"></i> <a href="#profile">Profile</a></li>
@@ -1475,7 +1476,7 @@
 					</div>
 
 					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>About us</h4>
+						<h4 style="color:#05adec;" >About us</h4>
 						<ul>
 							<li><i class="bx bx-chevron-right"></i> <a href="#about">Apa itu Himanika?</a></li>
 							<li><i class="bx bx-chevron-right"></i> <a href="#about">Tujuan Himanika</a></li>
@@ -1485,7 +1486,7 @@
 					</div>
 
 					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Contact Us</h4>
+						<h4 style="color:#05adec;" >Contact Us</h4>
 						<p>Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak
 							dipublikasikan. Silahkan
 							hubungi kami melalui kontak form pada tautan berikut atau email kami.</p>
@@ -1503,11 +1504,11 @@
 			</div>
 		</div>
 
-		<div class="container footer-bottom clearfix">
-			<div class="copyright">
+		<div style="color:#05adec;"  class="container footer-bottom clearfix" >
+			<div class="copyright" >
 				&copy; Copyright <strong><span>Simanika</span></strong>. All Rights Reserved
 			</div>
-			<div class="credits">
+			<div class="credits" style="color:#05adec;" >
 				<!-- All the links in the footer should remain intact. -->
 				<!-- You can delete the links only if you purchased the pro version. -->
 				<!-- Licensing information: https://bootstrapmade.com/license/ -->

@@ -14,7 +14,8 @@
 					"type": "GET",
 					"data": {
 						"SIMANIKA-API-KEY": get_api_login_value(),
-						"sort": "ASC"
+						"sort": "ASC",
+						"status": "1"
 					},
 					"headers": {
 						"Authorization" : get_api_key()
@@ -53,6 +54,7 @@
 						data: null,
 						render: res => {
 							return `
+								<button type="button" class="btn btn-sm mb-1 btn-primary btn-setujui" data-id="${res.id}" data-name="${res.nama}" data-toggle="modal" data-target="#setujuiModal">Ganti Divisi & Jabatan</button><br>
 								<button type="button" class="btn btn-sm mb-1 btn-warning btn-detail-member" data-alamat="${res.alamat}" data-tanggalWawancara="${res.tanggal_wawancara}" data-buktiKesanggupan="${res.bukti_kesanggupan}" data-buktiMahasiswa="${res.bukti_mahasiswa}" data-fileBuktiKesanggupan="${res.file_bukti_kesanggupan}" data-fileBuktiMahasiswa="${res.file_bukti_mahasiswa}" data-toggle="modal" data-target="#crudModal"><i class="fas fa-info"></i></button>
 								<button type="button" class="btn btn-sm mb-1 btn-danger btn-delete-member" data-id="${res.id}" data-name="${res.nama}"><i class="fas fa-trash"></i></button>
 							`;
@@ -86,6 +88,40 @@
 		}
 
 		load_member();
+
+		get_division();
+
+		function get_division() {
+			param = {}
+			param[get_api_login_global()['key']] = get_api_login_value();
+			callApi("POST", "division/getAll", param, function(req) {
+				$("select#division").select2({
+			        dropdownParent: $('#setujuiModal')
+			    });
+				option = '<option value="">-</option>';
+				$.each(req.data, function(index, val) {
+					option += '<option value="' + val.id + '">' + val.nama + '</option>';
+				});
+				$("select#division").html(option);
+			})
+		}
+
+		get_position();
+
+		function get_position() {
+			param = {}
+			param[get_api_login_global()['key']] = get_api_login_value();
+			callApi("POST", "position/getAll", param, function(req) {
+				$("select#position").select2({
+			        dropdownParent: $('#setujuiModal')
+			    });
+				option = '<option value="">-</option>';
+				$.each(req.data, function(index, val) {
+					option += '<option value="' + val.id + '">' + val.nama + '</option>';
+				});
+				$("select#position").html(option);
+			})
+		}
 
 		$(document).on('click', ".btn-detail-member", function () {
 			$('#crudModal #tanggalWawancara').val($(this).attr('data-tanggalWawancara'))
@@ -134,6 +170,43 @@
 				})
 
 			  }
+			})
+		})
+
+		$(document).on('click', ".btn-setujui", function () {
+			$('#setujuiModal .setujui-member-name').html($(this).attr('data-name'))
+
+			$('.btn-confirm-setujui').attr('data-id', $(this).attr('data-id'))
+		})
+
+		$(document).on('click', '.btn-confirm-setujui', function () {
+			data = {
+				user_id: $(this).attr('data-id'),
+				divisi: $("select#division").val(),
+				jabatan: $("select#position").val(),
+			}
+
+			data[get_api_login_global()['key']] = get_api_login_value();
+
+			callApi("POST", "member/set_member", data, function (req) {
+				pesan = req.message;
+				if (req.error == true) {
+					Swal.fire(
+				      'Gagal diupdate!',
+				      pesan,
+				      'error'
+				    )
+				}else{
+					Swal.fire(
+				      'Diupdate!',
+				      pesan,
+				      'success'
+				    )
+				    $("select#division").val('').change()
+				    $("select#position").val('').change()
+				    $("#setujuiModal").modal("hide")
+					load_member();
+				}
 			})
 		})
 

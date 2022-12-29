@@ -18,6 +18,16 @@ class Member extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function set_interview_post(){
+    	$response = $this->member->set_interview($this->post());
+    	$this->response($response);
+  	}
+
+  	public function set_member_post(){
+    	$response = $this->member->set_member($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

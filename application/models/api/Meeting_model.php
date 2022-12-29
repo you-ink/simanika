@@ -91,7 +91,7 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level'] != 1) {
+      if ($user['level_id'] != 1) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -159,7 +159,7 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level'] != 1) {
+      if ($user['level_id'] != 1) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -233,7 +233,7 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level'] != 1) {
+      if ($user['level_id'] != 1) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -282,7 +282,7 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level'] != 1) {
+      if ($user['level_id'] != 1) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -350,7 +350,7 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level'] != 1) {
+      if ($user['level_id'] != 1) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."

@@ -111,3 +111,39 @@
 		</div>
 	</div>
 </div>
+
+<!-- CRUD Modal -->
+<div class="modal fade" id="setujuiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLongTitle">Ganti Divisi dan Jabatan <span class="setujui-member-name"></span></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body pb-0">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="division">Divisi</label>
+							<select id="division" class="form-control" style="width: 100%">
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-12">
+							<label for="position">Jabatan</label>
+							<select id="position" class="form-control" style="width: 100%">
+							</select>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-confirm-setujui">Setujui</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

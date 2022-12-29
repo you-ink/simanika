@@ -28,6 +28,11 @@ class Position extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function getAll_post(){
+	    $response = $this->position->getAll($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

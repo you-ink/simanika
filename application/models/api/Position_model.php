@@ -14,6 +14,14 @@ class Position_model extends CI_Model {
         goto output;
       }
 
+      if ($user['level_id'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
+
       $length = intval($params['length']);
       $start = intval($params['start']);
       $draw = $params['draw'];
@@ -75,6 +83,14 @@ class Position_model extends CI_Model {
         goto output;
       }
 
+      if ($user['level_id'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
+
       $nama = $params['nama'];
       
       if (empty($nama)) {
@@ -114,6 +130,14 @@ class Position_model extends CI_Model {
         $hasil = array(
             'error' => true,
             'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
+      if ($user['level_id'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
         );
         goto output;
       }
@@ -167,6 +191,14 @@ class Position_model extends CI_Model {
         );
         goto output;
       }
+
+      if ($user['level_id'] != 1) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
       
       $id = $params['id'];
       
@@ -195,6 +227,47 @@ class Position_model extends CI_Model {
 
       output:
       return $hasil;
+    }
+    
+    public function getAll($params){
+      $user = get_user();
+      $user_id = $user['id'];
+      
+      if (empty($user_id)) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Anda belum login."
+        );
+        goto output;
+      }
+
+      $id = isset($params['id']) ? $params['id'] : '';
+
+      $position = $this->db->query("SELECT
+        id,
+        nama
+      FROM jabatan");
+
+      if ($position->num_rows() > 0) {
+
+        $no = 0;
+        foreach ($position->result_array() as $key) {
+          $result['error'] = false;
+          $result['message'] = null;
+          $result['data'][$no++] = [
+            'id' => $key['id'],
+            'nama' => $key['nama']
+          ];
+        }
+        goto output;
+      }
+
+      $result['Error'] = true;
+      $result['Message'] = "Jabatan tidak ditemukan";
+      goto output;
+
+      output:
+      return $result;
     }
 
 

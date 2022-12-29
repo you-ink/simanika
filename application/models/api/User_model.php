@@ -16,7 +16,7 @@ class User_model extends CI_Model {
 
 		$id = isset($params['id']) ? $params['id'] : '';
 
-		$user = $this->db->query("SELECT
+		$get_user = $this->db->query("SELECT
 			id,
 			nim,
 			angkatan,
@@ -26,10 +26,10 @@ class User_model extends CI_Model {
 			alamat
 		FROM users");
 
-		if ($user->num_rows() > 0) {
+		if ($get_user->num_rows() > 0) {
 
 			$no = 0;
-			foreach ($user->result_array() as $key) {
+			foreach ($get_user->result_array() as $key) {
 				$result['error'] = false;
 				$result['message'] = null;
 				$result['data'][$no++] = [

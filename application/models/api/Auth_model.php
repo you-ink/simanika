@@ -182,7 +182,7 @@ class Auth_model extends CI_Model {
         'nim' => $nim,
         'angkatan' => $angkatan,
         'token' => $token,
-        'status' => "0",
+        'status' => "2",
         'level_id' => '3'
       ));
 

@@ -28,6 +28,11 @@ class Division extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function getAll_post(){
+	    $response = $this->division->getAll($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

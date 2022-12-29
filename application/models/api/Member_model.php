@@ -213,6 +213,8 @@ class Member_model extends CI_Model {
         goto output;
       }
 
+      $data_user = $this->db->select("email")->get_where("users", ['id' => $wawancara_user_id])->row_array();
+
       $update = $this->db->update('detail_user', array(
           'tanggal_wawancara' => $tanggal,
           'waktu_wawancara' => $waktu,
@@ -238,7 +240,7 @@ class Member_model extends CI_Model {
         $mail->setFrom(env("mail_username"), 'No-reply '.env("mail_name"));
         $mail->addReplyTo(env("mail_username"), 'No-reply '.env("mail_name"));
 
-        $mail->addAddress($email);
+        $mail->addAddress($data_user['email']);
         $mail->Subject = 'Tanggal Wawancara';
 
         $mail->Body = header_email_reset_password().'<table border="0" cellpadding="0" cellspacing="0" class="text_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
@@ -268,12 +270,14 @@ class Member_model extends CI_Model {
         <td class="pad">
         <div style="font-family: sans-serif">
         <div class="" style="font-size: 15px; mso-line-height-alt: 21px; color: #000000; line-height: 1.5; font-family: Varela Round, Trebuchet MS, Helvetica, sans-serif;">
-        <p style="margin: 0; font-size: 15px; text-align: center; mso-line-height-alt: 21px;">'+$dateTime->format('Y-m-d H:i:s')+'</span></p>
+        <p style="margin: 0; font-size: 15px; text-align: center; mso-line-height-alt: 21px;">'.$dateTime->format('Y-m-d H:i:s').'</span></p>
         </div>
         </div>
         </td>
         </tr>
         </table>'.footer_email_reset_password();
+
+        $mail->send();
 
         $hasil = array(
             'error' => false,

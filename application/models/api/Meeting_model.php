@@ -91,13 +91,13 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level_id'] != 1) {
-        $hasil = array(
-            'error' => true,
-            'message' => "Unauthorized."
-        );
-        goto output;
-      }
+      // if ($user['level_id'] != 1) {
+      //   $hasil = array(
+      //       'error' => true,
+      //       'message' => "Unauthorized."
+      //   );
+      //   goto output;
+      // }
 
       $tipe = $params['tipe'];
       $nama = $params['nama'];
@@ -159,7 +159,7 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level_id'] != 1) {
+      if ($user['level_id'] == 3) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -233,7 +233,7 @@ class Meeting_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level_id'] != 1) {
+      if ($user['level_id'] == 3) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."

@@ -25,7 +25,7 @@ class WorkProgram_model extends CI_Model {
 
       $filter = "WHERE proker.id IS NOT NULL";
       (!empty($id)) ? $filter .= " AND proker.id = " . $this->db->escape($id) : "";
-      (!empty($search)) ? $filter .= " AND proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%'" : "";
+      (!empty($search)) ? $filter .= " AND (proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR get_status(proker.status) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
 
       if ($user['divisi_id'] != 1) {
         $filter .= " AND proker.divisi_id IS NULL OR proker.divisi_id IN(1, ".$user['divisi_id'].")";
@@ -107,6 +107,14 @@ class WorkProgram_model extends CI_Model {
         goto output;
       }
 
+      if ($user['level_id'] == 3) {
+        $hasil = array(
+            'error' => true,
+            'message' => "Unauthorized."
+        );
+        goto output;
+      }
+
       $nama = $params['nama'];
       $tanggal = $params['tanggal'];
       $status = $params['status'];
@@ -183,7 +191,7 @@ class WorkProgram_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level_id'] != 1) {
+      if ($user['level_id'] == 3) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -273,7 +281,7 @@ class WorkProgram_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level_id'] != 1) {
+      if ($user['level_id'] == 3) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -322,7 +330,7 @@ class WorkProgram_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level'] == 3) {
+      if ($user['level_id'] == 3) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."
@@ -390,7 +398,7 @@ class WorkProgram_model extends CI_Model {
         goto output;
       }
 
-      if ($user['level_id'] != 1) {
+      if ($user['level_id'] == 3) {
         $hasil = array(
             'error' => true,
             'message' => "Unauthorized."

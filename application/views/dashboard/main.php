@@ -31,7 +31,7 @@
 					<div class="d-flex flex-column m-auto">
 						<div class="stats-small__data text-center">
 							<span class="stats-small__label text-uppercase">Anggota Baru</span>
-							<h6 class="stats-small__value count my-3">2,390</h6>
+							<h6 class="stats-small__value count my-3 dashboard-item-1"></h6>
 						</div>
 					</div>
 				</div>
@@ -43,7 +43,7 @@
 					<div class="d-flex flex-column m-auto">
 						<div class="stats-small__data text-center">
 							<span class="stats-small__label text-uppercase">seluruh proker</span>
-							<h6 class="stats-small__value count my-3">17,281</h6>
+							<h6 class="stats-small__value count my-3 dashboard-item-2"></h6>
 						</div>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 					<div class="d-flex flex-column m-auto">
 						<div class="stats-small__data text-center">
 							<span class="stats-small__label text-uppercase">proker bulan ini</span>
-							<h6 class="stats-small__value count my-3">182</h6>
+							<h6 class="stats-small__value count my-3 dashboard-item-3"></h6>
 						</div>
 					</div>
 				</div>
@@ -67,7 +67,7 @@
 					<div class="d-flex flex-column m-auto">
 						<div class="stats-small__data text-center">
 							<span class="stats-small__label text-uppercase">proker belum selesai</span>
-							<h6 class="stats-small__value count my-3">8,147</h6>
+							<h6 class="stats-small__value count my-3 dashboard-item-4"></h6>
 						</div>
 					</div>
 				</div>
@@ -79,7 +79,7 @@
 					<div class="d-flex flex-column m-auto">
 						<div class="stats-small__data text-center">
 							<span class="stats-small__label text-uppercase">proker selesai</span>
-							<h6 class="stats-small__value count my-3">2,413</h6>
+							<h6 class="stats-small__value count my-3 dashboard-item-5"></h6>
 						</div>
 					</div>
 				</div>
@@ -127,37 +127,58 @@
 	<!-- End Small Stats Blocks -->
 	<div class="row">
 		<!-- Users Stats -->
-		<div class="col-lg-8 col-md-12 col-sm-12 mb-4">
+		<div class="col-lg-12 col-md-12 col-sm-12 mb-4">
 			<div class="card card-small">
 				<div class="card-header border-bottom">
 					<h6 class="m-0">Proker Bulan Ini</h6>
 				</div>
 				<div class="card-body pt-0">
-					<table class="table mb-0">
-						<thead class="bg-light">
-							<tr>
-								<th scope="col" class="border-0">No</th>
-								<th scope="col" class="border-0">Nama Program Kerja</th>
-								<th scope="col" class="border-0">Status</th>
-								<th scope="col" class="border-0">Tanggal</th>
-							</tr>
-						</thead>
-						<tbody>
-							
-						</tbody>
-					</table>
+					<div class="table-responsive mt-3">
+						<table class="table table-proker-this-month mb-0">
+							<thead class="bg-light">
+								<tr>
+									<th scope="col" class="border-0">No</th>
+									<th scope="col" class="border-0">Nama Program Kerja</th>
+									<th scope="col" class="border-0">Status</th>
+									<th scope="col" class="border-0">Tanggal</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
 		<!-- End Users Stats -->
 		<!-- Users By Device Stats -->
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+		<div class="col-lg-12 col-md-12 col-sm-12 mb-4">
 			<div class="card card-small h-100">
 				<div class="card-header border-bottom">
-					<h6 class="m-0">Statistik Proker</h6>
+					<h6 class="m-0">Statistik Rapat Per Tahun</h6>
 				</div>
-				<div class="card-body d-flex py-0">
-					<canvas height="220" class="blog-users-by-device m-auto"></canvas>
+				<div class="card-body d-flex p-3 row">
+                  	<div class="col-12 mb-3">
+                  		<label class="fw-bold">Pilih Tahun:</label>
+                  		<select class="form-control select-statistics-year">
+                  			<?php 
+
+                  				$currentYear = date("Y");
+
+								// Membuat perulangan tahun 2010 sampai tahun sekarang
+								for ($year = 2021; $year <= $currentYear; $year++) {
+									if ($year == $currentYear) {
+	  									echo "<option value='$year' selected>Tahun $year</option>";
+									} else {
+	  									echo "<option value='$year'>Tahun $year</option>";
+									}
+								}
+
+                  			?>
+                  		</select>
+                  	</div>
+					<div id="chartdiv" style="width: 100%; height: 500px;"></div>
 				</div>
 			</div>
 		</div>

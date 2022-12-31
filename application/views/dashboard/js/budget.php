@@ -225,6 +225,7 @@
 				    $("input#budgetName").val('')
 				    $("#crudModal").modal("hide")
 				    load_main();
+				    get_budget()
 				}
 			})
 		})

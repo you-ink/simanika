@@ -553,7 +553,7 @@ class WorkProgram_model extends CI_Model {
       }
 
       $tambah = $this->db->insert('anggaran_proker', array(
-        'nama' => $nama,
+        'nama' => strtoupper($nama),
         'proker_id' => $proker_id
       ));
 

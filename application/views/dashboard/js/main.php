@@ -352,6 +352,9 @@
 			})
 
 			$(document).on('click', '.btn-confirm-set-wawancara', function () {
+				$(this).html("<i class='fas fa-spinner fa-pulse'></i>")
+				$(this).attr('disabled', true)
+
 				data = {
 					user_id: $(this).attr('data-id'),
 					tanggal: $("input#tanggalWawancara").val(),
@@ -367,13 +370,19 @@
 					      'Gagal diupdate!',
 					      pesan,
 					      'error'
-					    )
+					    ).then((result) => {
+							$('.btn-confirm-set-wawancara').html("Set Tanggal")
+							$('.btn-confirm-set-wawancara').attr('disabled', false)
+						})
 					}else{
 						Swal.fire(
 					      'Diupdate!',
 					      pesan,
 					      'success'
-					    )
+					    ).then((result) => {
+							$('.btn-confirm-set-wawancara').html("Set Tanggal")
+							$('.btn-confirm-set-wawancara').attr('disabled', false)
+						})
 					    $("input#tanggalWawancara").val('')
 					    $("input#waktuWawancara").val('')
 					    $("#wawancaraModal").modal("hide")

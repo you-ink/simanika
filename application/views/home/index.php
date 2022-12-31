@@ -103,7 +103,6 @@
 					<h1>Himpunan Mahasiswa Program Studi Manajemen Informatika</h1>
 					<h2 >Diam Mengamati, Bergerak Pasti, Melangkah Bersinergi</h2>
 					<div class="d-flex justify-content-center justify-content-lg-start">
-						<a href="#footer" class="btn-get-started scrollto " style="background-color:black ">Subscribe</a>
 						<a href="https://www.youtube.com/watch?v=RAx8Hv8Wg9c"  class="glightbox btn-watch-video" ><i
 								class="bi bi-play-circle" ></i><span>Watch Video</span></a>
 					</div>
@@ -1336,7 +1335,7 @@
 
 				<div class="row">
 
-					<div class="col-lg-5 d-flex align-items-stretch">
+					<div class="col d-flex align-items-stretch">
 						<div class="info">
 							<div class="address">
 								<i class="bi bi-geo-alt"></i>
@@ -1384,7 +1383,7 @@
 
 							<br>
 							<iframe class="Maps" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-								width="100%" height="250" type="text/html"
+								width="100%" height="300" type="text/html"
 								src="https://www.youtube.com/embed/4P71C-72r3U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
 							<!-- <iframe class="Maps" src="https://www.youtube.com/watch?v=RAx8Hv8Wg9c" width="100%" height="250"
 								frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
@@ -1392,7 +1391,7 @@
 
 					</div>
 
-					<div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+					<!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
 						<form action="forms/contact.php" method="post" role="form" class="php-email-form">
 							<div class="row">
 								<div class="form-group col-md-6">
@@ -1419,7 +1418,7 @@
 							</div>
 							<div class="text-center"><button type="submit">Send Message</button></div>
 						</form>
-					</div>
+					</div> -->
 
 				</div>
 

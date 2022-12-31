@@ -182,6 +182,9 @@
 						data: 'nama'
 					},
 					{
+						data: 'divisi'
+					},
+					{
 						data: 'nama_status'
 					},
 					{

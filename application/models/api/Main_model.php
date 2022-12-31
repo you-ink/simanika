@@ -77,9 +77,11 @@ class Main_model extends CI_Model {
           		penanggung_jawab_id,
           		(
             		SELECT SUM(jumlah*harga) FROM detail_anggaran_proker LEFT JOIN anggaran_proker on anggaran_proker.id = anggaran_proker_id WHERE proker_id = proker.id
-          		) as total
+          		) as total,
+          		divisi.nama as divisi
         	FROM
           		proker
+        	LEFT JOIN divisi ON divisi.id = divisi_id
         	LEFT JOIN users pelaksana ON pelaksana.id = pelaksana_id
         	LEFT JOIN users penanggung_jawab ON penanggung_jawab.id = penanggung_jawab_id
         	$filter
@@ -100,9 +102,11 @@ class Main_model extends CI_Model {
           		penanggung_jawab_id,
           		(
             		SELECT SUM(jumlah*harga) FROM detail_anggaran_proker LEFT JOIN anggaran_proker on anggaran_proker.id = anggaran_proker_id WHERE proker_id = proker.id
-          		) as total
+          		) as total,
+          		divisi.nama as divisi
         	FROM
           		proker
+        	LEFT JOIN divisi ON divisi.id = divisi_id
         	LEFT JOIN users pelaksana ON pelaksana.id = pelaksana_id
         	LEFT JOIN users penanggung_jawab ON penanggung_jawab.id = penanggung_jawab_id
         	$filter

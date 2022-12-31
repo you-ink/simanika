@@ -139,6 +139,7 @@
 								<tr>
 									<th scope="col" class="border-0">No</th>
 									<th scope="col" class="border-0">Nama Program Kerja</th>
+									<th scope="col" class="border-0">Divisi</th>
 									<th scope="col" class="border-0">Status</th>
 									<th scope="col" class="border-0">Tanggal</th>
 								</tr>

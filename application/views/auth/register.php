@@ -104,19 +104,19 @@
 									</div>
 									<div class="form-row upload--foto text-white">
 										<div class="form-group col-12">
-											<label class="text-white">Foto Profile</label>
+											<label class="text-white">Foto Profile (.jpg, .jpeg, .png)</label>
 											<input id="foto" type="file" accept=".jpg, .jpeg, .png">
 										</div>
 									</div>
 									<div class="form-row upload--bukti_kesanggupan text-white">
 										<div class="form-group col-12">
-											<label class="text-white">Bukti Kesanggupan</label>
+											<label class="text-white">Bukti Kesanggupan (.pdf, .docx, .doc)</label>
 											<input id="bukti_kesanggupan" type="file" accept=".pdf, .docx, .doc">
 										</div>
 									</div>
 									<div class="form-row upload--bukti_mahasiswa text-white">
 										<div class="form-group col-12">
-											<label class="text-white">Bukti Mahasiswa</label>
+											<label class="text-white">Bukti Mahasiswa (.pdf, .png, .jpeg, .jpg)</label>
 											<input id="bukti_mahasiswa" type="file" accept=".pdf, .png, .jpeg, .jpg">
 										</div>
 									</div>

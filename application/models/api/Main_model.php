@@ -62,10 +62,6 @@ class Main_model extends CI_Model {
       	(!empty($id)) ? $filter .= " AND proker.id = " . $this->db->escape($id) : "";
       	(!empty($search)) ? $filter .= " AND (proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR get_status(proker.status) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
 
-      	if ($user['divisi_id'] != 1) {
-        	$filter .= " AND proker.divisi_id IS NULL OR proker.divisi_id IN(1, ".$user['divisi_id'].")";
-      	}
-
       	$recordsTotal = $this->db->query("
         	SELECT 
           		proker.id,

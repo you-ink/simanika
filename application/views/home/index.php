@@ -44,6 +44,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+	
 
 <body>
 
@@ -1016,7 +1017,7 @@
 
 
 		<!-- ======= Cta Section ======= -->
-		<section id="cta" class="cta" >
+		<section id="cta" class="cta" style="background-color: #05adec;">
 			<div class="container" data-aos="zoom-in">
 
 				<div class="row">
@@ -1504,9 +1505,11 @@
 			</div>
 		</div>
 
-		<div style="color:#05adec;"  class="container footer-bottom clearfix" >
-			<div class="copyright" >
-				&copy; Copyright <strong><span>Simanika</span></strong>. All Rights Reserved
+		<div style= "background-color: #05adec;" class="footer-bottom clearfix" >
+			<div class="container">
+				<span>Copyright &copy; 2022
+              		<a href="<?php echo base_url('home/') ?>" style="color:	#483D8B;">Simanika</a>
+            	</span>	
 			</div>
 			<div class="credits" style="color:#05adec;" >
 				<!-- All the links in the footer should remain intact. -->

@@ -192,7 +192,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #47b2e4;
+  color: black;
 }
 
 .navbar .getstarted,
@@ -208,7 +208,7 @@ h6 {
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
+  color: #05adec;;
   background: #31a9e1;
 }
 
@@ -432,7 +432,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #05adec;;
 }
 
 #hero .btn-watch-video {
@@ -454,7 +454,7 @@ h6 {
 }
 
 #hero .btn-watch-video:hover i {
-  color: #47b2e4;
+  color: black;;
 }
 
 #hero .animated {

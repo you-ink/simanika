@@ -60,7 +60,12 @@ class Main_model extends CI_Model {
 
       	$filter = "WHERE MONTH(proker.tanggal_acara) = MONTH('".date("Y-m-d")."')";
       	(!empty($id)) ? $filter .= " AND proker.id = " . $this->db->escape($id) : "";
-      	(!empty($search)) ? $filter .= " AND (proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR get_status(proker.status) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
+      	(!empty($search)) ? $filter .= " AND (proker.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR 
+          		IF(
+          			proker.status = 1, 
+          			'Terlaksana',
+          			'Belum Terlaksana'
+			    ) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
 
       	$recordsTotal = $this->db->query("
         	SELECT 
@@ -68,7 +73,11 @@ class Main_model extends CI_Model {
           		proker.nama,
           		proker.tanggal_acara,
           		proker.status,
-          		get_status(proker.status) as nama_status,
+          		IF(
+          			proker.status = 1, 
+          			'Terlaksana',
+          			'Belum Terlaksana'
+			    ) as nama_status,
           		proker.tor,
           		proker.lpj,
           		pelaksana.nama as pelaksana,
@@ -93,7 +102,11 @@ class Main_model extends CI_Model {
           		proker.nama,
           		proker.tanggal_acara,
           		proker.status,
-          		get_status(proker.status) as nama_status,
+          		IF(
+          			proker.status = 1, 
+          			'Terlaksana',
+          			'Belum Terlaksana'
+			    ) as nama_status,
           		proker.tor,
           		proker.lpj,
           		pelaksana.nama as pelaksana,

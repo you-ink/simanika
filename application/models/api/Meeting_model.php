@@ -25,7 +25,12 @@ class Meeting_model extends CI_Model {
 
       $filter = "WHERE rapat.id IS NOT NULL";
       (!empty($id)) ? $filter .= " AND rapat.id = " . $this->db->escape($id) : "";
-      (!empty($search)) ? $filter .= " AND (rapat.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR get_tipe_rapat(rapat.tipe) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
+      (!empty($search)) ? $filter .= " AND (rapat.nama LIKE '%" . $this->db->escape_like_str($search) . "%' OR 
+          IF(
+            rapat.tipe = 1,
+            'Rapat Resmi',
+            'Rapat Program Kerja'
+          ) LIKE '%" . $this->db->escape_like_str($search) . "%')" : "";
 
       if ($user['divisi_id'] != 1) {
         $filter .= " AND rapat.divisi_id IS NULL OR rapat.divisi_id IN(1, ".$user['divisi_id'].")";
@@ -40,7 +45,11 @@ class Meeting_model extends CI_Model {
           rapat.waktu_mulai,
           rapat.notulensi,
           rapat.daftar_hadir,
-          get_tipe_rapat(rapat.tipe) as deskripsi_tipe
+          IF(
+            rapat.tipe = 1,
+            'Rapat Resmi',
+            'Rapat Program Kerja'
+          ) as deskripsi_tipe
         FROM
           rapat
         $filter
@@ -55,7 +64,11 @@ class Meeting_model extends CI_Model {
           rapat.waktu_mulai,
           rapat.notulensi,
           rapat.daftar_hadir,
-          get_tipe_rapat(rapat.tipe) as deskripsi_tipe
+          IF(
+            rapat.tipe = 1,
+            'Rapat Resmi',
+            'Rapat Program Kerja'
+          ) as deskripsi_tipe
         FROM
           rapat
         $filter

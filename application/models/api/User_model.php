@@ -14,17 +14,21 @@ class User_model extends CI_Model {
         	goto output;
       	}
 
-		$id = isset($params['id']) ? $params['id'] : '';
+		$division = isset($params['division']) ? $params['division'] : '';
+
+		$filter = !empty($division) ? " WHERE detail_user.divisi_id = '$division'" : "";
 
 		$get_user = $this->db->query("SELECT
-			id,
+			users.id,
 			nim,
 			angkatan,
 			nama,
 			telp,
 			email,
 			alamat
-		FROM users");
+		FROM users
+		LEFT JOIN detail_user ON detail_user.user_id = users.id
+		$filter");
 
 		if ($get_user->num_rows() > 0) {
 
@@ -241,6 +245,51 @@ class User_model extends CI_Model {
 	    output:
 	    return $hasil;
 	}
+
+	public function bph($params){
+		$get_user = $this->db->query("SELECT
+			users.id,
+			nim,
+			angkatan,
+			users.nama,
+			telp,
+			email,
+			alamat,
+			detail_user.foto,
+			jabatan.nama as jabatan
+		FROM users
+		LEFT JOIN detail_user ON detail_user.user_id = users.id
+		LEFT JOIN jabatan ON detail_user.jabatan_id = jabatan.id
+		WHERE divisi_id = '1'");
+
+		if ($get_user->num_rows() > 0) {
+
+			$no = 0;
+			foreach ($get_user->result_array() as $key) {
+				$result['error'] = false;
+				$result['message'] = null;
+				$result['data'][$no++] = [
+					'id' => $key['id'],
+					'nim' => $key['nim'],
+					'angkatan' => $key['angkatan'],
+					'nama' => $key['nama'],
+					'telp' => $key['telp'],
+					'email' => $key['email'],
+					'alamat' => $key['alamat'],
+					'foto' => $key['foto'],
+					'jabatan' => $key['jabatan'],
+				];
+			}
+			goto output;
+		}
+
+		$result['Error'] = true;
+		$result['Message'] = "User tidak ditemukan";
+		goto output;
+
+		output:
+		return $result;
+    }
 
 }
 

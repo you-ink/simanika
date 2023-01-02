@@ -28,6 +28,11 @@ class User extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function bph_post(){
+    	$response = $this->user->bph($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

@@ -184,6 +184,7 @@ $config['auth_library_function'] = '';
 // $config['auth_override_class_method']['accounts']['user'] = 'basic';
 // $config['auth_override_class_method']['dashboard']['*'] = 'basic';
 $config['auth_override_class_method']['auth']['*'] = 'none';
+$config['auth_override_class_method']['user']['bph'] = 'none';
 
 
 // ---Uncomment list line for the wildard unit test

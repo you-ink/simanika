@@ -499,516 +499,9 @@
 				</div>
 
 
-				<div class="row">
+				<div class="row section-bph">
 
-					<div class="col-sm-6 mt-4-lg-0">
-						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-							<div class="pic"><img
-									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/ketua.jpg"
-									class="img-fluid" alt=""></div>
-							<div class="team-img">
-								<h4 style="color:#05adec;">Muhammad Rudy Darmawan</h4>
-								<span>Ketua Umum</span>
-								<p>Manajemen Informatika Angkatan 2020</p>
-								<div class="social">
-									<a href="" ><i  style="color:#05adec;" class="ri-twitter-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
-									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 mt-4 mt-lg-0">
-						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-							<div class="pic"><img
-									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/wakilketua.jpg"
-									class="img-fluid" alt=""></div>
-							<div class="team-img">
-								<h4 style="color:#05adec;" >Atikah Nuri Hazma</h4>
-								<span>Wakil Ketua Umum</span>
-								<p>Manajemen Informatika Angkatan 2021</p>
-								<div class="social">
-									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
-									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 mt-4">
-						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-							<div class="pic"><img
-									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris1.jpg"
-									class="img-fluid" alt=""></div>
-							<div class="team-img">
-								<h4 style="color:#05adec;" >Rahma Romadona Ayu Riswanti</h4>
-								<span>Sekretaris 1</span>
-								<p>Manajemen Informatika Angkatan 2020</p>
-								<div class="social">
-									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
-									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 mt-4">
-						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-							<div class="pic"><img
-									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/sekretaris2.jpg"
-									class="img-fluid" alt=""></div>
-							<div class="team-img">
-								<h4 style="color:#05adec;" >Mutia Budi Utami</h4>
-								<span>Sekretaris 2</span>
-								<p>Manajemen Informatika Angkatan 2021</p>
-								<div class="social">
-									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
-									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 mt-4">
-						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="500">
-							<div class="pic"><img
-									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara1.jpg"
-									class="img-fluid" alt=""></div>
-							<div class="team-img">
-								<h4 style="color:#05adec;" >Nurlita Ayu Rakhmawati</h4>
-								<span>Bendahara 1</span>
-								<p>Manajemen Informatika Angkatan 2020</p>
-								<div class="social">
-									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
-									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 mt-4">
-						<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-							<div class="pic"><img
-									src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/bendahara2.jpg"
-									class="img-fluid" alt=""></div>
-							<div class="team-img">
-								<h4 style="color:#05adec;" >Marisa Setya Anggraini</h4>
-								<span>Bendahara 2</span>
-								<p>Manajemen Informatika Angkatan 2021</p>
-								<div class="social">
-									<a href=""><i style="color:#05adec;"  class="ri-twitter-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-facebook-fill"></i></a>
-									<a href=""><i style="color:#05adec;"  class="ri-instagram-fill"></i></a>
-									<a href=""> <i style="color:#05adec;"  class="ri-linkedin-box-fill"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- <div class="col-sm-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="700">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kadivpsdm.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Hamid Rafiud Derajad</h4>
-                <span>Kepala Divisi PSDM</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""><i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/cominatbakatkewirausahaan.jpg" class="img-fluid"
-								alt=""></div>
-              <div class="team-img">
-                <h4>Aishanda Vania A. & Siti Rusdaniah</h4>
-                <span>CO Minat Bakat dan Co Kewirausahaan</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="1000">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/lailatul.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Lailatul Nunawaroh & Nur Laili W</h4>
-                <span>Anggota Akademik PSDM</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/hendy.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Hendy Mawarid & Mufid Aditya Dafentri</h4>
-                <span>Anggota Akademik PSDM</span>
-                <p>Manajemen Informatika Angkatan 2020 & 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/rafli.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>M Rafli Maulana & Raynaldi Wibowo</h4>
-                <span>Anggota NonAkademik PSDM</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/theo.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>M Daffa Izzaz Agung Theola & Dimas Rizqi Agung P
-				</h4>
-                <span>Anggota NonAkademik PSDM</span>
-                <p>Manajemen Informatika Angkatan 2020 & 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/afandi.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Ahmad Afandi & Ardella Setya Maharany
-				</h4>
-                <span>Anggota Kewirausahaan</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/nadila.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Nadila Devi Tsabita & Imratul Mukdalifah
-				</h4>
-                <span>Anggota Kewirausahaan</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/rizal.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Rizal Khoirul Anam & Thoriq Ayub Bahtiar
-				</h4>
-                <span>Anggota Akdemik & Non Akademik PSDM</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kadivhumas.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>M Basar Riski
-				</h4>
-                <span>Kepala Divisi HUMAS</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/fuad.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Fuad Hasyim Fanani
-				</h4>
-                <span>Anggota HUMAS</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/firda.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Firda Ulfa Unsilah
-				</h4>
-                <span>Anggota HUMAS</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kia.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Ananda Zakia Syahfitri
-				</h4>
-                <span>Anggota HUMAS</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/akbar.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Akbar Kusnadi
-				</h4>
-                <span>Anggota HUMAS</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/kadivkominfo.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Lukman Afandi
-				</h4>
-                <span>Kepala Divisi KOMINFO</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/raehan.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Raehan Reza Mahendra
-				</h4>
-                <span>Anggota KOMINFO</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/yoga.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Yoga Saputra
-				</h4>
-                <span>Anggota KOMINFO</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/ranin.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Ranin Nabila
-				</h4>
-                <span>Anggota KOMINFO</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/andika.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Mohammad Andika Alsabfandi
-				</h4>
-                <span>Anggota KOMINFO</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/anam.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Khoirul Anam
-				</h4>
-                <span>Anggota KOMINFO</span>
-                <p>Manajemen Informatika Angkatan 2021</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="600">
-			<div class="pic"><img src="<?php echo base_url("assets/template/arsha/") ?>assets/img/team/herman.jpg" class="img-fluid"
-								alt=""></div>
-                <h4>Muhammad Herman Maulana
-				</h4>
-                <span>Anggota KOMINFO</span>
-                <p>Manajemen Informatika Angkatan 2020</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+					
 
 				</div>
 		</section><!-- End member Section -->
@@ -1524,6 +1017,18 @@
 	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
 			class="bi bi-arrow-up-short"></i></a>
 
+
+	<script>
+    function get_api_url() {
+        return "<?php echo base_url('api/') ?>";
+    }
+  </script>
+
+  <?= script([
+    'js/jquery-3.6.1.min.js',
+    'js/main.js',
+	]); ?>
+
 	<!-- Vendor JS Files -->
 	<script src="<?php echo base_url("assets/template/arsha/") ?>assets/vendor/aos/aos.js"></script>
 	<script src="<?php echo base_url("assets/template/arsha/") ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
@@ -1538,6 +1043,36 @@
 
 	<!-- Template Main JS File -->
 	<script src="<?php echo base_url("assets/template/arsha/") ?>assets/js/main.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			function getBPH() {
+				callApi("POST", "user/bph", null, function(req) {
+					member = '';
+					$.each(req.data, function(index, val) {
+						member += `<div class="col-sm-6 mt-4-lg-0">
+								<div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+									<div class="pic">
+										<img src="<?php echo base_url() ?>${val.foto}" class="img-fluid" alt="" width="150" height="150">
+									</div>
+									<div class="team-img px-3">
+										<h4 style="color:#05adec;">${val.nama}</h4>
+										<span>${val.jabatan}</span>
+										<p>Manajemen Informatika Angkatan ${val.angkatan}</p>
+									</div>
+								</div>
+							</div>`;
+					});
+
+					$(".section-bph").html(member);
+				})
+			}
+
+			getBPH()
+
+		})
+	</script>
 
 </body>
 

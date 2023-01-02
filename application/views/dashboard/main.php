@@ -157,7 +157,7 @@
 		<div class="col-lg-12 col-md-12 col-sm-12 mb-4">
 			<div class="card card-small h-100">
 				<div class="card-header border-bottom">
-					<h6 class="m-0">Statistik Rapat Per Tahun</h6>
+					<h6 class="m-0">Statistik Proker Per Tahun</h6>
 				</div>
 				<div class="card-body d-flex p-3 row">
                   	<div class="col-12 mb-3">

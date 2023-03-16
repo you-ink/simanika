@@ -18,6 +18,11 @@ class Auth extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function register_mobile_post(){
+    	$response = $this->auth->register_mobile($this->post());
+    	$this->response($response);
+  	}
+
   	public function forgotpassword_post(){
     	$response = $this->auth->forgotpassword($this->post());
     	$this->response($response);

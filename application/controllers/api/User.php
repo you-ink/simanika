@@ -33,6 +33,12 @@ class User extends REST_Controller{
     	$this->response($response);
   	}
 
+  	public function get_user_by_token_post()
+  	{
+    	$response = $this->user->get_user_by_token($this->post());
+    	$this->response($response);
+  	}
+
 }
 
 ?>

@@ -272,6 +272,156 @@ class Auth_model extends CI_Model {
       return $hasil;
     }
 
+    public function register_mobile($params)
+    {
+      $nama = $params['nama'];
+      $email = $params['email'];
+      $nim = $params['nim'];
+      $angkatan = $params['angkatan'];
+      $telp = $params['telp'];
+      $password = $params['password'];
+      $confirm_password = $params['confirm_password'];
+
+      if (empty($nama)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Nama belum diisi."
+        );
+        goto output;
+      } else if (empty($email)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Email belum diisi."
+        );
+        goto output;
+      } else if (empty($nim)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "NIM belum diisi."
+        );
+        goto output;
+      } else if (empty($angkatan)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Angkatan belum diisi."
+        );
+        goto output;
+      } else if (empty($telp)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "No. Telepon belum diisi."
+        );
+        goto output;
+      } else if (empty($password)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Password belum diisi."
+        );
+        goto output;
+      } else if (empty($confirm_password)) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Konfirmasi Password belum diisi."
+        );
+        goto output;
+      }
+
+      $uppercase = preg_match('@[A-Z]@', $password);
+      $lowercase = preg_match('@[a-z]@', $password);
+      $number    = preg_match('@[0-9]@', $password);
+      $specialChars = preg_match('@[^\w]@', $password);
+
+      if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8) {
+        $hasil = array(
+          'error' => true,
+          'message' => 'Password harus terdiri dari minimal 8 karakter dan harus menyertakan setidaknya satu huruf besar, satu angka, dan satu karakter khusus.'
+        );
+        goto output;
+      }
+
+      if ($password !== $confirm_password) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Password dan Konfirmasi Password harus sama."
+        );
+        goto output;
+      }
+
+      $cek_nim_email = $this->db->query("SELECT * FROM users WHERE email  = '$email' || nim = '$nim'")->num_rows();
+      if ($cek_nim_email > 0) {
+        $hasil = array(
+          'error' => true,
+          'message' => "Email atau NIM telah terpakai. Silahkan hubungi CS untuk konfirmasi."
+        );
+        goto output;
+      }
+
+      $token = generate_token(38);
+
+      $insert = $this->db->insert('users', array(
+        'nama' => $nama,
+        'telp' => $telp,
+        'email' => $email,
+        'password' => password_hash($password, PASSWORD_DEFAULT),
+        'nim' => $nim,
+        'angkatan' => $angkatan,
+        'token' => $token,
+        'status' => "2",
+        'level_id' => '3'
+      ));
+
+      if ($insert) {
+        $inserted_id = $this->db->insert_id();
+
+        $insert_detail = $this->db->insert('detail_user', array(
+          'user_id' => $inserted_id,
+          'jabatan_id' => '6'
+        ));
+
+        if (!$insert_detail) {
+          $hasil = array(
+            'error' => true,
+            'message' => "Gagal melakukan registrasi."
+          );
+          $this->delete_user($inserted_id);
+          goto output;
+        }
+
+        $insert_api_key = $this->db->insert('api_keys', array(
+          'user_id' => $inserted_id,
+          'key' => $token,
+          'level' => 1,
+          'ignore_limits' => 0,
+          'is_private_key' => 0,
+          'ip_addresses' => null,
+          'date_created' => 0,
+        ));
+
+        if (!$insert_api_key) {
+          $hasil = array(
+            'error' => true,
+            'message' => "Gagal melakukan registrasi."
+          );
+          $this->delete_user($inserted_id);
+          goto output;
+        }
+
+        $hasil = array(
+          'error' => false,
+          'message' => "Berhasil melakukan registrasi. Silahkan Login."
+        );
+        goto output;
+      }
+
+      $hasil = array(
+        'error' => true,
+        'message' => "Gagal melakukan registrasi."
+      );
+
+      output:
+      return $hasil;
+    }
+
     public function delete_user($user_id)
     {
       $this->db->delete('users', ['id'=>$id]);
